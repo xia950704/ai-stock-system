@@ -32,8 +32,12 @@ if _ROOT not in sys.path:
 
 try:
     from engine import data_loader, trading_day, market_judge, stock_judge, jev_adapter, report
+    from decision import adapter as decision_adapter
+    from stock_codes import P0_POOL, P2_POOL, all_judge_codes
 except ImportError:
     from . import data_loader, trading_day, market_judge, stock_judge, jev_adapter, report
+    from decision import adapter as decision_adapter
+    from stock_codes import P0_POOL, P2_POOL, all_judge_codes
 
 TZ = timezone(timedelta(hours=8))
 
@@ -118,6 +122,10 @@ def main():
     parser.add_argument("--json", action="store_true", help="同时输出 JSON 结果")
     parser.add_argument("--force", action="store_true",
                         help="显式允许覆盖指定的报告输出文件")
+    parser.add_argument("--decision-model", action="store_true",
+                        help="启用 AMD Decision Model 替代纯规则判断")
+    parser.add_argument("--decision-model-name", default=None,
+                        help="指定 AMD 决策模型名（默认 Clef）")
     args = parser.parse_args()
 
     now = datetime.now(TZ)
@@ -196,7 +204,7 @@ def main():
     print()
 
     print("[5/8] JEV 探查...")
-    pool_codes = [s["code"] for s in data_loader.P0_POOL + data_loader.P2_POOL]
+    pool_codes = [s.code for s in P0_POOL + P2_POOL]
     jev_results = run_jev_probe(pool_codes, use_mock=args.mock_jev, force_mock_failure=args.mock_jev_fail)
     jev_ok = sum(1 for r in jev_results.values() if r.get("ok"))
     jev_total = len(jev_results)
@@ -224,6 +232,83 @@ def main():
         print(f"  JEV 汇总：{jev_status} {jev_ok}/{jev_total}（错误码：{error_codes}）")
     print()
 
+    # [5.25/8] AMD Decision Model 探查（可选）
+    decision_status = "skipped"
+    decision_results = {}
+    if args.decision_model:
+        print("[5.25/8] AMD Decision Model...")
+        model_name = args.decision_model_name or "Clef"
+        try:
+            from decision.contract import DecisionInput
+            from decision.adapter import decide as decision_decide
+
+            # Build DecisionInput from collected data
+            di = DecisionInput(
+                report_date=report_date,
+                market_context={
+                    "verdict": market.get("verdict", "中性"),
+                    "confidence": market.get("confidence", "low"),
+                    "supporting_evidence": market.get("supports", []),
+                    "conflicting_evidence": market.get("conflicts", []),
+                    "limitations": market.get("limitations", []),
+                },
+                stocks=[],  # filled below
+                data_provenance={
+                    "anchor": "ok" if not anchor_err else "error",
+                    "ranking": "ok" if not ranking_err else "error",
+                    "jev": jev_status,
+                    "search": search_status if "search_status" in dir() else "skipped",
+                },
+                freshness_gate=staleness_gate or {},
+                constraints={"max_position_pct": 10},
+            )
+
+            # Fill stocks from pool_status
+            pool_status_local = data_loader.get_pool_status(
+                data_loader.build_anchor_index(anchor_data or []),
+                data_loader.build_ranking_index(ranking_data or {}),
+                data_loader.build_portfolio_index(portfolio_data or []),
+            )
+            for code in pool_codes:
+                ps = pool_status_local.get(code, {})
+                jev_r = jev_results.get(code, {})
+                di.stocks.append({
+                    "code": code,
+                    "name": ps.get("name", code),
+                    "price": ps.get("current"),
+                    "anchor": ps.get("anchor"),
+                    "deviation_pct": ps.get("deviation"),
+                    "pe": ps.get("pe"),
+                    "composite_score": ps.get("composite_score"),
+                    "tech_score": ps.get("tech_score"),
+                    "ml_boost": ps.get("ml_boost"),
+                    "jev_answer": jev_r.get("answers", {}).get("answer", {}).get("noul"),
+                    "jev_ok": jev_r.get("ok", False),
+                })
+
+            decision_output = decision_decide(di, model=model_name)
+            decision_results["market"] = {
+                "verdict": decision_output.market_verdict,
+                "confidence": decision_output.market_confidence,
+                "reasoning": decision_output.market_reasoning,
+            }
+            for s in decision_output.stocks:
+                decision_results[s.code] = {
+                    "action": s.action.value if hasattr(s.action, "value") else str(s.action),
+                    "confidence": s.confidence,
+                    "reasoning": s.reasoning,
+                }
+            decision_status = "available" if decision_output.stocks else "empty"
+            print("  ✅ AMD Decision Model: %s (%d stocks, %s)" % (model_name, len(decision_output.stocks), decision_status))
+            if decision_output.market_verdict:
+                print("  大盘判断: %s (conf=%s)" % (decision_output.market_verdict, decision_output.market_confidence))
+        except Exception as e:
+            decision_status = "error: %s" % str(e)[:120]
+            print("  ❌ AMD Decision Model 异常: %s" % str(e)[:120])
+    else:
+        print("[5.25/8] AMD Decision Model 未启用（使用 --decision-model 启用）")
+    print()
+
     print("[5.5/8] 外部证据探查（Search API）...")
     search_status = "skipped"
     search_results = {}
@@ -234,7 +319,7 @@ def main():
         try:
             from probe import probe_pool
             use_mock = bool(args.mock_search)
-            pool_stocks = data_loader.P0_POOL + data_loader.P2_POOL
+            pool_stocks = [{"code": s.code, "name": s.name} for s in P0_POOL + P2_POOL]
             search_results = probe_pool(pool_stocks, use_mock=use_mock, max_queries=3)
             search_status = "mock" if use_mock else search_results.get("status", "ok")
             for code, r in search_results.get("stocks", {}).items():
@@ -284,6 +369,14 @@ def main():
     print()
 
     print("[8/8] 报告生成...")
+    # Attach decision model results if available
+    if decision_results:
+        run_result_decision = {"market": decision_results.get("market"), "stocks": {k: v for k, v in decision_results.items() if k != "market"}}
+        decision_status_str = "available"
+    else:
+        run_result_decision = None
+        decision_status_str = "skipped"
+
     run_result = {
         "generated_at": generated_at,
         "report_date": report_date,
@@ -294,6 +387,8 @@ def main():
         "config_status": config_status,
         "jev_status": jev_status,
         "search_status": search_status,
+        "decision_status": decision_status_str,
+        "decision_results": run_result_decision,
         "missing_data": missing_data,
         "market": market,
         "stocks": stock_analyses,

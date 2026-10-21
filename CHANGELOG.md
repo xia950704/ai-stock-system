@@ -6,15 +6,15 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
-- 新增 `scripts/daily_positions_snapshot.py`：每日持仓快照归档脚本
-- 改进 `src/engine/trading_day.py`：新增中国 A 股静态节假日表（2026-2027），`trading_day_status()` 支持节假日判断
-- 改进 `src/search/evidence.py`：新增 `RELAY_VERIFIED_TIER=2`，relay LLM 池作为第二路独立验证通道
-- 改进 `src/search/probe.py`：新增 `relay_verify_claim()` 函数，每条 claim 经 relay 池交叉验证
-- 改进 `scripts/daily_commit_bot.py`：去掉 mock 模式，改为真实 JEV + Search API 调用，串入持仓快照脚本
-- 新增 `src/data_provider/` 统一数据源抽象层（DataSource ABC + Registry + 健康检查）
-- 新增 `AGENTS.md` 开发治理规范
-- 新增 `requirements.txt` 依赖管理
-- 改进 `daily_judge.py` 启动时增加数据源健康检查步骤
+- 新增 src/stock_codes.py：集中式股票代码注册表（P0=7, P2=1, HK=3, ETF=32, LEGACY=36），所有模块统一引用
+- 新增 src/decision/adapter.py：AMD Decision Model 适配层（Clef / d3 / d3-flash，endpoint=/v1/systemone）
+- 新增 src/decision/registry.json：注册 3 个 AMD 决策模型（Clef primary, d3, d3-flash fallback）
+- 改进 src/engine/daily_judge.py：新增 --decision-model CLI 开关，第 5.25 步调用 AMD Decision Model
+- 改进 src/engine/report.py：新增 C2 节展示 AMD Decision Model 个股判断
+- 改进 src/engine/daily_judge.py：股票池引用从 data_loader 迁移到 stock_codes（唯一真源）
+- 改进 src/decision/adapter.py：429 速率限制指数退避（4s/8s/12s/16s/20s），最多 5 次重试
+- 改进 .env：新增 AMD_API_KEY / AMD_API_BASE / AMD_DECISION_MODEL 配置
+- 安装 @tencent-qqmail/agently-cli：Agent Mail CLI 已授权（xiahshuang@agent.qq.com）
 
 ## [2026-10-21] — data_provider 基础设施
 

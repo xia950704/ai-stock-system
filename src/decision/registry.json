@@ -1,0 +1,48 @@
+{
+  "models": [
+    {
+      "model_id": "Clef",
+      "display_name": "Clef (AMD Decision Model)",
+      "provider": "AMD",
+      "base_url": "https://developer.amd.com.cn/radeon/api/v1",
+      "api_key_env": "AMD_API_KEY",
+      "api_key_location": "~/.codex/.env (AMD_API_KEY=rc-c8cd1139b79ebb6578de5dfe25771aad4d7c58201c776ba7)",
+      "context_window": null,
+      "priority": 0,
+      "enabled": true,
+      "allowed_data_scope": "market context + per-stock price/anchor/deviation/PE/composite/JEV/search claims; no position size or cost basis",
+      "restrictions": "rate limit exceeded observed; use retry/backoff; do not loop rapidly",
+      "notes": "Output modality: decision. Input: text+image. Does not support tools/streaming."
+    },
+    {
+      "model_id": "d3",
+      "display_name": "d3 (AMD Decision Model)",
+      "provider": "AMD",
+      "base_url": "https://developer.amd.com.cn/radeon/api/v1",
+      "api_key_env": "AMD_API_KEY",
+      "api_key_location": "~/.codex/.env",
+      "context_window": null,
+      "priority": 1,
+      "enabled": true,
+      "allowed_data_scope": "same as Clef",
+      "restrictions": "same as Clef",
+      "notes": "Same family as Clef, experimental"
+    },
+    {
+      "model_id": "d3-flash",
+      "display_name": "d3-flash (AMD Decision Model)",
+      "provider": "AMD",
+      "base_url": "https://developer.amd.com.cn/radeon/api/v1",
+      "api_key_env": "AMD_API_KEY",
+      "api_key_location": "~/.codex/.env",
+      "context_window": null,
+      "priority": 2,
+      "enabled": true,
+      "allowed_data_scope": "same as Clef",
+      "restrictions": "same as Clef",
+      "notes": "Fast variant of d3"
+    }
+  ],
+  "primary_model_id": "Clef",
+  "last_updated": "2026-10-21T18:00:00+08:00"
+}

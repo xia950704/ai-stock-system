@@ -53,6 +53,15 @@ def generate_report(run_result: Dict[str, Any]) -> str:
     if run_result.get("search_status") == "mock":
         lines.append("- **注意：Search API 使用 Mock 模式，外部证据不构成真实检索结果。**")
     lines.append(f"- 缺失数据：{run_result.get('missing_data', []) or '无'}")
+    decision_status = run_result.get('decision_status')
+    if decision_status and decision_status != 'skipped':
+        lines.append(f"- AMD Decision Model: {decision_status}")
+        dr = run_result.get('decision_results') or {}
+        dm = dr.get('market') or {}
+        if dm.get('verdict'):
+            lines.append(f"  模型大盘判断: {dm['verdict']} (conf={dm.get('confidence', 'N/A')})")
+            if dm.get('reasoning'):
+                lines.append(f"  模型推理: {dm['reasoning'][:200]}")
     lines.append("")
 
     lines.append("## B. 大盘研判")
@@ -186,6 +195,19 @@ def generate_report(run_result: Dict[str, Any]) -> str:
             for c in act["invalidation"]:
                 lines.append(f"  - {c}")
         lines.append("")
+
+    # C2. AMD Decision Model 个股判断
+    dr = run_result.get("decision_results")
+    if dr and dr.get("stocks"):
+        lines.append("## C2. AMD Decision Model 个股判断")
+        lines.append("")
+        for code, sd in dr["stocks"].items():
+            lines.append(f"### {code}")
+            lines.append("")
+            lines.append(f"- 行动：{sd.get('action', 'N/A')}（置信度：{sd.get('confidence', 'N/A')}）")
+            if sd.get("reasoning"):
+                lines.append(f"- 推理：{sd['reasoning'][:300]}")
+            lines.append("")
 
     lines.append("## D. 重点跟踪事项")
     lines.append("")
