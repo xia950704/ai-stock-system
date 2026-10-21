@@ -1,0 +1,25 @@
+# Codex 配置模板（占位符版 — 不含真实密钥）
+# 源文件: ~/.codex/config.toml (P1 未复制原件，因其包含明文 bearer token)
+# 使用时: 将 <PLACEHOLDER_*> 替换为真实值，或改用环境变量注入。
+# 真实值存放建议: 本机配置文件或环境变量，禁止提交到任何 Git 仓库。
+
+model_provider = "custom"
+model_catalog_json = "model-catalogs/<CATALOG_FILE>.json"
+model_reasoning_effort = "xhigh"
+model_verbosity = "medium"
+model = "auto"
+
+[model_providers.custom]
+name = "custom"
+wire_api = "responses"
+requires_openai_auth = true
+base_url = "http://127.0.0.1:<RELAY_PORT>/v1"
+experimental_bearer_token = "<PLACEHOLDER_RELAY_BEARER_TOKEN>"
+
+[mcp_servers.jev-systemone]
+command = "<HOME>/.hermes/mcp-servers/jev-systemone/.venv/bin/python"
+args = ["<HOME>/.hermes/mcp-servers/jev-systemone/server.py"]
+enabled = true
+
+# JEV 路由池（Codex 侧，由 relay /v1/models 实拉生成）
+# 源: ~/.codex/jev-routing.json — 已复制到 src/jev/routing-codex.json（只读参考）

@@ -1,0 +1,33 @@
+{
+  "name": "康龙化成",
+  "code": "300759",
+  "source_dir": "康龙化成_300759_SZ",
+  "data_source": "stock_analysis",
+  "data_date": "2026-05-26",
+  "price_range": {
+    "start_date": "2019-01-28",
+    "end_date": "2026-05-26",
+    "start_price": 11.03,
+    "current_price": 25.5,
+    "high": 244.6,
+    "low": 9.19,
+    "trading_days": 1773
+  },
+  "files": {
+    "investment_note": "投资笔记.md",
+    "tech_analysis": "技术分析.md",
+    "events": "事件时间线.md",
+    "pipeline": "业务管线.md",
+    "valuation": "估值追踪.md",
+    "rd_pipeline": "研发管线.md",
+    "charts": [
+      "图表/full_history_kline.png",
+      "图表/recent5y_candle.png"
+    ],
+    "csv_data": [
+      "full_history_daily.csv",
+      "events.csv"
+    ]
+  },
+  "status": "integrated"
+}

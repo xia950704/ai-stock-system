@@ -1,0 +1,48 @@
+# 敏感文件与个人数据（禁止提交）
+
+# 凭证与密钥
+**/.key
+**/*.key
+**/.env
+**/auth.json
+**/settings.json
+**/*secret*
+**/*token*
+
+# 真实配置（含明文密钥）
+**/config.toml
+**/config.yaml
+
+# 个人持仓、成本价、账户信息
+**/portfolio_*.json
+**/*holding*
+**/*cost*
+**/*account*
+
+# 日志与缓存
+**/logs/
+**/__pycache__/
+**/*.pyc
+**/*.log
+**/.DS_Store
+
+# 临时目录
+**/tmp/
+**/scratch/
+
+# 虚拟环境
+**/.venv/
+**/venv/
+
+# 模型与大数据快照（可选）
+**/*.pkl
+**/*.model
+
+# 配对交易状态（含真实持仓）
+src/trading/auto_trade_state.json
+src/trading/logs/
+
+# 已复制的敏感配置模板（占位符可提交，但真实值不提交）
+docs/config/*.toml
+docs/config/*.yaml
+!docs/config/*.template

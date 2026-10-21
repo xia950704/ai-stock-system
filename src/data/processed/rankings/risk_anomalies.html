@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ 风险异常检测 - 2026-09-24</title>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:#0f1117; color:#e0e0e0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; padding:20px; }
+h1 { font-size:24px; margin-bottom:8px; color:#fff; }
+.subtitle { color:#888; font-size:14px; margin-bottom:24px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:16px; margin-bottom:24px; }
+.card { background:#1a1d27; border-radius:12px; padding:20px; border:1px solid #2a2d37; }
+.card h3 { font-size:14px; color:#888; margin-bottom:8px; }
+.card .value { font-size:28px; font-weight:700; }
+.chart-card { background:#1a1d27; border-radius:12px; padding:16px; border:1px solid #2a2d37; margin-bottom:16px; }
+.chart-card h3 { font-size:14px; color:#888; margin-bottom:12px; }
+.chart { width:100%; height:300px; }
+table { width:100%; border-collapse:collapse; font-size:13px; }
+th { text-align:left; padding:8px 10px; color:#888; font-weight:500; border-bottom:1px solid #2a2d37; }
+td { padding:8px 10px; border-bottom:1px solid #22252f; }
+tr:hover td { background:rgba(255,255,255,0.03); }
+</style>
+</head>
+<body>
+<h1>⚠️ 风险异常检测报告</h1>
+<p class="subtitle">2026-09-24 | 2 只扫描 | 0 只有异常 | 共 0 个异常</p>
+
+<div class="grid">
+  <div class="card"><h3>高风险</h3><div class="value" style="color:#d4380d">0</div></div>
+  <div class="card"><h3>中风险</h3><div class="value" style="color:#fa8c16">0</div></div>
+  <div class="card"><h3>低风险</h3><div class="value" style="color:#888">0</div></div>
+  <div class="card"><h3>异常股票</h3><div class="value">0</div></div>
+</div>
+
+<div class="grid">
+  <div class="chart-card">
+    <h3>📊 异常类型分布</h3>
+    <div id="distChart" class="chart"></div>
+  </div>
+  <div class="chart-card">
+    <h3>⚠️ 高风险异常</h3>
+    <div style="padding:10px">
+    <div style="color:#888">无高风险异常</div>
+    </div>
+  </div>
+</div>
+
+<script>
+const distChart = echarts.init(document.getElementById('distChart'));
+distChart.setOption({
+  tooltip: { trigger: 'item', formatter: '{b}: {c}' },
+  series: [{
+    type: 'pie', radius: ['40%', '70%'],
+    data: [],
+    label: { color: '#888' },
+    itemStyle: { borderRadius: 4 }
+  }]
+});
+</script>
+
+<div class="chart-card">
+  <h3>📋 完整异常列表</h3>
+  <table><thead><tr>
+    <th>股票</th><th>级别</th><th>类型</th><th>详情</th><th>价格</th><th>日期</th>
+  </tr></thead><tbody>
+  
+  </tbody></table>
+</div>
+</body>
+</html>

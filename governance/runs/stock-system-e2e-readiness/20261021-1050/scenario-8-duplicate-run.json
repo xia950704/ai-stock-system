@@ -1,0 +1,10 @@
+{
+  "target": "reports/shadow/e2e_test_20261021_v3",
+  "md_exists": true,
+  "json_exists": true,
+  "conflicts": [
+    "reports/shadow/e2e_test_20261021_v3.md",
+    "reports/shadow/e2e_test_20261021_v3.json"
+  ],
+  "overwrite_default": false
+}

@@ -1,0 +1,14 @@
+# Daily Stock Analysis System - dependencies
+
+# HTTP 客户端
+httpx>=0.27.0
+
+# 数据处理
+pandas>=2.0.0
+numpy>=1.24.0
+
+# 工具
+python-dotenv>=1.0.0
+
+# JEV MCP 桥接（可选，仅 MCP 传输模式需要）
+# 由 ~/.hermes/mcp-servers/jev-systemone 提供运行时

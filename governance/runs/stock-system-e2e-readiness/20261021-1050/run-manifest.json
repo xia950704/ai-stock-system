@@ -1,0 +1,67 @@
+{
+  "run_id": "governance/runs/stock-system-e2e-readiness/20261021-1050",
+  "started_at": "2026-10-21T10:14:00+08:00",
+  "completed_at": "2026-10-21T11:35:00+08:00",
+  "scope": [
+    "decision-model-status",
+    "jev-call-chain",
+    "jev-real-call",
+    "search-real-call",
+    "eight-shadow-scenarios",
+    "historical-readiness",
+    "full-regression"
+  ],
+  "artifacts": [
+    "governance/runs/stock-system-e2e-readiness/20261021-1050/00_SCOPE.md",
+    "governance/runs/stock-system-e2e-readiness/20261021-1050/01_BASELINE.md",
+    "governance/runs/stock-system-e2e-readiness/20261021-1050/02_JEV_INTEGRATION.md",
+    "governance/runs/stock-system-e2e-readiness/20261021-1050/03_SEARCH_VALIDATION.md",
+    "governance/runs/stock-system-e2e-readiness/20261021-1050/04_DATA_READINESS.md",
+    "governance/runs/stock-system-e2e-readiness/20261021-1050/05_SHADOW_RUN.md",
+    "governance/runs/stock-system-e2e-readiness/20261021-1050/06_TEST_RESULTS.md",
+    "governance/runs/stock-system-e2e-readiness/20261021-1050/07_REMEDIATION_LOG.md",
+    "governance/runs/stock-system-e2e-readiness/20261021-1050/08_BLOCKERS.md",
+    "governance/runs/stock-system-e2e-readiness/20261021-1050/09_FINAL_QUALIFICATION.md",
+    "governance/runs/stock-system-e2e-readiness/20261021-1050/final-run-qualification.md",
+    "governance/runs/stock-system-e2e-readiness/20261021-1050/radar-historical-inventory.json",
+    "governance/runs/stock-system-e2e-readiness/20261021-1050/run-manifest.json",
+    "governance/runs/stock-system-e2e-readiness/20261021-1050/scenario-6-evidence-status.json",
+    "governance/runs/stock-system-e2e-readiness/20261021-1050/scenario-7-jev-malformed.json",
+    "governance/runs/stock-system-e2e-readiness/20261021-1050/scenario-8-duplicate-run.json"
+  ],
+  "tests": {
+    "executed": true,
+    "total": 137,
+    "passed": 137,
+    "failed": 0,
+    "skipped": 0
+  },
+  "real_calls": {
+    "jev": {
+      "executed": true,
+      "yes_no_attempted": 8,
+      "yes_no_success": 8,
+      "route_attempted": 1,
+      "route_success": 1,
+      "provider": "amd",
+      "model": "Clef",
+      "transport": "mcp"
+    },
+    "search": {
+      "executed": true,
+      "queries": 24,
+      "success": 24,
+      "results_per_query": 5
+    },
+    "trading": {
+      "executed": false,
+      "authorized": false
+    }
+  },
+  "qualification": {
+    "infrastructure": "PASS",
+    "research_workflow": "CONDITIONAL_PASS",
+    "formal_unattended_automation": "BLOCKED",
+    "automated_trading": "NOT_AUTHORIZED"
+  }
+}

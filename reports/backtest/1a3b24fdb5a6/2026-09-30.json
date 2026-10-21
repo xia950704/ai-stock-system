@@ -1,0 +1,1994 @@
+{
+  "generated_at": "2026-10-20 18:56:35",
+  "report_date": "2026-09-30",
+  "replay_task_id": "1a3b24fdb5a6",
+  "historical_mode": true,
+  "trading_day": {
+    "effective_date": "2026-09-30",
+    "data_date": "2026-09-30",
+    "verdict": "TRADING_DAY",
+    "reason": "工作日且数据新鲜",
+    "confidence": "medium"
+  },
+  "freshness": {
+    "check_time": "2026-10-20 18:56:35",
+    "realtime_date": "2026-09-23",
+    "ranking_run_date": null,
+    "issues": []
+  },
+  "config_status": "HISTORICAL_REPLAY",
+  "jev_status": "historical_unavailable",
+  "search_status": "historical_unavailable",
+  "snapshot_info": {
+    "anchor_available": true,
+    "anchor_asof": "2026-09-23",
+    "ranking_available": false,
+    "ranking_asof": null,
+    "realtime_available": true,
+    "realtime_asof": "2026-09-23"
+  },
+  "market": {
+    "verdict": "中性",
+    "confidence": "low",
+    "evidence": [
+      "锚价池 55 只股票平均偏离 +12.22%",
+      "正偏离 48 只，负偏离 7 只",
+      "池内股票整体高于锚价，反映风险偏好偏高"
+    ],
+    "counter_evidence": [],
+    "scenarios": {
+      "偏多": {
+        "condition": "池内平均偏离持续扩大且买入信号占优",
+        "support": "正偏离股票数量多于负偏离，买入信号占优",
+        "invalidation": "平均偏离回落至 0 附近或卖出信号反超"
+      },
+      "基准": {
+        "condition": "池内股票围绕锚价波动，多空力量均衡",
+        "support": "平均偏离在 -2% ~ +5% 区间，买卖信号接近",
+        "invalidation": "偏离突破 ±5% 或排名信号出现单边倾斜"
+      },
+      "偏空": {
+        "condition": "池内股票普遍低于锚价，卖出信号占优",
+        "support": "平均偏离为负且持续扩大",
+        "invalidation": "平均偏离转正且买入信号回暖"
+      }
+    },
+    "limitations": [
+      "无外部指数行情数据（无上证/沪深300等实际指数表现）",
+      "无成交额、市场广度（涨跌家数）等外部数据",
+      "大盘判断仅基于本地股票池聚合统计，不能等同于真实大盘",
+      "法定节假日无法确认，交易日判断为保守估计"
+    ],
+    "aggregate_stats": {
+      "anchor": {
+        "count": 55,
+        "status_distribution": {
+          "买入区间": 6,
+          "超买入区间": 35,
+          "锚价失效": 14
+        },
+        "avg_deviation": 12.22,
+        "min_deviation": -9.9,
+        "max_deviation": 43.7,
+        "pos_deviation_count": 48,
+        "neg_deviation_count": 7,
+        "avg_change_pct": -0.1,
+        "avg_pe": 830.5
+      },
+      "ranking": {
+        "count": 0
+      }
+    }
+  },
+  "stocks": [
+    {
+      "code": "sh600276",
+      "name": "恒瑞医药",
+      "pool": "P0",
+      "price_layer": {
+        "current": 46.77,
+        "anchor": 47,
+        "deviation": -1.8,
+        "status": "买入区间",
+        "pe": 36,
+        "prev_close": 46.07,
+        "change_pct": null,
+        "composite_score": null,
+        "latest_date": null,
+        "data_quality": "数据完整"
+      },
+      "fund_layer": {
+        "available_data": [
+          "价格",
+          "涨跌幅",
+          "锚价偏离",
+          "综合评分",
+          "技术信号"
+        ],
+        "unavailable_data": [
+          "主力资金流向",
+          "北向资金",
+          "融资融券",
+          "大单成交"
+        ],
+        "signals": [
+          "股价略低于锚价 1.8%"
+        ],
+        "note": "无可核实的主力资金数据，仅使用价格与排名信号；不得将单一价格信号等同于资金意图"
+      },
+      "rd_layer": {
+        "research_exists": true,
+        "last_update": "2026-08-21",
+        "note_summary": {
+          "current_price": "46.13",
+          "anchor_price": "47",
+          "deviation": "-1.8",
+          "pe_ttm": "36",
+          "status": "买入区间",
+          "update_time": "2026-09-01",
+          "hist_percentile": "0.7",
+          "hist_range": "[45.94, 64.26]"
+        },
+        "note": "研发信息仅来自 Obsidian 既有研究记录；若记录日期陈旧，标记为待核实"
+      },
+      "order_layer": {
+        "available_data": [],
+        "unavailable_data": [
+          "订单数据",
+          "销量数据",
+          "收入明细",
+          "商业化兑现指标"
+        ],
+        "note": "当前无订单/销量数据源，订单面无法分析"
+      },
+      "jev_layer": {
+        "called": false,
+        "available": false,
+        "status": "not_called",
+        "result": null,
+        "note": "JEV 当前环境不可用（model_na / insufficient / forbidden），不得解释为中性或任何方向信号"
+      },
+      "synthesis": {
+        "relation": "部分支持，存在数据缺口",
+        "supports": [
+          "价格低于锚价，与买入区间状态一致"
+        ],
+        "conflicts": [],
+        "gaps": [
+          "JEV 未调用",
+          "订单面数据缺失",
+          "研究笔记最后更新：2026-08-21"
+        ]
+      },
+      "action": {
+        "action": "WAIT",
+        "reason": "股价略低于锚价 1.8%，偏离有限",
+        "conditions": [
+          "股价进一步回调至买入区间"
+        ],
+        "invalidation": [
+          "股价回升超过锚价"
+        ]
+      }
+    },
+    {
+      "code": "sz000963",
+      "name": "华东医药",
+      "pool": "P0",
+      "price_layer": {
+        "current": 27.55,
+        "anchor": 27,
+        "deviation": 1.6,
+        "status": "超买入区间",
+        "pe": 14.77,
+        "prev_close": 27.26,
+        "change_pct": null,
+        "composite_score": null,
+        "latest_date": null,
+        "data_quality": "数据完整"
+      },
+      "fund_layer": {
+        "available_data": [
+          "价格",
+          "涨跌幅",
+          "锚价偏离",
+          "综合评分",
+          "技术信号"
+        ],
+        "unavailable_data": [
+          "主力资金流向",
+          "北向资金",
+          "融资融券",
+          "大单成交"
+        ],
+        "signals": [
+          "股价接近锚价（偏离 1.6%）"
+        ],
+        "note": "无可核实的主力资金数据，仅使用价格与排名信号；不得将单一价格信号等同于资金意图"
+      },
+      "rd_layer": {
+        "research_exists": true,
+        "last_update": "2026-08-07",
+        "note_summary": {
+          "current_price": "27.28",
+          "anchor_price": "27",
+          "deviation": "1.6",
+          "pe_ttm": "14.77",
+          "status": "超买入区间",
+          "update_time": "2026-09-01",
+          "hist_percentile": "6.7",
+          "hist_range": "[26.41, 39.04]"
+        },
+        "note": "研发信息仅来自 Obsidian 既有研究记录；若记录日期陈旧，标记为待核实"
+      },
+      "order_layer": {
+        "available_data": [],
+        "unavailable_data": [
+          "订单数据",
+          "销量数据",
+          "收入明细",
+          "商业化兑现指标"
+        ],
+        "note": "当前无订单/销量数据源，订单面无法分析"
+      },
+      "jev_layer": {
+        "called": false,
+        "available": false,
+        "status": "not_called",
+        "result": null,
+        "note": "JEV 当前环境不可用（model_na / insufficient / forbidden），不得解释为中性或任何方向信号"
+      },
+      "synthesis": {
+        "relation": "部分支持，存在数据缺口",
+        "supports": [
+          "价格低于锚价，与买入区间状态一致"
+        ],
+        "conflicts": [],
+        "gaps": [
+          "JEV 未调用",
+          "订单面数据缺失",
+          "研究笔记最后更新：2026-08-07"
+        ]
+      },
+      "action": {
+        "action": "HOLD",
+        "reason": "股价接近锚价（偏离 1.6%）",
+        "conditions": [],
+        "invalidation": []
+      }
+    },
+    {
+      "code": "sz002262",
+      "name": "恩华药业",
+      "pool": "P0",
+      "price_layer": {
+        "current": 22.82,
+        "anchor": 21,
+        "deviation": 6.5,
+        "status": "超买入区间",
+        "pe": 20.9,
+        "prev_close": 22.03,
+        "change_pct": null,
+        "composite_score": null,
+        "latest_date": null,
+        "data_quality": "数据完整"
+      },
+      "fund_layer": {
+        "available_data": [
+          "价格",
+          "涨跌幅",
+          "锚价偏离",
+          "综合评分",
+          "技术信号"
+        ],
+        "unavailable_data": [
+          "主力资金流向",
+          "北向资金",
+          "融资融券",
+          "大单成交"
+        ],
+        "signals": [
+          "股价高于锚价 6.5%，偏高"
+        ],
+        "note": "无可核实的主力资金数据，仅使用价格与排名信号；不得将单一价格信号等同于资金意图"
+      },
+      "rd_layer": {
+        "research_exists": true,
+        "last_update": null,
+        "note_summary": {
+          "status": "骨架（待补具体数字）"
+        },
+        "note": "研发信息仅来自 Obsidian 既有研究记录；若记录日期陈旧，标记为待核实"
+      },
+      "order_layer": {
+        "available_data": [],
+        "unavailable_data": [
+          "订单数据",
+          "销量数据",
+          "收入明细",
+          "商业化兑现指标"
+        ],
+        "note": "当前无订单/销量数据源，订单面无法分析"
+      },
+      "jev_layer": {
+        "called": false,
+        "available": false,
+        "status": "not_called",
+        "result": null,
+        "note": "JEV 当前环境不可用（model_na / insufficient / forbidden），不得解释为中性或任何方向信号"
+      },
+      "synthesis": {
+        "relation": "部分支持，存在数据缺口",
+        "supports": [
+          "价格低于锚价，与买入区间状态一致"
+        ],
+        "conflicts": [],
+        "gaps": [
+          "JEV 未调用",
+          "订单面数据缺失"
+        ]
+      },
+      "action": {
+        "action": "HOLD",
+        "reason": "股价高于锚价 6.5%，偏高但未到减仓区间",
+        "conditions": [],
+        "invalidation": [
+          "股价继续大幅上涨"
+        ]
+      }
+    },
+    {
+      "code": "sz002422",
+      "name": "科伦药业",
+      "pool": "P0",
+      "price_layer": {
+        "current": 40.94,
+        "anchor": 42,
+        "deviation": -3.5,
+        "status": "买入区间",
+        "pe": 15,
+        "prev_close": 40.58,
+        "change_pct": null,
+        "composite_score": null,
+        "latest_date": null,
+        "data_quality": "数据完整"
+      },
+      "fund_layer": {
+        "available_data": [
+          "价格",
+          "涨跌幅",
+          "锚价偏离",
+          "综合评分",
+          "技术信号"
+        ],
+        "unavailable_data": [
+          "主力资金流向",
+          "北向资金",
+          "融资融券",
+          "大单成交"
+        ],
+        "signals": [
+          "股价略低于锚价 3.5%"
+        ],
+        "note": "无可核实的主力资金数据，仅使用价格与排名信号；不得将单一价格信号等同于资金意图"
+      },
+      "rd_layer": {
+        "research_exists": true,
+        "last_update": "2026-08-04",
+        "note_summary": {
+          "current_price": "40.46",
+          "anchor_price": "42",
+          "deviation": "-3.5",
+          "pe_ttm": "15",
+          "status": "买入区间",
+          "update_time": "2026-09-01",
+          "hist_percentile": "52.2",
+          "hist_range": "[28.81, 51.35]"
+        },
+        "note": "研发信息仅来自 Obsidian 既有研究记录；若记录日期陈旧，标记为待核实"
+      },
+      "order_layer": {
+        "available_data": [],
+        "unavailable_data": [
+          "订单数据",
+          "销量数据",
+          "收入明细",
+          "商业化兑现指标"
+        ],
+        "note": "当前无订单/销量数据源，订单面无法分析"
+      },
+      "jev_layer": {
+        "called": false,
+        "available": false,
+        "status": "not_called",
+        "result": null,
+        "note": "JEV 当前环境不可用（model_na / insufficient / forbidden），不得解释为中性或任何方向信号"
+      },
+      "synthesis": {
+        "relation": "部分支持，存在数据缺口",
+        "supports": [
+          "价格低于锚价，与买入区间状态一致"
+        ],
+        "conflicts": [],
+        "gaps": [
+          "JEV 未调用",
+          "订单面数据缺失",
+          "研究笔记最后更新：2026-08-04"
+        ]
+      },
+      "action": {
+        "action": "WAIT",
+        "reason": "股价略低于锚价 3.5%，偏离有限",
+        "conditions": [
+          "股价进一步回调至买入区间"
+        ],
+        "invalidation": [
+          "股价回升超过锚价"
+        ]
+      }
+    },
+    {
+      "code": "sh603259",
+      "name": "药明康德",
+      "pool": "P0",
+      "price_layer": {
+        "current": 164.87,
+        "anchor": 145,
+        "deviation": 5.5,
+        "status": "超买入区间",
+        "pe": 18.5,
+        "prev_close": 154.78,
+        "change_pct": null,
+        "composite_score": null,
+        "latest_date": null,
+        "data_quality": "数据完整"
+      },
+      "fund_layer": {
+        "available_data": [
+          "价格",
+          "涨跌幅",
+          "锚价偏离",
+          "综合评分",
+          "技术信号"
+        ],
+        "unavailable_data": [
+          "主力资金流向",
+          "北向资金",
+          "融资融券",
+          "大单成交"
+        ],
+        "signals": [
+          "股价高于锚价 5.5%，偏高"
+        ],
+        "note": "无可核实的主力资金数据，仅使用价格与排名信号；不得将单一价格信号等同于资金意图"
+      },
+      "rd_layer": {
+        "research_exists": true,
+        "last_update": "2026-06-11",
+        "note_summary": {
+          "current_price": "152.57",
+          "anchor_price": "145",
+          "deviation": "5.5",
+          "pe_ttm": "18.5",
+          "status": "超买入区间",
+          "update_time": "2026-09-01",
+          "hist_percentile": "83.9",
+          "hist_range": "[86.41, 167.90]"
+        },
+        "note": "研发信息仅来自 Obsidian 既有研究记录；若记录日期陈旧，标记为待核实"
+      },
+      "order_layer": {
+        "available_data": [],
+        "unavailable_data": [
+          "订单数据",
+          "销量数据",
+          "收入明细",
+          "商业化兑现指标"
+        ],
+        "note": "当前无订单/销量数据源，订单面无法分析"
+      },
+      "jev_layer": {
+        "called": false,
+        "available": false,
+        "status": "not_called",
+        "result": null,
+        "note": "JEV 当前环境不可用（model_na / insufficient / forbidden），不得解释为中性或任何方向信号"
+      },
+      "synthesis": {
+        "relation": "部分支持，存在数据缺口",
+        "supports": [
+          "价格低于锚价，与买入区间状态一致"
+        ],
+        "conflicts": [],
+        "gaps": [
+          "JEV 未调用",
+          "订单面数据缺失",
+          "研究笔记最后更新：2026-06-11"
+        ]
+      },
+      "action": {
+        "action": "HOLD",
+        "reason": "股价高于锚价 5.5%，偏高但未到减仓区间",
+        "conditions": [],
+        "invalidation": [
+          "股价继续大幅上涨"
+        ]
+      }
+    },
+    {
+      "code": "sh688506",
+      "name": "百利天恒",
+      "pool": "P0",
+      "price_layer": {
+        "current": 243.2,
+        "anchor": 290,
+        "deviation": -9.9,
+        "status": "买入区间",
+        "pe": 138.0,
+        "prev_close": 266.84,
+        "change_pct": null,
+        "composite_score": null,
+        "latest_date": null,
+        "data_quality": "数据完整"
+      },
+      "fund_layer": {
+        "available_data": [
+          "价格",
+          "涨跌幅",
+          "锚价偏离",
+          "综合评分",
+          "技术信号"
+        ],
+        "unavailable_data": [
+          "主力资金流向",
+          "北向资金",
+          "融资融券",
+          "大单成交"
+        ],
+        "signals": [
+          "股价低于锚价 9.9%，可能反映悲观情绪或超跌"
+        ],
+        "note": "无可核实的主力资金数据，仅使用价格与排名信号；不得将单一价格信号等同于资金意图"
+      },
+      "rd_layer": {
+        "research_exists": true,
+        "last_update": "2026-08-07",
+        "note_summary": {
+          "current_price": "261.8",
+          "anchor_price": "290",
+          "deviation": "-9.9",
+          "pe_ttm": "138",
+          "status": "买入区间",
+          "update_time": "2026-09-01",
+          "hist_percentile": "44.7",
+          "hist_range": "[204.58, 344.00]"
+        },
+        "note": "研发信息仅来自 Obsidian 既有研究记录；若记录日期陈旧，标记为待核实"
+      },
+      "order_layer": {
+        "available_data": [],
+        "unavailable_data": [
+          "订单数据",
+          "销量数据",
+          "收入明细",
+          "商业化兑现指标"
+        ],
+        "note": "当前无订单/销量数据源，订单面无法分析"
+      },
+      "jev_layer": {
+        "called": false,
+        "available": false,
+        "status": "not_called",
+        "result": null,
+        "note": "JEV 当前环境不可用（model_na / insufficient / forbidden），不得解释为中性或任何方向信号"
+      },
+      "synthesis": {
+        "relation": "部分支持，存在数据缺口",
+        "supports": [
+          "价格低于锚价，与买入区间状态一致"
+        ],
+        "conflicts": [],
+        "gaps": [
+          "JEV 未调用",
+          "订单面数据缺失",
+          "研究笔记最后更新：2026-08-07"
+        ]
+      },
+      "action": {
+        "action": "OBSERVE",
+        "reason": "【数据新鲜度门槛】无法确认行情数据所属交易日，禁止基于价格产生交易类建议。原建议 CONSIDER_ENTRY 基于旧行情，降级为观察。",
+        "conditions": [
+          "锚价有效",
+          "无重大负面事件",
+          "估值合理"
+        ],
+        "invalidation": [
+          "股价回升至锚价以上",
+          "锚价失效",
+          "出现重大利空"
+        ],
+        "original_action": "CONSIDER_ENTRY",
+        "staleness_blocked": true
+      },
+      "staleness_gate": {
+        "verdict": "DATE_UNKNOWN",
+        "asof_date": null,
+        "report_date": "2026-09-30",
+        "lag_trading_days": null,
+        "blocking": true,
+        "reason": "无法确认行情数据所属交易日，禁止基于价格产生交易类建议"
+      }
+    },
+    {
+      "code": "sh512400",
+      "name": "sh512400",
+      "pool": "P0",
+      "price_layer": {
+        "current": 1.626,
+        "anchor": null,
+        "deviation": null,
+        "status": null,
+        "pe": null,
+        "prev_close": null,
+        "change_pct": null,
+        "composite_score": null,
+        "latest_date": null,
+        "data_quality": "数据不完整: 无锚价; 无偏离"
+      },
+      "fund_layer": {
+        "available_data": [
+          "价格",
+          "涨跌幅",
+          "锚价偏离",
+          "综合评分",
+          "技术信号"
+        ],
+        "unavailable_data": [
+          "主力资金流向",
+          "北向资金",
+          "融资融券",
+          "大单成交"
+        ],
+        "signals": [],
+        "note": "无可核实的主力资金数据，仅使用价格与排名信号；不得将单一价格信号等同于资金意图"
+      },
+      "rd_layer": {
+        "research_exists": false,
+        "last_update": null,
+        "note_summary": {},
+        "note": "研发信息仅来自 Obsidian 既有研究记录；若记录日期陈旧，标记为待核实"
+      },
+      "order_layer": {
+        "available_data": [],
+        "unavailable_data": [
+          "订单数据",
+          "销量数据",
+          "收入明细",
+          "商业化兑现指标"
+        ],
+        "note": "当前无订单/销量数据源，订单面无法分析"
+      },
+      "jev_layer": {
+        "called": false,
+        "available": false,
+        "status": "not_called",
+        "result": null,
+        "note": "JEV 当前环境不可用（model_na / insufficient / forbidden），不得解释为中性或任何方向信号"
+      },
+      "synthesis": {
+        "relation": "证据不足",
+        "supports": [],
+        "conflicts": [],
+        "gaps": [
+          "JEV 未调用",
+          "订单面数据缺失",
+          "无研究笔记"
+        ]
+      },
+      "action": {
+        "action": "INSUFFICIENT_EVIDENCE",
+        "reason": "无可用价格或评分数据",
+        "conditions": [],
+        "invalidation": []
+      }
+    },
+    {
+      "code": "sh688331",
+      "name": "荣昌生物",
+      "pool": "P2",
+      "price_layer": {
+        "current": 117.75,
+        "anchor": 114,
+        "deviation": 5.1,
+        "status": "超买入区间",
+        "pe": 586.0,
+        "prev_close": 121.78,
+        "change_pct": null,
+        "composite_score": null,
+        "latest_date": null,
+        "data_quality": "数据完整"
+      },
+      "fund_layer": {
+        "available_data": [
+          "价格",
+          "涨跌幅",
+          "锚价偏离",
+          "综合评分",
+          "技术信号"
+        ],
+        "unavailable_data": [
+          "主力资金流向",
+          "北向资金",
+          "融资融券",
+          "大单成交"
+        ],
+        "signals": [
+          "股价高于锚价 5.1%，偏高"
+        ],
+        "note": "无可核实的主力资金数据，仅使用价格与排名信号；不得将单一价格信号等同于资金意图"
+      },
+      "rd_layer": {
+        "research_exists": true,
+        "last_update": "2026-06-01",
+        "note_summary": {
+          "current_price": "119.18",
+          "anchor_price": "114",
+          "deviation": "5.1",
+          "pe_ttm": "586",
+          "status": "超买入区间",
+          "update_time": "2026-09-01",
+          "hist_percentile": "56.2",
+          "hist_range": "[81.35, 153.26]"
+        },
+        "note": "研发信息仅来自 Obsidian 既有研究记录；若记录日期陈旧，标记为待核实"
+      },
+      "order_layer": {
+        "available_data": [],
+        "unavailable_data": [
+          "订单数据",
+          "销量数据",
+          "收入明细",
+          "商业化兑现指标"
+        ],
+        "note": "当前无订单/销量数据源，订单面无法分析"
+      },
+      "jev_layer": {
+        "called": false,
+        "available": false,
+        "status": "not_called",
+        "result": null,
+        "note": "JEV 当前环境不可用（model_na / insufficient / forbidden），不得解释为中性或任何方向信号"
+      },
+      "synthesis": {
+        "relation": "部分支持，存在数据缺口",
+        "supports": [
+          "价格低于锚价，与买入区间状态一致"
+        ],
+        "conflicts": [],
+        "gaps": [
+          "JEV 未调用",
+          "订单面数据缺失",
+          "研究笔记最后更新：2026-06-01"
+        ]
+      },
+      "action": {
+        "action": "HOLD",
+        "reason": "股价高于锚价 5.1%，偏高但未到减仓区间",
+        "conditions": [],
+        "invalidation": [
+          "股价继续大幅上涨"
+        ]
+      }
+    }
+  ],
+  "focus": {
+    "top_stocks": []
+  },
+  "provenance": {
+    "as_of": "2026-09-30",
+    "kline": {
+      "available": true
+    },
+    "anchor": {
+      "available": true,
+      "as_of": "2026-09-23",
+      "path": "/Users/xiashuang/harness/stock_daily/anchor_status_2026-09-23.json",
+      "reason": "锚价快照 2026-09-23 可用",
+      "data": [
+        {
+          "name": "百利天恒",
+          "code": "sh688506",
+          "current": 261.3,
+          "anchor": 290,
+          "deviation": -9.9,
+          "status": "买入区间",
+          "pe": 138.0,
+          "prev_close": 266.84,
+          "change_pct": -2.08
+        },
+        {
+          "name": "贝达药业",
+          "code": "sz300558",
+          "current": 50.11,
+          "anchor": 54,
+          "deviation": -7.2,
+          "status": "买入区间",
+          "pe": 64,
+          "prev_close": 50.48,
+          "change_pct": -0.73
+        },
+        {
+          "name": "科伦药业",
+          "code": "sz002422",
+          "current": 40.54,
+          "anchor": 42,
+          "deviation": -3.5,
+          "status": "买入区间",
+          "pe": 15,
+          "prev_close": 40.58,
+          "change_pct": -0.1
+        },
+        {
+          "name": "恒瑞医药",
+          "code": "sh600276",
+          "current": 46.17,
+          "anchor": 47,
+          "deviation": -1.8,
+          "status": "买入区间",
+          "pe": 36,
+          "prev_close": 46.07,
+          "change_pct": 0.22
+        },
+        {
+          "name": "华东医药",
+          "code": "sz000963",
+          "current": 27.42,
+          "anchor": 27,
+          "deviation": 1.6,
+          "status": "超买入区间",
+          "pe": 14.77,
+          "prev_close": 27.26,
+          "change_pct": 0.59
+        },
+        {
+          "name": "丽珠集团",
+          "code": "sz000513",
+          "current": 26.49,
+          "anchor": 26,
+          "deviation": 1.9,
+          "status": "超买入区间",
+          "pe": 150.0,
+          "prev_close": 26.41,
+          "change_pct": 0.3
+        },
+        {
+          "name": "凯莱英",
+          "code": "sz002821",
+          "current": 158.37,
+          "anchor": 157,
+          "deviation": 0.9,
+          "status": "超买入区间",
+          "pe": 56,
+          "prev_close": 161.6,
+          "change_pct": -2.0
+        },
+        {
+          "name": "恩华药业",
+          "code": "sz002262",
+          "current": 22.37,
+          "anchor": 21,
+          "deviation": 6.5,
+          "status": "超买入区间",
+          "pe": 20.9,
+          "prev_close": 22.03,
+          "change_pct": 1.54
+        },
+        {
+          "name": "君实生物",
+          "code": "sh688180",
+          "current": 33.01,
+          "anchor": 31,
+          "deviation": 6.5,
+          "status": "超买入区间",
+          "pe": 172.0,
+          "prev_close": 32.98,
+          "change_pct": 0.09
+        },
+        {
+          "name": "复星医药",
+          "code": "sh600196",
+          "current": 22.44,
+          "anchor": 21,
+          "deviation": 6.9,
+          "status": "超买入区间",
+          "pe": 18.6,
+          "prev_close": 22.36,
+          "change_pct": 0.36
+        },
+        {
+          "name": "药明康德",
+          "code": "sh603259",
+          "current": 152.93,
+          "anchor": 145,
+          "deviation": 5.5,
+          "status": "超买入区间",
+          "pe": 18.5,
+          "prev_close": 154.78,
+          "change_pct": -1.2
+        },
+        {
+          "name": "荣昌生物",
+          "code": "sh688331",
+          "current": 119.79,
+          "anchor": 114,
+          "deviation": 5.1,
+          "status": "超买入区间",
+          "pe": 586.0,
+          "prev_close": 121.78,
+          "change_pct": -1.63
+        },
+        {
+          "name": "国药股份",
+          "code": "sh600511",
+          "current": 26.55,
+          "anchor": 25,
+          "deviation": 6.2,
+          "status": "超买入区间",
+          "pe": 63.0,
+          "prev_close": 26.69,
+          "change_pct": -0.52
+        },
+        {
+          "name": "昊海生科",
+          "code": "sh688366",
+          "current": 30.09,
+          "anchor": 28,
+          "deviation": 7.5,
+          "status": "超买入区间",
+          "pe": 2.0,
+          "prev_close": 29.95,
+          "change_pct": 0.47
+        },
+        {
+          "name": "白云山",
+          "code": "sh600332",
+          "current": 20.29,
+          "anchor": 19,
+          "deviation": 6.8,
+          "status": "超买入区间",
+          "pe": 139.0,
+          "prev_close": 20.42,
+          "change_pct": -0.64
+        },
+        {
+          "name": "联影医疗",
+          "code": "sh688271",
+          "current": 105.16,
+          "anchor": 97,
+          "deviation": 8.4,
+          "status": "超买入区间",
+          "pe": 174.0,
+          "prev_close": 104.5,
+          "change_pct": 0.63
+        },
+        {
+          "name": "片仔癀",
+          "code": "sh600436",
+          "current": 122.88,
+          "anchor": 113,
+          "deviation": 8.7,
+          "status": "超买入区间",
+          "pe": 1073.0,
+          "prev_close": 122.13,
+          "change_pct": 0.61
+        },
+        {
+          "name": "上海医药",
+          "code": "sh601607",
+          "current": 16.24,
+          "anchor": 15,
+          "deviation": 8.3,
+          "status": "超买入区间",
+          "pe": 304.0,
+          "prev_close": 16.25,
+          "change_pct": -0.06
+        },
+        {
+          "name": "鱼跃医疗",
+          "code": "sz002223",
+          "current": 25.89,
+          "anchor": 24,
+          "deviation": 7.9,
+          "status": "超买入区间",
+          "pe": 649.0,
+          "prev_close": 25.58,
+          "change_pct": 1.21
+        },
+        {
+          "name": "乐普医疗",
+          "code": "sz300003",
+          "current": 11.95,
+          "anchor": 11,
+          "deviation": 8.6,
+          "status": "超买入区间",
+          "pe": 216.0,
+          "prev_close": 11.92,
+          "change_pct": 0.25
+        },
+        {
+          "name": "ST人福",
+          "code": "sh600079",
+          "current": 18.65,
+          "anchor": 17,
+          "deviation": 9.7,
+          "status": "超买入区间",
+          "pe": 114.0,
+          "prev_close": 18.61,
+          "change_pct": 0.21
+        },
+        {
+          "name": "*ST上普",
+          "code": "sh600680",
+          "current": 7.69,
+          "anchor": 7,
+          "deviation": 9.9,
+          "status": "超买入区间",
+          "pe": 0.0,
+          "prev_close": 7.69,
+          "change_pct": 0.0
+        },
+        {
+          "name": "奥翔药业",
+          "code": "sh603229",
+          "current": 7.77,
+          "anchor": 7,
+          "deviation": 11.0,
+          "status": "超买入区间",
+          "pe": 62,
+          "prev_close": 7.73,
+          "change_pct": 0.52
+        },
+        {
+          "name": "云南白药",
+          "code": "sz000538",
+          "current": 50.5,
+          "anchor": 45,
+          "deviation": 12.2,
+          "status": "超买入区间",
+          "pe": 556.0,
+          "prev_close": 50.39,
+          "change_pct": 0.22
+        },
+        {
+          "name": "心脉医疗",
+          "code": "sh688016",
+          "current": 88.9,
+          "anchor": 79,
+          "deviation": 12.5,
+          "status": "超买入区间",
+          "pe": 139.0,
+          "prev_close": 88.9,
+          "change_pct": 0.0
+        },
+        {
+          "name": "江中药业",
+          "code": "sh600750",
+          "current": 23.82,
+          "anchor": 21,
+          "deviation": 13.4,
+          "status": "超买入区间",
+          "pe": 93.0,
+          "prev_close": 23.86,
+          "change_pct": -0.17
+        },
+        {
+          "name": "以岭药业",
+          "code": "sz002603",
+          "current": 16.03,
+          "anchor": 14,
+          "deviation": 14.5,
+          "status": "超买入区间",
+          "pe": 422.0,
+          "prev_close": 15.93,
+          "change_pct": 0.63
+        },
+        {
+          "name": "同仁堂",
+          "code": "sh600085",
+          "current": 23.98,
+          "anchor": 21,
+          "deviation": 14.2,
+          "status": "超买入区间",
+          "pe": 169.0,
+          "prev_close": 23.89,
+          "change_pct": 0.38
+        },
+        {
+          "name": "健民集团",
+          "code": "sh600976",
+          "current": 27.58,
+          "anchor": 24,
+          "deviation": 14.9,
+          "status": "超买入区间",
+          "pe": 13.5,
+          "prev_close": 27.53,
+          "change_pct": 0.18
+        },
+        {
+          "name": "迈克生物",
+          "code": "sz300463",
+          "current": 9.32,
+          "anchor": 8,
+          "deviation": 16.5,
+          "status": "超买入区间",
+          "pe": 20.0,
+          "prev_close": 9.25,
+          "change_pct": 0.76
+        },
+        {
+          "name": "爱尔眼科",
+          "code": "sz300015",
+          "current": 8.25,
+          "anchor": 7,
+          "deviation": 17.9,
+          "status": "超买入区间",
+          "pe": 244.0,
+          "prev_close": 8.21,
+          "change_pct": 0.49
+        },
+        {
+          "name": "九洲药业",
+          "code": "sh603456",
+          "current": 15.25,
+          "anchor": 13,
+          "deviation": 17.3,
+          "status": "超买入区间",
+          "pe": 25,
+          "prev_close": 15.29,
+          "change_pct": -0.26
+        },
+        {
+          "name": "天宇股份",
+          "code": "sz300702",
+          "current": 21.3,
+          "anchor": 18,
+          "deviation": 18.3,
+          "status": "超买入区间",
+          "pe": 40.0,
+          "prev_close": 21.39,
+          "change_pct": -0.42
+        },
+        {
+          "name": "华兰生物",
+          "code": "sz002007",
+          "current": 13.03,
+          "anchor": 11,
+          "deviation": 18.5,
+          "status": "超买入区间",
+          "pe": 209.0,
+          "prev_close": 13.08,
+          "change_pct": -0.38
+        },
+        {
+          "name": "爱美客",
+          "code": "sz300896",
+          "current": 93.55,
+          "anchor": 77,
+          "deviation": 21.5,
+          "status": "锚价失效",
+          "pe": 175.0,
+          "prev_close": 92.81,
+          "change_pct": 0.8
+        },
+        {
+          "name": "万泰生物",
+          "code": "sh603392",
+          "current": 29.12,
+          "anchor": 24,
+          "deviation": 21.3,
+          "status": "锚价失效",
+          "pe": 310.0,
+          "prev_close": 28.99,
+          "change_pct": 0.45
+        },
+        {
+          "name": "安图生物",
+          "code": "sh603658",
+          "current": 33.01,
+          "anchor": 27,
+          "deviation": 22.3,
+          "status": "锚价失效",
+          "pe": 244.0,
+          "prev_close": 32.92,
+          "change_pct": 0.27
+        },
+        {
+          "name": "百济神州",
+          "code": "sh688235",
+          "current": 266.69,
+          "anchor": 220,
+          "deviation": 21.2,
+          "status": "锚价失效",
+          "pe": 759.0,
+          "prev_close": 269.86,
+          "change_pct": -1.17
+        },
+        {
+          "name": "沃森生物",
+          "code": "sz300142",
+          "current": 13.55,
+          "anchor": 11,
+          "deviation": 23.2,
+          "status": "锚价失效",
+          "pe": 3426.0,
+          "prev_close": 13.59,
+          "change_pct": -0.29
+        },
+        {
+          "name": "百润股份",
+          "code": "sz002568",
+          "current": 17.97,
+          "anchor": 14,
+          "deviation": 28.4,
+          "status": "锚价失效",
+          "pe": 663.0,
+          "prev_close": 17.71,
+          "change_pct": 1.47
+        },
+        {
+          "name": "迈瑞医疗",
+          "code": "sz300760",
+          "current": 167.87,
+          "anchor": 129,
+          "deviation": 30.1,
+          "status": "锚价失效",
+          "pe": 5722.0,
+          "prev_close": 165.35,
+          "change_pct": 1.52
+        },
+        {
+          "name": "博腾股份",
+          "code": "sz300363",
+          "current": 18.94,
+          "anchor": 15,
+          "deviation": 26.3,
+          "status": "锚价失效",
+          "pe": 604.0,
+          "prev_close": 19.27,
+          "change_pct": -1.71
+        },
+        {
+          "name": "用友网络",
+          "code": "sh600588",
+          "current": 10.38,
+          "anchor": 8,
+          "deviation": 29.8,
+          "status": "锚价失效",
+          "pe": 1249.0,
+          "prev_close": 10.29,
+          "change_pct": 0.87
+        },
+        {
+          "name": "普洛药业",
+          "code": "sh600216",
+          "current": 12.97,
+          "anchor": 10,
+          "deviation": 29.7,
+          "status": "锚价失效",
+          "pe": 152.0,
+          "prev_close": 12.93,
+          "change_pct": 0.31
+        },
+        {
+          "name": "康龙化成",
+          "code": "sz300759",
+          "current": 42.77,
+          "anchor": 32,
+          "deviation": 33.7,
+          "status": "锚价失效",
+          "pe": 4801.0,
+          "prev_close": 43.3,
+          "change_pct": -1.22
+        },
+        {
+          "name": "智飞生物",
+          "code": "sz300122",
+          "current": 13.77,
+          "anchor": 10,
+          "deviation": 37.7,
+          "status": "锚价失效",
+          "pe": 1186.0,
+          "prev_close": 13.66,
+          "change_pct": 0.81
+        },
+        {
+          "name": "惠泰医疗",
+          "code": "sz300620",
+          "current": 297.0,
+          "anchor": 230,
+          "deviation": 29.1,
+          "status": "锚价失效",
+          "pe": 15919.0,
+          "prev_close": 319.0,
+          "change_pct": -6.9
+        },
+        {
+          "name": "新产业",
+          "code": "sz300832",
+          "current": 50.31,
+          "anchor": 35,
+          "deviation": 43.7,
+          "status": "锚价失效",
+          "pe": 601.0,
+          "prev_close": 49.93,
+          "change_pct": 0.76
+        },
+        {
+          "name": "泰格医药",
+          "code": "sz300347",
+          "current": 50.45,
+          "anchor": 49,
+          "deviation": 3.0,
+          "status": "超买入区间",
+          "pe": 471.0,
+          "prev_close": 50.19,
+          "change_pct": 0.52,
+          "gfdma_exempt": true
+        },
+        {
+          "name": "天士力",
+          "code": "sh600535",
+          "current": 14.63,
+          "anchor": 14.5,
+          "deviation": 0.9,
+          "status": "超买入区间",
+          "pe": null,
+          "prev_close": 14.72,
+          "change_pct": -0.61,
+          "gfdma_exempt": true
+        },
+        {
+          "name": "大参林",
+          "code": "sh603233",
+          "current": 18.08,
+          "anchor": 17.5,
+          "deviation": 3.3,
+          "status": "超买入区间",
+          "pe": null,
+          "prev_close": 18.13,
+          "change_pct": -0.28,
+          "gfdma_exempt": true
+        },
+        {
+          "name": "天坛生物",
+          "code": "sh600161",
+          "current": 12.16,
+          "anchor": 12,
+          "deviation": 1.3,
+          "status": "超买入区间",
+          "pe": null,
+          "prev_close": 12.18,
+          "change_pct": -0.16,
+          "gfdma_exempt": true
+        },
+        {
+          "name": "博瑞医药",
+          "code": "sh688166",
+          "current": 34.22,
+          "anchor": 35,
+          "deviation": -2.2,
+          "status": "买入区间",
+          "pe": null,
+          "prev_close": 34.13,
+          "change_pct": 0.26,
+          "gfdma_exempt": true
+        },
+        {
+          "name": "九芝堂",
+          "code": "sz000989",
+          "current": 8.92,
+          "anchor": 9,
+          "deviation": -0.9,
+          "status": "超买入区间",
+          "pe": 23.21,
+          "prev_close": 9.09,
+          "change_pct": -0.44,
+          "gfdma_exempt": true
+        },
+        {
+          "name": "中国医药",
+          "code": "sh600056",
+          "current": 9.07,
+          "anchor": 9.73,
+          "deviation": -6.8,
+          "status": "买入区间",
+          "pe": 31.67,
+          "prev_close": 9.08,
+          "change_pct": -0.11,
+          "gfdma_exempt": true
+        }
+      ]
+    },
+    "ranking": {
+      "available": false,
+      "as_of": null,
+      "path": null,
+      "reason": "无排名快照可用于 2026-09-30",
+      "data": null
+    },
+    "realtime": {
+      "available": true,
+      "as_of": "2026-09-23",
+      "path": "/Users/xiashuang/harness/stock_daily/realtime_prices_20260923.json",
+      "reason": "实时价格 2026-09-23 可用",
+      "data": {
+        "sh688506": {
+          "name": "百利天恒",
+          "price": 261.3,
+          "prev_close": 266.84,
+          "change_pct": -2.08,
+          "pe": 138.0,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sz300558": {
+          "name": "贝达药业",
+          "price": 50.11,
+          "prev_close": 50.48,
+          "change_pct": -0.73,
+          "pe": 64,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sz002422": {
+          "name": "科伦药业",
+          "price": 40.54,
+          "prev_close": 40.58,
+          "change_pct": -0.1,
+          "pe": 15,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sh600276": {
+          "name": "恒瑞医药",
+          "price": 46.17,
+          "prev_close": 46.07,
+          "change_pct": 0.22,
+          "pe": 36,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sz000963": {
+          "name": "华东医药",
+          "price": 27.42,
+          "prev_close": 27.26,
+          "change_pct": 0.59,
+          "pe": 14.77,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sz000513": {
+          "name": "丽珠集团",
+          "price": 26.49,
+          "prev_close": 26.41,
+          "change_pct": 0.3,
+          "pe": 150.0,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sz002821": {
+          "name": "凯莱英",
+          "price": 158.37,
+          "prev_close": 161.6,
+          "change_pct": -2.0,
+          "pe": 56,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sz002262": {
+          "name": "恩华药业",
+          "price": 22.37,
+          "prev_close": 22.03,
+          "change_pct": 1.54,
+          "pe": 20.9,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sh688180": {
+          "name": "君实生物",
+          "price": 33.01,
+          "prev_close": 32.98,
+          "change_pct": 0.09,
+          "pe": 172.0,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sh600196": {
+          "name": "复星医药",
+          "price": 22.44,
+          "prev_close": 22.36,
+          "change_pct": 0.36,
+          "pe": 18.6,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sh603259": {
+          "name": "药明康德",
+          "price": 152.93,
+          "prev_close": 154.78,
+          "change_pct": -1.2,
+          "pe": 18.5,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sh688331": {
+          "name": "荣昌生物",
+          "price": 119.79,
+          "prev_close": 121.78,
+          "change_pct": -1.63,
+          "pe": 586.0,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sh600511": {
+          "name": "国药股份",
+          "price": 26.55,
+          "prev_close": 26.69,
+          "change_pct": -0.52,
+          "pe": 63.0,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sh688366": {
+          "name": "昊海生科",
+          "price": 30.09,
+          "prev_close": 29.95,
+          "change_pct": 0.47,
+          "pe": 2.0,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sh600332": {
+          "name": "白云山",
+          "price": 20.29,
+          "prev_close": 20.42,
+          "change_pct": -0.64,
+          "pe": 139.0,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sh688271": {
+          "name": "联影医疗",
+          "price": 105.16,
+          "prev_close": 104.5,
+          "change_pct": 0.63,
+          "pe": 174.0,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sh600436": {
+          "name": "片仔癀",
+          "price": 122.88,
+          "prev_close": 122.13,
+          "change_pct": 0.61,
+          "pe": 1073.0,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sh601607": {
+          "name": "上海医药",
+          "price": 16.24,
+          "prev_close": 16.25,
+          "change_pct": -0.06,
+          "pe": 304.0,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sz002223": {
+          "name": "鱼跃医疗",
+          "price": 25.89,
+          "prev_close": 25.58,
+          "change_pct": 1.21,
+          "pe": 649.0,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sz300003": {
+          "name": "乐普医疗",
+          "price": 11.95,
+          "prev_close": 11.92,
+          "change_pct": 0.25,
+          "pe": 216.0,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sh600079": {
+          "name": "ST人福",
+          "price": 18.65,
+          "prev_close": 18.61,
+          "change_pct": 0.21,
+          "pe": 114.0,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sh600680": {
+          "name": "*ST上普",
+          "price": 7.69,
+          "prev_close": 7.69,
+          "change_pct": 0.0,
+          "pe": 0.0,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sh603229": {
+          "name": "奥翔药业",
+          "price": 7.77,
+          "prev_close": 7.73,
+          "change_pct": 0.52,
+          "pe": 62,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sz000538": {
+          "name": "云南白药",
+          "price": 50.5,
+          "prev_close": 50.39,
+          "change_pct": 0.22,
+          "pe": 556.0,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sh688016": {
+          "name": "心脉医疗",
+          "price": 88.9,
+          "prev_close": 88.9,
+          "change_pct": 0.0,
+          "pe": 139.0,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sh600750": {
+          "name": "江中药业",
+          "price": 23.82,
+          "prev_close": 23.86,
+          "change_pct": -0.17,
+          "pe": 93.0,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sz002603": {
+          "name": "以岭药业",
+          "price": 16.03,
+          "prev_close": 15.93,
+          "change_pct": 0.63,
+          "pe": 422.0,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sh600085": {
+          "name": "同仁堂",
+          "price": 23.98,
+          "prev_close": 23.89,
+          "change_pct": 0.38,
+          "pe": 169.0,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sh600976": {
+          "name": "健民集团",
+          "price": 27.58,
+          "prev_close": 27.53,
+          "change_pct": 0.18,
+          "pe": 13.5,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sz300463": {
+          "name": "迈克生物",
+          "price": 9.32,
+          "prev_close": 9.25,
+          "change_pct": 0.76,
+          "pe": 20.0,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sz300015": {
+          "name": "爱尔眼科",
+          "price": 8.25,
+          "prev_close": 8.21,
+          "change_pct": 0.49,
+          "pe": 244.0,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sh603456": {
+          "name": "九洲药业",
+          "price": 15.25,
+          "prev_close": 15.29,
+          "change_pct": -0.26,
+          "pe": 25,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sz300702": {
+          "name": "天宇股份",
+          "price": 21.3,
+          "prev_close": 21.39,
+          "change_pct": -0.42,
+          "pe": 40.0,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sz002007": {
+          "name": "华兰生物",
+          "price": 13.03,
+          "prev_close": 13.08,
+          "change_pct": -0.38,
+          "pe": 209.0,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sz300896": {
+          "name": "爱美客",
+          "price": 93.55,
+          "prev_close": 92.81,
+          "change_pct": 0.8,
+          "pe": 175.0,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sh603392": {
+          "name": "万泰生物",
+          "price": 29.12,
+          "prev_close": 28.99,
+          "change_pct": 0.45,
+          "pe": 310.0,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sh603658": {
+          "name": "安图生物",
+          "price": 33.01,
+          "prev_close": 32.92,
+          "change_pct": 0.27,
+          "pe": 244.0,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sh688235": {
+          "name": "百济神州",
+          "price": 266.69,
+          "prev_close": 269.86,
+          "change_pct": -1.17,
+          "pe": 759.0,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sz300142": {
+          "name": "沃森生物",
+          "price": 13.55,
+          "prev_close": 13.59,
+          "change_pct": -0.29,
+          "pe": 3426.0,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sz002568": {
+          "name": "百润股份",
+          "price": 17.97,
+          "prev_close": 17.71,
+          "change_pct": 1.47,
+          "pe": 663.0,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sz300760": {
+          "name": "迈瑞医疗",
+          "price": 167.87,
+          "prev_close": 165.35,
+          "change_pct": 1.52,
+          "pe": 5722.0,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sz300363": {
+          "name": "博腾股份",
+          "price": 18.94,
+          "prev_close": 19.27,
+          "change_pct": -1.71,
+          "pe": 604.0,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sh600588": {
+          "name": "用友网络",
+          "price": 10.38,
+          "prev_close": 10.29,
+          "change_pct": 0.87,
+          "pe": 1249.0,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sh600216": {
+          "name": "普洛药业",
+          "price": 12.97,
+          "prev_close": 12.93,
+          "change_pct": 0.31,
+          "pe": 152.0,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sz300759": {
+          "name": "康龙化成",
+          "price": 42.77,
+          "prev_close": 43.3,
+          "change_pct": -1.22,
+          "pe": 4801.0,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sz300122": {
+          "name": "智飞生物",
+          "price": 13.77,
+          "prev_close": 13.66,
+          "change_pct": 0.81,
+          "pe": 1186.0,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sz300620": {
+          "name": "惠泰医疗",
+          "price": 297.0,
+          "prev_close": 319.0,
+          "change_pct": -6.9,
+          "pe": 15919.0,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sz300832": {
+          "name": "新产业",
+          "price": 50.31,
+          "prev_close": 49.93,
+          "change_pct": 0.76,
+          "pe": 601.0,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sz300347": {
+          "name": "泰格医药",
+          "price": 50.45,
+          "prev_close": 50.19,
+          "change_pct": 0.52,
+          "pe": 471.0,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sh600535": {
+          "name": "天士力",
+          "price": 14.63,
+          "prev_close": 14.72,
+          "change_pct": -0.61,
+          "pe": null,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sh603233": {
+          "name": "大参林",
+          "price": 18.08,
+          "prev_close": 18.13,
+          "change_pct": -0.28,
+          "pe": null,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sh600161": {
+          "name": "天坛生物",
+          "price": 12.16,
+          "prev_close": 12.18,
+          "change_pct": -0.16,
+          "pe": null,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sh688166": {
+          "name": "博瑞医药",
+          "price": 34.22,
+          "prev_close": 34.13,
+          "change_pct": 0.26,
+          "pe": null,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sz000989": {
+          "name": "九芝堂",
+          "price": 8.92,
+          "prev_close": 9.09,
+          "change_pct": -0.44,
+          "pe": 23.21,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        },
+        "sh600056": {
+          "name": "中国医药",
+          "price": 9.07,
+          "prev_close": 9.08,
+          "change_pct": -0.11,
+          "pe": 31.67,
+          "source": "harness/anchor_status.json",
+          "date": "2026-09-23"
+        }
+      }
+    },
+    "research": {
+      "600276": {
+        "available": true,
+        "commit": "c220794b12aa0a3f6ac9c7ddf0a34d7a315e20fd",
+        "commit_date": "2026-09-19",
+        "content": "---\ntags: [股票投研]\ncreated: 2026-08-10\ncurrent_price: 46.13\nanchor_price: 47\ndeviation: -1.8\npe_ttm: 36\nhist_percentile: 0.7\nhist_range: [45.94, 64.26]\nstatus: 买入区间\nupdate_time: 2026-09-01\n---\n\n![IMA 链接](https://ima.qq.com/wiki/9an1Hs0j2YIkbcfTqFOh-DFrOANBqzI4_cNNMkL1054=/markdown_6b1d8eda220a4d23b5e64ff5e28370dd_7ae417ece11f289bc26be2a2375d50967452253912834373)\n\n> **知识库**: 投资参考\n> **迁移时间**: 2026-07-06 02:04\n> **原始文件**: `_migrated/恒瑞医药(600276.SH)投资笔记.md`\n>\n> ## 关键要点\n> ---\ntags: [投研, 股票, 恒瑞医药, 分析]\ncreated: 2026-05-28\nexchange: SH\nticker: 600276\ntitle: 恒瑞医药(600276.SH)投资笔记\nupdated: 2026-08-07\n---\naliases:\n  - 恒瑞\n  - '600276'\n  - Hengrui\ncurrent_price: 49.50 (约，H1后破50)\ninnovate_ratio: 61.69%\npe_ttm: 36\nposition: 观察中\ntarget_position: 42元加仓，总仓位1.5-2万（已失效，等待回踩）\nprice_vs_high: '-57%'\nprice_vs_low: +554%\nsector: 创新药/医药\nstatus: P0-核心监控\nstock_code: 600276.SH / 1276.HK\ntags:\n  - 创新药\n  - A股\n  - 港股\n  - 重仓观察\n# 📊 恒瑞医药 (600276.SH) 投资笔记\n\n> **一句话逻辑**：中国创新药龙头，从仿制药转型阵痛中走出，2025年进入出海元年（GLP-1 + GSK 1...\n\n---\n\n## 📋 更新日志\n\n\n### 2026-08-21（2026 H1财报更新）\n\n- **营收**：154.56亿（同比-1.94%）\n- **净利润**：44.65亿（同比+0.34%）\n- **扣非净利润**：37.30亿（同比-12.71%）\n- **毛利率**：86.33%（同比基本持平，2025H1为86.58%）\n- **ROE**：8.04%（2025H1为9.42%，下降1.38pct）\n- **资产负债率**：8.17%（2025H1为6.14%，略升）\n- **EPS**：0.68元（2025H1为0.70元，微降）\n- **数据校验**：H1/2025全年营收比48.9%，正常范围（45-65%），数据通过校验\n- **数据源**：AKShare同花顺接口\n\n**独立判断**：\n\n1. **营收断崖**：2025H1营收+15.88%→2026H1营收-1.94%，增速由正转负，是趋势性信号而非偶发\n2. **扣非净利-12.71%是核心利空**：净利润+0.34%主要靠非经常性损益支撑，扣非才是真实经营利润，同比腰斩\n3. **毛利率86.33%基本没动**（86.58%→86.33%），排除产品降价因素，问题在销量端——集采品种放量或创新药销售不及预期\n4. **负债率从6.14%升至8.17%**，杠杆轻微上升但绝对值仍极低，财务安全性无虞\n5. **对建仓价47元的直接影响**：2026 H1营收转负，若2026全年延续负增长，47元建仓价对应的估值逻辑需要重新评估。中报验证后回调的\"第三笔\"逻辑成立——如果8月底股价因中报利空回调到47-50区间，可以考虑第一笔而非等锚价失效\n\n**操作建议**：\n- 47元锚价维持，但建仓理由从\"创新高\"转为\"中报利空回调后估值修复\"\n- 若8月底股价跌破50元并企稳在47-50区间，是第一笔建仓窗口\n- 若中报后股价继续强势（市场不认利空），则本轮放弃，等Q4再次回踩\n\n---\n\n### 2026-08-07（锚价失效更新）\n\n- **现价**：54.62元（8/7 +4.82%）\n- **锚价状态**：\n  - 日报锚 47元 → 失效（现价超出20%）\n  - v2.1锚 40元 → 失效（现价超出36%）\n- **判断**：8/4三条件2.5/3满足后，恒瑞继续上涨，47元第一笔触发已错过。技术面涨停当日不追，等回踩47-50元区间再评估第一笔。\n- **操作建议**：观望，等待回踩47-50元。若8月底前不回踩，等待8月底中报验证后重新评估。\n- **锚失效规则适用**：现价54.62 > 47×1.2=56.4，尚未触发失效红线，但距触发区已偏离+16%，按新规则转\"回踩原锚区等待\"。\n\n---\n\n### 2026-06-11（回购与BMS合作更新）\n\n- **现价**：46.78元\n- **BMS合作**：13款全球合作新叙事，支撑47元锚逻辑\n- **操作建议**：47元为第一笔触发，等回踩确认\n\n---\n\n### 2026-05-25（初始建档）\n\n- 收盘价：约46元\n- PE(TTM)：36x\n- 创新药收入占比：61.69%\n- 技术面：等待右侧信号\n\n---\n\n## 🔗 相关笔记\n",
+        "reason": "笔记可用 (commit c220794b, 2026-09-19)"
+      },
+      "000963": {
+        "available": true,
+        "commit": "c220794b12aa0a3f6ac9c7ddf0a34d7a315e20fd",
+        "commit_date": "2026-09-19",
+        "content": "---\ncreated: 2026-05-28\nexchange: SZ\ntags: [投研, 股票, 华东医药, 分析]\nticker: 000963\ntitle: 华东医药(000963.SZ)投资笔记\nupdated: 2026-08-07\ncurrent_price: 27.28\nanchor_price: 27\ndeviation: 1.6\npe_ttm: 14.77\nhist_percentile: 6.7\nhist_range: [26.41, 39.04]\nstatus: 超买入区间\nupdate_time: 2026-09-01\n---\naliases:\n  - 华东\n  - 000963\n  - Huadong\ntags:\n  - 医药\n  - 创新药\n  - 医美\n  - GLP-1\n  - A股\n  - 观察中\nstock_code: 000963.SZ\nsector: 医药/创新药/医美\ncreated: 2026-05-25T00:00:00.000Z\nupdated: 2026-05-25T00:00:00.000Z\nstatus: 观察中\nposition: 空仓\ntarget_position: ''\ncurrent_price: 28.99\npe_ttm: 14.77\nprice_vs_high: '-69.8%'\nprice_vs_low: '+41.0%'\ninnovate_ratio: ''\ndata_source: stock_analysis\nkline_raw_rows: 1528\nkline_qfq_rows: 3511\nkline_raw_range: 2010-01-04 ~ 2026-05-26\nkline_qfq_range: 2005-01-04 ~ 2024-12-31\ndata_processed_at: 2026-05-26 14:54:53\ntitle: 华东医药 (000963.SZ) 投资笔记\n> **AI 摘要**：华东医药投资分析主页。从仿制药转型创新药+医美，GLP-1赛道布局完整（利拉鲁肽已获批+司美格鲁肽在研），2025年创新药收入+64%验证转型成效。当前PE约18x，处于合理偏低区间，趋势偏弱，等待右侧信号。\n# 📊 华东医药 (000963.SZ) 投资笔记\n\n> **一句话逻辑**：从仿制药转型创新药+医美，GLP-1赛道布局完整（利拉鲁肽已获批+司美格鲁肽在研），2025年创新药收入+64%验证转型成效，但估值仍被\"仿制药承压\"框架压制。\n\n---\n\n## 🎯 当前定位\n\n| 维度 | 状态 | 说明 |\n|------|------|------|\n| **估值** | 🟡 合理偏低 | PE(TTM) ~18x，接近历史底部 |\n| **趋势** | 🔴 空头排列 | MA5<MA20<MA60，趋势偏弱 |\n| **位置** | 📊 底部震荡 | 近5年在28-35元窄幅震荡 |\n| **基本面** | ✅ 向好 | 创新药收入+64%，GLP-1布局完整 |\n\n---\n\n## 📐 关键价格位\n\n```\n96.17 ─── 2017-04 历史最高（集采前巅峰）\n  │\n  50   ─── 2021-05 近5年最高\n  │\n  40   ─── 2022-08 震荡区间顶部\n  │\n  35   ─── 近期压力位（MA60附近）\n  │\n  32   ─── MA20压力\n  │\n ▶ 29.07 ── 2026-05-25 最新收盘 ◀\n  │\n  27   ─── 短线支撑\n  │\n  24.68 ─── 2024-07 近5年最低\n  │\n  30   ─── 2018集采后低点\n  │\n   4.10 ─── 2005-01 历史最低（不复权）\n```\n\n---\n\n## 💡 投资决策框架\n\n### ✅ 建仓信号（满足 2 个以上考虑入场）\n\n- [ ] 股价站稳 **32 元**（突破MA20压力）\n- [ ] RSI 回升至 **30 以上**（脱离超卖）\n- [ ] MACD **金叉**且站上零轴\n- [ ] 2026Q2创新药收入增速**维持高位**（>50%）\n- [ ] 司美格鲁肽临床**重大进展**\n- [ ] 医美业务**放量超预期**\n\n### ⚠️ 观望条件（当前位置）\n\n- RSI 18.4 严重超卖 → 短期反弹概率大，但趋势未改\n- 均线空头排列 → 中期趋势仍弱\n- 28-35元窄幅震荡 → 等待方向选择\n\n### 🔴 减仓/离场信号\n### 🔴 减仓/离场信号\n- [ ] 股价**跌破 24.68 元**（近5年最低失守）\n- [ ] GLP-1临床**重大失败**或竞品加速上市\n- [ ] 集采范围**超预期扩大**至创新药\n- [ ] 创新药收入增速**大幅放缓**（<20%）\n- [ ] 医美赛道出现**重大政策风险**\n- [ ] 2015年Nature论文**被正式撤稿**，ATAC平台理论根基动摇，华东医药计提减值\n\n### 🟢 加仓信号\n\n- [ ] 股价突破 **35 元**且站稳\n- [ ] 司美格鲁肽**获批上市**\n- [ ] 创新药收入占比突破 **30%**\n- [ ] 医美业务**收入翻倍增长**\n- [ ] PE 回落至 **15x 以下**（极端低估）\n\n---\n\n## 📈 核心催化剂（未来 12 个月）\n\n| 催化剂 | 预计时间 | 影响级别 | 状态 |\n|--------|---------|---------|------|\n| 司美格鲁肽临床进展 | 2026H2 | ⭐⭐⭐⭐ | 进行中 |\n| 2026Q2创新药收入增速 | 2026-07 | ⭐⭐⭐ | 等待数据 |\n| 医美业务放量数据 | 2026全年 | ⭐⭐⭐ | 持续跟踪 |\n| 利拉鲁肽销售放量 | 2026全年 | ⭐⭐ | 已商业化 |\n| 医药反腐影响边际减弱 | 持续 | ⭐⭐ | 进行中 |\n\n---\n\n## 📋 更新日志\n\n> **更新方法**：每次有新数据时，修改 frontmatter 中的核心指标，在下方添加新记录。\n\n### 2026-06-01（策略服务v3.0信号更新）\n\n**策略信号**：SELL（置信度 80.0%）\n- MA20：31.27，MA60：33.76，空头排列（间距7.4%）\n- 成交量：放量（比率1.50）\n- 市场状态：趋势市（ADX=67.61，布林带宽度=N/A）\n- 信号解读：均线SELL(间距-7.4%)，放量，PE数据缺失(合理)，ADX=67.6>=25 且 布林带宽度=25.17%>=0.15，趋势市\n\n**技术面判断**：\n- 当前处于趋势市，信号可靠性较高，趋势方向明确\n- 空头排列，短期趋势向下\n- 放量，有资金配合\n\n**综合判断**：\n- 策略信号SELL，置信度80.0%，属于高置信度信号\n- 建议：关注卖出/减仓机会，需结合基本面进一步验证\n- 当前医药板块整体回调，建议等待更明确的方向信号\n\n---\n\n### 2026-07-23（新增：ATAC平台学术造假风险）\n**事件**：耿同学公开扒浙江大学卢雄斌系统性造假——7篇论文撤稿+20篇争议，三校联合调查认定\"系统性研究不端行为\"，印第安纳大学同日解聘。\n\n**因果链**：Lu 2015 Nature论文（POLR2A理论）→ Heidelberg Pharma ATAC平台理论基础 → 华东医药€1.05亿收购35%股权 → HDP-101中国I期临床\n\n**风险核心**：Lu 2015 Nature论文是ATAC平台\"精准靶向\"差异化卖点的科学基础，该论文尚未撤稿但PubPeer已有质疑，且被撤稿论文涉及德国公司CSO为共同作者。三层影响评估中，基础生物化学和ADC工程技术不受影响，但转化医学理论层是风险核心。\n\n**对建仓的影响**：ATAC平台是华东医药的期权而非主业决定因素，核心建仓逻辑（GLP-1管线+医美+仿制药现金流）不受影响。HDP-101只是创新药故事的一部分，不是建仓否决因素。新增减仓信号：如果2015年Nature论文被正式撤稿，需评估华东医药是否计提减值。\n\n**特朗普仿制药关税消息核实（2026-07-21）**：来源为第一财经报道，可信。核心内容：2026年8月1日起美国对进口仿制药两年零关税；2028年8月起加征100%关税（一年期）；此后提高至200%。目标是推动仿制药回流美国本土生产。\n\n**对华东医药的影响**：华东医药仿制药业务以中国国内市场为主（阿卡波糖、百令胶囊等），出口占比极低。2025年中国对美原料药出口40.7亿美元（占主导），西药制剂仅11.62亿美元（占13.14%）。华东医药的仿制药不在对美出口主体内，政策直接冲击有限。间接影响：如果关税最终导致全球仿制药成本上升，华东医药国内市场的竞争格局会变化——但这是2028年后的事，且白宫已设1年观察期，政策存在较大变数（美国大选周期、药价抗议豁免等）。\n\n**对建仓的影响**：不构成建仓否决因素，也不是建仓信号。这是一条\"远期需关注\"的信息，不是当前决策变量。\n\n---\n\n### 2026-05-25（初始建档）\n\n- 收盘价：29.07（近5年低位震荡）\n- PE(TTM)：~18x（接近历史底部）\n- 创新药收入增速：+64%（2025年，转型成效初显）\n- 技术面：空头排列，RSI 18.4严重超卖\n- 估值判断：合理偏低，但趋势未改，需等待右侧信号\n- **操作建议**：左侧可考虑28-30元分批建仓，右侧等待突破32元确认\n\n### 2026-08-07（锚价状态更新）\n\n- **现价**：28.99元（8/7 +4.21%）\n- **锚价状态**：\n  - 日报锚 27元 → 接近触发（+7%，距触发区最近）\n  - v2.1第一批 23元 → 已失效（超出26%）\n- **判断**：8/4策略笔记明确\"28以下→第一批10%仓位\"，现价28.99元距27元触发区仅+7%，是全池离锚最近的股票。\n- **操作建议**：**待执行**。若明日回踩28元以下，执行第一批10%仓位。若直接上涨不回调，等下一次板块回调窗口。\n\n---\n\n## 🔗 相关笔记\n\n- [[99-归档/股票投研_已归档/股票/华东医药/华东医药-股东大会深度分析-2026-06-23|华东医药-股东大会深度分析-2026-06-23]]\n- [[99-归档/股票投研_已归档/股票/华东医药/华东医药-技术分析|华东医药-技术分析]]\n- [[99-归档/股票投研_已归档/股票/华东医药/华东医药-估值追踪|华东医药-估值追踪]]\n- [[99-归档/股票投研_已归档/股票/华东医药/华东医药-事件时间线|华东医药-事件时间线]]\n- [[99-归档/股票投研_已归档/股票/华东医药/华东医药-业务管线|华东医药-业务管线]]\n- [[01-股票投研/01-股票分析框架.md|股票分析框架]]\n\n---\n\n### 产业链/竞争关联\n- ~~[[99-归档/股票投研_已归档/股票/普洛药业/普洛药业(600216.SH)研发管线|普洛药业 (600216.SH)]]~~\n- [[01-股票投研/股票/信达生物/信达生物(01801.HK)投资笔记.md|信达生物 (01801.HK)]]\n- ~~[[99-归档/股票投研_已归档/股票/复星医药/复星医药(600196.SH)策略分析报告-2026-06-01|复星医药 (600196.SH)]]~~\n- ~~[[99-归档/股票投研_已归档/股票/石药集团/石药集团(01093.HK)策略分析报告-2026-06-01|石药集团 (01093.HK)]]~~\n## 📎 图表附件\n\n### 5年K线（含事件标注）\n!!!~~\n\n### 全历史K线\n!!!~~\n\n### 事件对照图\n!!!~~\n\n### 近5年事件对照图\n!!!~~\n",
+        "reason": "笔记可用 (commit c220794b, 2026-09-19)"
+      },
+      "002262": {
+        "available": true,
+        "commit": "c220794b12aa0a3f6ac9c7ddf0a34d7a315e20fd",
+        "commit_date": "2026-09-19",
+        "content": "---\ntitle: 恩华药业(002262.SZ)投资笔记\ntags: [投研, 股票, 恩华药业, 分析, P0]\nstock_code: 002262.SZ\nsector: 医药/化学制剂/中枢神经\ncreated: 2026-09-05\nupdated: 2026-09-05\nstatus: 骨架（待补具体数字）\nposition: 空仓\nexchange: SZ\nticker: 002262\n---\n\n# 📊 恩华药业 (002262.SZ) 投资笔记\n\n> **一句话逻辑**：中枢神经（CNS）领域精耕者，麻醉/精神/神经线产品矩阵稳定；估值锚由 PE 分位法给出 19.3 元（p10），当前价 22.73 在中枢合理价 23.06 附近，处于\"待观察\"区间。\n> **本笔记为骨架版**：核心数据已引自既有 vault 笔记（`data/anchor_valuation_20260826.md` / `data/price_alert_20260904.md`），具体公司业务/管线/财务待补充。\n\n---\n\n## 一、核心数据\n\n### 1.1 估值锚（来源：`data/anchor_valuation_20260826.md`）\n\n| 指标 | 数值 |\n|------|------|\n| EPS(TTM) | ¥1.08 |\n| 当前 PE | 20.48 |\n| 历史 10% 分位 PE | 17.86 |\n| 历史 20% 分位 PE | 18.78 |\n| 历史 50% 分位 PE | 21.34 |\n| **推断建仓价（p10）** | **¥19.30** |\n| 推断加仓价（p20） | ¥20.29 |\n| 中枢合理价（p50） | ¥23.06 |\n| 数据样本 | 2099 天 |\n\n### 1.2 最新价（来源：`data/price_alert_20260904.md`）\n\n| 指标 | 数值 |\n|------|------|\n| 当前价 | ¥22.73 |\n| 涨跌幅 | +8.2% |\n| 距建仓价（19.30）| +17.8%（**上方**）|\n| 锚价（vault W02 取值）| ¥21 |\n| 状态 | 👀 待观察 |\n\n> **结论**：当前价 22.73 高于 PE 分位法推断的 p10 建仓价 19.30；MOC 标的\"建仓区间 24-26\"是反向标记——24-26 不是建仓位而是观察位/上方阻力。\n\n---\n\n## 二、业务管线（待补）\n\n### 2.1 核心产品线（CNS 领域）\n> 已知恩华药业聚焦**中枢神经系统**用药，主要细分：\n> - **麻醉镇痛**：咪达唑仑/依托咪酯/瑞芬太尼/舒芬太尼\n> - **精神类**：利培酮/阿立哌唑/喹硫平/丁螺环酮\n> - **神经类**：加巴喷丁/卡马西平\n>\n> ⚠️ **具体市场份额/销售额/集采冲击**待补（避免编造）。\n\n### 2.2 在研管线\n> ⚠️ **具体管线进度/适应症/临床阶段**待补。可参考：\n> - `01-股票投研/股票/恩华药业/` 当前为空，本次为首次写入\n> - 建议从恩华 2025 年报 + 2026 半年报公开披露补齐\n\n---\n\n## 三、事件时间线（待补）\n\n> ⚠️ 关键事件未整理。可关注：\n> - 集采品种降价节奏（已多次集采）\n> - 中报披露（2026-08-18 已过，待 2026 年报）\n> - 新产品获批 / 一致性评价进展\n\n---\n\n## 四、估值追踪\n\n| 日期 | 价格 | 锚价 | 距锚价 | 估值判断 |\n|------|------|------|--------|----------|\n| 2026-08-26 | 22.13 | 21 | +5.4% | PE 分位法合理 |\n| 2026-09-04 | 22.73 | 21 | +8.2% | 上方，待观察 |\n| 2026-09-05 | (待补) | 21 | — | 骨架 |\n\n---\n\n## 五、技术分析（待补）\n\n> ⚠️ K 线/均线/关键价位未整理。建议从 `kline_baostock/` 拉数据补：\n> - MA60 / MA120 位置\n> - 近 60 日高低点\n> - 成交量异动节点\n\n---\n\n## 六、研发管线（待补）\n\n> ⚠️ 创新药/仿制药管线分层待整理：\n> - 创新药在研数 + 适应症分布\n> - 仿制药一致性评价进度\n> - 与 P0 池其他化学制剂（恒瑞/华东/科伦）的差异化定位\n\n---\n\n## 七、关键问题清单（用户判断）\n\n1. **集采压力**：恩华主力品种（瑞芬太尼/咪达唑仑等）是否已被纳入集采？降价幅度？\n2. **估值锚可信度**：PE 分位法给的 19.30 在 CNS 板块里是否合理？是否需要 SOTP 拆分（创新药 vs 仿制药）？\n3. **空仓等待时机**：当前价 22.73 高于 p10 锚 19.30 约 18%，回踩到 20-21 区间是否给左侧第一笔？\n4. **MOC \"建仓区间 24-26\" 标记矛盾**：MOC 标的 24-26 是观察位还是建仓位？需要明确。\n\n---\n\n## 八、关联引用\n\n- [[01-股票投研/策略对比-三条件框架vsETF轮动]] — 锚价 21 元的依据\n- [[01-股票投研/data/anchor_valuation_20260826]] — 估值明细\n- [[01-股票投研/data/price_alert_20260904]] — 最新价\n- [[01-股票投研/MOC-股票投研]] — P0 池定位\n- 01-股票投研/P0汇总_2026-09-01.json — P0 池元数据\n\n---\n\n## 九、DSH 路由\n\n- 用户问\"恩华\" → 命中本文件 + 关联 P0 池\n- DSH 不给操作建议（persona §信条：投研归市场，多空并举）\n- 触发词：\"恩华 / 002262 / 中枢神经 / CNS / 麻醉\"\n\n---\n\n*创建：2026-09-05（骨架首版）| 数据来源：vault 既有数据 | 业务/管线/财务待补*\n*来源文件：`data/anchor_valuation_20260826.md` / `data/price_alert_20260904.md` / `MOC-股票投研.md` / `策略对比-三条件框架vsETF轮动.md` / `P0汇总_2026-09-01.json`*\n",
+        "reason": "笔记可用 (commit c220794b, 2026-09-19)"
+      },
+      "002422": {
+        "available": true,
+        "commit": "c220794b12aa0a3f6ac9c7ddf0a34d7a315e20fd",
+        "commit_date": "2026-09-19",
+        "content": "---\ncreated: 2026-05-28\nexchange: SZ\ntags: [投研, 股票, 科伦药业, 分析]\nticker: 002422\ntitle: 科伦药业(002422.SZ)投资笔记\nupdated: 2026-08-04\ncurrent_price: 40.46\nanchor_price: 42\ndeviation: -3.5\npe_ttm: 15\nhist_percentile: 52.2\nhist_range: [28.81, 51.35]\nstatus: 买入区间\nupdate_time: 2026-09-01\n---\naliases:\n  - 科伦\n  - 002422\n  - Kelun\ntags:\n  - 医药\n  - 创新药\n  - ADC\n  - A股\n  - 观察中\nstock_code: 002422.SZ\nsector: 大输液/ADC/抗生素中间体\nfounders: 刘革新（创始人）+ 刘思川（二代接班，总经理）\nsubsidiaries: 科伦博泰（创新药平台，独立运营）、川宁生物（已分拆上市）\nbd_partner: 默沙东（90亿美元ADC授权，2022-12）\ncreated: 2026-05-25T00:00:00.000Z\nupdated: 2026-05-25T00:00:00.000Z\nstatus: 观察中\nposition: 空仓\ntarget_position: ''\ncurrent_price: 34.36\npe_ttm: ~15\nprice_vs_high: '-79.3%'\nprice_vs_low: '+159.1%'\ndata_source: stock_analysis\nkline_raw_rows: 3850\nkline_qfq_rows: 335\nkline_raw_range: 2010-06-03 ~ 2026-05-26\nkline_qfq_range: 2025-01-02 ~ 2026-05-26\ndata_processed_at: 2026-05-26 14:55:45\ntitle: 科伦药业 (002422.SZ) 投资笔记\n> **AI 摘要**：科伦药业投资分析主页。从大输液龙头转型ADC创新药，2022年与默沙东达成超90亿美元ADC授权（7款管线），SKB264 NDA已受理。当前PE约15x，合理区间，震荡整理中，等待SKB264获批催化。\n# 📊 科伦药业 (002422.SZ) 投资笔记\n\n> **一句话逻辑**：从大输液龙头转型ADC创新药，2022年12月与默沙东达成超90亿美元ADC授权（7款管线），二代接班后战略清晰，当前34元处于历史中低位，SKB264 NDA已受理，等待创新药兑现。\n\n---\n\n## 🎯 当前定位\n\n| 维度 | 状态 | 说明 |\n|------|------|------|\n| **估值** | 🟡 合理 | PE(TTM) ~15x，历史中低位 |\n| **趋势** | 🟡 震荡 | MA20/MA60频繁交叉，无明显趋势 |\n| **位置** | 📊 中低位 | 34.36元 vs 历史最高166元（-79%） |\n| **基本面** | ✅ 转型兑现期 | SKB264 NDA受理，多管线推进 |\n| **商业模式** | ✅ BD驱动 | 默沙东90亿美元ADC授权，7款管线 |\n\n---\n\n## 📐 关键价格位\n\n```\n166.49 ─── 2010-11 历史最高（大输液龙头溢价）\n  │\n  130   ─── 2015-06 牛市高点\n  │\n   50   ─── 2022-2024 震荡区间顶部\n  │\n   40   ─── 中期压力位\n  │\n   34   ─── 当前价位\n  │\n   30   ─── 近期支撑\n  │\n   25   ─── 强支撑\n  │\n   13.26 ─── 2016-02 历史最低（不复权）\n```\n\n---\n\n## 💡 投资决策框架\n\n### ✅ 建仓信号（满足 2 个以上考虑入场）\n\n- [ ] 股价站稳 **40 元**（突破震荡区间上沿）\n- [ ] **SKB264获批上市**（最大催化，预计2025-2026）\n- [ ] 默沙东 **后续ADC项目进入关键临床**\n- [ ] 创新药收入占比 **突破20%**\n- [ ] 放量突破 **50 元** 并站稳\n- [ ] 回调至 **25-30 元** 区间企稳\n\n### ⚠️ 观望条件（当前位置）\n\n- 股价在30-40元区间震荡 → 方向未明\n- SKB264 NDA已受理但尚未获批 → 等待结果\n- 医药反腐影响边际减弱 → 行业环境改善\n\n### 🔴 减仓/离场信号\n\n- [ ] 股价**跌破 25 元**（强支撑失守）\n- [ ] SKB264 **审批延迟或被否**\n- [ ] 默沙东 **终止部分ADC合作**\n- [ ] 大输液业务 **持续萎缩超预期**\n- [ ] 集采范围 **超预期扩大**\n\n### 🟢 加仓信号\n\n- [ ] SKB264 **获批上市**\n- [ ] 默沙东 **新增ADC授权**（>7款）\n- [ ] 创新药收入占比 **突破30%**\n- [ ] 股价突破 **50 元** 且站稳\n- [ ] 回调至 **25-30 元** 区间企稳\n\n---\n\n## 📈 核心催化剂（未来 12 个月）\n\n| 催化剂 | 预计时间 | 影响级别 | 状态 |\n|--------|---------|---------|------|\n| SKB264获批上市 | 2025-2026 | ⭐⭐⭐⭐⭐ | NDA已受理 |\n| 默沙东后续ADC临床进展 | 2026-2027 | ⭐⭐⭐⭐ | 7款管线推进 |\n| 创新药收入占比提升 | 持续 | ⭐⭐⭐ | 当前~15% |\n| SKB500/SKB535临床数据 | 2026-2027 | ⭐⭐⭐ | 临床中 |\n\n---\n\n## 📋 更新日志\n\n> **更新方法**：每次有新数据时，修改 frontmatter 中的核心指标，在下方添加新记录。\n\n### 2026-08-04（市场面验证更新）\n\n- 现价：42.62元（8/4盘中 +3.12%，随CXO板块修复；药明中报超预期驱动板块大涨）\n- **2025年报**：营收下滑、三大业务支柱萎缩、**净利下滑超四成**（华夏时报 4-24）\n- **2026Q1**：收入42.59亿(-2.98%)、**归母净利4.54亿(-22.34%)**、经营现金流-44.45%、应收账款近50亿（深圳商报 4-29）\n- 非输液制剂(仿制药)2025收入88.67亿(-13.91%)；抗生素中间体/原料药44.97亿(-23.20%)（蓝鲸财经 5-26）\n- 第12批集采（7/31公示，8/2公告）：**14款产品拟中标**，含沙库巴曲缬沙坦钠片（2025收入仅7000万，占比极小）；6/3原研专利获5年延长，仿制药放量受限\n- 科伦博泰正面：6月收到宜联YL201分成6.03亿 + 和解款7亿（现金流入）；博泰今日481港元，ADC平台市场面价值持续兑现\n- **8/3 -4.86% 归因**：板块性回调日（恒瑞-2%、凯莱英-3.75%、君实-3%）× 集采博弈 × 基本面弱势共振，当日无个股利空新闻驱动\n- 医药代表管理办法8/1施行：全行业合规政策，8/3-8/4市场无负面定价（板块普涨），政策面压制已出清\n- **判断更新**：母公司\"转型兑现期\"评级**下修至\"转型初期、兑现缓慢\"**——净利连续下滑、创新药仍亏钱、传统三业务收缩；α在科伦博泰，跟踪SKB264获批与默沙东分成兑现节奏\n- 合规传闻（行贿医生）无公开市场信息佐证，按市场面分析原则不纳入跟踪因子\n- **操作建议**：维持观望；若建仓，等回调至35元下方且Q2财报验证净利降幅收窄，或SKB264获批催化\n\n### 2026-05-25（初始建档）\n\n- 收盘价：34.36元（历史中低位）\n- PE(TTM)：~15x（合理区间）\n- 核心BD：2022年12月默沙东90亿美元ADC授权（7款管线）\n- 子公司：科伦博泰（创新药平台，独立运营）、川宁生物（已分拆上市）\n- 二代接班：刘思川2015年接任总经理，战略向创新药转型\n- 技术面：震荡格局，MA20/MA60频繁交叉\n- **风险提示**：老板亲自下场卖补剂（营销方式争议，可能反映传统业务压力）\n- **操作建议**：观望，等待SKB264获批或回调至25-30元；关注传统业务萎缩情况\n\n---\n\n## 🔗 相关笔记\n\n- [[99-归档/股票投研_已归档/股票/科伦药业/科伦药业-技术分析|科伦药业-技术分析]]\n- [[99-归档/股票投研_已归档/股票/科伦药业/科伦药业-业务管线|科伦药业-业务管线]]\n- [[99-归档/股票投研_已归档/股票/科伦药业/科伦药业-研发管线|科伦药业-研发管线]]\n- [[01-股票投研/01-股票分析框架.md|股票分析框架]]\n\n## 横向对比 - 创新药企\n\n### 与ADC子公司对比\n- [[01-股票投研/股票/科伦博泰/科伦博泰(06990.HK)投资笔记.md]] - ADC子公司对标\n\n### 与输液同行对比\n- ~~大输液行业分析~~ - 输液赛道对比\n\n### 与CRO对比\n- [[01-股票投研/股票/药明康德/药明康德(603259.SH)投资笔记.md]] - 制药 vs CRO\n\n---\n\n## 📎 图表附件\n### 产业链/竞争关联\n- ~~[[99-归档/股票投研_已归档/股票/百利天恒/百利天恒 (688506.SH) — 估值重估：市场定价 vs 临床数据|百利天恒 (688506.SH)]]~~\n- ~~[[01-股票投研/股票/荣昌生物/荣昌生物(688331.SH)投资笔记.md|荣昌生物 (688331.SH)]]~~\n- ~~[[01-股票投研/股票/康诺亚/康诺亚(02162.HK)投资笔记.md|康诺亚 (02162.HK)]]~~\n- [[99-归档/股票占位骨架_202609/凯莱英/凯莱英(002821.SZ)投资笔记|凯莱英 (002821.SZ)]]\n- ~~[[99-归档/股票投研_已归档/股票/九洲药业/九洲药业(603456.SH)投资笔记|九洲药业 (603456.SH)]]~~\n## 📎 图表附件\n\n### 全历史K线\n!!!~~\n\n### 近5年蜡烛图\n!!!~~\n\n### 大事件对照图\n!!!~~\n",
+        "reason": "笔记可用 (commit c220794b, 2026-09-19)"
+      },
+      "603259": {
+        "available": true,
+        "commit": "c220794b12aa0a3f6ac9c7ddf0a34d7a315e20fd",
+        "commit_date": "2026-09-19",
+        "content": "---\ncreated: 2026-05-28\nexchange: SH\ntags: [投研, 股票, 药明康德, 分析]\nticker: 603259\ntitle: 药明康德(603259.SH)投资笔记\nupdated: 2026-05-31\ncurrent_price: 152.57\nanchor_price: 145\ndeviation: 5.5\npe_ttm: 18.5\nhist_percentile: 83.9\nhist_range: [86.41, 167.90]\nstatus: 超买入区间\nupdate_time: 2026-09-01\n---\naliases:\n  - 药明\n  - 603259\n  - WuXi\ntags:\n  - 医药\n  - CRO\n  - CRDMO\n  - A股\n  - 观察中\nstock_code: 603259.SH\nsector: CRO/CRDMO\ncreated: 2026-05-25T00:00:00.000Z\nupdated: 2026-05-29T00:00:00.000Z\nstatus: 观察中\nposition: 空仓\ntarget_position: v2.1分批69/77/85（锚价81，-10%地缘折价）\ncurrent_price: 99.85\npe_ttm: 18.5\nprice_vs_high: '-63%'\nprice_vs_low: +20%\ncore_order_book: 597.7 亿\ndata_source: stock_analysis\nkline_raw_rows: 1953\nkline_qfq_rows: 1953\nkline_raw_range: 2018-05-08 ~ 2026-05-26\nkline_qfq_range: 2018-05-08 ~ 2026-05-26\ndata_processed_at: 2026-05-26 14:55:16\ntitle: 药明康德 (603259.SH) 投资笔记\n> **AI 摘要**：药明康德投资分析主页。全球CRO/CRDMO龙头，Q1业绩爆发式增长（利润+72%），在手订单近600亿提供极高可见度，但受BIOSECURE法案阴影压制估值。当前PE约20x，合理偏低，横盘整理中。\n# 📊 药明康德 (603259.SH) 投资笔记\n\n> **一句话逻辑**：全球CRO/CRDMO龙头，Q1业绩爆发式增长（利润+72%），在手订单近600亿提供极高可见度，但受BIOSECURE法案阴影压制估值。\n\n---\n\n## 🎯 当前定位\n\n| 维度 | 状态 | 说明 |\n|------|------|------|\n| **估值** | 🟡 合理 | PE(TTM) 18.5x，历史低位区间 |\n| **趋势** | ➡️ 横盘震荡 | 60-65元区间整理，多空博弈 |\n| **位置** | 📊 低位 | 从170+高点回撤63%，接近底部区域 |\n| **基本面** | ✅ 强劲 | Q1利润+72%，在手订单597.7亿 |\n\n---\n\n> **定位**：生物药 CDMO企业，受行业周期 + 地缘政治双重影响，估值处于历史低位。\n\n## 📐 关键价格位\n\n```\n170+   ─── 2021 历史最高\n  │\n  100  ─── 2022-2023 震荡区间顶部\n  │\n   80  ─── 中期阻力位\n  │\n   72  ─── 短期阻力位\n  │\n   68  ─── 近期反弹高点\n  │\n ▶ 62.76 ── 2026-05-25 最新收盘 ◀\n  │\n   60.8 ─── 短期强支撑（今日下影线）\n  │\n   58   ─── 横盘区间下沿\n  │\n   52   ─── 2024年低点区域\n  │\n   35   ─── 2022年底部铁底\n```\n\n> **买入区间：13.5-16.2元（PE 12-15x）；止损位：10.8元；目标位：23.4元（行业回暖）。**\n\n---\n\n## 💡 投资决策框架\n\n### ✅ 建仓信号（满足 2 个以上考虑入场）\n\n- [ ] 股价站稳 **65 元**（突破横盘区间上沿）\n- [ ] BIOSECURE法案阴影**实质性消除**或缓和\n- [ ] 放量突破 **MA60**（中期趋势转强）\n- [ ] 在手订单继续**超预期增长**（>650亿）\n- [ ] TIDES业务（多肽/寡核苷酸）收入**翻倍增长**\n- [ ] 成交量出现**持续放量**（非单日脉冲）\n\n> **政策→地缘政治不确定性；基本面→订单增速放缓但长期需求稳定；估值→PE 历史低位。**\n\n### ⚠️ 观望条件（当前位置）\n\n- 股价在 60-65 元区间横盘 → 方向未明\n- BIOSECURE法案阴影未完全消除 → 地缘政治风险仍存\n- 十字星放量 → 多空博弈激烈，需等待方向选择\n\n### 🔴 减仓/离场信号\n\n- [ ] 股价**跌破 58 元**（横盘区间失守）\n- [ ] BIOSECURE法案**实质性制裁**落地\n- [ ] 在手订单**大幅下滑**（<500亿）\n- [ ] 海外收入占比**显著下降**（>20%降幅）\n- [ ] 管理层发出**负面指引**或下调业绩\n\n### 🟢 加仓信号\n\n- [ ] 股价突破 **68 元**且站稳\n- [ ] 新**大订单**落地（单体>50亿）\n- [ ] TIDES业务占比突破 **15%**\n- [ ] 地缘政治风险**实质性缓和**\n- [ ] Q2/Q3业绩继续**超预期**（利润增速>50%）\n### 2026-05-25（数据同步更新）\n\n- 收盘价：103.98（5月14日高点110后回调）\n- PE(TTM)：约20x（合理偏低）\n- 均线排列：多头排列（MA20>MA60>MA250）\n- MACD：零轴上方，红柱缩短，短期动能减弱\n- 估值判断：处于合理区间，不算贵\n- **操作建议**：关注100元支撑，回调至90-100元区间可考虑建仓\n---\n\n## 📈 核心催化剂（未来 12 个月）\n\n| 催化剂 | 预计时间 | 影响级别 | 状态 |\n|--------|---------|---------|------|\n| 订单回暖 | 短期 | ⭐⭐⭐ | 待跟踪 |\n| 产能利用率恢复 | 中期 | ⭐⭐ | 待跟踪 |\n| 一体化优势。 | 长期 | ⭐⭐ | 待跟踪 |\n\n## 📋 更新日志\n\n> **更新方法**：每次有新数据时，修改 frontmatter 中的核心指标，在下方添加新记录。\n\n### 2026-06-11（回购效率对比：两天花2亿）\n\n- 收盘价：¥96.45 (-0.61%）\n- **回购进展**：6/9通过10亿回购方案（上限156.95元/股），6/11-12两天即回购约2亿元（占20%）\n- **市场对比**：被评价为\"有底气\"，与恒瑞慢节奏形成鲜明反差\n- **信号意义**：\n  - 敢在1260H清单风波后立即大额回购，传递\"股价被低估\"信号\n  - 两天花20%额度，执行力和市值管理态度远超恒瑞\n  - 投资者评价底气来自业绩底牌（Q1+39.4%）和在手订单（近600亿）\n- **自身对比**：当前价格比方案通过时更低，回购均价可能低于96.45\n\n### 2026-06-10（1260H清单事件 + 纠风文件）\n\n- 收盘价：¥97.00 (+3.77%）\n- **1260H清单事件**（6/8更新，6/9公开）：\n  - 美国国防部将药明康德列入\"中国军工企业\"清单\n  - 药明公告否认，声明将立即申诉\n  - 盘中-8%后收回，收跌2.63%，次日+3.77%收复失地\n- **实质影响评估**（基于阿基米德Biotech分析）：\n  - 1260H ≠ 实体清单，限制仅涉及联邦采购合同(FAR)\n  - 不影响商业合作、Medicare/Medicaid\n  - 有\"祖父\"条款（不溯及既往），至2033年前不受影响\n  - 小米(2021)、中微半导体(2024)均4-6个月成功移出\n- **基本面支撑**：\n  - 一季度营收124.4亿(+39.4%)，近600亿在手订单(+23.6%)\n  - 2025年741次审计0严重发现\n  - 已主动去风险：出售CGT/临床测试业务，聚焦CRDMO\n- **框架调整**：1260H移出诉讼成为2026H2核心催化剂\n- **待跟踪**：药明申诉进展\n\n### 2026-05-29（分红日）\n\n- **2024年度分红实施**：2026-05-29 为除权除息日，年度分红落地\n- 药明康德历年分红率稳定，2024年度分红方案待确认具体金额\n- 分红日股价通常会有除权缺口，属于正常市场行为\n- ⚠️ 需确认具体分红方案（每10股派发现金红利金额）及红利发放日\n\n### 2026-05-25（初始建档）\n\n- 收盘价：62.76（十字星小阴线，上下影线极长）\n- PE(TTM)：18.5x（合理偏低区间）\n- 在手订单：597.7亿（+23.6%）\n- Q1业绩：营收+28.8%，经调整净利润+71.7%\n- 技术面：横盘整理，60.8元下影线有资金承接\n- 估值判断：基本面强劲但受地缘政治压制，比恒瑞更接近底部\n- **操作建议**：谨慎乐观，可考虑比恒瑞更积极，但仍建议等待突破65元确认\n\n---\n\n## 🔗 相关笔记\n\n- [[99-归档/股票投研_已归档/股票/药明康德/药明康德-技术分析|药明康德-技术分析]]\n- [[99-归档/股票投研_已归档/股票/药明康德/药明康德-估值追踪|药明康德-估值追踪]]\n- [[99-归档/股票投研_已归档/股票/药明康德/药明康德-事件时间线|药明康德-事件时间线]]\n- [[99-归档/股票投研_已归档/股票/药明康德/药明康德-研发管线|药明康德-研发管线]]\n- [[99-归档/股票投研_已归档/恒瑞医药 × 药明康德 综合投研分析|恒瑞医药 × 药明康德 综合投研分析]]\n- [[01-股票投研/01-股票分析框架.md|股票分析框架]]\n\n---\n\n### 产业链/竞争关联\n- [[01-股票投研/股票/恒瑞医药/恒瑞医药(600276.SH)投资笔记.md|恒瑞医药 (600276.SH)]]\n- [[01-股票投研/股票/百济神州/百济神州(688235.SH)投资笔记.md|百济神州 (688235.SH)]]\n- [[01-股票投研/股票/信达生物/信达生物(01801.HK)投资笔记.md|信达生物 (01801.HK)]]\n- ~~[[99-归档/股票投研_已归档/股票/康方生物/康方生物(09926.HK)估值追踪|康方生物 (09926.HK)]]~~\n- [[99-归档/股票占位骨架_202609/凯莱英/凯莱英(002821.SZ)投资笔记|凯莱英 (002821.SZ)]]\n- ~~[[99-归档/股票投研_已归档/股票/康龙化成/康龙化成 (300759.SZ) 投资笔记|康龙化成 (300759.SZ)]]~~\n- [[01-股票投研/股票/药明康德/药明康德(603259.SH)投资笔记.md|药明康德 (603259.SH)]]\n- ~~[[99-归档/股票投研_已归档/股票/泰格医药/泰格医药(300347.SZ)估值追踪|泰格医药 (300347.SZ)]]~~\n## 📎 图表附件\n\n### 5年K线（含事件标注）\n!!!~~\n\n### 全历史K线\n!!!~~\n\n## 横向对比 - 关联药企\n\n### 与恒瑞医药对比\n- [[01-股票投研/股票/恒瑞医药/恒瑞医药(600276.SH)投资笔记.md]] - CRO vs 制药，商业模式差异\n- ~~[[99-归档/股票投研_已归档/13-恒瑞×药明综合分析报告|恒瑞×药明综合分析报告]]~~ - 深度交叉分析\n\n### 与 CRO 同行对比\n- [[99-归档/股票投研_已归档/股票/泰格医药/泰格医药(300347.SZ)投资笔记|泰格医药(300347.SZ)投资笔记]] - 临床 CRO\n- [[99-归档/股票投研_已归档/股票/康龙化成/康龙化成 (300759.SZ) 投资笔记|康龙化成 (300759.SZ) 投资笔记]] - 全流程 CRO\n- [[99-归档/股票占位骨架_202609/凯莱英/凯莱英(002821.SZ)投资笔记|凯莱英(002821.SZ)投资笔记]] - CDMO\n- [[99-归档/股票投研_已归档/股票/药明生物/药明生物(02269.HK)投资笔记|药明生物(02269.HK)投资笔记]] - 港股生物药 CRO\n\n### 与制药企业对比（客户视角）\n- [[01-股票投研/股票/恒瑞医药/恒瑞医药(600276.SH)投资笔记.md]] - 国内创新药龙头\n- [[01-股票投研/股票/信达生物/信达生物(01801.HK)投资笔记.md]] - 港股创新药\n- [[01-股票投研/股票/百济神州/百济神州(688235.SH)投资笔记.md]] - 全球化创新药\n",
+        "reason": "笔记可用 (commit c220794b, 2026-09-19)"
+      },
+      "688506": {
+        "available": true,
+        "commit": "c220794b12aa0a3f6ac9c7ddf0a34d7a315e20fd",
+        "commit_date": "2026-09-19",
+        "content": "---\ncreated: 2026-06-15\ntype: stock_note\nstock_name: 百利天恒\nstock_code: 688506.SH\ntags: [分析, 百利天恒, P0]\nupdated: 2026-08-07\ncurrent_price: 261.8\nanchor_price: 290\ndeviation: -9.9\npe_ttm: 138\nhist_percentile: 44.7\nhist_range: [204.58, 344.00]\nstatus: 买入区间\nupdate_time: 2026-09-01\n---\n\n# 百利天恒 (688506.SH) 投资笔记\n\n> **一句话逻辑**：EGFR×HER3 双抗ADC龙头，BL-B01D1（TAS4556）NDA已提交等待获批，BMS 84亿美元BD支撑估值天花板。科创板门槛限制流动性，需等待催化落地。\n\n---\n\n## 🎯 当前定位\n\n| 维度 | 状态 | 说明 |\n|------|------|------|\n| **估值** | ⚠️ 亏损 | PE不适用，按管线估值法评估 |\n| **趋势** | 🔴 高位震荡 | 300元以上震荡，科创板流动性折价 |\n| **位置** | 📊 距历史最高约-43% | 从480+高点回撤，尚未到历史底部 |\n| **基本面** | ✅ 催化剂明确 | BL-B01D1 NDA等待获批，是最大确定性事件 |\n| **流动性** | 🔴 科创板限制 | 50万门槛+流动性折价，不适合大仓位 |\n\n---\n\n## 📐 关键价格位\n\n```\n480+ ─── 历史最高（科创板上市初期）\n  │\n  400  ─── 2024-2025 高位震荡区间\n  │\n  350  ─── 近期压力位\n  │\n  300  ─── 当前价位（心理锚）\n  │\n  240  ─── -20%回撤触发线\n  │\n  200  ─── 强支撑/历史中枢\n```\n\n---\n\n## 💡 投资决策框架\n\n### ✅ 建仓信号（满足 1 个即触发）\n\n- [ ] **回撤20%**：从300元心理锚回落至 **240元以下**（流动性折价补偿）\n- [ ] **BL-B01D1获批**：NDA获批上市公告当日\n- [ ] **回撤30%**：回落至 **210元以下**（深度回撤，补偿流动性风险）\n\n### ⚠️ 观望条件（当前位置）\n\n- 现价307元，距-20%触发线240元还有22%空间\n- NDA获批时间不确定，无明确催化剂时间窗口\n- 科创板流动性折价，不适合建仓第一笔\n\n### 🔴 减仓/离场信号\n\n- [ ] BL-B01D1 **临床失败或被否**\n- [ ] BMS **终止合作或大幅下调分成**\n- [ ] 科创板 **流动性危机**（换手率<0.1%持续3天）\n- [ ] 股价**跌破200元**（心理支撑失守）\n\n### 🟢 加仓信号\n\n- [ ] BL-B01D1获批后放量突破350元\n- [ ] 回撤至210元以下企稳\n\n---\n\n## 📈 核心催化剂（未来 12 个月）\n\n| 催化剂 | 预计时间 | 影响级别 | 状态 |\n|--------|---------|---------|------|\n| BL-B01D1 NDA获批 | 2026H2-H1 2027 | ⭐⭐⭐⭐⭐ | NDA已提交 |\n| BL-B01D1海外授权 | 2026-2027 | ⭐⭐⭐⭐ | BMS合作中 |\n| Q2/Q3财报 | 2026-07/10 | ⭐⭐⭐ | 等待数据 |\n\n---\n\n## 📋 更新日志\n\n### 2026-08-07（从P0 stub升级为active）\n\n- **背景**：8/4策略对比笔记判定\"无锚；补回撤20%触发器或移出P0\"——此笔记未执行，本次补全\n- **现价**：307.07元（8/7）\n- **锚价**：300元心理锚（无历史低位锚，科创板上市时间短）\n- **触发器**：回撤20%（240元）或BL-B01D1获批\n- **判断**：保持在P0，但流动性折价明确，仓位不超过总仓位的5%\n- **操作建议**：不追高，等回撤至240元以下或获批催化再入场\n\n---\n\n## 🔗 相关笔记\n\n- 01-股票投研/股票/百利天恒/百利天恒(688506.SH)策略分析报告-20260604.md\n- 01-股票投研/股票/百利天恒/百利天恒(688506.SH)策略分析报告-20260601.md\n",
+        "reason": "笔记可用 (commit c220794b, 2026-09-19)"
+      },
+      "512400": {
+        "available": false,
+        "commit": "c220794b12aa0a3f6ac9c7ddf0a34d7a315e20fd",
+        "commit_date": "2026-09-19",
+        "content": null,
+        "reason": "无匹配笔记路径: 512400"
+      },
+      "688331": {
+        "available": true,
+        "commit": "c220794b12aa0a3f6ac9c7ddf0a34d7a315e20fd",
+        "commit_date": "2026-09-19",
+        "content": "---\ncreated: 2026-05-28\nexchange: SH\ntags: [投研, 股票, 荣昌生物, 分析]\nticker: 688331\ntitle: 荣昌生物(688331.SH)投资笔记\nupdated: 2026-05-31\ncurrent_price: 119.18\nanchor_price: 114\ndeviation: 5.1\npe_ttm: 586\nhist_percentile: 56.2\nhist_range: [81.35, 153.26]\nstatus: 超买入区间\nupdate_time: 2026-09-01\n---\naliases:\n  - 荣昌\n  - 688331\n  - RemeGen\ntags:\n  - 医药\n  - 创新药\n  - ADC\n  - 科创板\n  - A+H股\n  - 观察中\nstock_code: 688331.SH / 09995.HK\nsector: 创新药/ADC/自身免疫\nfounders: 王威东（董事长）+ 房健民（CEO/首席科学家，哈佛肿瘤学博士）\ncdmo: 迈百瑞（王威东旗下，抗体/ADC CDMO）\ncreated: 2026-05-25T00:00:00.000Z\nupdated: 2026-05-25T00:00:00.000Z\nstatus: 观察中\nposition: 空仓\ntarget_position: ''\ncurrent_price: 113.94\npe_ttm: 亏损\nprice_vs_high: '-27.33%'\nprice_vs_low: '+409.34%'\ndata_source: stock_analysis\nkline_raw_rows: 0\nkline_qfq_rows: 669\nkline_raw_range: N/A\nkline_qfq_range: 2022-03-31 ~ 2024-12-31\ndata_processed_at: 2026-05-26 14:56:36\ntitle: 荣昌生物 (688331.SH) 投资笔记\n> **AI 摘要**：荣昌生物投资分析主页。房健民（哈佛肿瘤学）+ 王威东（迈百瑞CDMO）双创始人架构，包圆研发+生产前后端。2021年26亿美元BD给Seagen（后转辉瑞），当前高位回调至113元，等待辉瑞FDA审批催化剂。\n# 📊 荣昌生物 (688331.SH) 投资笔记\n\n> **一句话逻辑**：房健民（哈佛肿瘤学）+ 王威东（迈百瑞CDMO）双创始人架构，包圆研发+生产前后端，2021年26亿美元BD给Seagen（后转辉瑞），疫情前布局的产业链协同模式，当前高位回调至113元，等待辉瑞FDA审批催化剂。\n\n---\n\n## 🎯 当前定位\n\n| 维度 | 状态 | 说明 |\n|------|------|------|\n| **估值** | ⚠️ 亏损 | 尚未盈利，PE为负，估值依赖管线预期 |\n| **趋势** | 🟡 高位回调 | 从156.79元回撤27.3%，MA20/MA60形成压力 |\n| **位置** | 📊 中高位 | 高于MA250（92.95），长期趋势未破 |\n| **基本面** | ✅ 拐点确认 | 业绩减亏，商业化提速，出海预期兑现 |\n| **商业模式** | ✅ 全产业链 | 房健民研发 + 迈百瑞生产，前后端包圆 |\n\n---\n\n## 📐 关键价格位\n\n```\n156.79 ─── 2026-04 历史最高\n  │\n  124  ─── MA20/MA60 压力位\n  │\n ▶ 113.94 ── 2026-05-25 最新收盘 ◀\n  │\n  100  ─── 整数关口支撑\n  │\n   93   ─── MA250 长期支撑\n  │\n   77   ─── 2025年底部平台\n  │\n   22.37 ─── 2024-09 历史最低\n  │\n   48   ─── 2022 IPO发行价\n```\n\n---\n\n## 💡 投资决策框架\n\n### ✅ 建仓信号（满足 2 个以上考虑入场）\n\n- [ ] 股价回调至 **MA250（93元）** 附近企稳\n- [ ] 辉瑞 **FDA提交维迪西妥上市申请**（最大催化）\n- [ ] 泰它西普 **新适应症获批**（市场空间拓展）\n- [ ] 季度业绩 **继续减亏** 或接近盈利拐点\n- [ ] 放量突破 **MA60（124元）** 确认趋势恢复\n\n### ⚠️ 观望条件（当前位置）\n\n- 高位回调27%，短期均线死叉 → 趋势未明\n- MA20/MA60形成压力 → 需要放量突破\n- 辉瑞FDA审批时间不确定 → 最大催化未落地\n\n### 🔴 减仓/离场信号\n\n- [ ] 股价**跌破 MA250（93元）**（长期趋势破位）\n- [ ] 辉瑞 **FDA申请被拒** 或临床失败\n- [ ] 维迪西妥 **海外临床重大失败**\n- [ ] 业绩 **亏损扩大** 而非减亏\n- [ ] 大股东 **大幅减持**\n- [ ] **房健民离职或健康出现问题**（核心IP风险）\n- [ ] **迈百瑞与荣昌协同关系断裂**（产业链价值归零）\n\n### 🟢 加仓信号\n\n- [ ] 股价突破 **124元** 且站稳\n- [ ] 辉瑞 **FDA获批** 或提交申请\n- [ ] 泰它西普 **新适应症获批**\n- [ ] 季度业绩 **接近盈利**\n- [ ] 回调至 **90-95元** 区间企稳\n- [ ] **迈百瑞独立上市或融资**（验证CDMO价值）\n\n---\n\n## 📈 核心催化剂（未来 12 个月）\n\n| 催化剂 | 预计时间 | 影响级别 | 状态 |\n|--------|---------|---------|------|\n| 辉瑞FDA提交维迪西妥上市申请 | 2026H2 | ⭐⭐⭐⭐⭐ | 最大催化 |\n| 辉瑞FDA审批结果 | 2027H1 | ⭐⭐⭐⭐⭐ | 决定估值 |\n| 泰它西普新适应症获批 | 2026-2027 | ⭐⭐⭐ | 进行中 |\n| 季度业绩减亏确认 | 持续 | ⭐⭐⭐ | 持续跟踪 |\n| ADC管线新进展 | 持续 | ⭐⭐ | 研发中 |\n\n---\n\n## 📋 更新日志\n\n> **更新方法**：每次有新数据时，修改 frontmatter 中的核心指标，在下方添加新记录。\n\n### 2026-06-01（策略服务v3.0信号更新）\n\n**策略信号**：SELL（置信度 80.0%）\n- MA20：119.15，MA60：124.55，空头排列（间距4.3%）\n- 成交量：放量（比率1.68）\n- 市场状态：趋势市（ADX=51.84，布林带宽度=N/A）\n- 信号解读：均线SELL(间距-4.3%)，放量，PE数据缺失(合理)，ADX=51.8>=25 且 布林带宽度=22.46%>=0.15，趋势市\n\n**技术面判断**：\n- 当前处于趋势市，信号可靠性较高，趋势方向明确\n- 空头排列，短期趋势向下\n- 放量，有资金配合\n\n**综合判断**：\n- 策略信号SELL，置信度80.0%，属于高置信度信号\n- 建议：关注卖出/减仓机会，需结合基本面进一步验证\n- 当前医药板块整体回调，建议等待更明确的方向信号\n\n---\n\n### 2026-05-25（初始建档）\n\n- 收盘价：113.94（从156.79高点回撤27.3%）\n- 技术面：MA20/MA60死叉形成压力，MA250（92.95）为长期支撑\n- 核心催化：辉瑞推进维迪西妥海外临床，年内可能提交FDA申请\n- 估值判断：尚未盈利，估值依赖管线预期，风险较高\n- **商业模式**：房健民（哈佛肿瘤学）+ 王威东（迈百瑞CDMO）双创始人，包圆研发+生产前后端\n- **BD逻辑**：26亿美元BD给Seagen（2021），辉瑞2023年收购Seagen后承接，非新签\n- **操作建议**：观望，等待回调至90-95元或辉瑞FDA催化落地；关注房健民稳定性\n\n---\n\n## 🔗 相关笔记\n\n- [[99-归档/股票投研_已归档/股票/荣昌生物/荣昌生物-技术分析|荣昌生物-技术分析]]\n- [[99-归档/股票投研_已归档/股票/荣昌生物/荣昌生物-业务管线|荣昌生物-业务管线]]\n- [[99-归档/股票投研_已归档/股票/荣昌生物/荣昌生物-研发管线|荣昌生物-研发管线]]\n- [[01-股票投研/01-股票分析框架.md|股票分析框架]]\n\n## 横向对比 - 创新药企\n\n### 与ADC赛道对比\n- [[01-股票投研/股票/科伦博泰/科伦博泰(06990.HK)投资笔记.md]] - ADC赛道对标\n- [[99-归档/股票投研_已归档/股票/康方生物/康方生物(09926.HK)投资笔记|康方生物(09926.HK)投资笔记]] - 双抗+ADC对标\n\n### 与PD-1药企对比\n- [[01-股票投研/股票/恒瑞医药/恒瑞医药(600276.SH)投资笔记.md]] - A股创新药龙头\n- [[01-股票投研/股票/信达生物/信达生物(01801.HK)投资笔记.md]] - 港股创新药\n\n### 与CRO对比\n- [[01-股票投研/股票/药明康德/药明康德(603259.SH)投资笔记.md]] - 制药 vs CRO\n\n---\n\n## 📎 图表附件\n### 产业链/竞争关联\n- ~~[[99-归档/股票投研_已归档/股票/百利天恒/百利天恒 (688506.SH) — 估值重估：市场定价 vs 临床数据|百利天恒 (688506.SH)]]~~\n- ~~[[99-归档/股票投研_已归档/股票/科伦药业/科伦药业(002422.SZ)策略分析报告-2026-06-01|科伦药业 (002422.SZ)]]~~\n- ~~[[01-股票投研/股票/康诺亚/康诺亚(02162.HK)投资笔记.md|康诺亚 (02162.HK)]]~~\n## 📎 图表附件\n\n### 5年K线（含事件标注）\n!!!~~\n\n### 全历史K线\n!!!~~\n\n### 事件对照图（5年）\n!!!~~\n\n### 事件对照图（全历史）\n!!!~~\n",
+        "reason": "笔记可用 (commit c220794b, 2026-09-19)"
+      }
+    },
+    "search": {
+      "available": false,
+      "reason": "无历史 Search 记录"
+    },
+    "jev": {
+      "available": false,
+      "reason": "无历史 JEV 记录"
+    }
+  },
+  "lookahead_check": {
+    "clean": true,
+    "violations": [],
+    "check_time": "2026-10-20T18:56:35.516863"
+  }
+}

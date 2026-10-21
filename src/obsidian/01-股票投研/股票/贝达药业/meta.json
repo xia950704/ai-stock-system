@@ -1,0 +1,33 @@
+{
+  "name": "贝达药业",
+  "code": "300558",
+  "source_dir": "贝达药业_300558_SZ",
+  "data_source": "stock_analysis",
+  "data_date": "2026-05-26",
+  "price_range": {
+    "start_date": "2016-11-07",
+    "end_date": "2026-05-26",
+    "start_price": 25.3,
+    "current_price": 48.1,
+    "high": 160.66,
+    "low": 23.19,
+    "trading_days": 2318
+  },
+  "files": {
+    "investment_note": "投资笔记.md",
+    "tech_analysis": "技术分析.md",
+    "events": "事件时间线.md",
+    "pipeline": "业务管线.md",
+    "valuation": "估值追踪.md",
+    "rd_pipeline": "研发管线.md",
+    "charts": [
+      "图表/full_history_kline.png",
+      "图表/recent5y_candle.png"
+    ],
+    "csv_data": [
+      "full_history_daily.csv",
+      "events.csv"
+    ]
+  },
+  "status": "integrated"
+}

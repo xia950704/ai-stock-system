@@ -1,0 +1,19 @@
+[
+  {
+    "name": "博腾股份",
+    "code": "sz300363",
+    "old_anchor": 18,
+    "new_anchor": 13.5,
+    "change": -4.5,
+    "change_pct": -25.0,
+    "current": 21.83,
+    "deviation": 21.3,
+    "percentile": 37.3,
+    "hist_range": [
+      13.32,
+      29.29
+    ],
+    "level": "P3",
+    "reason": "历史37%分位，偏低分位，上调锚价"
+  }
+]

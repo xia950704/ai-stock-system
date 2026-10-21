@@ -1,0 +1,3531 @@
+[
+  {
+    "stock_name": "万泰生物",
+    "stock_code": "603392",
+    "exchange": "SH",
+    "sector": "",
+    "status": "active",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/万泰生物/万泰生物(603392.SH)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "万泰生物-估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "万泰生物-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "万泰生物-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "万泰生物-业务管线.md",
+          "万泰生物 业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "万泰生物-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 10
+  },
+  {
+    "stock_name": "上海医药",
+    "stock_code": "601607",
+    "exchange": "SH",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "",
+    "updated": "",
+    "note_file": "01-股票投研/股票/上海医药/上海医药-投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "上海医药(601607.SH)估值追踪.md",
+          "上海医药-估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "上海医药(601607.SH)事件时间线.md",
+          "上海医药-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "上海医药-技术分析.md",
+          "上海医药(601607.SH)技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "上海医药 业务管线.md",
+          "上海医药-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "上海医药(601607.SH)研发管线.md",
+          "上海医药-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 13
+  },
+  {
+    "stock_name": "中国中药",
+    "stock_code": "600085",
+    "exchange": "SH",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "",
+    "updated": "",
+    "note_file": "01-股票投研/股票/中国中药/中国中药-投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "中国中药-估值追踪.md",
+          "中国中药(00570.HK)估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "中国中药(00570.HK)事件时间线.md",
+          "中国中药-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "中国中药(00570.HK)技术分析.md",
+          "中国中药-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "中国中药-业务管线.md",
+          "中国中药 业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "中国中药-研发管线.md",
+          "中国中药(00570.HK)研发管线.md"
+        ]
+      }
+    },
+    "total_files": 13
+  },
+  {
+    "stock_name": "丽珠集团",
+    "stock_code": "000513",
+    "exchange": "SZ",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/丽珠集团/丽珠集团(000513.SZ)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "丽珠集团(000513.SZ)估值追踪.md",
+          "丽珠集团-估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "丽珠集团(000513.SZ)事件时间线.md",
+          "丽珠集团-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "丽珠集团(000513.SZ)技术分析.md",
+          "丽珠集团-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "丽珠集团 业务管线.md",
+          "丽珠集团-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "丽珠集团-研发管线.md",
+          "丽珠集团(000513.SZ)研发管线.md"
+        ]
+      }
+    },
+    "total_files": 13
+  },
+  {
+    "stock_name": "乐普医疗",
+    "stock_code": "300003",
+    "exchange": "SZ",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "",
+    "updated": "",
+    "note_file": "01-股票投研/股票/乐普医疗/乐普医疗-投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "乐普医疗-估值追踪.md",
+          "乐普医疗(300003.SZ)估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "乐普医疗(300003.SZ)事件时间线.md",
+          "乐普医疗-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "乐普医疗(300003.SZ)技术分析.md",
+          "乐普医疗-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "乐普医疗-业务管线.md",
+          "乐普医疗 业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "乐普医疗-研发管线.md",
+          "乐普医疗(300003.SZ)研发管线.md"
+        ]
+      }
+    },
+    "total_files": 13
+  },
+  {
+    "stock_name": "九洲药业",
+    "stock_code": "603456",
+    "exchange": "SH",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/九洲药业/九洲药业(603456.SH)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "九洲药业-估值追踪.md",
+          "九洲药业(603456.SH)估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "九洲药业(603456.SH)事件时间线.md",
+          "九洲药业-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "九洲药业(603456.SH)技术分析.md",
+          "九洲药业-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "九洲药业-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "九洲药业-研发管线.md",
+          "九洲药业(603456.SH)研发管线.md"
+        ]
+      }
+    },
+    "total_files": 14
+  },
+  {
+    "stock_name": "云南白药",
+    "stock_code": "000538",
+    "exchange": "SZ",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/云南白药/云南白药(000538.SZ)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "云南白药-估值追踪.md",
+          "云南白药(000538.SZ)估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "云南白药-事件时间线.md",
+          "云南白药(000538.SZ)事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "云南白药(000538.SZ)技术分析.md",
+          "云南白药-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "云南白药 业务管线.md",
+          "云南白药-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "云南白药-研发管线.md",
+          "云南白药(000538.SZ)研发管线.md"
+        ]
+      }
+    },
+    "total_files": 14
+  },
+  {
+    "stock_name": "人福医药",
+    "stock_code": "600079",
+    "exchange": "SH",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/人福医药/人福医药(600079.SH)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "人福医药(600079.SH)估值追踪.md",
+          "人福医药-估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "人福医药-事件时间线.md",
+          "人福医药(600079.SH)事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "人福医药(600079.SH)技术分析.md",
+          "人福医药-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "人福医药-业务管线.md",
+          "人福医药 业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "人福医药-研发管线.md",
+          "人福医药(600079.SH)研发管线.md"
+        ]
+      }
+    },
+    "total_files": 14
+  },
+  {
+    "stock_name": "以岭药业",
+    "stock_code": "002603",
+    "exchange": "SZ",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/以岭药业/以岭药业(002603.SZ)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "以岭药业(002603.SZ)估值追踪.md",
+          "以岭药业-估值追踪.md",
+          "以岭药业 - 估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "以岭药业-事件时间线.md",
+          "以岭药业(002603.SZ)事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "以岭药业-技术分析.md",
+          "以岭药业(002603.SZ)技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "以岭药业 业务管线.md",
+          "以岭药业-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "以岭药业(002603.SZ)研发管线.md",
+          "以岭药业-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 15
+  },
+  {
+    "stock_name": "信达生物",
+    "stock_code": "600276",
+    "exchange": "SH",
+    "sector": "",
+    "status": "active",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/信达生物/信达生物(01801.HK)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "信达生物-估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "信达生物-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "信达生物-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "信达生物-业务管线.md",
+          "信达生物 业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "信达生物-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 10
+  },
+  {
+    "stock_name": "健民集团",
+    "stock_code": "600976",
+    "exchange": "SH",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "",
+    "updated": "",
+    "note_file": "01-股票投研/股票/健民集团/健民集团-投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "健民集团-估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "健民集团-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "健民集团-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "健民集团 业务管线.md",
+          "健民集团-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "健民集团-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 9
+  },
+  {
+    "stock_name": "先健科技",
+    "stock_code": "688016",
+    "exchange": "SH",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "",
+    "updated": "",
+    "note_file": "01-股票投研/股票/先健科技/先健科技-投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "先健科技-估值追踪.md",
+          "先健科技(01302.HK)估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "先健科技(01302.HK)事件时间线.md",
+          "先健科技-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "先健科技-技术分析.md",
+          "先健科技(01302.HK)技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "先健科技 业务管线.md",
+          "先健科技-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "先健科技(01302.HK)研发管线.md",
+          "先健科技-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 13
+  },
+  {
+    "stock_name": "凯莱英",
+    "stock_code": "002821",
+    "exchange": "SZ",
+    "sector": "",
+    "status": "active",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/凯莱英/凯莱英(002821.SZ)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "凯莱英-估值追踪.md",
+          "凯莱英 - 估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "凯莱英-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "凯莱英-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "凯莱英-业务管线.md",
+          "凯莱英 业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "凯莱英-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 11
+  },
+  {
+    "stock_name": "华东医药",
+    "stock_code": "000963",
+    "exchange": "SZ",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/华东医药/华东医药(000963.SZ)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "华东医药-估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "华东医药-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "华东医药-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "华东医药-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "华东医药-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 10
+  },
+  {
+    "stock_name": "华兰生物",
+    "stock_code": "002007",
+    "exchange": "SZ",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/华兰生物/华兰生物(002007.SZ)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "华兰生物 - 估值追踪.md",
+          "华兰生物-估值追踪.md",
+          "华兰生物(002007.SZ)估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "华兰生物(002007.SZ)事件时间线.md",
+          "华兰生物-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "华兰生物(002007.SZ)技术分析.md",
+          "华兰生物-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "华兰生物-业务管线.md",
+          "华兰生物 业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "华兰生物-研发管线.md",
+          "华兰生物(002007.SZ)研发管线.md"
+        ]
+      }
+    },
+    "total_files": 15
+  },
+  {
+    "stock_name": "华润医药",
+    "stock_code": "601607",
+    "exchange": "SH",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/华润医药/华润医药(00332.HK)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "华润医药-估值追踪.md",
+          "华润医药(00332.HK)估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "华润医药-事件时间线.md",
+          "华润医药(00332.HK)事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "华润医药(00332.HK)技术分析.md",
+          "华润医药-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "华润医药-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "华润医药-研发管线.md",
+          "华润医药(00332.HK)研发管线.md"
+        ]
+      }
+    },
+    "total_files": 12
+  },
+  {
+    "stock_name": "博瑞医药",
+    "stock_code": "688166",
+    "exchange": "SH",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/博瑞医药/博瑞医药(600680.SH)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "博瑞医药 - 估值追踪.md",
+          "博瑞医药(600680.SH)估值追踪.md",
+          "博瑞医药-估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "博瑞医药-事件时间线.md",
+          "博瑞医药(600680.SH)事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "博瑞医药-技术分析.md",
+          "博瑞医药(600680.SH)技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "博瑞医药 业务管线.md",
+          "博瑞医药-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "博瑞医药(600680.SH)研发管线.md",
+          "博瑞医药-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 15
+  },
+  {
+    "stock_name": "博腾股份",
+    "stock_code": "300363",
+    "exchange": "SZ",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/博腾股份/博腾股份(300363.SZ)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "博腾股份 - 估值追踪.md",
+          "博腾股份-估值追踪.md",
+          "博腾股份(300363.SZ)估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "博腾股份-事件时间线.md",
+          "博腾股份(300363.SZ)事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "博腾股份(300363.SZ)技术分析.md",
+          "博腾股份-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "博腾股份-业务管线.md",
+          "博腾股份 业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "博腾股份-研发管线.md",
+          "博腾股份(300363.SZ)研发管线.md"
+        ]
+      }
+    },
+    "total_files": 15
+  },
+  {
+    "stock_name": "同仁堂",
+    "stock_code": "600085",
+    "exchange": "SH",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/同仁堂/同仁堂(600085.SH)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "同仁堂-估值追踪.md",
+          "同仁堂 - 估值追踪.md",
+          "同仁堂(600085.SH)估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "同仁堂(600085.SH)事件时间线.md",
+          "同仁堂-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "同仁堂(600085.SH)技术分析.md",
+          "同仁堂-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "同仁堂-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "同仁堂-研发管线.md",
+          "同仁堂(600085.SH)研发管线.md"
+        ]
+      }
+    },
+    "total_files": 14
+  },
+  {
+    "stock_name": "君实生物",
+    "stock_code": "688180",
+    "exchange": "SH",
+    "sector": "",
+    "status": "active",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/君实生物/君实生物(688180.SH)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "君实生物(688180.SH)估值追踪.md",
+          "君实生物-估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "君实生物-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "君实生物-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "君实生物 业务管线.md",
+          "君实生物-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "君实生物-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 12
+  },
+  {
+    "stock_name": "国药股份",
+    "stock_code": "600511",
+    "exchange": "SH",
+    "sector": "医药流通",
+    "status": "观察中",
+    "position": "空仓",
+    "current_price": "¥27.19",
+    "pe_ttm": "",
+    "created": "2026-06-19",
+    "updated": "2026-06-19",
+    "note_file": "01-股票投研/股票/国药股份/国药股份-投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "国药股份 - 估值追踪.md",
+          "国药股份-估值追踪.md",
+          "国药股份(600511.SH)估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "国药股份-事件时间线.md",
+          "国药股份(600511.SH)事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "国药股份-技术分析.md",
+          "国药股份(600511.SH)技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "国药股份 业务管线.md",
+          "国药股份-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "国药股份(600511.SH)研发管线.md",
+          "国药股份-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 14
+  },
+  {
+    "stock_name": "复星医药",
+    "stock_code": "600196",
+    "exchange": "SH",
+    "sector": "",
+    "status": "active",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/复星医药/复星医药(600196.SH)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "复星医药-估值追踪.md",
+          "复星医药 - 估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "复星医药-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "复星医药-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "复星医药-业务管线.md",
+          "复星医药 业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "复星医药-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 12
+  },
+  {
+    "stock_name": "大参林",
+    "stock_code": "603233",
+    "exchange": "SH",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/大参林/大参林(603233.SH)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "大参林 - 估值追踪.md",
+          "大参林(603233.SH)估值追踪.md",
+          "大参林-估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "大参林(603233.SH)事件时间线.md",
+          "大参林-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "大参林-技术分析.md",
+          "大参林(603233.SH)技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "大参林-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "大参林(603233.SH)研发管线.md",
+          "大参林-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 13
+  },
+  {
+    "stock_name": "天坛生物",
+    "stock_code": "600161",
+    "exchange": "SH",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "",
+    "updated": "",
+    "note_file": "01-股票投研/股票/天坛生物/天坛生物-投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "天坛生物 - 估值追踪.md",
+          "天坛生物-估值追踪.md",
+          "天坛生物(600161.SH)估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "天坛生物-事件时间线.md",
+          "天坛生物(600161.SH)事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "天坛生物(600161.SH)技术分析.md",
+          "天坛生物-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "天坛生物-业务管线.md",
+          "天坛生物 业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "天坛生物-研发管线.md",
+          "天坛生物(600161.SH)研发管线.md"
+        ]
+      }
+    },
+    "total_files": 15
+  },
+  {
+    "stock_name": "天士力",
+    "stock_code": "600535",
+    "exchange": "SH",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "",
+    "updated": "",
+    "note_file": "01-股票投研/股票/天士力/天士力-投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "天士力-估值追踪.md",
+          "天士力 - 估值追踪.md",
+          "天士力(600535.SH)估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "天士力-事件时间线.md",
+          "天士力(600535.SH)事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "天士力(600535.SH)技术分析.md",
+          "天士力-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "天士力-业务管线.md",
+          "天士力 业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "天士力-研发管线.md",
+          "天士力(600535.SH)研发管线.md"
+        ]
+      }
+    },
+    "total_files": 14
+  },
+  {
+    "stock_name": "天宇股份",
+    "stock_code": "300702",
+    "exchange": "SZ",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/天宇股份/天宇股份(300702.SZ)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "天宇股份-估值追踪.md",
+          "天宇股份(300702.SZ)估值追踪.md",
+          "天宇股份 - 估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "天宇股份-事件时间线.md",
+          "天宇股份(300702.SZ)事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "天宇股份(300702.SZ)技术分析.md",
+          "天宇股份-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "天宇股份-业务管线.md",
+          "天宇股份 业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "天宇股份-研发管线.md",
+          "天宇股份(300702.SZ)研发管线.md"
+        ]
+      }
+    },
+    "total_files": 14
+  },
+  {
+    "stock_name": "奥翔药业",
+    "stock_code": "603229",
+    "exchange": "SH",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/奥翔药业/奥翔药业(603229.SH)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "奥翔药业(603229.SH)估值追踪.md",
+          "奥翔药业-估值追踪.md",
+          "奥翔药业 - 估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "奥翔药业-事件时间线.md",
+          "奥翔药业(603229.SH)事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "奥翔药业-技术分析.md",
+          "奥翔药业(603229.SH)技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "奥翔药业-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "奥翔药业(603229.SH)研发管线.md",
+          "奥翔药业-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 13
+  },
+  {
+    "stock_name": "威高股份",
+    "stock_code": "300760",
+    "exchange": "SZ",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/威高股份/威高股份(01066.HK)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "威高股份 - 估值追踪.md",
+          "威高股份(01066.HK)估值追踪.md",
+          "威高股份-估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "威高股份-事件时间线.md",
+          "威高股份(01066.HK)事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "威高股份-技术分析.md",
+          "威高股份(01066.HK)技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "威高股份 业务管线.md",
+          "威高股份-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "威高股份(01066.HK)研发管线.md",
+          "威高股份-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 14
+  },
+  {
+    "stock_name": "安图生物",
+    "stock_code": "603658",
+    "exchange": "SH",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/安图生物/安图生物(603658.SH)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "安图生物 - 估值追踪.md",
+          "安图生物-估值追踪.md",
+          "安图生物(603658.SH)估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "安图生物(603658.SH)事件时间线.md",
+          "安图生物-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "安图生物(603658.SH)技术分析.md",
+          "安图生物-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "安图生物-业务管线.md",
+          "安图生物 业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "安图生物-研发管线.md",
+          "安图生物(603658.SH)研发管线.md"
+        ]
+      }
+    },
+    "total_files": 15
+  },
+  {
+    "stock_name": "康哲药业",
+    "stock_code": "600196",
+    "exchange": "SH",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "",
+    "updated": "",
+    "note_file": "01-股票投研/股票/康哲药业/康哲药业-投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "康哲药业(01177.HK)估值追踪.md",
+          "康哲药业-估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "康哲药业-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "康哲药业-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "康哲药业-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "康哲药业-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 11
+  },
+  {
+    "stock_name": "康方生物",
+    "stock_code": "600276",
+    "exchange": "SH",
+    "sector": "",
+    "status": "active",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/康方生物/康方生物(09926.HK)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "康方生物-估值追踪.md",
+          "康方生物(09926.HK)估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "康方生物-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "康方生物-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "康方生物 业务管线.md",
+          "康方生物-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "康方生物-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 12
+  },
+  {
+    "stock_name": "康诺亚",
+    "stock_code": "688331",
+    "exchange": "SH",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/康诺亚/康诺亚(02162.HK)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "康诺亚(02162.HK)估值追踪.md",
+          "康诺亚-估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "康诺亚-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "康诺亚-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "康诺亚-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "康诺亚-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 10
+  },
+  {
+    "stock_name": "康龙化成",
+    "stock_code": "300759",
+    "exchange": "SZ",
+    "sector": "",
+    "status": "active",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/康龙化成/康龙化成(300759.SZ)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "康龙化成(300759.SZ)估值追踪.md",
+          "康龙化成-估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "康龙化成-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "康龙化成-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "康龙化成 业务管线.md",
+          "康龙化成-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "康龙化成-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 12
+  },
+  {
+    "stock_name": "微创医疗",
+    "stock_code": "300760",
+    "exchange": "SZ",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/微创医疗/微创医疗(00853.HK)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "微创医疗-估值追踪.md",
+          "微创医疗(00853.HK)估值追踪.md",
+          "微创医疗 - 估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "微创医疗-事件时间线.md",
+          "微创医疗(00853.HK)事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "微创医疗(00853.HK)技术分析.md",
+          "微创医疗-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "微创医疗-业务管线.md",
+          "微创医疗 业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "微创医疗-研发管线.md",
+          "微创医疗(00853.HK)研发管线.md"
+        ]
+      }
+    },
+    "total_files": 14
+  },
+  {
+    "stock_name": "心脉医疗",
+    "stock_code": "688016",
+    "exchange": "SH",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/心脉医疗/心脉医疗(688016.SH)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "心脉医疗(688016.SH)估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "心脉医疗(688016.SH)事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "心脉医疗(688016.SH)技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": false,
+        "files": []
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "心脉医疗(688016.SH)研发管线.md"
+        ]
+      }
+    },
+    "total_files": 6
+  },
+  {
+    "stock_name": "恒瑞医药",
+    "stock_code": "600276",
+    "exchange": "SH",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "",
+    "updated": "",
+    "note_file": "01-股票投研/股票/恒瑞医药/恒瑞医药-投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "恒瑞医药-估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "恒瑞医药-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "恒瑞医药-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "恒瑞医药-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "恒瑞医药-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 11
+  },
+  {
+    "stock_name": "恩华药业",
+    "stock_code": "002262",
+    "exchange": "SZ",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/恩华药业/恩华药业(002262.SZ)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "恩华药业(002262.SZ)估值追踪.md",
+          "恩华药业 - 估值追踪.md",
+          "恩华药业-估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "恩华药业-事件时间线.md",
+          "恩华药业(002262.SZ)事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "恩华药业-技术分析.md",
+          "恩华药业(002262.SZ)技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "恩华药业 业务管线.md",
+          "恩华药业-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "恩华药业(002262.SZ)研发管线.md",
+          "恩华药业-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 14
+  },
+  {
+    "stock_name": "惠泰医疗",
+    "stock_code": "688617",
+    "exchange": "SH",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "",
+    "updated": "",
+    "note_file": "01-股票投研/股票/惠泰医疗/惠泰医疗-投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "惠泰医疗-估值追踪.md",
+          "惠泰医疗(688617.SH)估值追踪.md",
+          "惠泰医疗 - 估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "惠泰医疗-事件时间线.md",
+          "惠泰医疗(688617.SH)事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "惠泰医疗(688617.SH)技术分析.md",
+          "惠泰医疗-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "惠泰医疗-业务管线.md",
+          "惠泰医疗 业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "惠泰医疗-研发管线.md",
+          "惠泰医疗(688617.SH)研发管线.md"
+        ]
+      }
+    },
+    "total_files": 16
+  },
+  {
+    "stock_name": "新产业",
+    "stock_code": "300832",
+    "exchange": "SZ",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/新产业/新产业(300832.SZ)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "新产业-估值追踪.md",
+          "新产业 - 估值追踪.md",
+          "新产业(300832.SZ)估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "新产业(300832.SZ)事件时间线.md",
+          "新产业-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "新产业(300832.SZ)技术分析.md",
+          "新产业-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "新产业-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "新产业-研发管线.md",
+          "新产业(300832.SZ)研发管线.md"
+        ]
+      }
+    },
+    "total_files": 13
+  },
+  {
+    "stock_name": "昊海生科",
+    "stock_code": "688366",
+    "exchange": "SH",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "",
+    "updated": "",
+    "note_file": "01-股票投研/股票/昊海生科/昊海生科-投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "昊海生科-估值追踪.md",
+          "昊海生科(688366.SH)估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "昊海生科-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "昊海生科-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "昊海生科-业务管线.md",
+          "昊海生科 业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "昊海生科-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 12
+  },
+  {
+    "stock_name": "普洛药业",
+    "stock_code": "600216",
+    "exchange": "SH",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/普洛药业/普洛药业(600216.SH)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "普洛药业-估值追踪.md",
+          "普洛药业 - 估值追踪.md",
+          "普洛药业(600216.SH)估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "普洛药业-事件时间线.md",
+          "普洛药业(600216.SH)事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "普洛药业(600216.SH)技术分析.md",
+          "普洛药业-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "普洛药业-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "普洛药业-研发管线.md",
+          "普洛药业(600216.SH)研发管线.md"
+        ]
+      }
+    },
+    "total_files": 15
+  },
+  {
+    "stock_name": "智飞生物",
+    "stock_code": "300122",
+    "exchange": "SZ",
+    "sector": "",
+    "status": "active",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/智飞生物/智飞生物(300122.SZ)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "智飞生物-估值追踪.md",
+          "智飞生物(300122.SZ)估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "智飞生物-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "智飞生物-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "智飞生物-业务管线.md",
+          "智飞生物 业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "智飞生物-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 12
+  },
+  {
+    "stock_name": "梓橦宫",
+    "stock_code": "603811",
+    "exchange": "SH",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/梓橦宫/梓橦宫(920566.BJ)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "梓橦宫-估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "梓橦宫-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "梓橦宫-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "梓橦宫-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "梓橦宫-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 10
+  },
+  {
+    "stock_name": "步长制药",
+    "stock_code": "603858",
+    "exchange": "SH",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/步长制药/步长制药(603858.SH)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "步长制药-估值追踪.md",
+          "步长制药 - 估值追踪.md",
+          "步长制药(603858.SH)估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "步长制药-事件时间线.md",
+          "步长制药(603858.SH)事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "步长制药(603858.SH)技术分析.md",
+          "步长制药-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "步长制药-业务管线.md",
+          "步长制药 业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "步长制药-研发管线.md",
+          "步长制药(603858.SH)研发管线.md"
+        ]
+      }
+    },
+    "total_files": 15
+  },
+  {
+    "stock_name": "江中药业",
+    "stock_code": "600750",
+    "exchange": "SH",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/江中药业/江中药业(600750.SH)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "江中药业(600750.SH)估值追踪.md",
+          "江中药业 - 估值追踪.md",
+          "江中药业-估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "江中药业-事件时间线.md",
+          "江中药业(600750.SH)事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "江中药业-技术分析.md",
+          "江中药业(600750.SH)技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "江中药业 业务管线.md",
+          "江中药业-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "江中药业(600750.SH)研发管线.md",
+          "江中药业-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 14
+  },
+  {
+    "stock_name": "沃森生物",
+    "stock_code": "300142",
+    "exchange": "SZ",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "",
+    "updated": "",
+    "note_file": "01-股票投研/股票/沃森生物/沃森生物-投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "沃森生物-估值追踪.md",
+          "沃森生物(300142.SZ)估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "沃森生物-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "沃森生物-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "沃森生物-业务管线.md",
+          "沃森生物 业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "沃森生物-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 12
+  },
+  {
+    "stock_name": "泰格医药",
+    "stock_code": "300347",
+    "exchange": "SZ",
+    "sector": "",
+    "status": "active",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/泰格医药/泰格医药(300347.SZ)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "泰格医药-估值追踪.md",
+          "泰格医药(300347.SZ)估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "泰格医药-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "泰格医药-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "泰格医药-业务管线.md",
+          "泰格医药 业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "泰格医药-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 12
+  },
+  {
+    "stock_name": "海正药业",
+    "stock_code": "600267",
+    "exchange": "SH",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/海正药业/海正药业(600267.SH)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "海正药业-估值追踪.md",
+          "海正药业(600267.SH)估值追踪.md",
+          "海正药业 - 估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "海正药业(600267.SH)事件时间线.md",
+          "海正药业-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "海正药业(600267.SH)技术分析.md",
+          "海正药业-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "海正药业 业务管线.md",
+          "海正药业-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "海正药业-研发管线.md",
+          "海正药业(600267.SH)研发管线.md"
+        ]
+      }
+    },
+    "total_files": 14
+  },
+  {
+    "stock_name": "爱尔眼科",
+    "stock_code": "300015",
+    "exchange": "SZ",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "",
+    "updated": "",
+    "note_file": "01-股票投研/股票/爱尔眼科/爱尔眼科-投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "爱尔眼科-估值追踪.md",
+          "爱尔眼科(300015.SZ)估值追踪.md",
+          "爱尔眼科 - 估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "爱尔眼科-事件时间线.md",
+          "爱尔眼科(300015.SZ)事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "爱尔眼科-技术分析.md",
+          "爱尔眼科(300015.SZ)技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "爱尔眼科-业务管线.md",
+          "爱尔眼科 业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "爱尔眼科(300015.SZ)研发管线.md",
+          "爱尔眼科-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 15
+  },
+  {
+    "stock_name": "爱美客",
+    "stock_code": "300896",
+    "exchange": "SZ",
+    "sector": "",
+    "status": "active",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/爱美客/爱美客(300896.SZ)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "爱美客(300896.SZ)估值追踪.md",
+          "爱美客-估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "爱美客-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "爱美客-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "爱美客 业务管线.md",
+          "爱美客-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "爱美客-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 11
+  },
+  {
+    "stock_name": "片仔癀",
+    "stock_code": "600436",
+    "exchange": "SH",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/片仔癀/片仔癀(600436.SH)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "片仔癀 - 估值追踪.md",
+          "片仔癀(600436.SH)估值追踪.md",
+          "片仔癀-估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "片仔癀-事件时间线.md",
+          "片仔癀(600436.SH)事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "片仔癀-技术分析.md",
+          "片仔癀(600436.SH)技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "片仔癀 业务管线.md",
+          "片仔癀-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "片仔癀(600436.SH)研发管线.md",
+          "片仔癀-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 16
+  },
+  {
+    "stock_name": "璎黎药业",
+    "stock_code": "688403",
+    "exchange": "SH",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/璎黎药业/璎黎药业(688403.SH)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "璎黎药业-估值追踪.md",
+          "璎黎药业 估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "璎黎药业-事件时间线.md",
+          "璎黎药业 事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "璎黎药业 技术分析.md",
+          "璎黎药业-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "璎黎药业-业务管线.md",
+          "璎黎药业 业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "璎黎药业-研发管线.md",
+          "璎黎药业 研发管线.md"
+        ]
+      }
+    },
+    "total_files": 14
+  },
+  {
+    "stock_name": "用友网络",
+    "stock_code": "600588",
+    "exchange": "SH",
+    "sector": "企业服务/信创",
+    "status": "观察中",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-06-02",
+    "updated": "2026-06-02",
+    "note_file": "01-股票投研/股票/用友网络/用友网络(600588.SH) 投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "用友网络-估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "用友网络-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "用友网络-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "用友网络-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "用友网络-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 8
+  },
+  {
+    "stock_name": "白云山",
+    "stock_code": "600332",
+    "exchange": "SH",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/白云山/白云山(600332.SH)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "白云山 - 估值追踪.md",
+          "白云山-估值追踪.md",
+          "白云山(600332.SH)估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "白云山(600332.SH)事件时间线.md",
+          "白云山-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "白云山(600332.SH)技术分析.md",
+          "白云山-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "白云山-业务管线.md",
+          "白云山 业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "白云山-研发管线.md",
+          "白云山(600332.SH)研发管线.md"
+        ]
+      }
+    },
+    "total_files": 15
+  },
+  {
+    "stock_name": "百利天恒",
+    "stock_code": "688506",
+    "exchange": "SH",
+    "sector": "",
+    "status": "active",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-06-01",
+    "updated": "2026-06-22",
+    "note_file": "01-股票投研/股票/百利天恒/百利天恒 (688506.SH) 投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "百利天恒-估值追踪.md",
+          "百利天恒(688506.SH)估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "百利天恒-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "百利天恒-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "百利天恒-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "百利天恒-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 15
+  },
+  {
+    "stock_name": "百济神州",
+    "stock_code": "688235",
+    "exchange": "SH",
+    "sector": "",
+    "status": "active",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/百济神州/百济神州(688235.SH)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "百济神州(688235.SH)估值追踪.md",
+          "百济神州-估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "百济神州-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "百济神州-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "百济神州 业务管线.md",
+          "百济神州-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "百济神州-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 12
+  },
+  {
+    "stock_name": "百润股份",
+    "stock_code": "002568",
+    "exchange": "SZ",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "",
+    "updated": "",
+    "note_file": "01-股票投研/股票/百润股份/百润股份-投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "百润股份(002568.SZ)估值追踪.md",
+          "百润股份-估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "百润股份(002568.SZ)事件时间线.md",
+          "百润股份-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "百润股份-技术分析.md",
+          "百润股份(002568.SZ)技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "百润股份(002568.SZ)业务管线.md",
+          "百润股份-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "百润股份-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 11
+  },
+  {
+    "stock_name": "石四药集团",
+    "stock_code": "482920",
+    "exchange": "BJ",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "",
+    "updated": "",
+    "note_file": "01-股票投研/股票/石四药集团/石四药集团-投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "石四药集团-估值追踪.md",
+          "石四药集团(02005.HK)估值追踪.md",
+          "石四药集团 - 估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "石四药集团-事件时间线.md",
+          "石四药集团(02005.HK)事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "石四药集团(02005.HK)技术分析.md",
+          "石四药集团-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "石四药集团-业务管线.md",
+          "石四药集团 业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "石四药集团-研发管线.md",
+          "石四药集团(02005.HK)研发管线.md"
+        ]
+      }
+    },
+    "total_files": 14
+  },
+  {
+    "stock_name": "石药集团",
+    "stock_code": "000963",
+    "exchange": "SZ",
+    "sector": "",
+    "status": "active",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/石药集团/石药集团(01093.HK)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "石药集团(01093.HK)估值追踪.md",
+          "石药集团-估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "石药集团-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "石药集团-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "石药集团-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "石药集团-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 10
+  },
+  {
+    "stock_name": "科伦博泰",
+    "stock_code": "688331",
+    "exchange": "SH",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "",
+    "updated": "",
+    "note_file": "01-股票投研/股票/科伦博泰/科伦博泰-投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "科伦博泰-估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "科伦博泰-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "科伦博泰-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "科伦博泰-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "科伦博泰-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 8
+  },
+  {
+    "stock_name": "科伦药业",
+    "stock_code": "002422",
+    "exchange": "SZ",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/科伦药业/科伦药业(002422.SZ)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "科伦药业-估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "科伦药业-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "科伦药业-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "科伦药业-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "科伦药业-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 9
+  },
+  {
+    "stock_name": "联影医疗",
+    "stock_code": "688271",
+    "exchange": "SH",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/联影医疗/联影医疗(688271.SH)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "联影医疗(688271.SH)估值追踪.md",
+          "联影医疗 - 估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "联影医疗(688271.SH)事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "联影医疗(688271.SH)技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "联影医疗 业务管线.md",
+          "联影医疗-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "联影医疗(688271.SH)研发管线.md"
+        ]
+      }
+    },
+    "total_files": 10
+  },
+  {
+    "stock_name": "联邦制药",
+    "stock_code": "600216",
+    "exchange": "SH",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/联邦制药/联邦制药(00348.HK)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "联邦制药(00348.HK)估值追踪.md",
+          "联邦制药-估值追踪.md",
+          "联邦制药 - 估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "联邦制药-事件时间线.md",
+          "联邦制药(00348.HK)事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "联邦制药-技术分析.md",
+          "联邦制药(00348.HK)技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "联邦制药-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "联邦制药(00348.HK)研发管线.md",
+          "联邦制药-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 13
+  },
+  {
+    "stock_name": "荣昌生物",
+    "stock_code": "688331",
+    "exchange": "SH",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/荣昌生物/荣昌生物(688331.SH)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "荣昌生物(688331.SH)估值追踪.md",
+          "荣昌生物-估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "荣昌生物-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "荣昌生物-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "荣昌生物-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "荣昌生物-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 10
+  },
+  {
+    "stock_name": "药明康德",
+    "stock_code": "603259",
+    "exchange": "SH",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/药明康德/药明康德(603259.SH)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "药明康德-估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "药明康德-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "药明康德-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "药明康德-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "药明康德-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 10
+  },
+  {
+    "stock_name": "药明生物",
+    "stock_code": "603259",
+    "exchange": "SH",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/药明生物/药明生物(02269.HK)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "药明生物-估值追踪.md",
+          "药明生物(02269.HK)估值追踪.md",
+          "药明生物 - 估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "药明生物(02269.HK)事件时间线.md",
+          "药明生物-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "药明生物(02269.HK)技术分析.md",
+          "药明生物-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "药明生物-业务管线.md",
+          "药明生物 业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "药明生物-研发管线.md",
+          "药明生物(02269.HK)研发管线.md"
+        ]
+      }
+    },
+    "total_files": 14
+  },
+  {
+    "stock_name": "贝达药业",
+    "stock_code": "300558",
+    "exchange": "SZ",
+    "sector": "",
+    "status": "active",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/贝达药业/贝达药业(300558.SZ)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "贝达药业-估值追踪.md",
+          "贝达药业(300558.SZ)估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "贝达药业-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "贝达药业-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "贝达药业-业务管线.md",
+          "贝达药业 业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "贝达药业-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 11
+  },
+  {
+    "stock_name": "迈克生物",
+    "stock_code": "300463",
+    "exchange": "SZ",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/迈克生物/迈克生物(300463.SZ)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "迈克生物(300463.SZ)估值追踪.md",
+          "迈克生物 - 估值追踪.md",
+          "迈克生物-估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "迈克生物-事件时间线.md",
+          "迈克生物(300463.SZ)事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "迈克生物-技术分析.md",
+          "迈克生物(300463.SZ)技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "迈克生物-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "迈克生物(300463.SZ)研发管线.md",
+          "迈克生物-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 13
+  },
+  {
+    "stock_name": "迈瑞医疗",
+    "stock_code": "300760",
+    "exchange": "SZ",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/迈瑞医疗/迈瑞医疗(300760.SZ)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "迈瑞医疗-估值追踪.md",
+          "迈瑞医疗 - 估值追踪.md",
+          "迈瑞医疗(300760.SZ)估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "迈瑞医疗(300760.SZ)事件时间线.md",
+          "迈瑞医疗-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "迈瑞医疗(300760.SZ)技术分析.md",
+          "迈瑞医疗-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "迈瑞医疗 业务管线.md",
+          "迈瑞医疗-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "迈瑞医疗-研发管线.md",
+          "迈瑞医疗(300760.SZ)研发管线.md"
+        ]
+      }
+    },
+    "total_files": 15
+  },
+  {
+    "stock_name": "阿里健康",
+    "stock_code": "824938",
+    "exchange": "BJ",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/阿里健康/阿里健康(00241.HK)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "阿里健康(00241.HK)估值追踪.md",
+          "阿里健康-估值追踪.md",
+          "阿里健康 - 估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "阿里健康(00241.HK)事件时间线.md",
+          "阿里健康-事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "阿里健康-技术分析.md",
+          "阿里健康(00241.HK)技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "阿里健康 业务管线.md",
+          "阿里健康-业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "阿里健康(00241.HK)研发管线.md",
+          "阿里健康-研发管线.md"
+        ]
+      }
+    },
+    "total_files": 14
+  },
+  {
+    "stock_name": "鱼跃医疗",
+    "stock_code": "002223",
+    "exchange": "SZ",
+    "sector": "",
+    "status": "",
+    "position": "",
+    "current_price": "",
+    "pe_ttm": "",
+    "created": "2026-05-28",
+    "updated": "2026-05-31",
+    "note_file": "01-股票投研/股票/鱼跃医疗/鱼跃医疗(002223.SZ)投资笔记.md",
+    "dimensions": {
+      "估值追踪": {
+        "exists": true,
+        "files": [
+          "鱼跃医疗-估值追踪.md",
+          "鱼跃医疗 - 估值追踪.md",
+          "鱼跃医疗(002223.SZ)估值追踪.md"
+        ]
+      },
+      "事件时间线": {
+        "exists": true,
+        "files": [
+          "鱼跃医疗-事件时间线.md",
+          "鱼跃医疗(002223.SZ)事件时间线.md"
+        ]
+      },
+      "技术分析": {
+        "exists": true,
+        "files": [
+          "鱼跃医疗(002223.SZ)技术分析.md",
+          "鱼跃医疗-技术分析.md"
+        ]
+      },
+      "业务管线": {
+        "exists": true,
+        "files": [
+          "鱼跃医疗-业务管线.md",
+          "鱼跃医疗 业务管线.md"
+        ]
+      },
+      "研发管线": {
+        "exists": true,
+        "files": [
+          "鱼跃医疗-研发管线.md",
+          "鱼跃医疗(002223.SZ)研发管线.md"
+        ]
+      }
+    },
+    "total_files": 15
+  }
+]

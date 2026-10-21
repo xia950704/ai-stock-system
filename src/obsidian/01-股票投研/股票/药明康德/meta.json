@@ -1,0 +1,33 @@
+{
+  "name": "药明康德",
+  "code": "603259",
+  "source_dir": "药明康德_603259_SS",
+  "data_source": "stock_analysis",
+  "data_date": "2026-05-26",
+  "price_range": {
+    "start_date": "2018-05-08",
+    "end_date": "2026-05-26",
+    "start_price": 31.1,
+    "current_price": 104.11,
+    "high": 188.28,
+    "low": 25.92,
+    "trading_days": 1953
+  },
+  "files": {
+    "investment_note": "投资笔记.md",
+    "tech_analysis": "技术分析.md",
+    "events": "事件时间线.md",
+    "pipeline": "业务管线.md",
+    "valuation": "估值追踪.md",
+    "rd_pipeline": "研发管线.md",
+    "charts": [
+      "图表/full_history_kline.png",
+      "图表/recent5y_candle.png"
+    ],
+    "csv_data": [
+      "full_history_daily.csv",
+      "events.csv"
+    ]
+  },
+  "status": "integrated"
+}

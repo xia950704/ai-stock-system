@@ -1,0 +1,482 @@
+[
+  {
+    "name": "百利天恒",
+    "code": "sh688506",
+    "current": 261.8,
+    "anchor": 290,
+    "deviation": -9.9,
+    "status": "买入区间",
+    "pe": -1.89,
+    "percentile": 44.7
+  },
+  {
+    "name": "贝达药业",
+    "code": "sz300558",
+    "current": 50.0,
+    "anchor": 54,
+    "deviation": -7.2,
+    "status": "买入区间",
+    "pe": -0.95,
+    "percentile": 31.5
+  },
+  {
+    "name": "科伦药业",
+    "code": "sz002422",
+    "current": 40.46,
+    "anchor": 42,
+    "deviation": -3.5,
+    "status": "买入区间",
+    "pe": -0.3,
+    "percentile": 52.2
+  },
+  {
+    "name": "恒瑞医药",
+    "code": "sh600276",
+    "current": 46.13,
+    "anchor": 47,
+    "deviation": -1.8,
+    "status": "买入区间",
+    "pe": 0.13,
+    "percentile": 0.7
+  },
+  {
+    "name": "华东医药",
+    "code": "sz000963",
+    "current": 27.28,
+    "anchor": 27,
+    "deviation": 1.6,
+    "status": "超买入区间",
+    "pe": 0.07,
+    "percentile": 6.7
+  },
+  {
+    "name": "丽珠集团",
+    "code": "sz000513",
+    "current": 26.67,
+    "anchor": 26,
+    "deviation": 1.9,
+    "status": "超买入区间",
+    "pe": 0.98,
+    "percentile": 4.8
+  },
+  {
+    "name": "凯莱英",
+    "code": "sz002821",
+    "current": 158.97,
+    "anchor": 157,
+    "deviation": 0.9,
+    "status": "超买入区间",
+    "pe": -1.63,
+    "percentile": 67.4
+  },
+  {
+    "name": "恩华药业",
+    "code": "sz002262",
+    "current": 23.08,
+    "anchor": 21,
+    "deviation": 6.5,
+    "status": "超买入区间",
+    "pe": 4.77,
+    "percentile": 62.3
+  },
+  {
+    "name": "君实生物",
+    "code": "sh688180",
+    "current": 32.99,
+    "anchor": 31,
+    "deviation": 6.5,
+    "status": "超买入区间",
+    "pe": 0.03,
+    "percentile": 25.1
+  },
+  {
+    "name": "复星医药",
+    "code": "sh600196",
+    "current": 22.5,
+    "anchor": 21,
+    "deviation": 6.9,
+    "status": "超买入区间",
+    "pe": 0.63,
+    "percentile": 22.1
+  },
+  {
+    "name": "药明康德",
+    "code": "sh603259",
+    "current": 152.57,
+    "anchor": 145,
+    "deviation": 5.5,
+    "status": "超买入区间",
+    "pe": -1.43,
+    "percentile": 83.9
+  },
+  {
+    "name": "荣昌生物",
+    "code": "sh688331",
+    "current": 119.18,
+    "anchor": 114,
+    "deviation": 5.1,
+    "status": "超买入区间",
+    "pe": -2.13,
+    "percentile": 56.2
+  },
+  {
+    "name": "国药股份",
+    "code": "sh600511",
+    "current": 26.66,
+    "anchor": 25,
+    "deviation": 6.2,
+    "status": "超买入区间",
+    "pe": -0.11,
+    "percentile": 24.8
+  },
+  {
+    "name": "昊海生科",
+    "code": "sh688366",
+    "current": 30.31,
+    "anchor": 28,
+    "deviation": 7.5,
+    "status": "超买入区间",
+    "pe": 1.2,
+    "percentile": 7.0
+  },
+  {
+    "name": "白云山",
+    "code": "sh600332",
+    "current": 20.27,
+    "anchor": 19,
+    "deviation": 6.8,
+    "status": "超买入区间",
+    "pe": -0.73,
+    "percentile": 11.5
+  },
+  {
+    "name": "联影医疗",
+    "code": "sh688271",
+    "current": 106.9,
+    "anchor": 97,
+    "deviation": 8.4,
+    "status": "超买入区间",
+    "pe": 2.3,
+    "percentile": 13.8
+  },
+  {
+    "name": "片仔癀",
+    "code": "sh600436",
+    "current": 123.82,
+    "anchor": 113,
+    "deviation": 8.7,
+    "status": "超买入区间",
+    "pe": 1.38,
+    "percentile": 23.8
+  },
+  {
+    "name": "上海医药",
+    "code": "sh601607",
+    "current": 16.41,
+    "anchor": 15,
+    "deviation": 8.3,
+    "status": "超买入区间",
+    "pe": 0.98,
+    "percentile": 47.0
+  },
+  {
+    "name": "鱼跃医疗",
+    "code": "sz002223",
+    "current": 26.14,
+    "anchor": 24,
+    "deviation": 7.9,
+    "status": "超买入区间",
+    "pe": 2.19,
+    "percentile": 6.4
+  },
+  {
+    "name": "乐普医疗",
+    "code": "sz300003",
+    "current": 11.96,
+    "anchor": 11,
+    "deviation": 8.6,
+    "status": "超买入区间",
+    "pe": 0.34,
+    "percentile": 6.9
+  },
+  {
+    "name": "ST人福",
+    "code": "sh600079",
+    "current": 18.83,
+    "anchor": 17,
+    "deviation": 9.7,
+    "status": "超买入区间",
+    "pe": 1.18,
+    "percentile": 75.8
+  },
+  {
+    "name": "*ST上普",
+    "code": "sh600680",
+    "current": 7.69,
+    "anchor": 7,
+    "deviation": 9.9,
+    "status": "超买入区间",
+    "pe": 0.0,
+    "percentile": 0
+  },
+  {
+    "name": "奥翔药业",
+    "code": "sh603229",
+    "current": 7.79,
+    "anchor": 7,
+    "deviation": 11.0,
+    "status": "超买入区间",
+    "pe": 0.78,
+    "percentile": 14.2
+  },
+  {
+    "name": "云南白药",
+    "code": "sz000538",
+    "current": 50.87,
+    "anchor": 45,
+    "deviation": 12.2,
+    "status": "超买入区间",
+    "pe": 0.95,
+    "percentile": 38.8
+  },
+  {
+    "name": "心脉医疗",
+    "code": "sh688016",
+    "current": 89.15,
+    "anchor": 79,
+    "deviation": 12.5,
+    "status": "超买入区间",
+    "pe": 0.28,
+    "percentile": 11.5
+  },
+  {
+    "name": "江中药业",
+    "code": "sh600750",
+    "current": 23.76,
+    "anchor": 21,
+    "deviation": 13.4,
+    "status": "超买入区间",
+    "pe": -0.42,
+    "percentile": 43.3
+  },
+  {
+    "name": "以岭药业",
+    "code": "sz002603",
+    "current": 16.06,
+    "anchor": 14,
+    "deviation": 14.5,
+    "status": "超买入区间",
+    "pe": 0.82,
+    "percentile": 27.0
+  },
+  {
+    "name": "同仁堂",
+    "code": "sh600085",
+    "current": 24.07,
+    "anchor": 21,
+    "deviation": 14.2,
+    "status": "超买入区间",
+    "pe": 0.75,
+    "percentile": 20.0
+  },
+  {
+    "name": "健民集团",
+    "code": "sh600976",
+    "current": 27.71,
+    "anchor": 24,
+    "deviation": 14.9,
+    "status": "超买入区间",
+    "pe": 0.65,
+    "percentile": 26.4
+  },
+  {
+    "name": "迈克生物",
+    "code": "sz300463",
+    "current": 9.34,
+    "anchor": 8,
+    "deviation": 16.5,
+    "status": "超买入区间",
+    "pe": 0.97,
+    "percentile": 18.7
+  },
+  {
+    "name": "爱尔眼科",
+    "code": "sz300015",
+    "current": 8.27,
+    "anchor": 7,
+    "deviation": 17.9,
+    "status": "超买入区间",
+    "pe": 0.73,
+    "percentile": 8.0
+  },
+  {
+    "name": "九洲药业",
+    "code": "sh603456",
+    "current": 15.25,
+    "anchor": 13,
+    "deviation": 17.3,
+    "status": "超买入区间",
+    "pe": -0.26,
+    "percentile": 42.6
+  },
+  {
+    "name": "天宇股份",
+    "code": "sz300702",
+    "current": 21.83,
+    "anchor": 18,
+    "deviation": 18.3,
+    "status": "超买入区间",
+    "pe": 2.06,
+    "percentile": 37.9
+  },
+  {
+    "name": "华兰生物",
+    "code": "sz002007",
+    "current": 13.11,
+    "anchor": 11,
+    "deviation": 18.5,
+    "status": "超买入区间",
+    "pe": 0.23,
+    "percentile": 24.3
+  },
+  {
+    "name": "爱美客",
+    "code": "sz300896",
+    "current": 94.04,
+    "anchor": 77,
+    "deviation": 21.5,
+    "status": "锚价失效",
+    "pe": 1.33,
+    "percentile": 10.8
+  },
+  {
+    "name": "万泰生物",
+    "code": "sh603392",
+    "current": 29.11,
+    "anchor": 24,
+    "deviation": 21.3,
+    "status": "锚价失效",
+    "pe": 0.41,
+    "percentile": 12.9
+  },
+  {
+    "name": "安图生物",
+    "code": "sh603658",
+    "current": 33.0,
+    "anchor": 27,
+    "deviation": 22.3,
+    "status": "锚价失效",
+    "pe": 0.24,
+    "percentile": 50.0
+  },
+  {
+    "name": "百济神州",
+    "code": "sh688235",
+    "current": 266.38,
+    "anchor": 220,
+    "deviation": 21.2,
+    "status": "锚价失效",
+    "pe": -1.29,
+    "percentile": 58.7
+  },
+  {
+    "name": "沃森生物",
+    "code": "sz300142",
+    "current": 13.59,
+    "anchor": 11,
+    "deviation": 23.2,
+    "status": "锚价失效",
+    "pe": 0.0,
+    "percentile": 50.4
+  },
+  {
+    "name": "百润股份",
+    "code": "sz002568",
+    "current": 18.11,
+    "anchor": 14,
+    "deviation": 28.4,
+    "status": "锚价失效",
+    "pe": 2.26,
+    "percentile": 44.1
+  },
+  {
+    "name": "迈瑞医疗",
+    "code": "sz300760",
+    "current": 170.7,
+    "anchor": 129,
+    "deviation": 30.1,
+    "status": "锚价失效",
+    "pe": 3.24,
+    "percentile": 43.5
+  },
+  {
+    "name": "博腾股份",
+    "code": "sz300363",
+    "current": 18.9,
+    "anchor": 15,
+    "deviation": 26.3,
+    "status": "锚价失效",
+    "pe": -1.92,
+    "percentile": 37.3
+  },
+  {
+    "name": "用友网络",
+    "code": "sh600588",
+    "current": 10.42,
+    "anchor": 8,
+    "deviation": 29.8,
+    "status": "锚价失效",
+    "pe": 1.26,
+    "percentile": 15.0
+  },
+  {
+    "name": "普洛药业",
+    "code": "sh600216",
+    "current": 12.92,
+    "anchor": 10,
+    "deviation": 29.7,
+    "status": "锚价失效",
+    "pe": -0.08,
+    "percentile": 27.5
+  },
+  {
+    "name": "康龙化成",
+    "code": "sz300759",
+    "current": 42.12,
+    "anchor": 32,
+    "deviation": 33.7,
+    "status": "锚价失效",
+    "pe": -2.73,
+    "percentile": 73.5
+  },
+  {
+    "name": "智飞生物",
+    "code": "sz300122",
+    "current": 13.93,
+    "anchor": 10,
+    "deviation": 37.7,
+    "status": "锚价失效",
+    "pe": 1.98,
+    "percentile": 26.0
+  },
+  {
+    "name": "惠泰医疗",
+    "code": "sz300620",
+    "current": 290.5,
+    "anchor": 230,
+    "deviation": 29.1,
+    "status": "锚价失效",
+    "pe": -8.93,
+    "percentile": 67.1
+  },
+  {
+    "name": "新产业",
+    "code": "sz300832",
+    "current": 50.95,
+    "anchor": 35,
+    "deviation": 43.7,
+    "status": "锚价失效",
+    "pe": 2.04,
+    "percentile": 48.1
+  }
+]

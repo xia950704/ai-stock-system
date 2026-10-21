@@ -1,0 +1,9 @@
+[PASS] T-P01 DATA_ROOT 生效: update_anchor.ANCHOR_PATH 指向 DATA_ROOT
+[PASS] T-P03 DATA_ROOT 生效: BACKUP_PATH 位于 DATA_ROOT/backup_phase1
+[PASS] T-P01b DATA_ROOT 生效: fetch_realtime.ANCHOR_PATH 指向 DATA_ROOT
+[PASS] T-P02 STOCK_DAILY_DIR 缺失时降级到 ~/harness/stock_daily
+[PASS] T-P02b 失效路径 ~/.hermes/workspace/stock_daily 已从运行时代码移除
+[PASS] T-P04 源文件不存在时抛出 FileNotFoundError（清晰报错，不静默）
+[PASS] T-P05 stock_ranking.WORKSPACE 跟随 STOCK_DAILY_DIR
+
+=== test_paths: 7 passed, 0 failed ===

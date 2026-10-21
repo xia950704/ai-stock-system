@@ -1,0 +1,14 @@
+{
+  "price_alerts": [
+    {
+      "type": "price",
+      "time": "2026-07-13T16:47:59.201044",
+      "price": 45.38895484720927,
+      "change": "-12.85%",
+      "threshold": "3%",
+      "message": "⚠️ 价格波动 -12.85%，超过阈值 3%"
+    }
+  ],
+  "ml_alerts": [],
+  "performance_alerts": []
+}

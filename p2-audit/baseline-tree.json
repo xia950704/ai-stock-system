@@ -1,0 +1,2113 @@
+{
+  ".": {
+    "dirs": [
+      "docs",
+      "p0-audit",
+      "p1-migration",
+      "src"
+    ],
+    "files": [
+      ".gitignore"
+    ],
+    "file_count": 1
+  },
+  "docs": {
+    "dirs": [
+      "config",
+      "rules"
+    ],
+    "files": [],
+    "file_count": 0
+  },
+  "docs/config": {
+    "dirs": [],
+    "files": [
+      "codex-config.toml.template",
+      "hermes-config.yaml.template"
+    ],
+    "file_count": 2
+  },
+  "docs/rules": {
+    "dirs": [],
+    "files": [
+      "vault-rules.md",
+      "workspace-rules.md"
+    ],
+    "file_count": 2
+  },
+  "p1-migration": {
+    "dirs": [],
+    "files": [
+      "migration-manifest.csv",
+      "p1-audit-report.md"
+    ],
+    "file_count": 2
+  },
+  "p0-audit": {
+    "dirs": [],
+    "files": [
+      "acceptance-tests.md",
+      "architecture-proposal.md",
+      "asset-inventory.md",
+      "dependency-map.md",
+      "jev-integration-plan.md",
+      "migration-manifest.csv",
+      "migration-plan.md",
+      "migration-results.json",
+      "risk-register.md",
+      "source-of-truth.md"
+    ],
+    "file_count": 10
+  },
+  "src": {
+    "dirs": [
+      "data",
+      "jev",
+      "obsidian",
+      "scripts",
+      "skills",
+      "trading",
+      "workflows"
+    ],
+    "files": [],
+    "file_count": 0
+  },
+  "src/workflows": {
+    "dirs": [
+      "wrappers"
+    ],
+    "files": [],
+    "file_count": 0
+  },
+  "src/workflows/wrappers": {
+    "dirs": [],
+    "files": [
+      "github_stock_heartbeat.sh",
+      "investment_pipeline.sh",
+      "stock_daily_fetch.sh"
+    ],
+    "file_count": 3
+  },
+  "src/jev": {
+    "dirs": [],
+    "files": [
+      "README.md",
+      "noise_check.py",
+      "routing-codex.json",
+      "routing-hermes.json",
+      "run.sh",
+      "selftest.py",
+      "selftest_modes.py",
+      "selftest_router.py",
+      "selftest_skill_examples.py",
+      "server.py"
+    ],
+    "file_count": 10
+  },
+  "src/scripts": {
+    "dirs": [
+      "core",
+      "fetch",
+      "legacy"
+    ],
+    "files": [],
+    "file_count": 0
+  },
+  "src/scripts/core": {
+    "dirs": [],
+    "files": [
+      "investment_pipeline.py",
+      "stock_ranking.py"
+    ],
+    "file_count": 2
+  },
+  "src/scripts/legacy": {
+    "dirs": [
+      "etf_tracking"
+    ],
+    "files": [
+      "512400_price_monitor.py",
+      "anchor_valuation.py",
+      "backtest_signals.py",
+      "baseline_dashboard.py",
+      "baseline_ml.py",
+      "extract_stock_data.py",
+      "fetch_finance_and_pe.py",
+      "full_market_ml_backtest.py",
+      "generate_kline_charts.py",
+      "generate_portfolio_dashboard.py",
+      "gfdma_scorer.py",
+      "investment_pipeline.py",
+      "kotler_batch.py",
+      "merge_stock_portfolio.py",
+      "ml_trend_predict.py",
+      "mock_investment_monitor.py",
+      "portfolio_analysis.py",
+      "prediction_engine.py",
+      "risk_alert.py",
+      "risk_anomaly_detection.py",
+      "run_kotler_batch.sh",
+      "scenario_simulator.py",
+      "short_term_scan.py",
+      "sotp_valuation.py",
+      "standardize_stock_notes.py",
+      "stock_mail_router.py",
+      "stock_price_alert.py",
+      "stock_ranking.py",
+      "stock_signal_extractor.py"
+    ],
+    "file_count": 29
+  },
+  "src/scripts/legacy/etf_tracking": {
+    "dirs": [],
+    "files": [
+      "etf_codes.txt",
+      "weekly_etf_tracker.py"
+    ],
+    "file_count": 2
+  },
+  "src/scripts/fetch": {
+    "dirs": [],
+    "files": [
+      "fetch_kline_tencent.py",
+      "fetch_kline_tencent_incremental.py",
+      "fetch_realtime.py",
+      "update_anchor.py"
+    ],
+    "file_count": 4
+  },
+  "src/skills": {
+    "dirs": [
+      "jev-systemone",
+      "stock-research",
+      "system-warmup-stock",
+      "system-warmup-trading"
+    ],
+    "files": [],
+    "file_count": 0
+  },
+  "src/skills/jev-systemone": {
+    "dirs": [],
+    "files": [
+      "SKILL.md"
+    ],
+    "file_count": 1
+  },
+  "src/skills/stock-research": {
+    "dirs": [],
+    "files": [
+      "SKILL.md",
+      "dsh-stock-data-reader.py"
+    ],
+    "file_count": 2
+  },
+  "src/skills/system-warmup-stock": {
+    "dirs": [],
+    "files": [
+      "SKILL.md"
+    ],
+    "file_count": 1
+  },
+  "src/skills/system-warmup-trading": {
+    "dirs": [],
+    "files": [
+      "SKILL.md"
+    ],
+    "file_count": 1
+  },
+  "src/obsidian": {
+    "dirs": [
+      "01-股票投研"
+    ],
+    "files": [],
+    "file_count": 0
+  },
+  "src/obsidian/01-股票投研": {
+    "dirs": [
+      "02-工具与方法",
+      "ETF",
+      "data",
+      "scripts",
+      "tools",
+      "分析报告",
+      "图表",
+      "日更",
+      "模板",
+      "横向对比",
+      "股票"
+    ],
+    "files": [
+      "01-股票分析框架.md",
+      "01-股票分析框架.md.bak",
+      "02-投研方法论.md",
+      "04-医药股票跟踪池.md",
+      "05-股票更新清单.md",
+      "05-股票更新清单.md.bak",
+      "05-股票更新清单.md.bak2",
+      "06-Agent命令清单-股票数据更新.md",
+      "06-Agent命令清单-股票数据更新.md.bak",
+      "06-Agent命令清单-股票数据更新.md.bak2",
+      "08-A股医药深度分析.md",
+      "09-港股创新药深度分析.md",
+      "14-恒瑞×药明综合投研分析.md",
+      "27-股票笔记关系图谱.md",
+      "9-14_股票周检分析_20260914.md",
+      "9-9_股票分析_20260909.md",
+      "AGENTS.md",
+      "GS-中国零售H2-260814-研读笔记.md",
+      "MOC-股票投研.md",
+      "P0汇总_2026-09-01.json",
+      "每日检查_2026-09-14.md",
+      "每日检查_2026-09-15.md",
+      "每日检查_2026-09-18.md",
+      "每日检查_2026-09-21.md",
+      "每日检查_2026-09-30.md",
+      "每日检查_20260901.md",
+      "每日检查_20260907.md",
+      "每日检查_20260909.md",
+      "每日检查_20260910.md",
+      "每日检查_20260911.md",
+      "策略对比-三条件框架vsETF轮动.md",
+      "股票系统阶段0审计报告-20260924.md",
+      "股票系统阶段1报告-20260924.md",
+      "股票系统阶段1验收报告-20260924.md",
+      "股票系统阶段2执行报告-20260925.md",
+      "股票系统阶段2诊断报告-20260925.md",
+      "股票系统阶段2验收报告-20260924.md",
+      "股票系统阶段3验收报告-20260924.md",
+      "资金轮动_2026-09-W2.md",
+      "锚价调整_2026-09-01.json",
+      "锚价调整_2026-09-07.json",
+      "锚价调整_2026-09-09.json",
+      "锚价调整_2026-09-10.json",
+      "锚价调整_2026-09-11.json",
+      "锚价调整_2026-09-14.json",
+      "锚价调整_2026-09-15.json",
+      "锚价调整_2026-09-18.json",
+      "锚价调整_2026-09-21.json",
+      "锚价调整_2026-09-30.json",
+      "锚价调整_历史_2026-09-01.json"
+    ],
+    "file_count": 50
+  },
+  "src/obsidian/01-股票投研/图表": {
+    "dirs": [],
+    "files": [
+      "300347_全历史K线图.png",
+      "300347_近5年蜡烛图.png",
+      "300759_全历史K线图.png",
+      "300759_近5年蜡烛图.png",
+      "300896_全历史K线图.png",
+      "300896_近5年蜡烛图.png",
+      "600196_全历史K线图.png",
+      "600196_近5年蜡烛图.png",
+      "920566_全历史K线图.png",
+      "920566_近5年蜡烛图.png"
+    ],
+    "file_count": 10
+  },
+  "src/obsidian/01-股票投研/tools": {
+    "dirs": [],
+    "files": [
+      "daily_update.py"
+    ],
+    "file_count": 1
+  },
+  "src/obsidian/01-股票投研/分析报告": {
+    "dirs": [],
+    "files": [
+      "股票近期趋势判断_2026-10-14.md"
+    ],
+    "file_count": 1
+  },
+  "src/obsidian/01-股票投研/日更": {
+    "dirs": [],
+    "files": [
+      "医药早报_2026-09-30.md",
+      "配对信号_2026-09-14.md",
+      "配对信号_2026-09-15.md",
+      "配对信号_2026-09-16.md",
+      "配对信号_2026-09-17.md",
+      "配对信号_2026-09-18.md",
+      "配对信号_2026-09-21.md",
+      "配对信号_2026-09-22.md",
+      "配对信号_2026-09-23.md",
+      "配对信号_2026-09-24.md",
+      "配对信号_2026-09-25.md",
+      "配对信号_2026-09-28.md",
+      "配对信号_2026-09-29.md",
+      "配对信号_2026-09-30.md",
+      "配对信号_2026-10-01.md",
+      "配对信号_2026-10-02.md",
+      "配对信号_2026-10-05.md",
+      "配对信号_2026-10-06.md",
+      "配对信号_2026-10-07.md",
+      "配对信号_2026-10-08.md",
+      "配对信号_2026-10-09.md",
+      "配对信号_2026-10-12.md",
+      "配对信号_2026-10-13.md",
+      "配对信号_2026-10-14.md",
+      "配对信号_2026-10-15.md",
+      "配对信号_2026-10-16.md",
+      "配对信号_2026-10-19.md",
+      "配对信号_20260813.md",
+      "配对信号_20260814.md",
+      "配对信号_20260817.md",
+      "配对信号_20260818.md",
+      "配对信号_20260819.md",
+      "配对信号_20260820.md",
+      "配对信号_20260821.md",
+      "配对信号_20260824.md",
+      "配对信号_20260825.md",
+      "配对信号_20260826.md",
+      "配对信号_20260827.md",
+      "配对信号_20260828.md",
+      "配对信号_20260831.md",
+      "配对信号_20260901.md",
+      "配对信号_20260902.md",
+      "配对信号_20260903.md",
+      "配对信号_20260904.md",
+      "配对信号_20260907.md",
+      "配对信号_20260908.md",
+      "配对信号_20260909.md",
+      "配对信号_20260910.md",
+      "配对信号_20260911.md"
+    ],
+    "file_count": 49
+  },
+  "src/obsidian/01-股票投研/股票": {
+    "dirs": [
+      "00-策略分析报告模板-索引",
+      "万泰生物",
+      "上海医药",
+      "中国中药",
+      "乐普医疗",
+      "人福医药",
+      "信达生物",
+      "健民集团",
+      "先健科技",
+      "华东医药",
+      "君实生物",
+      "国药股份",
+      "复星医药",
+      "天坛生物",
+      "天宇股份",
+      "康哲药业",
+      "康方生物",
+      "康诺亚",
+      "康龙化成",
+      "心脉医疗",
+      "恒瑞医药",
+      "恩华药业",
+      "惠泰医疗",
+      "昊海生科",
+      "普洛药业",
+      "智飞生物",
+      "沃森生物",
+      "泰格医药",
+      "海正药业",
+      "爱尔眼科",
+      "用友网络",
+      "百利天恒",
+      "百济神州",
+      "百润股份",
+      "石四药集团",
+      "石药集团",
+      "科伦博泰",
+      "科伦药业",
+      "荣昌生物",
+      "药明康德",
+      "贝达药业"
+    ],
+    "files": [
+      "生物医药跟踪池.md",
+      "股票索引.md",
+      "股票索引.md.bak"
+    ],
+    "file_count": 3
+  },
+  "src/obsidian/01-股票投研/股票/天宇股份": {
+    "dirs": [],
+    "files": [
+      "天宇股份 业务管线.md"
+    ],
+    "file_count": 1
+  },
+  "src/obsidian/01-股票投研/股票/华东医药": {
+    "dirs": [
+      "图表"
+    ],
+    "files": [
+      "events.csv",
+      "full_history_daily.csv",
+      "kline_qfq.csv",
+      "kline_raw.csv",
+      "meta.json",
+      "华东医药(000963.SZ)投资笔记.md",
+      "华东医药-阿卡波糖集采两阶段分解-20260616.md"
+    ],
+    "file_count": 7
+  },
+  "src/obsidian/01-股票投研/股票/华东医药/图表": {
+    "dirs": [],
+    "files": [
+      "candlestick_5y.png",
+      "full_history.png",
+      "full_history_kline.png",
+      "recent5y_candle.png"
+    ],
+    "file_count": 4
+  },
+  "src/obsidian/01-股票投研/股票/海正药业": {
+    "dirs": [],
+    "files": [
+      "海正药业-投资笔记.md"
+    ],
+    "file_count": 1
+  },
+  "src/obsidian/01-股票投研/股票/药明康德": {
+    "dirs": [
+      "图表"
+    ],
+    "files": [
+      "events.csv",
+      "full_history_daily.csv",
+      "kline_qfq.csv",
+      "kline_raw.csv",
+      "meta.json",
+      "药明康德(603259.SH)投资笔记.md"
+    ],
+    "file_count": 6
+  },
+  "src/obsidian/01-股票投研/股票/药明康德/图表": {
+    "dirs": [],
+    "files": [
+      "candlestick_5y.png",
+      "full_history.png",
+      "full_history_kline.png",
+      "recent5y_candle.png"
+    ],
+    "file_count": 4
+  },
+  "src/obsidian/01-股票投研/股票/智飞生物": {
+    "dirs": [
+      "图表"
+    ],
+    "files": [
+      "events.csv",
+      "full_history_daily.csv",
+      "kline_qfq.csv",
+      "kline_raw.csv",
+      "meta.json",
+      "智飞生物(300122.SZ)投资笔记.md",
+      "智飞生物-投资笔记.md",
+      "智飞生物_kline_kline_qfq",
+      "智飞生物_kline_kline_raw"
+    ],
+    "file_count": 9
+  },
+  "src/obsidian/01-股票投研/股票/智飞生物/图表": {
+    "dirs": [],
+    "files": [
+      "candlestick_5y.png",
+      "candlestick_macd_5y.png",
+      "full_history.png",
+      "full_history_kline.png",
+      "recent5y_candle.png"
+    ],
+    "file_count": 5
+  },
+  "src/obsidian/01-股票投研/股票/信达生物": {
+    "dirs": [
+      "图表"
+    ],
+    "files": [
+      "events.csv",
+      "full_history_daily.csv",
+      "kline_qfq.csv",
+      "kline_raw.csv",
+      "meta.json",
+      "信达生物(01801.HK)投资笔记.md",
+      "信达生物_kline_raw.csv"
+    ],
+    "file_count": 7
+  },
+  "src/obsidian/01-股票投研/股票/信达生物/图表": {
+    "dirs": [],
+    "files": [
+      "full_history_kline.png",
+      "kline_full_history.png",
+      "kline_recent_3y.png",
+      "kline_recent_5y.png",
+      "recent5y_candle.png"
+    ],
+    "file_count": 5
+  },
+  "src/obsidian/01-股票投研/股票/国药股份": {
+    "dirs": [],
+    "files": [
+      "国药股份(600511.SH)投资笔记.md"
+    ],
+    "file_count": 1
+  },
+  "src/obsidian/01-股票投研/股票/用友网络": {
+    "dirs": [],
+    "files": [
+      "用友网络-投资笔记.md"
+    ],
+    "file_count": 1
+  },
+  "src/obsidian/01-股票投研/股票/百润股份": {
+    "dirs": [],
+    "files": [
+      "百润股份-投资笔记.md"
+    ],
+    "file_count": 1
+  },
+  "src/obsidian/01-股票投研/股票/康哲药业": {
+    "dirs": [
+      "图表"
+    ],
+    "files": [
+      "events.csv",
+      "full_history_daily.csv",
+      "kline_qfq.csv",
+      "kline_raw.csv",
+      "meta.json",
+      "康哲药业(00867.HK)投资笔记.md",
+      "康哲药业-投资笔记.md"
+    ],
+    "file_count": 7
+  },
+  "src/obsidian/01-股票投研/股票/康哲药业/图表": {
+    "dirs": [],
+    "files": [
+      "candlestick_5y.png",
+      "full_history.png",
+      "full_history_kline.png",
+      "recent5y_candle.png"
+    ],
+    "file_count": 4
+  },
+  "src/obsidian/01-股票投研/股票/沃森生物": {
+    "dirs": [
+      "图表"
+    ],
+    "files": [
+      "events.csv",
+      "full_history_daily.csv",
+      "kline_qfq.csv",
+      "kline_raw.csv",
+      "meta.json",
+      "沃森生物-投资笔记.md",
+      "沃森生物_kline_kline_qfq",
+      "沃森生物_kline_kline_raw"
+    ],
+    "file_count": 8
+  },
+  "src/obsidian/01-股票投研/股票/沃森生物/图表": {
+    "dirs": [],
+    "files": [
+      "candlestick_5y.png",
+      "full_history.png",
+      "full_history_kline.png",
+      "recent5y_candle.png"
+    ],
+    "file_count": 4
+  },
+  "src/obsidian/01-股票投研/股票/先健科技": {
+    "dirs": [],
+    "files": [
+      "先健科技(01302.HK)投资笔记.md"
+    ],
+    "file_count": 1
+  },
+  "src/obsidian/01-股票投研/股票/昊海生科": {
+    "dirs": [
+      "图表"
+    ],
+    "files": [
+      "events.csv",
+      "full_history_daily.csv",
+      "kline_qfq.csv",
+      "kline_raw.csv",
+      "meta.json",
+      "昊海生科_kline_kline_qfq",
+      "昊海生科_kline_kline_raw"
+    ],
+    "file_count": 7
+  },
+  "src/obsidian/01-股票投研/股票/昊海生科/图表": {
+    "dirs": [],
+    "files": [
+      "candlestick_5y.png",
+      "candlestick_macd.png",
+      "cumulative_return.png",
+      "financial_summary.png",
+      "full_history.png",
+      "full_history_kline.png",
+      "recent5y_candle.png"
+    ],
+    "file_count": 7
+  },
+  "src/obsidian/01-股票投研/股票/石四药集团": {
+    "dirs": [],
+    "files": [
+      "石四药集团(02005.HK)投资笔记.md",
+      "石四药集团-投资笔记.md"
+    ],
+    "file_count": 2
+  },
+  "src/obsidian/01-股票投研/股票/科伦博泰": {
+    "dirs": [],
+    "files": [
+      "科伦博泰(06990.HK)投资笔记.md"
+    ],
+    "file_count": 1
+  },
+  "src/obsidian/01-股票投研/股票/爱尔眼科": {
+    "dirs": [],
+    "files": [
+      "爱尔眼科(300015.SZ)投资笔记.md"
+    ],
+    "file_count": 1
+  },
+  "src/obsidian/01-股票投研/股票/健民集团": {
+    "dirs": [
+      "图表"
+    ],
+    "files": [
+      "events.csv",
+      "full_history_daily.csv",
+      "kline_qfq.csv",
+      "kline_raw.csv",
+      "meta.json",
+      "健民集团-投资笔记.md",
+      "健民集团_kline_kline_qfq",
+      "健民集团_kline_kline_raw"
+    ],
+    "file_count": 8
+  },
+  "src/obsidian/01-股票投研/股票/健民集团/图表": {
+    "dirs": [],
+    "files": [
+      "candlestick_5y.png",
+      "chart1_full_history.png",
+      "chart2_recent5y_candlestick.png",
+      "chart3_full_history_with_events.png",
+      "full_history.png",
+      "full_history_kline.png",
+      "recent5y_candle.png"
+    ],
+    "file_count": 7
+  },
+  "src/obsidian/01-股票投研/股票/中国中药": {
+    "dirs": [],
+    "files": [
+      "中国中药(00570.HK)投资笔记.md",
+      "中国中药-投资笔记.md"
+    ],
+    "file_count": 2
+  },
+  "src/obsidian/01-股票投研/股票/00-策略分析报告模板-索引": {
+    "dirs": [
+      "归档",
+      "状态"
+    ],
+    "files": [
+      "00-索引.md"
+    ],
+    "file_count": 1
+  },
+  "src/obsidian/01-股票投研/股票/00-策略分析报告模板-索引/状态": {
+    "dirs": [],
+    "files": [
+      "000963_status.json",
+      "600276_status.json"
+    ],
+    "file_count": 2
+  },
+  "src/obsidian/01-股票投研/股票/00-策略分析报告模板-索引/归档": {
+    "dirs": [
+      "600276"
+    ],
+    "files": [],
+    "file_count": 0
+  },
+  "src/obsidian/01-股票投研/股票/00-策略分析报告模板-索引/归档/600276": {
+    "dirs": [],
+    "files": [
+      "status_20260619_101223.json",
+      "status_20260619_135111.json"
+    ],
+    "file_count": 2
+  },
+  "src/obsidian/01-股票投研/股票/惠泰医疗": {
+    "dirs": [],
+    "files": [
+      "惠泰医疗(688617.SH)投资笔记.md"
+    ],
+    "file_count": 1
+  },
+  "src/obsidian/01-股票投研/股票/恒瑞医药": {
+    "dirs": [
+      "图表"
+    ],
+    "files": [
+      "events.csv",
+      "full_history_daily.csv",
+      "kline_qfq.csv",
+      "kline_raw.csv",
+      "meta.json",
+      "恒瑞医药(600276.SH)投资笔记.md",
+      "恒瑞医药(600276.SH)详细投研档案v2.0.md",
+      "恒瑞医药-集采冲击-SCM分析-20260616.md"
+    ],
+    "file_count": 8
+  },
+  "src/obsidian/01-股票投研/股票/恒瑞医药/图表": {
+    "dirs": [],
+    "files": [
+      "candlestick_5y.png",
+      "full_history.png",
+      "full_history_kline.png",
+      "recent5y_candle.png"
+    ],
+    "file_count": 4
+  },
+  "src/obsidian/01-股票投研/股票/天坛生物": {
+    "dirs": [],
+    "files": [
+      "天坛生物(600161.SH)投资笔记.md"
+    ],
+    "file_count": 1
+  },
+  "src/obsidian/01-股票投研/股票/上海医药": {
+    "dirs": [],
+    "files": [
+      "上海医药(601607.SH)投资笔记.md"
+    ],
+    "file_count": 1
+  },
+  "src/obsidian/01-股票投研/股票/乐普医疗": {
+    "dirs": [],
+    "files": [
+      "乐普医疗(300003.SZ)投资笔记.md"
+    ],
+    "file_count": 1
+  },
+  "src/obsidian/01-股票投研/股票/万泰生物": {
+    "dirs": [
+      "图表"
+    ],
+    "files": [
+      "events.csv",
+      "full_history_daily.csv",
+      "kline_qfq.csv",
+      "kline_raw.csv",
+      "meta.json",
+      "万泰生物(603392.SH)投资笔记.md",
+      "万泰生物_kline_kline_qfq",
+      "万泰生物_kline_kline_raw"
+    ],
+    "file_count": 8
+  },
+  "src/obsidian/01-股票投研/股票/万泰生物/图表": {
+    "dirs": [],
+    "files": [
+      "candlestick_5y.png",
+      "candlestick_macd_5y.png",
+      "full_history.png",
+      "full_history_events.png",
+      "full_history_kline.png",
+      "performance_metrics.png",
+      "recent5y_candle.png"
+    ],
+    "file_count": 7
+  },
+  "src/obsidian/01-股票投研/股票/泰格医药": {
+    "dirs": [
+      "图表"
+    ],
+    "files": [
+      "events.csv",
+      "full_history_daily.csv",
+      "kline_qfq.csv",
+      "kline_raw.csv",
+      "meta.json",
+      "泰格医药_kline_kline_qfq",
+      "泰格医药_kline_kline_raw"
+    ],
+    "file_count": 7
+  },
+  "src/obsidian/01-股票投研/股票/泰格医药/图表": {
+    "dirs": [],
+    "files": [
+      "candlestick_5y.png",
+      "full_history.png",
+      "full_history_kline.png",
+      "recent5y_candle.png"
+    ],
+    "file_count": 4
+  },
+  "src/obsidian/01-股票投研/股票/恩华药业": {
+    "dirs": [],
+    "files": [
+      "kline_raw.csv",
+      "meta.json",
+      "估值追踪.md",
+      "恩华药业(002262.SZ)投资笔记.md"
+    ],
+    "file_count": 4
+  },
+  "src/obsidian/01-股票投研/股票/君实生物": {
+    "dirs": [
+      "图表"
+    ],
+    "files": [
+      "events.csv",
+      "full_history_daily.csv",
+      "kline_qfq.csv",
+      "kline_raw.csv",
+      "meta.json",
+      "君实生物(688180.SH)投资笔记.md",
+      "君实生物_kline_kline_qfq",
+      "君实生物_kline_kline_raw"
+    ],
+    "file_count": 8
+  },
+  "src/obsidian/01-股票投研/股票/君实生物/图表": {
+    "dirs": [],
+    "files": [
+      "candlestick_5y.png",
+      "full_history.png",
+      "full_history_kline.png",
+      "recent5y_candle.png"
+    ],
+    "file_count": 4
+  },
+  "src/obsidian/01-股票投研/股票/康龙化成": {
+    "dirs": [
+      "图表"
+    ],
+    "files": [
+      "events.csv",
+      "full_history_daily.csv",
+      "kline_qfq.csv",
+      "kline_raw.csv",
+      "meta.json",
+      "康龙化成_kline_kline_qfq",
+      "康龙化成_kline_kline_raw"
+    ],
+    "file_count": 7
+  },
+  "src/obsidian/01-股票投研/股票/康龙化成/图表": {
+    "dirs": [],
+    "files": [
+      "candlestick_5y.png",
+      "full_history.png",
+      "full_history_kline.png",
+      "recent5y_candle.png"
+    ],
+    "file_count": 4
+  },
+  "src/obsidian/01-股票投研/股票/贝达药业": {
+    "dirs": [
+      "图表"
+    ],
+    "files": [
+      "events.csv",
+      "full_history_daily.csv",
+      "kline_qfq.csv",
+      "kline_raw.csv",
+      "meta.json",
+      "贝达药业(300558.SZ)投资笔记.md",
+      "贝达药业_kline_kline_qfq",
+      "贝达药业_kline_kline_raw"
+    ],
+    "file_count": 8
+  },
+  "src/obsidian/01-股票投研/股票/贝达药业/图表": {
+    "dirs": [],
+    "files": [
+      "candlestick_5y.png",
+      "full_history.png",
+      "full_history_kline.png",
+      "kline_full_history.png",
+      "kline_recent_5y.png",
+      "recent5y_candle.png"
+    ],
+    "file_count": 6
+  },
+  "src/obsidian/01-股票投研/股票/荣昌生物": {
+    "dirs": [
+      "图表"
+    ],
+    "files": [
+      "events.csv",
+      "full_history_daily.csv",
+      "kline_qfq.csv",
+      "kline_raw.csv",
+      "meta.json",
+      "荣昌生物(688331.SH)投资笔记.md"
+    ],
+    "file_count": 6
+  },
+  "src/obsidian/01-股票投研/股票/荣昌生物/图表": {
+    "dirs": [],
+    "files": [
+      "candlestick_5y.png",
+      "full_history.png",
+      "full_history_kline.png",
+      "recent5y_candle.png"
+    ],
+    "file_count": 4
+  },
+  "src/obsidian/01-股票投研/股票/石药集团": {
+    "dirs": [
+      "图表"
+    ],
+    "files": [
+      "events.csv",
+      "full_history_daily.csv",
+      "kline_qfq.csv",
+      "kline_raw.csv",
+      "meta.json"
+    ],
+    "file_count": 5
+  },
+  "src/obsidian/01-股票投研/股票/石药集团/图表": {
+    "dirs": [],
+    "files": [
+      "candlestick_5y.png",
+      "full_history.png",
+      "full_history_kline.png",
+      "kline_em.png",
+      "kline_intraday.png",
+      "recent5y_candle.png"
+    ],
+    "file_count": 6
+  },
+  "src/obsidian/01-股票投研/股票/百利天恒": {
+    "dirs": [
+      "图表"
+    ],
+    "files": [
+      "events.csv",
+      "full_history_daily.csv",
+      "kline_qfq.csv",
+      "kline_raw.csv",
+      "meta.json",
+      "百利天恒 (688506.SH) — ILD 安全性风险更新.md",
+      "百利天恒(688506.SH)投资笔记.md",
+      "百利天恒(688506.SH)策略分析报告-20260601.md",
+      "百利天恒(688506.SH)策略分析报告-20260604.md",
+      "百利天恒-朱义CPIC2026对话-批判性分析.md",
+      "百利天恒_kline_qfq.csv"
+    ],
+    "file_count": 11
+  },
+  "src/obsidian/01-股票投研/股票/百利天恒/图表": {
+    "dirs": [],
+    "files": [
+      "candlestick_5y.png",
+      "full_history.png",
+      "full_history_kline.png",
+      "kline_events_5year.png",
+      "kline_full_history.png",
+      "recent5y_candle.png"
+    ],
+    "file_count": 6
+  },
+  "src/obsidian/01-股票投研/股票/心脉医疗": {
+    "dirs": [],
+    "files": [
+      "心脉医疗(688016.SH)投资笔记.md",
+      "心脉医疗(688016.SH)策略分析报告-20260601.md"
+    ],
+    "file_count": 2
+  },
+  "src/obsidian/01-股票投研/股票/科伦药业": {
+    "dirs": [
+      "图表"
+    ],
+    "files": [
+      "SCM不适用说明-科伦药业-20260616.md",
+      "events.csv",
+      "full_history_daily.csv",
+      "kline_qfq.csv",
+      "kline_raw.csv",
+      "meta.json",
+      "科伦药业(002422.SZ)投资笔记.md"
+    ],
+    "file_count": 7
+  },
+  "src/obsidian/01-股票投研/股票/科伦药业/图表": {
+    "dirs": [],
+    "files": [
+      "candlestick_5y.png",
+      "full_history.png",
+      "full_history_kline.png",
+      "recent5y_candle.png"
+    ],
+    "file_count": 4
+  },
+  "src/obsidian/01-股票投研/股票/复星医药": {
+    "dirs": [
+      "图表"
+    ],
+    "files": [
+      "events.csv",
+      "full_history_daily.csv",
+      "kline_qfq.csv",
+      "kline_raw.csv",
+      "meta.json",
+      "复星医药_kline_kline_qfq",
+      "复星医药_kline_kline_raw",
+      "复星医药债务危机-SCM分析-20260616.md"
+    ],
+    "file_count": 8
+  },
+  "src/obsidian/01-股票投研/股票/复星医药/图表": {
+    "dirs": [],
+    "files": [
+      "candlestick_5y.png",
+      "full_history.png",
+      "full_history_kline.png",
+      "recent5y_candle.png"
+    ],
+    "file_count": 4
+  },
+  "src/obsidian/01-股票投研/股票/普洛药业": {
+    "dirs": [],
+    "files": [
+      "普洛药业(600216.SH)投资笔记.md"
+    ],
+    "file_count": 1
+  },
+  "src/obsidian/01-股票投研/股票/康方生物": {
+    "dirs": [
+      "图表"
+    ],
+    "files": [
+      "events.csv",
+      "full_history_daily.csv",
+      "kline_qfq.csv",
+      "kline_raw.csv",
+      "meta.json"
+    ],
+    "file_count": 5
+  },
+  "src/obsidian/01-股票投研/股票/康方生物/图表": {
+    "dirs": [],
+    "files": [
+      "full_history_kline.png",
+      "kline_em.png",
+      "kline_intraday.png",
+      "recent5y_candle.png"
+    ],
+    "file_count": 4
+  },
+  "src/obsidian/01-股票投研/股票/百济神州": {
+    "dirs": [
+      "图表"
+    ],
+    "files": [
+      "events.csv",
+      "full_history_daily.csv",
+      "kline_qfq.csv",
+      "kline_raw.csv",
+      "meta.json",
+      "百济神州(688235.SH)投资笔记.md",
+      "百济神州_kline_kline_qfq",
+      "百济神州_kline_kline_raw"
+    ],
+    "file_count": 8
+  },
+  "src/obsidian/01-股票投研/股票/百济神州/图表": {
+    "dirs": [],
+    "files": [
+      "candlestick_5y.png",
+      "full_history.png",
+      "full_history_kline.png",
+      "recent5y_candle.png"
+    ],
+    "file_count": 4
+  },
+  "src/obsidian/01-股票投研/股票/人福医药": {
+    "dirs": [],
+    "files": [
+      "人福医药(600079.SH)投资笔记.md"
+    ],
+    "file_count": 1
+  },
+  "src/obsidian/01-股票投研/股票/康诺亚": {
+    "dirs": [
+      "图表"
+    ],
+    "files": [
+      "events.csv",
+      "full_history_daily.csv",
+      "kline_qfq.csv",
+      "kline_raw.csv",
+      "meta.json",
+      "康诺亚(02162.HK)投资笔记.md"
+    ],
+    "file_count": 6
+  },
+  "src/obsidian/01-股票投研/股票/康诺亚/图表": {
+    "dirs": [],
+    "files": [
+      "candlestick_5y.png",
+      "full_history.png",
+      "full_history_kline.png",
+      "recent5y_candle.png"
+    ],
+    "file_count": 4
+  },
+  "src/obsidian/01-股票投研/02-工具与方法": {
+    "dirs": [
+      "量化研究"
+    ],
+    "files": [
+      "924政策冲击-恒瑞药明vs非医药-SCM分析-20260616.md"
+    ],
+    "file_count": 1
+  },
+  "src/obsidian/01-股票投研/02-工具与方法/量化研究": {
+    "dirs": [],
+    "files": [
+      "01-北京炒家首板战法.md",
+      "04-林园AI智能体.md",
+      "06-CHRONOS-K线语言模型.md",
+      "07-投资哲学-达利欧vs苏世民.md",
+      "08-华泰多因子模型.md",
+      "10-AI因子挖掘调研.md",
+      "11-QFLAM因子挖掘系统.md",
+      "12-Alpha360因子库.md",
+      "13-ETF轮动策略.md",
+      "AI量化视频系列笔记-索引.md"
+    ],
+    "file_count": 10
+  },
+  "src/obsidian/01-股票投研/模板": {
+    "dirs": [],
+    "files": [
+      "模板-股票观察看板.md"
+    ],
+    "file_count": 1
+  },
+  "src/obsidian/01-股票投研/横向对比": {
+    "dirs": [],
+    "files": [
+      "四只医药股-冲击事件因果效应对比-20260616.md"
+    ],
+    "file_count": 1
+  },
+  "src/obsidian/01-股票投研/scripts": {
+    "dirs": [],
+    "files": [
+      "valuation_update.py"
+    ],
+    "file_count": 1
+  },
+  "src/obsidian/01-股票投研/ETF": {
+    "dirs": [],
+    "files": [
+      "512400_口径说明.md",
+      "512400日度跟踪.md",
+      "ETF分析-半导体云计算创新药-20260616.md",
+      "ETF周度数据-2026-06-17.json",
+      "ETF周度数据-2026-06-27.json",
+      "ETF周度数据-2026-07-04.json",
+      "ETF周度数据-2026-07-11.json",
+      "ETF周度数据-2026-07-20.json",
+      "ETF周度数据-2026-07-25.json",
+      "ETF周度数据-2026-08-01.json",
+      "ETF周度数据-2026-08-08.json",
+      "ETF周度数据-2026-08-15.json",
+      "ETF周度数据-2026-08-22.json",
+      "ETF周度数据-2026-09-08.json",
+      "ETF周度数据-2026-10-20.json",
+      "ETF周度跟踪-2026-10-20.md",
+      "ETF周度跟踪-20260801.md",
+      "ETF周度跟踪-20260808.md",
+      "ETF周度跟踪-20260815.md",
+      "ETF周度跟踪-20260822.md",
+      "ETF周度跟踪-20260908.md",
+      "ETF投研笔记-20260527.md",
+      "ETF轮动排名快照-20260616.md",
+      "ETF轮动排名快照-20260618.md",
+      "Minervini趋势模板-全市场ETF筛选-20260616.md",
+      "交叉分析-轮动排名×日涨幅×K线MA-20260616.md",
+      "有色金属ETF-512400深度分析-20260617.md"
+    ],
+    "file_count": 27
+  },
+  "src/obsidian/01-股票投研/data": {
+    "dirs": [
+      "bayesian",
+      "daily_check",
+      "gfdma",
+      "standardized",
+      "stocks",
+      "verification"
+    ],
+    "files": [
+      "anchor_valuation_20260826.md",
+      "anchor_valuation_20260923.md",
+      "anchor_valuation_20260924.md",
+      "deviation_rules_20260924.md",
+      "earnings_h1_2026_0813.json",
+      "earnings_h1_2026_0813.md",
+      "earnings_h1_2026_scan_20260813.md",
+      "pe_data_20260630.json",
+      "pe_data_20260702.json",
+      "pe_data_20260703.json",
+      "pe_data_20260706.json",
+      "pe_data_20260707.json",
+      "pe_data_20260708.json",
+      "pe_data_20260709.json",
+      "pe_data_20260710.json",
+      "pe_data_20260713.json",
+      "pe_data_20260714.json",
+      "pe_data_20260715.json",
+      "pe_data_20260716.json",
+      "pe_data_20260717.json",
+      "pe_data_20260720.json",
+      "pe_data_20260803.json",
+      "pe_data_20260809.json",
+      "pe_data_20260810.json",
+      "pe_data_20260811.json",
+      "pe_data_20260812.json",
+      "pe_data_20260813.json",
+      "pe_data_20260814.json",
+      "pe_data_20260817.json",
+      "pe_data_20260818.json",
+      "pe_data_20260819.json",
+      "pe_data_20260820.json",
+      "pe_data_20260821.json",
+      "pe_data_20260824.json",
+      "pe_data_20260825.json",
+      "pe_data_20260826.json",
+      "pe_data_20260827.json",
+      "pe_data_20260924.json",
+      "pe_data_20260929.json",
+      "price_alert_20260727.md",
+      "price_alert_20260728.md",
+      "price_alert_20260729.md",
+      "price_alert_20260730.md",
+      "price_alert_20260731.md",
+      "price_alert_20260803.md",
+      "price_alert_20260809.md",
+      "price_alert_20260811.md",
+      "price_alert_20260812.md",
+      "price_alert_20260813.md",
+      "price_alert_20260814.md",
+      "price_alert_20260817.md",
+      "price_alert_20260818.md",
+      "price_alert_20260819.md",
+      "price_alert_20260820.md",
+      "price_alert_20260821.md",
+      "price_alert_20260824.md",
+      "price_alert_20260825.md",
+      "price_alert_20260826.md",
+      "price_alert_20260827.md",
+      "price_alert_20260831.md",
+      "price_alert_20260903.md",
+      "price_alert_20260904.md",
+      "price_data_20260630.json",
+      "price_data_20260702.json",
+      "price_data_20260703.json",
+      "price_data_20260706.json",
+      "price_data_20260707.json",
+      "price_data_20260708.json",
+      "price_data_20260709.json",
+      "price_data_20260710.json",
+      "price_data_20260713.json",
+      "price_data_20260714.json",
+      "price_data_20260715.json",
+      "price_data_20260716.json",
+      "price_data_20260717.json",
+      "price_data_20260720.json",
+      "price_data_20260803.json",
+      "price_data_20260809.json",
+      "price_data_20260810.json",
+      "price_data_20260811.json",
+      "price_data_20260812.json",
+      "price_data_20260813.json",
+      "price_data_20260814.json",
+      "price_data_20260817.json",
+      "price_data_20260818.json",
+      "price_data_20260819.json",
+      "price_data_20260820.json",
+      "price_data_20260821.json",
+      "price_data_20260824.json",
+      "price_data_20260825.json",
+      "price_data_20260826.json",
+      "price_data_20260827.json",
+      "price_data_20260924.json",
+      "price_data_20260929.json",
+      "sotp_valuation_20260827.md",
+      "sotp_valuation_20260903.md",
+      "sotp_valuation_20260904.md",
+      "sotp_valuation_20260923.md",
+      "sotp_valuation_20260924.md",
+      "投研周检_20260830.md",
+      "投研周检_20260906.md",
+      "投研周检_20261018.md",
+      "每日数据完整性检查_20260803.md",
+      "每日数据完整性检查_20260809.md",
+      "每日数据完整性检查_20260810.md",
+      "每日数据完整性检查_20260811.md",
+      "每日数据完整性检查_20260812.md",
+      "每日数据完整性检查_20260813.md",
+      "每日数据完整性检查_20260814.md",
+      "每日数据完整性检查_20260817.md",
+      "每日数据完整性检查_20260818.md",
+      "每日数据完整性检查_20260819.md",
+      "每日数据完整性检查_20260820.md",
+      "每日数据完整性检查_20260821.md",
+      "每日数据完整性检查_20260824.md",
+      "每日数据完整性检查_20260825.md",
+      "每日数据完整性检查_20260826.md",
+      "每日数据完整性检查_20260827.md",
+      "每日股票检查_20260803.csv",
+      "每日股票检查_20260809.csv",
+      "每日股票检查_20260810.csv",
+      "每日股票检查_20260811.csv",
+      "每日股票检查_20260812.csv",
+      "每日股票检查_20260813.csv",
+      "每日股票检查_20260814.csv",
+      "每日股票检查_20260817.csv",
+      "每日股票检查_20260818.csv",
+      "每日股票检查_20260819.csv",
+      "每日股票检查_20260820.csv",
+      "每日股票检查_20260821.csv",
+      "每日股票检查_20260824.csv",
+      "每日股票检查_20260825.csv",
+      "每日股票检查_20260826.csv",
+      "每日股票检查_20260827.csv"
+    ],
+    "file_count": 134
+  },
+  "src/obsidian/01-股票投研/data/stocks": {
+    "dirs": [],
+    "files": [
+      "300347_泰格医药.csv",
+      "300759_康龙化成.csv",
+      "300896_爱美客.csv",
+      "600196_复星医药.csv",
+      "920566_梓橦宫.csv"
+    ],
+    "file_count": 5
+  },
+  "src/obsidian/01-股票投研/data/daily_check": {
+    "dirs": [],
+    "files": [
+      "每日数据完整性检查_20260924.md",
+      "每日数据完整性检查_20260929.md",
+      "每日股票检查_20260630.csv",
+      "每日股票检查_20260702.csv",
+      "每日股票检查_20260703.csv",
+      "每日股票检查_20260706.csv",
+      "每日股票检查_20260707.csv",
+      "每日股票检查_20260708.csv",
+      "每日股票检查_20260709.csv",
+      "每日股票检查_20260710.csv",
+      "每日股票检查_20260713.csv",
+      "每日股票检查_20260714.csv",
+      "每日股票检查_20260715.csv",
+      "每日股票检查_20260716.csv",
+      "每日股票检查_20260717.csv",
+      "每日股票检查_20260720.csv",
+      "每日股票检查_20260721.csv",
+      "每日股票检查_20260722.csv",
+      "每日股票检查_20260723.csv",
+      "每日股票检查_20260724.csv",
+      "每日股票检查_20260727.csv",
+      "每日股票检查_20260728.csv",
+      "每日股票检查_20260729.csv",
+      "每日股票检查_20260730.csv",
+      "每日股票检查_20260731.csv",
+      "每日股票检查_20260803.csv",
+      "每日股票检查_20260803.md",
+      "每日股票检查_20260804.csv",
+      "每日股票检查_20260804.md",
+      "每日股票检查_20260805.csv",
+      "每日股票检查_20260805.md",
+      "每日股票检查_20260806.csv",
+      "每日股票检查_20260806.md",
+      "每日股票检查_20260807.csv",
+      "每日股票检查_20260807.md",
+      "每日股票检查_20260810.csv",
+      "每日股票检查_20260810.md",
+      "每日股票检查_20260811.csv",
+      "每日股票检查_20260811.md",
+      "每日股票检查_20260812.csv",
+      "每日股票检查_20260812.md",
+      "每日股票检查_20260813.csv",
+      "每日股票检查_20260813.md",
+      "每日股票检查_20260814.csv",
+      "每日股票检查_20260814.md",
+      "每日股票检查_20260817.csv",
+      "每日股票检查_20260817.md",
+      "每日股票检查_20260818.csv",
+      "每日股票检查_20260818.md",
+      "每日股票检查_20260819.csv",
+      "每日股票检查_20260819.md",
+      "每日股票检查_20260820.csv",
+      "每日股票检查_20260820.md",
+      "每日股票检查_20260821.csv",
+      "每日股票检查_20260821.md",
+      "每日股票检查_20260824.csv",
+      "每日股票检查_20260824.md",
+      "每日股票检查_20260825.csv",
+      "每日股票检查_20260825.md",
+      "每日股票检查_20260826.csv",
+      "每日股票检查_20260826.md",
+      "每日股票检查_20260827.csv",
+      "每日股票检查_20260827.md",
+      "每日股票检查_20260828.csv",
+      "每日股票检查_20260828.md",
+      "每日股票检查_20260830.csv",
+      "每日股票检查_20260830.md",
+      "每日股票检查_20260903.csv",
+      "每日股票检查_20260903.md",
+      "每日股票检查_20260904.csv",
+      "每日股票检查_20260904.md",
+      "每日股票检查_20260907.csv",
+      "每日股票检查_20260907.md",
+      "每日股票检查_20260909.csv",
+      "每日股票检查_20260909.md",
+      "每日股票检查_20260910.csv",
+      "每日股票检查_20260910.md",
+      "每日股票检查_20260911.csv",
+      "每日股票检查_20260911.md",
+      "每日股票检查_20260914.csv",
+      "每日股票检查_20260914.md",
+      "每日股票检查_20260915.csv",
+      "每日股票检查_20260915.md",
+      "每日股票检查_20260916.csv",
+      "每日股票检查_20260916.md",
+      "每日股票检查_20260917.csv",
+      "每日股票检查_20260917.md",
+      "每日股票检查_20260918.csv",
+      "每日股票检查_20260918.md",
+      "每日股票检查_20260921.csv",
+      "每日股票检查_20260921.md",
+      "每日股票检查_20260922.csv",
+      "每日股票检查_20260922.md",
+      "每日股票检查_20260923.csv",
+      "每日股票检查_20260923.md",
+      "每日股票检查_20260924.csv",
+      "每日股票检查_20260924_backfill.csv",
+      "每日股票检查_20260924_backfill.md",
+      "每日股票检查_20260928.csv",
+      "每日股票检查_20260928.md",
+      "每日股票检查_20260929.csv",
+      "每日股票检查_20260929.md",
+      "每日股票检查_20260930.csv",
+      "每日股票检查_20260930.md",
+      "每日股票检查_20261001.csv",
+      "每日股票检查_20261001.md",
+      "每日股票检查_20261002.csv",
+      "每日股票检查_20261002.md",
+      "每日股票检查_20261005.csv",
+      "每日股票检查_20261005.md",
+      "每日股票检查_20261006.csv",
+      "每日股票检查_20261006.md",
+      "每日股票检查_20261007.csv",
+      "每日股票检查_20261007.md",
+      "每日股票检查_20261008.csv",
+      "每日股票检查_20261008.md",
+      "每日股票检查_20261009.csv",
+      "每日股票检查_20261009.md",
+      "每日股票检查_20261012.csv",
+      "每日股票检查_20261012.md",
+      "每日股票检查_20261013.csv",
+      "每日股票检查_20261013.md",
+      "每日股票检查_20261014.csv",
+      "每日股票检查_20261014.md",
+      "每日股票检查_20261015.csv",
+      "每日股票检查_20261015.md",
+      "每日股票检查_20261016.csv",
+      "每日股票检查_20261016.md",
+      "每日股票检查_20261019.csv",
+      "每日股票检查_20261019.md"
+    ],
+    "file_count": 130
+  },
+  "src/obsidian/01-股票投研/data/verification": {
+    "dirs": [],
+    "files": [
+      "验证链清单_20260703.json",
+      "验证链清单_20260706.json",
+      "验证链清单_20260707.json",
+      "验证链清单_20260708.json",
+      "验证链清单_20260709.json",
+      "验证链清单_20260710.json",
+      "验证链清单_20260713.json",
+      "验证链清单_20260714.json",
+      "验证链清单_20260715.json",
+      "验证链清单_20260716.json",
+      "验证链清单_20260717.json",
+      "验证链清单_20260720.json",
+      "验证链清单_20260721.json",
+      "验证链清单_20260722.json",
+      "验证链清单_20260723.json",
+      "验证链清单_20260724.json",
+      "验证链清单_20260727.json",
+      "验证链清单_20260728.json",
+      "验证链清单_20260729.json",
+      "验证链清单_20260730.json",
+      "验证链清单_20260731.json",
+      "验证链清单_20260803.json",
+      "验证链清单_20260804.json",
+      "验证链清单_20260805.json",
+      "验证链清单_20260806.json",
+      "验证链清单_20260807.json",
+      "验证链清单_20260810.json",
+      "验证链清单_20260811.json",
+      "验证链清单_20260812.json",
+      "验证链清单_20260813.json",
+      "验证链清单_20260814.json",
+      "验证链清单_20260817.json",
+      "验证链清单_20260818.json",
+      "验证链清单_20260819.json",
+      "验证链清单_20260820.json",
+      "验证链清单_20260821.json",
+      "验证链清单_20260824.json",
+      "验证链清单_20260825.json",
+      "验证链清单_20260826.json",
+      "验证链清单_20260827.json",
+      "验证链清单_20260828.json",
+      "验证链清单_20260830.json",
+      "验证链清单_20260903.json",
+      "验证链清单_20260904.json",
+      "验证链清单_20260907.json",
+      "验证链清单_20260909.json",
+      "验证链清单_20260910.json",
+      "验证链清单_20260911.json",
+      "验证链清单_20260914.json",
+      "验证链清单_20260915.json",
+      "验证链清单_20260916.json",
+      "验证链清单_20260917.json",
+      "验证链清单_20260918.json",
+      "验证链清单_20260921.json",
+      "验证链清单_20260922.json",
+      "验证链清单_20260923.json",
+      "验证链清单_20260928.json",
+      "验证链清单_20260929.json",
+      "验证链清单_20260930.json",
+      "验证链清单_20261001.json",
+      "验证链清单_20261002.json",
+      "验证链清单_20261005.json",
+      "验证链清单_20261006.json",
+      "验证链清单_20261007.json",
+      "验证链清单_20261008.json",
+      "验证链清单_20261009.json",
+      "验证链清单_20261012.json",
+      "验证链清单_20261013.json",
+      "验证链清单_20261014.json",
+      "验证链清单_20261015.json",
+      "验证链清单_20261016.json",
+      "验证链清单_20261019.json"
+    ],
+    "file_count": 72
+  },
+  "src/obsidian/01-股票投研/data/gfdma": {
+    "dirs": [],
+    "files": [
+      "GF-DMA_健康度评分_20260703.csv",
+      "GF-DMA_健康度评分_20260703.json",
+      "GF-DMA_健康度评分_20260706.csv",
+      "GF-DMA_健康度评分_20260706.json",
+      "GF-DMA_健康度评分_20260707.csv",
+      "GF-DMA_健康度评分_20260707.json",
+      "GF-DMA_健康度评分_20260708.csv",
+      "GF-DMA_健康度评分_20260708.json",
+      "GF-DMA_健康度评分_20260709.csv",
+      "GF-DMA_健康度评分_20260709.json",
+      "GF-DMA_健康度评分_20260710.csv",
+      "GF-DMA_健康度评分_20260710.json",
+      "GF-DMA_健康度评分_20260713.csv",
+      "GF-DMA_健康度评分_20260713.json",
+      "GF-DMA_健康度评分_20260714.csv",
+      "GF-DMA_健康度评分_20260714.json",
+      "GF-DMA_健康度评分_20260715.csv",
+      "GF-DMA_健康度评分_20260715.json",
+      "GF-DMA_健康度评分_20260716.csv",
+      "GF-DMA_健康度评分_20260716.json",
+      "GF-DMA_健康度评分_20260717.csv",
+      "GF-DMA_健康度评分_20260717.json",
+      "GF-DMA_健康度评分_20260720.csv",
+      "GF-DMA_健康度评分_20260720.json",
+      "GF-DMA_健康度评分_20260721.csv",
+      "GF-DMA_健康度评分_20260721.json",
+      "GF-DMA_健康度评分_20260722.csv",
+      "GF-DMA_健康度评分_20260722.json",
+      "GF-DMA_健康度评分_20260723.csv",
+      "GF-DMA_健康度评分_20260723.json",
+      "GF-DMA_健康度评分_20260724.csv",
+      "GF-DMA_健康度评分_20260724.json",
+      "GF-DMA_健康度评分_20260727.csv",
+      "GF-DMA_健康度评分_20260727.json",
+      "GF-DMA_健康度评分_20260728.csv",
+      "GF-DMA_健康度评分_20260728.json",
+      "GF-DMA_健康度评分_20260729.csv",
+      "GF-DMA_健康度评分_20260729.json",
+      "GF-DMA_健康度评分_20260730.csv",
+      "GF-DMA_健康度评分_20260730.json",
+      "GF-DMA_健康度评分_20260731.csv",
+      "GF-DMA_健康度评分_20260731.json",
+      "GF-DMA_健康度评分_20260803.csv",
+      "GF-DMA_健康度评分_20260803.json",
+      "GF-DMA_健康度评分_20260804.csv",
+      "GF-DMA_健康度评分_20260804.json",
+      "GF-DMA_健康度评分_20260805.csv",
+      "GF-DMA_健康度评分_20260805.json",
+      "GF-DMA_健康度评分_20260806.csv",
+      "GF-DMA_健康度评分_20260806.json",
+      "GF-DMA_健康度评分_20260807.csv",
+      "GF-DMA_健康度评分_20260807.json",
+      "GF-DMA_健康度评分_20260810.csv",
+      "GF-DMA_健康度评分_20260810.json",
+      "GF-DMA_健康度评分_20260811.csv",
+      "GF-DMA_健康度评分_20260811.json",
+      "GF-DMA_健康度评分_20260812.csv",
+      "GF-DMA_健康度评分_20260812.json",
+      "GF-DMA_健康度评分_20260813.csv",
+      "GF-DMA_健康度评分_20260813.json",
+      "GF-DMA_健康度评分_20260814.csv",
+      "GF-DMA_健康度评分_20260814.json",
+      "GF-DMA_健康度评分_20260817.csv",
+      "GF-DMA_健康度评分_20260817.json",
+      "GF-DMA_健康度评分_20260818.csv",
+      "GF-DMA_健康度评分_20260818.json",
+      "GF-DMA_健康度评分_20260819.csv",
+      "GF-DMA_健康度评分_20260819.json",
+      "GF-DMA_健康度评分_20260820.csv",
+      "GF-DMA_健康度评分_20260820.json",
+      "GF-DMA_健康度评分_20260821.csv",
+      "GF-DMA_健康度评分_20260821.json",
+      "GF-DMA_健康度评分_20260824.csv",
+      "GF-DMA_健康度评分_20260824.json",
+      "GF-DMA_健康度评分_20260825.csv",
+      "GF-DMA_健康度评分_20260825.json",
+      "GF-DMA_健康度评分_20260826.csv",
+      "GF-DMA_健康度评分_20260826.json",
+      "GF-DMA_健康度评分_20260827.csv",
+      "GF-DMA_健康度评分_20260827.json",
+      "GF-DMA_健康度评分_20260828.csv",
+      "GF-DMA_健康度评分_20260828.json",
+      "GF-DMA_健康度评分_20260830.csv",
+      "GF-DMA_健康度评分_20260830.json",
+      "GF-DMA_健康度评分_20260903.csv",
+      "GF-DMA_健康度评分_20260903.json",
+      "GF-DMA_健康度评分_20260904.csv",
+      "GF-DMA_健康度评分_20260904.json",
+      "GF-DMA_健康度评分_20260907.csv",
+      "GF-DMA_健康度评分_20260907.json",
+      "GF-DMA_健康度评分_20260909.csv",
+      "GF-DMA_健康度评分_20260909.json",
+      "GF-DMA_健康度评分_20260910.csv",
+      "GF-DMA_健康度评分_20260910.json",
+      "GF-DMA_健康度评分_20260911.csv",
+      "GF-DMA_健康度评分_20260911.json",
+      "GF-DMA_健康度评分_20260914.csv",
+      "GF-DMA_健康度评分_20260914.json",
+      "GF-DMA_健康度评分_20260915.csv",
+      "GF-DMA_健康度评分_20260915.json",
+      "GF-DMA_健康度评分_20260916.csv",
+      "GF-DMA_健康度评分_20260916.json",
+      "GF-DMA_健康度评分_20260917.csv",
+      "GF-DMA_健康度评分_20260917.json",
+      "GF-DMA_健康度评分_20260918.csv",
+      "GF-DMA_健康度评分_20260918.json",
+      "GF-DMA_健康度评分_20260921.csv",
+      "GF-DMA_健康度评分_20260921.json",
+      "GF-DMA_健康度评分_20260922.csv",
+      "GF-DMA_健康度评分_20260922.json",
+      "GF-DMA_健康度评分_20260923.csv",
+      "GF-DMA_健康度评分_20260923.json",
+      "GF-DMA_健康度评分_20260924.csv",
+      "GF-DMA_健康度评分_20260924.md",
+      "GF-DMA_健康度评分_20260928.csv",
+      "GF-DMA_健康度评分_20260928.json",
+      "GF-DMA_健康度评分_20260929.csv",
+      "GF-DMA_健康度评分_20260929.json",
+      "GF-DMA_健康度评分_20260930.csv",
+      "GF-DMA_健康度评分_20260930.json",
+      "GF-DMA_健康度评分_20261001.csv",
+      "GF-DMA_健康度评分_20261001.json",
+      "GF-DMA_健康度评分_20261002.csv",
+      "GF-DMA_健康度评分_20261002.json",
+      "GF-DMA_健康度评分_20261005.csv",
+      "GF-DMA_健康度评分_20261005.json",
+      "GF-DMA_健康度评分_20261006.csv",
+      "GF-DMA_健康度评分_20261006.json",
+      "GF-DMA_健康度评分_20261007.csv",
+      "GF-DMA_健康度评分_20261007.json",
+      "GF-DMA_健康度评分_20261008.csv",
+      "GF-DMA_健康度评分_20261008.json",
+      "GF-DMA_健康度评分_20261009.csv",
+      "GF-DMA_健康度评分_20261009.json",
+      "GF-DMA_健康度评分_20261012.csv",
+      "GF-DMA_健康度评分_20261012.json",
+      "GF-DMA_健康度评分_20261013.csv",
+      "GF-DMA_健康度评分_20261013.json",
+      "GF-DMA_健康度评分_20261014.csv",
+      "GF-DMA_健康度评分_20261014.json",
+      "GF-DMA_健康度评分_20261015.csv",
+      "GF-DMA_健康度评分_20261015.json",
+      "GF-DMA_健康度评分_20261016.csv",
+      "GF-DMA_健康度评分_20261016.json",
+      "GF-DMA_健康度评分_20261019.csv",
+      "GF-DMA_健康度评分_20261019.json"
+    ],
+    "file_count": 146
+  },
+  "src/obsidian/01-股票投研/data/bayesian": {
+    "dirs": [],
+    "files": [
+      "Bayesian_H0H5_概率更新_20260703.json",
+      "Bayesian_H0H5_概率更新_20260706.json",
+      "Bayesian_H0H5_概率更新_20260707.json",
+      "Bayesian_H0H5_概率更新_20260708.json",
+      "Bayesian_H0H5_概率更新_20260709.json",
+      "Bayesian_H0H5_概率更新_20260710.json",
+      "Bayesian_H0H5_概率更新_20260713.json",
+      "Bayesian_H0H5_概率更新_20260714.json",
+      "Bayesian_H0H5_概率更新_20260715.json",
+      "Bayesian_H0H5_概率更新_20260716.json",
+      "Bayesian_H0H5_概率更新_20260717.json",
+      "Bayesian_H0H5_概率更新_20260720.json",
+      "Bayesian_H0H5_概率更新_20260721.json",
+      "Bayesian_H0H5_概率更新_20260722.json",
+      "Bayesian_H0H5_概率更新_20260723.json",
+      "Bayesian_H0H5_概率更新_20260724.json",
+      "Bayesian_H0H5_概率更新_20260727.json",
+      "Bayesian_H0H5_概率更新_20260728.json",
+      "Bayesian_H0H5_概率更新_20260729.json",
+      "Bayesian_H0H5_概率更新_20260730.json",
+      "Bayesian_H0H5_概率更新_20260731.json",
+      "Bayesian_H0H5_概率更新_20260803.json",
+      "Bayesian_H0H5_概率更新_20260804.json",
+      "Bayesian_H0H5_概率更新_20260805.json",
+      "Bayesian_H0H5_概率更新_20260806.json",
+      "Bayesian_H0H5_概率更新_20260807.json",
+      "Bayesian_H0H5_概率更新_20260810.json",
+      "Bayesian_H0H5_概率更新_20260811.json",
+      "Bayesian_H0H5_概率更新_20260812.json",
+      "Bayesian_H0H5_概率更新_20260813.json",
+      "Bayesian_H0H5_概率更新_20260814.json",
+      "Bayesian_H0H5_概率更新_20260817.json",
+      "Bayesian_H0H5_概率更新_20260818.json",
+      "Bayesian_H0H5_概率更新_20260819.json",
+      "Bayesian_H0H5_概率更新_20260820.json",
+      "Bayesian_H0H5_概率更新_20260821.json",
+      "Bayesian_H0H5_概率更新_20260824.json",
+      "Bayesian_H0H5_概率更新_20260825.json",
+      "Bayesian_H0H5_概率更新_20260826.json",
+      "Bayesian_H0H5_概率更新_20260827.json",
+      "Bayesian_H0H5_概率更新_20260828.json",
+      "Bayesian_H0H5_概率更新_20260830.json",
+      "Bayesian_H0H5_概率更新_20260903.json",
+      "Bayesian_H0H5_概率更新_20260904.json",
+      "Bayesian_H0H5_概率更新_20260907.json",
+      "Bayesian_H0H5_概率更新_20260909.json",
+      "Bayesian_H0H5_概率更新_20260910.json",
+      "Bayesian_H0H5_概率更新_20260911.json",
+      "Bayesian_H0H5_概率更新_20260914.json",
+      "Bayesian_H0H5_概率更新_20260915.json",
+      "Bayesian_H0H5_概率更新_20260916.json",
+      "Bayesian_H0H5_概率更新_20260917.json",
+      "Bayesian_H0H5_概率更新_20260918.json",
+      "Bayesian_H0H5_概率更新_20260921.json",
+      "Bayesian_H0H5_概率更新_20260922.json",
+      "Bayesian_H0H5_概率更新_20260923.json",
+      "Bayesian_H0H5_概率更新_20260928.json",
+      "Bayesian_H0H5_概率更新_20260929.json",
+      "Bayesian_H0H5_概率更新_20260930.json",
+      "Bayesian_H0H5_概率更新_20261001.json",
+      "Bayesian_H0H5_概率更新_20261002.json",
+      "Bayesian_H0H5_概率更新_20261005.json",
+      "Bayesian_H0H5_概率更新_20261006.json",
+      "Bayesian_H0H5_概率更新_20261007.json",
+      "Bayesian_H0H5_概率更新_20261008.json",
+      "Bayesian_H0H5_概率更新_20261009.json",
+      "Bayesian_H0H5_概率更新_20261012.json",
+      "Bayesian_H0H5_概率更新_20261013.json",
+      "Bayesian_H0H5_概率更新_20261014.json",
+      "Bayesian_H0H5_概率更新_20261015.json",
+      "Bayesian_H0H5_概率更新_20261016.json",
+      "Bayesian_H0H5_概率更新_20261019.json"
+    ],
+    "file_count": 72
+  },
+  "src/obsidian/01-股票投研/data/standardized": {
+    "dirs": [],
+    "files": [
+      "stock_scan.json",
+      "stock_summary.md",
+      "stocks.jsonl"
+    ],
+    "file_count": 3
+  },
+  "src/data": {
+    "dirs": [
+      "processed",
+      "raw"
+    ],
+    "files": [],
+    "file_count": 0
+  },
+  "src/data/processed": {
+    "dirs": [
+      "portfolio",
+      "rankings"
+    ],
+    "files": [],
+    "file_count": 0
+  },
+  "src/data/processed/rankings": {
+    "dirs": [],
+    "files": [
+      "backtest_dashboard.html",
+      "backtest_signals.json",
+      "risk_anomalies.html",
+      "risk_anomalies.json",
+      "stock_ranking.html",
+      "stock_ranking.json"
+    ],
+    "file_count": 6
+  },
+  "src/data/processed/portfolio": {
+    "dirs": [],
+    "files": [
+      "stock_portfolio_enriched.json"
+    ],
+    "file_count": 1
+  },
+  "src/data/raw": {
+    "dirs": [
+      "anchor",
+      "fundamentals",
+      "prices"
+    ],
+    "files": [
+      "README.md"
+    ],
+    "file_count": 1
+  },
+  "src/data/raw/fundamentals": {
+    "dirs": [],
+    "files": [
+      "anchor_status.json"
+    ],
+    "file_count": 1
+  },
+  "src/data/raw/prices": {
+    "dirs": [],
+    "files": [
+      "realtime_prices_20260923.json"
+    ],
+    "file_count": 1
+  },
+  "src/data/raw/anchor": {
+    "dirs": [],
+    "files": [
+      "anchor_status_2026-09-23.json"
+    ],
+    "file_count": 1
+  },
+  "src/trading": {
+    "dirs": [
+      "core",
+      "logs",
+      "reports",
+      "strategies",
+      "utils"
+    ],
+    "files": [
+      "CODEX.md",
+      "alerts.json",
+      "auto_trade_state.json",
+      "batch_results.json",
+      "config.py",
+      "cron_helper.py",
+      "discovered_pairs.json",
+      "discovered_pairs_v2.json",
+      "model.pkl",
+      "run.py",
+      "run_pairs.py",
+      "run_pipeline.py",
+      "sim_trading_state.json"
+    ],
+    "file_count": 13
+  },
+  "src/trading/core": {
+    "dirs": [],
+    "files": [
+      "__init__.py",
+      "backtest.py",
+      "data.py"
+    ],
+    "file_count": 3
+  },
+  "src/trading/strategies": {
+    "dirs": [
+      "ml",
+      "pairs",
+      "rotation"
+    ],
+    "files": [
+      "__init__.py"
+    ],
+    "file_count": 1
+  },
+  "src/trading/strategies/pairs": {
+    "dirs": [],
+    "files": [
+      "__init__.py",
+      "auto_trader.py",
+      "engine.py",
+      "runner.py"
+    ],
+    "file_count": 4
+  },
+  "src/trading/strategies/ml": {
+    "dirs": [],
+    "files": [
+      "__init__.py",
+      "alerts.py",
+      "forward.py",
+      "model.py",
+      "optimizer.py",
+      "pipeline.py",
+      "walk_forward.py"
+    ],
+    "file_count": 7
+  },
+  "src/trading/strategies/rotation": {
+    "dirs": [],
+    "files": [
+      "__init__.py",
+      "engine.py"
+    ],
+    "file_count": 2
+  },
+  "src/trading/utils": {
+    "dirs": [],
+    "files": [
+      "__init__.py",
+      "add_pairs_v2.py",
+      "batch_add_pairs.py",
+      "pairs_discovery.py",
+      "pairs_discovery_v2.py",
+      "report.py"
+    ],
+    "file_count": 6
+  },
+  "src/trading/logs": {
+    "dirs": [],
+    "files": [
+      "alert.log",
+      "auto_trade.log",
+      "auto_trade_log.csv",
+      "ml_signal.log",
+      "pairs_report.log",
+      "pairs_signal.log",
+      "pairs_weekly.log"
+    ],
+    "file_count": 7
+  },
+  "src/trading/reports": {
+    "dirs": [
+      "daily",
+      "discovery_cache",
+      "discovery_cache_v2",
+      "html"
+    ],
+    "files": [],
+    "file_count": 0
+  },
+  "src/trading/reports/html": {
+    "dirs": [],
+    "files": [
+      "index.html"
+    ],
+    "file_count": 1
+  },
+  "src/trading/reports/daily": {
+    "dirs": [],
+    "files": [
+      "2026-07-14.md",
+      "2026-07-16.md",
+      "2026-08-13.md",
+      "2026-08-14.md",
+      "2026-08-17.md",
+      "2026-08-18.md",
+      "2026-08-19.md",
+      "2026-08-20.md",
+      "2026-08-21.md",
+      "2026-08-24.md",
+      "2026-08-25.md",
+      "2026-08-26.md",
+      "2026-08-27.md",
+      "2026-08-28.md",
+      "2026-08-31.md",
+      "2026-09-01.md",
+      "2026-09-02.md",
+      "2026-09-03.md",
+      "2026-09-04.md",
+      "2026-09-07.md",
+      "2026-09-08.md",
+      "2026-09-09.md",
+      "2026-09-10.md",
+      "2026-09-11.md",
+      "2026-09-14.md",
+      "2026-09-15.md",
+      "2026-09-16.md",
+      "2026-09-17.md",
+      "2026-09-18.md",
+      "2026-09-21.md",
+      "2026-09-22.md",
+      "2026-09-23.md",
+      "2026-09-24.md",
+      "2026-09-25.md",
+      "2026-09-28.md",
+      "2026-09-29.md",
+      "2026-09-30.md",
+      "2026-10-01.md",
+      "2026-10-02.md",
+      "2026-10-05.md",
+      "2026-10-06.md",
+      "2026-10-07.md",
+      "2026-10-08.md",
+      "2026-10-09.md",
+      "2026-10-12.md",
+      "2026-10-13.md",
+      "2026-10-14.md",
+      "2026-10-15.md",
+      "2026-10-16.md",
+      "2026-10-19.md"
+    ],
+    "file_count": 50
+  },
+  "src/trading/reports/discovery_cache_v2": {
+    "dirs": [],
+    "files": [
+      "all_stocks.json"
+    ],
+    "file_count": 1
+  },
+  "src/trading/reports/discovery_cache": {
+    "dirs": [],
+    "files": [
+      "all_stocks_cache.json"
+    ],
+    "file_count": 1
+  }
+}

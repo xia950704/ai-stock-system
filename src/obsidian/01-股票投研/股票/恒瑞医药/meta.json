@@ -1,0 +1,33 @@
+{
+  "name": "恒瑞医药",
+  "code": "600276",
+  "source_dir": "恒瑞医药_600276_SS",
+  "data_source": "stock_analysis",
+  "data_date": "2026-05-26",
+  "price_range": {
+    "start_date": "2000-10-18",
+    "end_date": "2026-05-26",
+    "start_price": 27.7,
+    "current_price": 49.2,
+    "high": 116.87,
+    "low": 7.44,
+    "trading_days": 6161
+  },
+  "files": {
+    "investment_note": "投资笔记.md",
+    "tech_analysis": "技术分析.md",
+    "events": "事件时间线.md",
+    "pipeline": "业务管线.md",
+    "valuation": "估值追踪.md",
+    "rd_pipeline": "研发管线.md",
+    "charts": [
+      "图表/full_history_kline.png",
+      "图表/recent5y_candle.png"
+    ],
+    "csv_data": [
+      "full_history_daily.csv",
+      "events.csv"
+    ]
+  },
+  "status": "integrated"
+}

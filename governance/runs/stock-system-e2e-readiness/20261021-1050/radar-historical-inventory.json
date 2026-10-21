@@ -1,0 +1,397 @@
+{
+  "source_dir": "/Users/xiashuang/harness/bandwidth_radar",
+  "report_count": 25,
+  "date_range": {
+    "start": "2026-09-02",
+    "end": "2026-10-20"
+  },
+  "coverage_days": {
+    "sh600276": 21,
+    "sz000963": 25,
+    "sz002262": 25,
+    "sz002422": 22,
+    "sh603259": 25,
+    "sh688506": 3,
+    "sh512400": 0,
+    "sh688331": 19
+  },
+  "complete_pool_days": 0,
+  "complete_pool_dates": [],
+  "reports": [
+    {
+      "date": "2026-09-02",
+      "path": "/Users/xiashuang/harness/bandwidth_radar/radar_report_2026-09-02.md",
+      "table_row_count": 50,
+      "pool_present": {
+        "sh600276": true,
+        "sz000963": true,
+        "sz002262": true,
+        "sz002422": true,
+        "sh603259": true,
+        "sh688506": false,
+        "sh512400": false,
+        "sh688331": true
+      }
+    },
+    {
+      "date": "2026-09-03",
+      "path": "/Users/xiashuang/harness/bandwidth_radar/radar_report_2026-09-03.md",
+      "table_row_count": 56,
+      "pool_present": {
+        "sh600276": true,
+        "sz000963": true,
+        "sz002262": true,
+        "sz002422": true,
+        "sh603259": true,
+        "sh688506": false,
+        "sh512400": false,
+        "sh688331": true
+      }
+    },
+    {
+      "date": "2026-09-04",
+      "path": "/Users/xiashuang/harness/bandwidth_radar/radar_report_2026-09-04.md",
+      "table_row_count": 57,
+      "pool_present": {
+        "sh600276": true,
+        "sz000963": true,
+        "sz002262": true,
+        "sz002422": true,
+        "sh603259": true,
+        "sh688506": false,
+        "sh512400": false,
+        "sh688331": true
+      }
+    },
+    {
+      "date": "2026-09-07",
+      "path": "/Users/xiashuang/harness/bandwidth_radar/radar_report_2026-09-07.md",
+      "table_row_count": 56,
+      "pool_present": {
+        "sh600276": true,
+        "sz000963": true,
+        "sz002262": true,
+        "sz002422": true,
+        "sh603259": true,
+        "sh688506": false,
+        "sh512400": false,
+        "sh688331": true
+      }
+    },
+    {
+      "date": "2026-09-09",
+      "path": "/Users/xiashuang/harness/bandwidth_radar/radar_report_2026-09-09.md",
+      "table_row_count": 57,
+      "pool_present": {
+        "sh600276": true,
+        "sz000963": true,
+        "sz002262": true,
+        "sz002422": true,
+        "sh603259": true,
+        "sh688506": false,
+        "sh512400": false,
+        "sh688331": true
+      }
+    },
+    {
+      "date": "2026-09-10",
+      "path": "/Users/xiashuang/harness/bandwidth_radar/radar_report_2026-09-10.md",
+      "table_row_count": 55,
+      "pool_present": {
+        "sh600276": false,
+        "sz000963": true,
+        "sz002262": true,
+        "sz002422": true,
+        "sh603259": true,
+        "sh688506": false,
+        "sh512400": false,
+        "sh688331": true
+      }
+    },
+    {
+      "date": "2026-09-11",
+      "path": "/Users/xiashuang/harness/bandwidth_radar/radar_report_2026-09-11.md",
+      "table_row_count": 54,
+      "pool_present": {
+        "sh600276": false,
+        "sz000963": true,
+        "sz002262": true,
+        "sz002422": true,
+        "sh603259": true,
+        "sh688506": false,
+        "sh512400": false,
+        "sh688331": true
+      }
+    },
+    {
+      "date": "2026-09-14",
+      "path": "/Users/xiashuang/harness/bandwidth_radar/radar_report_2026-09-14.md",
+      "table_row_count": 56,
+      "pool_present": {
+        "sh600276": false,
+        "sz000963": true,
+        "sz002262": true,
+        "sz002422": true,
+        "sh603259": true,
+        "sh688506": true,
+        "sh512400": false,
+        "sh688331": true
+      }
+    },
+    {
+      "date": "2026-09-15",
+      "path": "/Users/xiashuang/harness/bandwidth_radar/radar_report_2026-09-15.md",
+      "table_row_count": 54,
+      "pool_present": {
+        "sh600276": false,
+        "sz000963": true,
+        "sz002262": true,
+        "sz002422": true,
+        "sh603259": true,
+        "sh688506": false,
+        "sh512400": false,
+        "sh688331": true
+      }
+    },
+    {
+      "date": "2026-09-16",
+      "path": "/Users/xiashuang/harness/bandwidth_radar/radar_report_2026-09-16.md",
+      "table_row_count": 56,
+      "pool_present": {
+        "sh600276": true,
+        "sz000963": true,
+        "sz002262": true,
+        "sz002422": true,
+        "sh603259": true,
+        "sh688506": false,
+        "sh512400": false,
+        "sh688331": true
+      }
+    },
+    {
+      "date": "2026-09-18",
+      "path": "/Users/xiashuang/harness/bandwidth_radar/radar_report_2026-09-18.md",
+      "table_row_count": 56,
+      "pool_present": {
+        "sh600276": true,
+        "sz000963": true,
+        "sz002262": true,
+        "sz002422": true,
+        "sh603259": true,
+        "sh688506": false,
+        "sh512400": false,
+        "sh688331": true
+      }
+    },
+    {
+      "date": "2026-09-21",
+      "path": "/Users/xiashuang/harness/bandwidth_radar/radar_report_2026-09-21.md",
+      "table_row_count": 58,
+      "pool_present": {
+        "sh600276": true,
+        "sz000963": true,
+        "sz002262": true,
+        "sz002422": true,
+        "sh603259": true,
+        "sh688506": true,
+        "sh512400": false,
+        "sh688331": true
+      }
+    },
+    {
+      "date": "2026-09-30",
+      "path": "/Users/xiashuang/harness/bandwidth_radar/radar_report_2026-09-30.md",
+      "table_row_count": 56,
+      "pool_present": {
+        "sh600276": true,
+        "sz000963": true,
+        "sz002262": true,
+        "sz002422": true,
+        "sh603259": true,
+        "sh688506": false,
+        "sh512400": false,
+        "sh688331": true
+      }
+    },
+    {
+      "date": "2026-10-01",
+      "path": "/Users/xiashuang/harness/bandwidth_radar/radar_report_2026-10-01.md",
+      "table_row_count": 56,
+      "pool_present": {
+        "sh600276": true,
+        "sz000963": true,
+        "sz002262": true,
+        "sz002422": true,
+        "sh603259": true,
+        "sh688506": false,
+        "sh512400": false,
+        "sh688331": true
+      }
+    },
+    {
+      "date": "2026-10-02",
+      "path": "/Users/xiashuang/harness/bandwidth_radar/radar_report_2026-10-02.md",
+      "table_row_count": 56,
+      "pool_present": {
+        "sh600276": true,
+        "sz000963": true,
+        "sz002262": true,
+        "sz002422": true,
+        "sh603259": true,
+        "sh688506": false,
+        "sh512400": false,
+        "sh688331": true
+      }
+    },
+    {
+      "date": "2026-10-07",
+      "path": "/Users/xiashuang/harness/bandwidth_radar/radar_report_2026-10-07.md",
+      "table_row_count": 56,
+      "pool_present": {
+        "sh600276": true,
+        "sz000963": true,
+        "sz002262": true,
+        "sz002422": true,
+        "sh603259": true,
+        "sh688506": false,
+        "sh512400": false,
+        "sh688331": true
+      }
+    },
+    {
+      "date": "2026-10-08",
+      "path": "/Users/xiashuang/harness/bandwidth_radar/radar_report_2026-10-08.md",
+      "table_row_count": 56,
+      "pool_present": {
+        "sh600276": true,
+        "sz000963": true,
+        "sz002262": true,
+        "sz002422": true,
+        "sh603259": true,
+        "sh688506": false,
+        "sh512400": false,
+        "sh688331": true
+      }
+    },
+    {
+      "date": "2026-10-09",
+      "path": "/Users/xiashuang/harness/bandwidth_radar/radar_report_2026-10-09.md",
+      "table_row_count": 57,
+      "pool_present": {
+        "sh600276": true,
+        "sz000963": true,
+        "sz002262": true,
+        "sz002422": true,
+        "sh603259": true,
+        "sh688506": false,
+        "sh512400": false,
+        "sh688331": true
+      }
+    },
+    {
+      "date": "2026-10-12",
+      "path": "/Users/xiashuang/harness/bandwidth_radar/radar_report_2026-10-12.md",
+      "table_row_count": 56,
+      "pool_present": {
+        "sh600276": true,
+        "sz000963": true,
+        "sz002262": true,
+        "sz002422": false,
+        "sh603259": true,
+        "sh688506": false,
+        "sh512400": false,
+        "sh688331": true
+      }
+    },
+    {
+      "date": "2026-10-13",
+      "path": "/Users/xiashuang/harness/bandwidth_radar/radar_report_2026-10-13.md",
+      "table_row_count": 54,
+      "pool_present": {
+        "sh600276": true,
+        "sz000963": true,
+        "sz002262": true,
+        "sz002422": false,
+        "sh603259": true,
+        "sh688506": false,
+        "sh512400": false,
+        "sh688331": false
+      }
+    },
+    {
+      "date": "2026-10-14",
+      "path": "/Users/xiashuang/harness/bandwidth_radar/radar_report_2026-10-14.md",
+      "table_row_count": 54,
+      "pool_present": {
+        "sh600276": true,
+        "sz000963": true,
+        "sz002262": true,
+        "sz002422": false,
+        "sh603259": true,
+        "sh688506": false,
+        "sh512400": false,
+        "sh688331": false
+      }
+    },
+    {
+      "date": "2026-10-15",
+      "path": "/Users/xiashuang/harness/bandwidth_radar/radar_report_2026-10-15.md",
+      "table_row_count": 55,
+      "pool_present": {
+        "sh600276": true,
+        "sz000963": true,
+        "sz002262": true,
+        "sz002422": true,
+        "sh603259": true,
+        "sh688506": false,
+        "sh512400": false,
+        "sh688331": false
+      }
+    },
+    {
+      "date": "2026-10-16",
+      "path": "/Users/xiashuang/harness/bandwidth_radar/radar_report_2026-10-16.md",
+      "table_row_count": 55,
+      "pool_present": {
+        "sh600276": true,
+        "sz000963": true,
+        "sz002262": true,
+        "sz002422": true,
+        "sh603259": true,
+        "sh688506": false,
+        "sh512400": false,
+        "sh688331": false
+      }
+    },
+    {
+      "date": "2026-10-19",
+      "path": "/Users/xiashuang/harness/bandwidth_radar/radar_report_2026-10-19.md",
+      "table_row_count": 55,
+      "pool_present": {
+        "sh600276": true,
+        "sz000963": true,
+        "sz002262": true,
+        "sz002422": true,
+        "sh603259": true,
+        "sh688506": false,
+        "sh512400": false,
+        "sh688331": false
+      }
+    },
+    {
+      "date": "2026-10-20",
+      "path": "/Users/xiashuang/harness/bandwidth_radar/radar_report_2026-10-20.md",
+      "table_row_count": 54,
+      "pool_present": {
+        "sh600276": true,
+        "sz000963": true,
+        "sz002262": true,
+        "sz002422": true,
+        "sh603259": true,
+        "sh688506": true,
+        "sh512400": false,
+        "sh688331": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+[PASS] T-D01 anchor_status.json 加载成功
+[PASS] T-D02 缺失文件返回 None + 错误
+[PASS] T-D03 无效 JSON 返回错误
+[PASS] T-D04 代码标准化 sh600276
+[PASS] T-D04b 代码标准化 sz000963
+[PASS] T-D04c 代码标准化纯数字
+[PASS] T-T01 周六为非交易日
+[PASS] T-T01b 周日为非交易日
+[PASS] T-T01c 周三为交易日
+[PASS] T-T02 周六 likely_trading_day=False
+[PASS] T-T02b 周三 likely_trading_day=True
+[PASS] T-M01 大盘研判返回 verdict
+[PASS] T-M01b 大盘研判有局限说明
+[PASS] T-M02 无数据时无法判断
+[PASS] T-J01 Mock JEV 正常返回
+[PASS] T-J02 Mock JEV 失败不等于中性
+[PASS] T-J02b 失败状态可追溯
+[PASS] T-J03 401 -> auth
+[PASS] T-J03b 402 -> insufficient
+[PASS] T-J03c 403 -> forbidden
+[PASS] T-J03d 404 -> not_found
+[PASS] T-J03e 400 model_na
+[PASS] T-J03f 500 -> server_error
+[PASS] T-S01 股票分析返回完整结构
+[PASS] T-S01b 行动建议有效
+[PASS] T-S02 锚价失效股票行动为 OBSERVE
+[PASS] T-R01 报告生成非空
+[PASS] T-R01b 报告包含必要章节
+
+=== test_engine: 28 passed, 0 failed ===

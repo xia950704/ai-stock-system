@@ -1,0 +1,33 @@
+{
+  "name": "百利天恒",
+  "code": "688506",
+  "source_dir": "百利天恒_688506_SS",
+  "data_source": "stock_analysis",
+  "data_date": "2026-05-26",
+  "price_range": {
+    "start_date": "2023-01-06",
+    "end_date": "2026-05-26",
+    "start_price": 32.05,
+    "current_price": 237.0,
+    "high": 414.02,
+    "low": 28.75,
+    "trading_days": 816
+  },
+  "files": {
+    "investment_note": "投资笔记.md",
+    "tech_analysis": "技术分析.md",
+    "events": "事件时间线.md",
+    "pipeline": "业务管线.md",
+    "valuation": "估值追踪.md",
+    "rd_pipeline": "研发管线.md",
+    "charts": [
+      "图表/full_history_kline.png",
+      "图表/recent5y_candle.png"
+    ],
+    "csv_data": [
+      "full_history_daily.csv",
+      "events.csv"
+    ]
+  },
+  "status": "integrated"
+}

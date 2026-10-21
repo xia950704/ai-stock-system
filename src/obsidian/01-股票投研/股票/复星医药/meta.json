@@ -1,0 +1,33 @@
+{
+  "name": "复星医药",
+  "code": "600196",
+  "source_dir": "复星医药_600196_SS",
+  "data_source": "stock_analysis",
+  "data_date": "2026-05-26",
+  "price_range": {
+    "start_date": "1998-08-07",
+    "end_date": "2026-05-26",
+    "start_price": 24.7,
+    "current_price": 23.17,
+    "high": 91.69,
+    "low": 4.15,
+    "trading_days": 6652
+  },
+  "files": {
+    "investment_note": "投资笔记.md",
+    "tech_analysis": "技术分析.md",
+    "events": "事件时间线.md",
+    "pipeline": "业务管线.md",
+    "valuation": "估值追踪.md",
+    "rd_pipeline": "研发管线.md",
+    "charts": [
+      "图表/full_history_kline.png",
+      "图表/recent5y_candle.png"
+    ],
+    "csv_data": [
+      "full_history_daily.csv",
+      "events.csv"
+    ]
+  },
+  "status": "integrated"
+}

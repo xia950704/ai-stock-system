@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📊 股票综合排名 - 2026-10-19</title>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:#0f1117; color:#e0e0e0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; padding:20px; }
+h1 { font-size:24px; margin-bottom:8px; color:#fff; }
+.subtitle { color:#888; font-size:14px; margin-bottom:24px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; margin-bottom:24px; }
+.card { background:#1a1d27; border-radius:12px; padding:20px; border:1px solid #2a2d37; }
+.card h3 { font-size:14px; color:#888; margin-bottom:8px; }
+.card .value { font-size:28px; font-weight:700; }
+.card .sub { font-size:12px; color:#666; margin-top:4px; }
+.chart-card { background:#1a1d27; border-radius:12px; padding:16px; border:1px solid #2a2d37; margin-bottom:16px; }
+.chart-card h3 { font-size:14px; color:#888; margin-bottom:12px; }
+.chart { width:100%; height:400px; }
+table { width:100%; border-collapse:collapse; font-size:13px; }
+th { text-align:left; padding:8px 10px; color:#888; font-weight:500; border-bottom:1px solid #2a2d37; }
+td { padding:8px 10px; border-bottom:1px solid #22252f; }
+tr:hover td { background:rgba(255,255,255,0.03); }
+</style>
+</head>
+<body>
+<h1>📊 股票综合评分排名</h1>
+<p class="subtitle">2026-10-19 | 26 只股票 | 买入信号 0 | 观望 0 | 卖出 26</p>
+
+<div class="grid">
+  <div class="card"><h3>买入信号</h3><div class="value" style="color:#00a854">0</div></div>
+  <div class="card"><h3>观望</h3><div class="value" style="color:#fa8c16">0</div></div>
+  <div class="card"><h3>卖出信号</h3><div class="value" style="color:#d4380d">26</div></div>
+  <div class="card"><h3>综合评分均值</h3><div class="value">29.2</div></div>
+</div>
+
+<div class="chart-card">
+  <h3>📈 综合评分排行</h3>
+  <div id="rankChart" class="chart"></div>
+</div>
+<script>
+const rankChart = echarts.init(document.getElementById('rankChart'));
+const data = [{"name": "君实生物", "score": 32.4}, {"name": "天宇股份", "score": 32.3}, {"name": "百润股份", "score": 32.3}, {"name": "复星医药", "score": 31.7}, {"name": "药明康德", "score": 31.4}, {"name": "贝达药业", "score": 31.2}, {"name": "恒瑞医药", "score": 31.1}, {"name": "沃森生物", "score": 30.9}, {"name": "百济神州", "score": 30.8}, {"name": "人福医药", "score": 30.6}, {"name": "恩华药业", "score": 30.5}, {"name": "健民集团", "score": 29.6}, {"name": "华东医药", "score": 28.9}, {"name": "智飞生物", "score": 28.4}, {"name": "万泰生物", "score": 28.3}, {"name": "国药股份", "score": 27.8}, {"name": "上海医药", "score": 27.7}, {"name": "普洛药业", "score": 27.4}, {"name": "爱尔眼科", "score": 27.4}, {"name": "荣昌生物", "score": 27.4}, {"name": "心脉医疗", "score": 27.2}, {"name": "乐普医疗", "score": 26.9}, {"name": "天坛生物", "score": 26.9}, {"name": "科伦药业", "score": 26.6}, {"name": "用友网络", "score": 26.3}, {"name": "百利天恒", "score": 26.3}];
+const colors = data.map(d => d.score >= 65 ? '#00a854' : (d.score >= 35 ? '#fa8c16' : '#d4380d'));
+rankChart.setOption({
+  tooltip: { trigger: 'axis' },
+  grid: { left: '15%', right: '5%', bottom: '15%' },
+  xAxis: { type: 'category', data: data.map(d => d.name), axisLabel: { color: '#888', rotate: 45, fontSize: 10 } },
+  yAxis: { type: 'value', min: 0, max: 100, axisLabel: { color: '#888' }, splitLine: { lineStyle: { color: '#2a2d37' } } },
+  series: [{
+    type: 'bar', data: data.map((d, i) => ({ value: d.score, itemStyle: { color: colors[i] } })),
+    label: { show: true, position: 'top', formatter: '{c}', color: '#888', fontSize: 10 }
+  }]
+});
+</script>
+
+<div class="chart-card">
+  <h3>📋 完整排名</h3>
+  <table><thead><tr>
+    <th>名称</th><th>板块</th><th>综合评分</th><th>技术分</th><th>ML加成</th><th>最新价</th><th>信号</th>
+  </tr></thead><tbody>
+  <tr>
+    <td>君实生物</td>
+    <td>CXO</td>
+    <td style="color:#d4380d;font-weight:700">32.4</td>
+    <td>32.4</td>
+    <td>0</td>
+    <td>35.96</td>
+    <td style="font-size:11px">rsi:观望 ma:买入 macd:观望 boll:卖出</td>
+  </tr><tr>
+    <td>天宇股份</td>
+    <td>CXO</td>
+    <td style="color:#d4380d;font-weight:700">32.3</td>
+    <td>32.3</td>
+    <td>0</td>
+    <td>22.47</td>
+    <td style="font-size:11px">rsi:观望 ma:买入 macd:观望 boll:卖出</td>
+  </tr><tr>
+    <td>百润股份</td>
+    <td>消费</td>
+    <td style="color:#d4380d;font-weight:700">32.3</td>
+    <td>32.3</td>
+    <td>0</td>
+    <td>19.26</td>
+    <td style="font-size:11px">rsi:观望 ma:买入 macd:观望 boll:卖出</td>
+  </tr><tr>
+    <td>复星医药</td>
+    <td>CXO</td>
+    <td style="color:#d4380d;font-weight:700">31.7</td>
+    <td>31.7</td>
+    <td>0</td>
+    <td>23.84</td>
+    <td style="font-size:11px">rsi:观望 ma:买入 macd:观望 boll:卖出</td>
+  </tr><tr>
+    <td>药明康德</td>
+    <td>CXO</td>
+    <td style="color:#d4380d;font-weight:700">31.4</td>
+    <td>31.4</td>
+    <td>0</td>
+    <td>164.87</td>
+    <td style="font-size:11px">rsi:观望 ma:买入 macd:观望 boll:卖出</td>
+  </tr><tr>
+    <td>贝达药业</td>
+    <td>创新药</td>
+    <td style="color:#d4380d;font-weight:700">31.2</td>
+    <td>31.2</td>
+    <td>0</td>
+    <td>50.55</td>
+    <td style="font-size:11px">rsi:观望 ma:买入 macd:观望 boll:卖出</td>
+  </tr><tr>
+    <td>恒瑞医药</td>
+    <td>CXO</td>
+    <td style="color:#d4380d;font-weight:700">31.1</td>
+    <td>31.1</td>
+    <td>0</td>
+    <td>46.77</td>
+    <td style="font-size:11px">rsi:观望 ma:买入 macd:观望 boll:卖出</td>
+  </tr><tr>
+    <td>沃森生物</td>
+    <td>疫苗</td>
+    <td style="color:#d4380d;font-weight:700">30.9</td>
+    <td>30.9</td>
+    <td>0</td>
+    <td>14.29</td>
+    <td style="font-size:11px">rsi:观望 ma:买入 macd:观望 boll:卖出</td>
+  </tr><tr>
+    <td>百济神州</td>
+    <td>CXO</td>
+    <td style="color:#d4380d;font-weight:700">30.8</td>
+    <td>30.8</td>
+    <td>0</td>
+    <td>265.0</td>
+    <td style="font-size:11px">rsi:观望 ma:买入 macd:观望 boll:观望</td>
+  </tr><tr>
+    <td>人福医药</td>
+    <td>麻醉药</td>
+    <td style="color:#d4380d;font-weight:700">30.6</td>
+    <td>30.6</td>
+    <td>0</td>
+    <td>19.11</td>
+    <td style="font-size:11px">rsi:观望 ma:买入 macd:观望 boll:卖出</td>
+  </tr><tr>
+    <td>恩华药业</td>
+    <td>创新药</td>
+    <td style="color:#d4380d;font-weight:700">30.5</td>
+    <td>30.5</td>
+    <td>0</td>
+    <td>22.82</td>
+    <td style="font-size:11px">rsi:观望 ma:观望 macd:观望 boll:卖出</td>
+  </tr><tr>
+    <td>健民集团</td>
+    <td>中药</td>
+    <td style="color:#d4380d;font-weight:700">29.6</td>
+    <td>29.6</td>
+    <td>0</td>
+    <td>26.7</td>
+    <td style="font-size:11px">rsi:观望 ma:观望 macd:观望 boll:观望</td>
+  </tr><tr>
+    <td>华东医药</td>
+    <td>CXO</td>
+    <td style="color:#d4380d;font-weight:700">28.9</td>
+    <td>28.9</td>
+    <td>0</td>
+    <td>27.55</td>
+    <td style="font-size:11px">rsi:观望 ma:观望 macd:观望 boll:卖出</td>
+  </tr><tr>
+    <td>智飞生物</td>
+    <td>疫苗</td>
+    <td style="color:#d4380d;font-weight:700">28.4</td>
+    <td>28.4</td>
+    <td>0</td>
+    <td>13.61</td>
+    <td style="font-size:11px">rsi:观望 ma:观望 macd:观望 boll:卖出</td>
+  </tr><tr>
+    <td>万泰生物</td>
+    <td>疫苗</td>
+    <td style="color:#d4380d;font-weight:700">28.3</td>
+    <td>28.3</td>
+    <td>0</td>
+    <td>27.16</td>
+    <td style="font-size:11px">rsi:观望 ma:观望 macd:观望 boll:观望</td>
+  </tr><tr>
+    <td>国药股份</td>
+    <td>医药商业</td>
+    <td style="color:#d4380d;font-weight:700">27.8</td>
+    <td>27.8</td>
+    <td>0</td>
+    <td>26.06</td>
+    <td style="font-size:11px">rsi:观望 ma:卖出 macd:观望 boll:观望</td>
+  </tr><tr>
+    <td>上海医药</td>
+    <td>医药商业</td>
+    <td style="color:#d4380d;font-weight:700">27.7</td>
+    <td>27.7</td>
+    <td>0</td>
+    <td>16.14</td>
+    <td style="font-size:11px">rsi:观望 ma:卖出 macd:观望 boll:观望</td>
+  </tr><tr>
+    <td>普洛药业</td>
+    <td>CXO</td>
+    <td style="color:#d4380d;font-weight:700">27.4</td>
+    <td>27.4</td>
+    <td>0</td>
+    <td>12.39</td>
+    <td style="font-size:11px">rsi:观望 ma:卖出 macd:观望 boll:观望</td>
+  </tr><tr>
+    <td>爱尔眼科</td>
+    <td>眼科</td>
+    <td style="color:#d4380d;font-weight:700">27.4</td>
+    <td>27.4</td>
+    <td>0</td>
+    <td>7.93</td>
+    <td style="font-size:11px">rsi:观望 ma:卖出 macd:观望 boll:买入</td>
+  </tr><tr>
+    <td>荣昌生物</td>
+    <td>CXO</td>
+    <td style="color:#d4380d;font-weight:700">27.4</td>
+    <td>27.4</td>
+    <td>0</td>
+    <td>117.75</td>
+    <td style="font-size:11px">rsi:观望 ma:卖出 macd:观望 boll:观望</td>
+  </tr><tr>
+    <td>心脉医疗</td>
+    <td>CXO</td>
+    <td style="color:#d4380d;font-weight:700">27.2</td>
+    <td>27.2</td>
+    <td>0</td>
+    <td>85.07</td>
+    <td style="font-size:11px">rsi:观望 ma:卖出 macd:观望 boll:观望</td>
+  </tr><tr>
+    <td>乐普医疗</td>
+    <td>医疗器械</td>
+    <td style="color:#d4380d;font-weight:700">26.9</td>
+    <td>26.9</td>
+    <td>0</td>
+    <td>11.59</td>
+    <td style="font-size:11px">rsi:观望 ma:卖出 macd:观望 boll:观望</td>
+  </tr><tr>
+    <td>天坛生物</td>
+    <td>疫苗</td>
+    <td style="color:#d4380d;font-weight:700">26.9</td>
+    <td>26.9</td>
+    <td>0</td>
+    <td>12.47</td>
+    <td style="font-size:11px">rsi:观望 ma:卖出 macd:观望 boll:卖出</td>
+  </tr><tr>
+    <td>科伦药业</td>
+    <td>CXO</td>
+    <td style="color:#d4380d;font-weight:700">26.6</td>
+    <td>26.6</td>
+    <td>0</td>
+    <td>40.94</td>
+    <td style="font-size:11px">rsi:观望 ma:卖出 macd:观望 boll:观望</td>
+  </tr><tr>
+    <td>用友网络</td>
+    <td></td>
+    <td style="color:#d4380d;font-weight:700">26.3</td>
+    <td>26.3</td>
+    <td>0</td>
+    <td>9.24</td>
+    <td style="font-size:11px">rsi:观望 ma:卖出 macd:观望 boll:买入</td>
+  </tr><tr>
+    <td>百利天恒</td>
+    <td>创新药</td>
+    <td style="color:#d4380d;font-weight:700">26.3</td>
+    <td>26.3</td>
+    <td>0</td>
+    <td>243.2</td>
+    <td style="font-size:11px">rsi:观望 ma:卖出 macd:观望 boll:观望</td>
+  </tr>
+  </tbody></table>
+</div>
+</body>
+</html>

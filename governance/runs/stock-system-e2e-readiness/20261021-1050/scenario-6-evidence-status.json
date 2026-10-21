@@ -1,0 +1,73 @@
+[
+  {
+    "case": "multi_source_confirmed",
+    "claim": {
+      "claim_id": "clm-ab817faa483e",
+      "claim": "测试：两项独立可靠来源",
+      "status": "multi_source_confirmed",
+      "independent_sources": 2,
+      "best_tier": 1,
+      "top_sources": [
+        {
+          "title": "交易所公告",
+          "url": "https://www.sse.com.cn/a",
+          "domain": "sse.com.cn",
+          "tier": 1,
+          "published_at": null
+        },
+        {
+          "title": "财联社",
+          "url": "https://www.cls.cn/b",
+          "domain": "cls.cn",
+          "tier": 3,
+          "published_at": null
+        }
+      ]
+    }
+  },
+  {
+    "case": "single_source",
+    "claim": {
+      "claim_id": "clm-bb484901b48d",
+      "claim": "测试：仅单一可靠来源",
+      "status": "single_source",
+      "independent_sources": 1,
+      "best_tier": 1,
+      "top_sources": [
+        {
+          "title": "交易所公告",
+          "url": "https://www.sse.com.cn/c",
+          "domain": "sse.com.cn",
+          "tier": 1,
+          "published_at": null
+        }
+      ]
+    }
+  },
+  {
+    "case": "manual_conflict_preserved",
+    "claim": {
+      "claim_id": "clm-a7d5ff6c9ca8",
+      "claim": "测试：两项结论冲突的人工标记",
+      "status": "conflicting",
+      "independent_sources": 2,
+      "best_tier": 1,
+      "top_sources": [
+        {
+          "title": "来源甲",
+          "url": "https://www.sse.com.cn/d",
+          "domain": "sse.com.cn",
+          "tier": 1,
+          "published_at": null
+        },
+        {
+          "title": "来源乙",
+          "url": "https://www.cls.cn/e",
+          "domain": "cls.cn",
+          "tier": 3,
+          "published_at": null
+        }
+      ]
+    }
+  }
+]

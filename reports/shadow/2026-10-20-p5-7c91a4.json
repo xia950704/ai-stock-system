@@ -1,0 +1,1489 @@
+{
+  "generated_at": "2026-10-20 21:55:54",
+  "report_date": "2026-10-20",
+  "trading_day": {
+    "effective_date": "2026-10-20",
+    "data_date": "2026-10-20",
+    "verdict": "TRADING_DAY",
+    "reason": "工作日且数据新鲜",
+    "confidence": "medium"
+  },
+  "freshness": {
+    "check_time": "2026-10-20T21:55:54.982425+08:00",
+    "anchor_mtime": "2026-10-20T15:30:15.774084+08:00",
+    "anchor_age_hours": 6.4,
+    "ranking_mtime": "2026-10-20T16:30:15.671425+08:00",
+    "ranking_age_hours": 5.4,
+    "issues": []
+  },
+  "config_status": "PASS",
+  "jev_status": "mock",
+  "search_status": "mock",
+  "missing_data": [],
+  "market": {
+    "verdict": "中性",
+    "confidence": "low",
+    "evidence": [
+      "锚价池 56 只股票平均偏离 +12.17%",
+      "正偏离 49 只，负偏离 6 只",
+      "池内股票整体高于锚价，反映风险偏好偏高",
+      "排名池 26 只：买入信号 0，观望 0，卖出信号 26",
+      "排名池平均综合评分 29.7/100"
+    ],
+    "counter_evidence": [
+      "卖出信号多于买入信号"
+    ],
+    "scenarios": {
+      "偏多": {
+        "condition": "池内平均偏离持续扩大且买入信号占优",
+        "support": "正偏离股票数量多于负偏离，买入信号占优",
+        "invalidation": "平均偏离回落至 0 附近或卖出信号反超"
+      },
+      "基准": {
+        "condition": "池内股票围绕锚价波动，多空力量均衡",
+        "support": "平均偏离在 -2% ~ +5% 区间，买卖信号接近",
+        "invalidation": "偏离突破 ±5% 或排名信号出现单边倾斜"
+      },
+      "偏空": {
+        "condition": "池内股票普遍低于锚价，卖出信号占优",
+        "support": "平均偏离为负且持续扩大",
+        "invalidation": "平均偏离转正且买入信号回暖"
+      }
+    },
+    "limitations": [
+      "无外部指数行情数据（无上证/沪深300等实际指数表现）",
+      "无成交额、市场广度（涨跌家数）等外部数据",
+      "大盘判断仅基于本地股票池聚合统计，不能等同于真实大盘",
+      "法定节假日无法确认，交易日判断为保守估计"
+    ],
+    "aggregate_stats": {
+      "anchor": {
+        "count": 56,
+        "status_distribution": {
+          "买入区间": 4,
+          "合理": 4,
+          "偏低估": 1,
+          "超买入区间": 32,
+          "锚价失效": 14,
+          "无锚价": 1
+        },
+        "avg_deviation": 12.17,
+        "min_deviation": -12.68,
+        "max_deviation": 43.7,
+        "pos_deviation_count": 49,
+        "neg_deviation_count": 6,
+        "avg_change_pct": 0.16,
+        "avg_pe": 830.5
+      },
+      "ranking": {
+        "count": 26,
+        "run_date": "2026-10-20",
+        "buy_signals": 0,
+        "watch_signals": 0,
+        "sell_signals": 26,
+        "avg_composite": 29.7,
+        "max_composite": 32.4,
+        "min_composite": 26.6
+      }
+    }
+  },
+  "stocks": [
+    {
+      "code": "sh600276",
+      "name": "恒瑞医药",
+      "pool": "P0",
+      "price_layer": {
+        "current": 47.45,
+        "anchor": 47,
+        "deviation": 0.96,
+        "status": "合理",
+        "pe": 36,
+        "prev_close": 46.08,
+        "change_pct": 2.97,
+        "composite_score": 31.7,
+        "latest_date": "2026-10-20",
+        "data_quality": "数据完整"
+      },
+      "fund_layer": {
+        "available_data": [
+          "价格",
+          "涨跌幅",
+          "锚价偏离",
+          "综合评分",
+          "技术信号"
+        ],
+        "unavailable_data": [
+          "主力资金流向",
+          "北向资金",
+          "融资融券",
+          "大单成交"
+        ],
+        "signals": [
+          "股价接近锚价（偏离 1.0%）",
+          "综合评分 31.7，技术面偏弱"
+        ],
+        "note": "无可核实的主力资金数据，仅使用价格与排名信号；不得将单一价格信号等同于资金意图"
+      },
+      "rd_layer": {
+        "research_exists": true,
+        "last_update": "2026-08-21",
+        "note_summary": {
+          "current_price": "46.13",
+          "anchor_price": "47",
+          "deviation": "-1.8",
+          "pe_ttm": "36",
+          "status": "买入区间",
+          "update_time": "2026-09-01",
+          "hist_percentile": "0.7",
+          "hist_range": "[45.94, 64.26]"
+        },
+        "note": "研发信息仅来自 Obsidian 既有研究记录；若记录日期陈旧，标记为待核实"
+      },
+      "order_layer": {
+        "available_data": [],
+        "unavailable_data": [
+          "订单数据",
+          "销量数据",
+          "收入明细",
+          "商业化兑现指标"
+        ],
+        "note": "当前无订单/销量数据源，订单面无法分析"
+      },
+      "jev_layer": {
+        "called": true,
+        "available": true,
+        "status": "ok",
+        "result": {
+          "ok": true,
+          "model": "mock",
+          "answers": {
+            "answer": {
+              "noul": 0.5
+            }
+          },
+          "request": {
+            "model": "jev",
+            "state": {
+              "code": "sh600276",
+              "description": "P3 daily research probe, no position or cost data"
+            },
+            "questions": {
+              "answer": {
+                "type": "noul",
+                "instructions": "Is this stock's current price above its anchor price?"
+              }
+            }
+          }
+        },
+        "note": "JEV 当前环境不可用（model_na / insufficient / forbidden），不得解释为中性或任何方向信号"
+      },
+      "synthesis": {
+        "relation": "部分支持，存在数据缺口",
+        "supports": [
+          "JEV 探查可用"
+        ],
+        "conflicts": [],
+        "gaps": [
+          "订单面数据缺失",
+          "研究笔记最后更新：2026-08-21"
+        ]
+      },
+      "action": {
+        "action": "HOLD",
+        "reason": "股价接近锚价（偏离 1.0%）",
+        "conditions": [],
+        "invalidation": []
+      },
+      "search_layer": {
+        "status": "ok",
+        "available": true,
+        "queries_executed": 3,
+        "claims": [
+          {
+            "claim_id": "clm-405a9021fb3d",
+            "claim": "公司发布最新公告",
+            "status": "single_source",
+            "independent_sources": 1,
+            "best_tier": 3,
+            "top_sources": [
+              {
+                "title": "公司发布最新公告",
+                "url": "https://www.cls.cn/a/1",
+                "domain": "cls.cn",
+                "tier": 3,
+                "published_at": "2026-10-19"
+              }
+            ]
+          },
+          {
+            "claim_id": "clm-89e87dbaa701",
+            "claim": "NMPA 受理新适应证申请",
+            "status": "single_source",
+            "independent_sources": 1,
+            "best_tier": 1,
+            "top_sources": [
+              {
+                "title": "NMPA 受理新适应证申请",
+                "url": "https://www.sse.com.cn/a/2",
+                "domain": "com.cn",
+                "tier": 1,
+                "published_at": "2026-10-18"
+              }
+            ]
+          },
+          {
+            "claim_id": "clm-0be37ffea7f0",
+            "claim": "三季报披露",
+            "status": "single_source",
+            "independent_sources": 1,
+            "best_tier": 1,
+            "top_sources": [
+              {
+                "title": "三季报披露",
+                "url": "https://www.cninfo.com.cn/a/3",
+                "domain": "com.cn",
+                "tier": 1,
+                "published_at": "2026-10-17"
+              }
+            ]
+          }
+        ],
+        "summary": {
+          "total": 3,
+          "by_status": {
+            "single_source": 3
+          }
+        },
+        "notes": []
+      }
+    },
+    {
+      "code": "sz000963",
+      "name": "华东医药",
+      "pool": "P0",
+      "price_layer": {
+        "current": 26.71,
+        "anchor": 27,
+        "deviation": -1.07,
+        "status": "偏低估",
+        "pe": 14.77,
+        "prev_close": 26.49,
+        "change_pct": 0.83,
+        "composite_score": 29.6,
+        "latest_date": "2026-10-20",
+        "data_quality": "数据完整"
+      },
+      "fund_layer": {
+        "available_data": [
+          "价格",
+          "涨跌幅",
+          "锚价偏离",
+          "综合评分",
+          "技术信号"
+        ],
+        "unavailable_data": [
+          "主力资金流向",
+          "北向资金",
+          "融资融券",
+          "大单成交"
+        ],
+        "signals": [
+          "股价略低于锚价 1.1%",
+          "综合评分 29.6，技术面偏弱"
+        ],
+        "note": "无可核实的主力资金数据，仅使用价格与排名信号；不得将单一价格信号等同于资金意图"
+      },
+      "rd_layer": {
+        "research_exists": true,
+        "last_update": "2026-08-07",
+        "note_summary": {
+          "current_price": "27.28",
+          "anchor_price": "27",
+          "deviation": "1.6",
+          "pe_ttm": "14.77",
+          "status": "超买入区间",
+          "update_time": "2026-09-01",
+          "hist_percentile": "6.7",
+          "hist_range": "[26.41, 39.04]"
+        },
+        "note": "研发信息仅来自 Obsidian 既有研究记录；若记录日期陈旧，标记为待核实"
+      },
+      "order_layer": {
+        "available_data": [],
+        "unavailable_data": [
+          "订单数据",
+          "销量数据",
+          "收入明细",
+          "商业化兑现指标"
+        ],
+        "note": "当前无订单/销量数据源，订单面无法分析"
+      },
+      "jev_layer": {
+        "called": true,
+        "available": true,
+        "status": "ok",
+        "result": {
+          "ok": true,
+          "model": "mock",
+          "answers": {
+            "answer": {
+              "noul": 0.5
+            }
+          },
+          "request": {
+            "model": "jev",
+            "state": {
+              "code": "sz000963",
+              "description": "P3 daily research probe, no position or cost data"
+            },
+            "questions": {
+              "answer": {
+                "type": "noul",
+                "instructions": "Is this stock's current price above its anchor price?"
+              }
+            }
+          }
+        },
+        "note": "JEV 当前环境不可用（model_na / insufficient / forbidden），不得解释为中性或任何方向信号"
+      },
+      "synthesis": {
+        "relation": "部分支持，存在数据缺口",
+        "supports": [
+          "JEV 探查可用"
+        ],
+        "conflicts": [],
+        "gaps": [
+          "订单面数据缺失",
+          "研究笔记最后更新：2026-08-07"
+        ]
+      },
+      "action": {
+        "action": "WAIT",
+        "reason": "股价略低于锚价 1.1%，偏离有限",
+        "conditions": [
+          "股价进一步回调至买入区间"
+        ],
+        "invalidation": [
+          "股价回升超过锚价"
+        ]
+      },
+      "search_layer": {
+        "status": "ok",
+        "available": true,
+        "queries_executed": 3,
+        "claims": [
+          {
+            "claim_id": "clm-405a9021fb3d",
+            "claim": "公司发布最新公告",
+            "status": "single_source",
+            "independent_sources": 1,
+            "best_tier": 3,
+            "top_sources": [
+              {
+                "title": "公司发布最新公告",
+                "url": "https://www.cls.cn/a/1",
+                "domain": "cls.cn",
+                "tier": 3,
+                "published_at": "2026-10-19"
+              }
+            ]
+          },
+          {
+            "claim_id": "clm-89e87dbaa701",
+            "claim": "NMPA 受理新适应证申请",
+            "status": "single_source",
+            "independent_sources": 1,
+            "best_tier": 1,
+            "top_sources": [
+              {
+                "title": "NMPA 受理新适应证申请",
+                "url": "https://www.sse.com.cn/a/2",
+                "domain": "com.cn",
+                "tier": 1,
+                "published_at": "2026-10-18"
+              }
+            ]
+          },
+          {
+            "claim_id": "clm-0be37ffea7f0",
+            "claim": "三季报披露",
+            "status": "single_source",
+            "independent_sources": 1,
+            "best_tier": 1,
+            "top_sources": [
+              {
+                "title": "三季报披露",
+                "url": "https://www.cninfo.com.cn/a/3",
+                "domain": "com.cn",
+                "tier": 1,
+                "published_at": "2026-10-17"
+              }
+            ]
+          }
+        ],
+        "summary": {
+          "total": 3,
+          "by_status": {
+            "single_source": 3
+          }
+        },
+        "notes": []
+      }
+    },
+    {
+      "code": "sz002262",
+      "name": "恩华药业",
+      "pool": "P0",
+      "price_layer": {
+        "current": 21.72,
+        "anchor": 21,
+        "deviation": 3.43,
+        "status": "合理",
+        "pe": 20.9,
+        "prev_close": 21.73,
+        "change_pct": -0.05,
+        "composite_score": 29.4,
+        "latest_date": "2026-10-20",
+        "data_quality": "数据完整"
+      },
+      "fund_layer": {
+        "available_data": [
+          "价格",
+          "涨跌幅",
+          "锚价偏离",
+          "综合评分",
+          "技术信号"
+        ],
+        "unavailable_data": [
+          "主力资金流向",
+          "北向资金",
+          "融资融券",
+          "大单成交"
+        ],
+        "signals": [
+          "股价接近锚价（偏离 3.4%）",
+          "综合评分 29.4，技术面偏弱"
+        ],
+        "note": "无可核实的主力资金数据，仅使用价格与排名信号；不得将单一价格信号等同于资金意图"
+      },
+      "rd_layer": {
+        "research_exists": true,
+        "last_update": null,
+        "note_summary": {
+          "status": "骨架（待补具体数字）"
+        },
+        "note": "研发信息仅来自 Obsidian 既有研究记录；若记录日期陈旧，标记为待核实"
+      },
+      "order_layer": {
+        "available_data": [],
+        "unavailable_data": [
+          "订单数据",
+          "销量数据",
+          "收入明细",
+          "商业化兑现指标"
+        ],
+        "note": "当前无订单/销量数据源，订单面无法分析"
+      },
+      "jev_layer": {
+        "called": true,
+        "available": true,
+        "status": "ok",
+        "result": {
+          "ok": true,
+          "model": "mock",
+          "answers": {
+            "answer": {
+              "noul": 0.5
+            }
+          },
+          "request": {
+            "model": "jev",
+            "state": {
+              "code": "sz002262",
+              "description": "P3 daily research probe, no position or cost data"
+            },
+            "questions": {
+              "answer": {
+                "type": "noul",
+                "instructions": "Is this stock's current price above its anchor price?"
+              }
+            }
+          }
+        },
+        "note": "JEV 当前环境不可用（model_na / insufficient / forbidden），不得解释为中性或任何方向信号"
+      },
+      "synthesis": {
+        "relation": "部分支持，存在数据缺口",
+        "supports": [
+          "JEV 探查可用"
+        ],
+        "conflicts": [],
+        "gaps": [
+          "订单面数据缺失"
+        ]
+      },
+      "action": {
+        "action": "HOLD",
+        "reason": "股价接近锚价（偏离 3.4%）",
+        "conditions": [],
+        "invalidation": []
+      },
+      "search_layer": {
+        "status": "ok",
+        "available": true,
+        "queries_executed": 3,
+        "claims": [
+          {
+            "claim_id": "clm-405a9021fb3d",
+            "claim": "公司发布最新公告",
+            "status": "single_source",
+            "independent_sources": 1,
+            "best_tier": 3,
+            "top_sources": [
+              {
+                "title": "公司发布最新公告",
+                "url": "https://www.cls.cn/a/1",
+                "domain": "cls.cn",
+                "tier": 3,
+                "published_at": "2026-10-19"
+              }
+            ]
+          },
+          {
+            "claim_id": "clm-89e87dbaa701",
+            "claim": "NMPA 受理新适应证申请",
+            "status": "single_source",
+            "independent_sources": 1,
+            "best_tier": 1,
+            "top_sources": [
+              {
+                "title": "NMPA 受理新适应证申请",
+                "url": "https://www.sse.com.cn/a/2",
+                "domain": "com.cn",
+                "tier": 1,
+                "published_at": "2026-10-18"
+              }
+            ]
+          },
+          {
+            "claim_id": "clm-0be37ffea7f0",
+            "claim": "三季报披露",
+            "status": "single_source",
+            "independent_sources": 1,
+            "best_tier": 1,
+            "top_sources": [
+              {
+                "title": "三季报披露",
+                "url": "https://www.cninfo.com.cn/a/3",
+                "domain": "com.cn",
+                "tier": 1,
+                "published_at": "2026-10-17"
+              }
+            ]
+          }
+        ],
+        "summary": {
+          "total": 3,
+          "by_status": {
+            "single_source": 3
+          }
+        },
+        "notes": []
+      }
+    },
+    {
+      "code": "sz002422",
+      "name": "科伦药业",
+      "pool": "P0",
+      "price_layer": {
+        "current": 43.2,
+        "anchor": 42,
+        "deviation": 2.86,
+        "status": "合理",
+        "pe": 15,
+        "prev_close": 41.78,
+        "change_pct": 3.4,
+        "composite_score": 28.7,
+        "latest_date": "2026-10-20",
+        "data_quality": "数据完整"
+      },
+      "fund_layer": {
+        "available_data": [
+          "价格",
+          "涨跌幅",
+          "锚价偏离",
+          "综合评分",
+          "技术信号"
+        ],
+        "unavailable_data": [
+          "主力资金流向",
+          "北向资金",
+          "融资融券",
+          "大单成交"
+        ],
+        "signals": [
+          "股价接近锚价（偏离 2.9%）",
+          "综合评分 28.7，技术面偏弱"
+        ],
+        "note": "无可核实的主力资金数据，仅使用价格与排名信号；不得将单一价格信号等同于资金意图"
+      },
+      "rd_layer": {
+        "research_exists": true,
+        "last_update": "2026-08-04",
+        "note_summary": {
+          "current_price": "40.46",
+          "anchor_price": "42",
+          "deviation": "-3.5",
+          "pe_ttm": "15",
+          "status": "买入区间",
+          "update_time": "2026-09-01",
+          "hist_percentile": "52.2",
+          "hist_range": "[28.81, 51.35]"
+        },
+        "note": "研发信息仅来自 Obsidian 既有研究记录；若记录日期陈旧，标记为待核实"
+      },
+      "order_layer": {
+        "available_data": [],
+        "unavailable_data": [
+          "订单数据",
+          "销量数据",
+          "收入明细",
+          "商业化兑现指标"
+        ],
+        "note": "当前无订单/销量数据源，订单面无法分析"
+      },
+      "jev_layer": {
+        "called": true,
+        "available": true,
+        "status": "ok",
+        "result": {
+          "ok": true,
+          "model": "mock",
+          "answers": {
+            "answer": {
+              "noul": 0.5
+            }
+          },
+          "request": {
+            "model": "jev",
+            "state": {
+              "code": "sz002422",
+              "description": "P3 daily research probe, no position or cost data"
+            },
+            "questions": {
+              "answer": {
+                "type": "noul",
+                "instructions": "Is this stock's current price above its anchor price?"
+              }
+            }
+          }
+        },
+        "note": "JEV 当前环境不可用（model_na / insufficient / forbidden），不得解释为中性或任何方向信号"
+      },
+      "synthesis": {
+        "relation": "部分支持，存在数据缺口",
+        "supports": [
+          "JEV 探查可用"
+        ],
+        "conflicts": [],
+        "gaps": [
+          "订单面数据缺失",
+          "研究笔记最后更新：2026-08-04"
+        ]
+      },
+      "action": {
+        "action": "HOLD",
+        "reason": "股价接近锚价（偏离 2.9%）",
+        "conditions": [],
+        "invalidation": []
+      },
+      "search_layer": {
+        "status": "ok",
+        "available": true,
+        "queries_executed": 3,
+        "claims": [
+          {
+            "claim_id": "clm-405a9021fb3d",
+            "claim": "公司发布最新公告",
+            "status": "single_source",
+            "independent_sources": 1,
+            "best_tier": 3,
+            "top_sources": [
+              {
+                "title": "公司发布最新公告",
+                "url": "https://www.cls.cn/a/1",
+                "domain": "cls.cn",
+                "tier": 3,
+                "published_at": "2026-10-19"
+              }
+            ]
+          },
+          {
+            "claim_id": "clm-89e87dbaa701",
+            "claim": "NMPA 受理新适应证申请",
+            "status": "single_source",
+            "independent_sources": 1,
+            "best_tier": 1,
+            "top_sources": [
+              {
+                "title": "NMPA 受理新适应证申请",
+                "url": "https://www.sse.com.cn/a/2",
+                "domain": "com.cn",
+                "tier": 1,
+                "published_at": "2026-10-18"
+              }
+            ]
+          },
+          {
+            "claim_id": "clm-0be37ffea7f0",
+            "claim": "三季报披露",
+            "status": "single_source",
+            "independent_sources": 1,
+            "best_tier": 1,
+            "top_sources": [
+              {
+                "title": "三季报披露",
+                "url": "https://www.cninfo.com.cn/a/3",
+                "domain": "com.cn",
+                "tier": 1,
+                "published_at": "2026-10-17"
+              }
+            ]
+          }
+        ],
+        "summary": {
+          "total": 3,
+          "by_status": {
+            "single_source": 3
+          }
+        },
+        "notes": []
+      }
+    },
+    {
+      "code": "sh603259",
+      "name": "药明康德",
+      "pool": "P0",
+      "price_layer": {
+        "current": 147.66,
+        "anchor": 145,
+        "deviation": 1.83,
+        "status": "合理",
+        "pe": 18.5,
+        "prev_close": 146.5,
+        "change_pct": 0.79,
+        "composite_score": 29.0,
+        "latest_date": "2026-10-20",
+        "data_quality": "数据完整"
+      },
+      "fund_layer": {
+        "available_data": [
+          "价格",
+          "涨跌幅",
+          "锚价偏离",
+          "综合评分",
+          "技术信号"
+        ],
+        "unavailable_data": [
+          "主力资金流向",
+          "北向资金",
+          "融资融券",
+          "大单成交"
+        ],
+        "signals": [
+          "股价接近锚价（偏离 1.8%）",
+          "综合评分 29.0，技术面偏弱"
+        ],
+        "note": "无可核实的主力资金数据，仅使用价格与排名信号；不得将单一价格信号等同于资金意图"
+      },
+      "rd_layer": {
+        "research_exists": true,
+        "last_update": "2026-06-11",
+        "note_summary": {
+          "current_price": "152.57",
+          "anchor_price": "145",
+          "deviation": "5.5",
+          "pe_ttm": "18.5",
+          "status": "超买入区间",
+          "update_time": "2026-09-01",
+          "hist_percentile": "83.9",
+          "hist_range": "[86.41, 167.90]"
+        },
+        "note": "研发信息仅来自 Obsidian 既有研究记录；若记录日期陈旧，标记为待核实"
+      },
+      "order_layer": {
+        "available_data": [],
+        "unavailable_data": [
+          "订单数据",
+          "销量数据",
+          "收入明细",
+          "商业化兑现指标"
+        ],
+        "note": "当前无订单/销量数据源，订单面无法分析"
+      },
+      "jev_layer": {
+        "called": true,
+        "available": true,
+        "status": "ok",
+        "result": {
+          "ok": true,
+          "model": "mock",
+          "answers": {
+            "answer": {
+              "noul": 0.5
+            }
+          },
+          "request": {
+            "model": "jev",
+            "state": {
+              "code": "sh603259",
+              "description": "P3 daily research probe, no position or cost data"
+            },
+            "questions": {
+              "answer": {
+                "type": "noul",
+                "instructions": "Is this stock's current price above its anchor price?"
+              }
+            }
+          }
+        },
+        "note": "JEV 当前环境不可用（model_na / insufficient / forbidden），不得解释为中性或任何方向信号"
+      },
+      "synthesis": {
+        "relation": "部分支持，存在数据缺口",
+        "supports": [
+          "JEV 探查可用"
+        ],
+        "conflicts": [],
+        "gaps": [
+          "订单面数据缺失",
+          "研究笔记最后更新：2026-06-11"
+        ]
+      },
+      "action": {
+        "action": "HOLD",
+        "reason": "股价接近锚价（偏离 1.8%）",
+        "conditions": [],
+        "invalidation": []
+      },
+      "search_layer": {
+        "status": "ok",
+        "available": true,
+        "queries_executed": 3,
+        "claims": [
+          {
+            "claim_id": "clm-405a9021fb3d",
+            "claim": "公司发布最新公告",
+            "status": "single_source",
+            "independent_sources": 1,
+            "best_tier": 3,
+            "top_sources": [
+              {
+                "title": "公司发布最新公告",
+                "url": "https://www.cls.cn/a/1",
+                "domain": "cls.cn",
+                "tier": 3,
+                "published_at": "2026-10-19"
+              }
+            ]
+          },
+          {
+            "claim_id": "clm-89e87dbaa701",
+            "claim": "NMPA 受理新适应证申请",
+            "status": "single_source",
+            "independent_sources": 1,
+            "best_tier": 1,
+            "top_sources": [
+              {
+                "title": "NMPA 受理新适应证申请",
+                "url": "https://www.sse.com.cn/a/2",
+                "domain": "com.cn",
+                "tier": 1,
+                "published_at": "2026-10-18"
+              }
+            ]
+          },
+          {
+            "claim_id": "clm-0be37ffea7f0",
+            "claim": "三季报披露",
+            "status": "single_source",
+            "independent_sources": 1,
+            "best_tier": 1,
+            "top_sources": [
+              {
+                "title": "三季报披露",
+                "url": "https://www.cninfo.com.cn/a/3",
+                "domain": "com.cn",
+                "tier": 1,
+                "published_at": "2026-10-17"
+              }
+            ]
+          }
+        ],
+        "summary": {
+          "total": 3,
+          "by_status": {
+            "single_source": 3
+          }
+        },
+        "notes": []
+      }
+    },
+    {
+      "code": "sh688506",
+      "name": "百利天恒",
+      "pool": "P0",
+      "price_layer": {
+        "current": 253.23,
+        "anchor": 290,
+        "deviation": -12.68,
+        "status": "买入区间",
+        "pe": 138.0,
+        "prev_close": 238.0,
+        "change_pct": 6.4,
+        "composite_score": 30.9,
+        "latest_date": "2026-10-20",
+        "data_quality": "数据完整"
+      },
+      "fund_layer": {
+        "available_data": [
+          "价格",
+          "涨跌幅",
+          "锚价偏离",
+          "综合评分",
+          "技术信号"
+        ],
+        "unavailable_data": [
+          "主力资金流向",
+          "北向资金",
+          "融资融券",
+          "大单成交"
+        ],
+        "signals": [
+          "股价低于锚价 12.7%，可能反映悲观情绪或超跌",
+          "当日涨跌幅 +6.4%，涨幅较大",
+          "综合评分 30.9，技术面偏弱"
+        ],
+        "note": "无可核实的主力资金数据，仅使用价格与排名信号；不得将单一价格信号等同于资金意图"
+      },
+      "rd_layer": {
+        "research_exists": true,
+        "last_update": "2026-08-07",
+        "note_summary": {
+          "current_price": "261.8",
+          "anchor_price": "290",
+          "deviation": "-9.9",
+          "pe_ttm": "138",
+          "status": "买入区间",
+          "update_time": "2026-09-01",
+          "hist_percentile": "44.7",
+          "hist_range": "[204.58, 344.00]"
+        },
+        "note": "研发信息仅来自 Obsidian 既有研究记录；若记录日期陈旧，标记为待核实"
+      },
+      "order_layer": {
+        "available_data": [],
+        "unavailable_data": [
+          "订单数据",
+          "销量数据",
+          "收入明细",
+          "商业化兑现指标"
+        ],
+        "note": "当前无订单/销量数据源，订单面无法分析"
+      },
+      "jev_layer": {
+        "called": true,
+        "available": true,
+        "status": "ok",
+        "result": {
+          "ok": true,
+          "model": "mock",
+          "answers": {
+            "answer": {
+              "noul": 0.5
+            }
+          },
+          "request": {
+            "model": "jev",
+            "state": {
+              "code": "sh688506",
+              "description": "P3 daily research probe, no position or cost data"
+            },
+            "questions": {
+              "answer": {
+                "type": "noul",
+                "instructions": "Is this stock's current price above its anchor price?"
+              }
+            }
+          }
+        },
+        "note": "JEV 当前环境不可用（model_na / insufficient / forbidden），不得解释为中性或任何方向信号"
+      },
+      "synthesis": {
+        "relation": "部分支持，存在数据缺口",
+        "supports": [
+          "价格低于锚价，与买入区间状态一致",
+          "JEV 探查可用"
+        ],
+        "conflicts": [],
+        "gaps": [
+          "订单面数据缺失",
+          "研究笔记最后更新：2026-08-07"
+        ]
+      },
+      "action": {
+        "action": "CONSIDER_ENTRY",
+        "reason": "股价低于锚价 12.7%，处于买入区间",
+        "conditions": [
+          "锚价有效",
+          "无重大负面事件",
+          "估值合理"
+        ],
+        "invalidation": [
+          "股价回升至锚价以上",
+          "锚价失效",
+          "出现重大利空"
+        ]
+      },
+      "search_layer": {
+        "status": "ok",
+        "available": true,
+        "queries_executed": 3,
+        "claims": [
+          {
+            "claim_id": "clm-405a9021fb3d",
+            "claim": "公司发布最新公告",
+            "status": "single_source",
+            "independent_sources": 1,
+            "best_tier": 3,
+            "top_sources": [
+              {
+                "title": "公司发布最新公告",
+                "url": "https://www.cls.cn/a/1",
+                "domain": "cls.cn",
+                "tier": 3,
+                "published_at": "2026-10-19"
+              }
+            ]
+          },
+          {
+            "claim_id": "clm-89e87dbaa701",
+            "claim": "NMPA 受理新适应证申请",
+            "status": "single_source",
+            "independent_sources": 1,
+            "best_tier": 1,
+            "top_sources": [
+              {
+                "title": "NMPA 受理新适应证申请",
+                "url": "https://www.sse.com.cn/a/2",
+                "domain": "com.cn",
+                "tier": 1,
+                "published_at": "2026-10-18"
+              }
+            ]
+          },
+          {
+            "claim_id": "clm-0be37ffea7f0",
+            "claim": "三季报披露",
+            "status": "single_source",
+            "independent_sources": 1,
+            "best_tier": 1,
+            "top_sources": [
+              {
+                "title": "三季报披露",
+                "url": "https://www.cninfo.com.cn/a/3",
+                "domain": "com.cn",
+                "tier": 1,
+                "published_at": "2026-10-17"
+              }
+            ]
+          }
+        ],
+        "summary": {
+          "total": 3,
+          "by_status": {
+            "single_source": 3
+          }
+        },
+        "notes": []
+      }
+    },
+    {
+      "code": "sh512400",
+      "name": "512400有色金属ETF",
+      "pool": "P0",
+      "price_layer": {
+        "current": 1.506,
+        "anchor": null,
+        "deviation": null,
+        "status": "无锚价",
+        "pe": null,
+        "prev_close": 1.525,
+        "change_pct": -1.25,
+        "composite_score": null,
+        "latest_date": null,
+        "data_quality": "数据不完整: 无锚价; 无偏离"
+      },
+      "fund_layer": {
+        "available_data": [
+          "价格",
+          "涨跌幅",
+          "锚价偏离",
+          "综合评分",
+          "技术信号"
+        ],
+        "unavailable_data": [
+          "主力资金流向",
+          "北向资金",
+          "融资融券",
+          "大单成交"
+        ],
+        "signals": [],
+        "note": "无可核实的主力资金数据，仅使用价格与排名信号；不得将单一价格信号等同于资金意图"
+      },
+      "rd_layer": {
+        "research_exists": false,
+        "last_update": null,
+        "note_summary": {},
+        "note": "研发信息仅来自 Obsidian 既有研究记录；若记录日期陈旧，标记为待核实"
+      },
+      "order_layer": {
+        "available_data": [],
+        "unavailable_data": [
+          "订单数据",
+          "销量数据",
+          "收入明细",
+          "商业化兑现指标"
+        ],
+        "note": "当前无订单/销量数据源，订单面无法分析"
+      },
+      "jev_layer": {
+        "called": true,
+        "available": true,
+        "status": "ok",
+        "result": {
+          "ok": true,
+          "model": "mock",
+          "answers": {
+            "answer": {
+              "noul": 0.5
+            }
+          },
+          "request": {
+            "model": "jev",
+            "state": {
+              "code": "sh512400",
+              "description": "P3 daily research probe, no position or cost data"
+            },
+            "questions": {
+              "answer": {
+                "type": "noul",
+                "instructions": "Is this stock's current price above its anchor price?"
+              }
+            }
+          }
+        },
+        "note": "JEV 当前环境不可用（model_na / insufficient / forbidden），不得解释为中性或任何方向信号"
+      },
+      "synthesis": {
+        "relation": "部分支持，存在数据缺口",
+        "supports": [
+          "JEV 探查可用"
+        ],
+        "conflicts": [],
+        "gaps": [
+          "订单面数据缺失",
+          "无研究笔记"
+        ]
+      },
+      "action": {
+        "action": "INSUFFICIENT_EVIDENCE",
+        "reason": "无可用价格或评分数据",
+        "conditions": [],
+        "invalidation": []
+      },
+      "search_layer": {
+        "status": "ok",
+        "available": true,
+        "queries_executed": 3,
+        "claims": [
+          {
+            "claim_id": "clm-405a9021fb3d",
+            "claim": "公司发布最新公告",
+            "status": "single_source",
+            "independent_sources": 1,
+            "best_tier": 3,
+            "top_sources": [
+              {
+                "title": "公司发布最新公告",
+                "url": "https://www.cls.cn/a/1",
+                "domain": "cls.cn",
+                "tier": 3,
+                "published_at": "2026-10-19"
+              }
+            ]
+          },
+          {
+            "claim_id": "clm-89e87dbaa701",
+            "claim": "NMPA 受理新适应证申请",
+            "status": "single_source",
+            "independent_sources": 1,
+            "best_tier": 1,
+            "top_sources": [
+              {
+                "title": "NMPA 受理新适应证申请",
+                "url": "https://www.sse.com.cn/a/2",
+                "domain": "com.cn",
+                "tier": 1,
+                "published_at": "2026-10-18"
+              }
+            ]
+          },
+          {
+            "claim_id": "clm-0be37ffea7f0",
+            "claim": "三季报披露",
+            "status": "single_source",
+            "independent_sources": 1,
+            "best_tier": 1,
+            "top_sources": [
+              {
+                "title": "三季报披露",
+                "url": "https://www.cninfo.com.cn/a/3",
+                "domain": "com.cn",
+                "tier": 1,
+                "published_at": "2026-10-17"
+              }
+            ]
+          }
+        ],
+        "summary": {
+          "total": 3,
+          "by_status": {
+            "single_source": 3
+          }
+        },
+        "notes": []
+      }
+    },
+    {
+      "code": "sh688331",
+      "name": "荣昌生物",
+      "pool": "P2",
+      "price_layer": {
+        "current": 119.79,
+        "anchor": 114,
+        "deviation": 5.1,
+        "status": "超买入区间",
+        "pe": 586.0,
+        "prev_close": 121.78,
+        "change_pct": -1.63,
+        "composite_score": 27.8,
+        "latest_date": "2026-10-20",
+        "data_quality": "数据完整"
+      },
+      "fund_layer": {
+        "available_data": [
+          "价格",
+          "涨跌幅",
+          "锚价偏离",
+          "综合评分",
+          "技术信号"
+        ],
+        "unavailable_data": [
+          "主力资金流向",
+          "北向资金",
+          "融资融券",
+          "大单成交"
+        ],
+        "signals": [
+          "股价高于锚价 5.1%，偏高",
+          "综合评分 27.8，技术面偏弱"
+        ],
+        "note": "无可核实的主力资金数据，仅使用价格与排名信号；不得将单一价格信号等同于资金意图"
+      },
+      "rd_layer": {
+        "research_exists": true,
+        "last_update": "2026-06-01",
+        "note_summary": {
+          "current_price": "119.18",
+          "anchor_price": "114",
+          "deviation": "5.1",
+          "pe_ttm": "586",
+          "status": "超买入区间",
+          "update_time": "2026-09-01",
+          "hist_percentile": "56.2",
+          "hist_range": "[81.35, 153.26]"
+        },
+        "note": "研发信息仅来自 Obsidian 既有研究记录；若记录日期陈旧，标记为待核实"
+      },
+      "order_layer": {
+        "available_data": [],
+        "unavailable_data": [
+          "订单数据",
+          "销量数据",
+          "收入明细",
+          "商业化兑现指标"
+        ],
+        "note": "当前无订单/销量数据源，订单面无法分析"
+      },
+      "jev_layer": {
+        "called": true,
+        "available": true,
+        "status": "ok",
+        "result": {
+          "ok": true,
+          "model": "mock",
+          "answers": {
+            "answer": {
+              "noul": 0.5
+            }
+          },
+          "request": {
+            "model": "jev",
+            "state": {
+              "code": "sh688331",
+              "description": "P3 daily research probe, no position or cost data"
+            },
+            "questions": {
+              "answer": {
+                "type": "noul",
+                "instructions": "Is this stock's current price above its anchor price?"
+              }
+            }
+          }
+        },
+        "note": "JEV 当前环境不可用（model_na / insufficient / forbidden），不得解释为中性或任何方向信号"
+      },
+      "synthesis": {
+        "relation": "存在冲突",
+        "supports": [
+          "价格低于锚价，与买入区间状态一致",
+          "JEV 探查可用"
+        ],
+        "conflicts": [
+          "技术面偏弱但价格高于锚价，信号冲突"
+        ],
+        "gaps": [
+          "订单面数据缺失",
+          "研究笔记最后更新：2026-06-01"
+        ]
+      },
+      "action": {
+        "action": "HOLD",
+        "reason": "股价高于锚价 5.1%，偏高但未到减仓区间",
+        "conditions": [],
+        "invalidation": [
+          "股价继续大幅上涨"
+        ]
+      },
+      "search_layer": {
+        "status": "ok",
+        "available": true,
+        "queries_executed": 3,
+        "claims": [
+          {
+            "claim_id": "clm-405a9021fb3d",
+            "claim": "公司发布最新公告",
+            "status": "single_source",
+            "independent_sources": 1,
+            "best_tier": 3,
+            "top_sources": [
+              {
+                "title": "公司发布最新公告",
+                "url": "https://www.cls.cn/a/1",
+                "domain": "cls.cn",
+                "tier": 3,
+                "published_at": "2026-10-19"
+              }
+            ]
+          },
+          {
+            "claim_id": "clm-89e87dbaa701",
+            "claim": "NMPA 受理新适应证申请",
+            "status": "single_source",
+            "independent_sources": 1,
+            "best_tier": 1,
+            "top_sources": [
+              {
+                "title": "NMPA 受理新适应证申请",
+                "url": "https://www.sse.com.cn/a/2",
+                "domain": "com.cn",
+                "tier": 1,
+                "published_at": "2026-10-18"
+              }
+            ]
+          },
+          {
+            "claim_id": "clm-0be37ffea7f0",
+            "claim": "三季报披露",
+            "status": "single_source",
+            "independent_sources": 1,
+            "best_tier": 1,
+            "top_sources": [
+              {
+                "title": "三季报披露",
+                "url": "https://www.cninfo.com.cn/a/3",
+                "domain": "com.cn",
+                "tier": 1,
+                "published_at": "2026-10-17"
+              }
+            ]
+          }
+        ],
+        "summary": {
+          "total": 3,
+          "by_status": {
+            "single_source": 3
+          }
+        },
+        "notes": []
+      }
+    }
+  ],
+  "focus": {
+    "top_stocks": [
+      "百利天恒 (sh688506): CONSIDER_ENTRY"
+    ],
+    "risks": [
+      "无"
+    ],
+    "events": [
+      "无已知即将发生的事件（当前无外部事件数据源）"
+    ],
+    "gaps": [
+      "恒瑞医药: 订单面数据缺失",
+      "恒瑞医药: 研究笔记最后更新：2026-08-21",
+      "华东医药: 订单面数据缺失",
+      "华东医药: 研究笔记最后更新：2026-08-07",
+      "恩华药业: 订单面数据缺失",
+      "科伦药业: 订单面数据缺失",
+      "科伦药业: 研究笔记最后更新：2026-08-04",
+      "药明康德: 订单面数据缺失",
+      "药明康德: 研究笔记最后更新：2026-06-11",
+      "百利天恒: 订单面数据缺失",
+      "百利天恒: 研究笔记最后更新：2026-08-07",
+      "512400有色金属ETF: 订单面数据缺失",
+      "512400有色金属ETF: 无研究笔记",
+      "荣昌生物: 订单面数据缺失",
+      "荣昌生物: 研究笔记最后更新：2026-06-01"
+    ]
+  },
+  "traces": [
+    {
+      "claim": "锚价池共 56 只股票",
+      "source": "~/harness/anchor_status.json"
+    },
+    {
+      "claim": "排名数据 run_date=2026-10-20",
+      "source": "~/harness/stock_daily/stock_ranking.json"
+    },
+    {
+      "claim": "JEV 当前环境不可用（model_na / insufficient / forbidden）",
+      "source": "P3-1 jev_validation_report.md, router.bynara.id 实测"
+    },
+    {
+      "claim": "大盘判断仅基于本地股票池聚合统计，无外部指数数据",
+      "source": "market_judge.py limitations"
+    }
+  ]
+}

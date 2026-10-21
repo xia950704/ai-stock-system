@@ -1,0 +1,100 @@
+{
+  "mode": "redacted-text",
+  "min_confidence": 0.6,
+  "simple_needs_confidence": 0.85,
+  "hard_needs_probability": 0.6,
+  "simple_needs_probability": 0.7,
+  "ask_chars": 2500,
+  "ask_sections": [
+    "Prompt",
+    "Task",
+    "Request",
+    "Instruction",
+    "Objective",
+    "Goal"
+  ],
+  "drop_sections": [
+    "Your previous run's output",
+    "Script Output",
+    "Output from job",
+    "Previous output",
+    "Prior run",
+    "Last run"
+  ],
+  "cache_repeat_asks": true,
+  "cache_size": 512,
+  "sticky_context_tokens": 32000,
+  "escalation": {
+    "enabled": false,
+    "rungs": []
+  },
+  "exclude": [
+    "*:free",
+    "cloudflare-ai-gateway:*"
+  ],
+  "private_profiles": [],
+  "tiers": {
+    "simple": {
+      "general": [
+        "openrouter:anthropic/claude-haiku-5.5",
+        "openrouter:perceptron/perceptron-mk1.5",
+        "openrouter:upstage/solar-mini4",
+        "openrouter:xiaomi/mimo-v2.6-flash",
+        "openrouter:openai/gpt-6-luna",
+        "openrouter:openai/gpt-6-luna-pro"
+      ],
+      "coding": [
+        "openrouter:qwen/qwen3-coder-next",
+        "openrouter:mistralai/codestral-2508",
+        "openrouter:qwen/qwen3-coder-flash",
+        "openrouter:qwen/qwen3-coder",
+        "openrouter:qwen/qwen3-coder-30b-a3b-instruct",
+        "openrouter:anthropic/claude-haiku-5.5"
+      ]
+    },
+    "medium": {
+      "general": [
+        "openrouter:mistralai/mistral-large-4-0",
+        "openrouter:google/gemini-nano-banana-2.1",
+        "openrouter:unbiased/pareto-26.10-preview",
+        "openrouter:aion-labs/aion-3.5-mini",
+        "openrouter:x-ai/grok-4.7",
+        "openrouter:sakana/fugu-max"
+      ],
+      "coding": [
+        "openrouter:moonshotai/kimi-k2.7-code",
+        "openrouter:bytedance-seed/seed-2.0-code",
+        "openrouter:mistralai/devstral-2512",
+        "openrouter:openai/gpt-5.1-codex-mini",
+        "openrouter:openai/gpt-5.1-codex",
+        "openrouter:openai/gpt-5.1-codex-max"
+      ],
+      "research": [
+        "openrouter:x-ai/grok-4.7",
+        "openrouter:x-ai/grok-4.6",
+        "openrouter:x-ai/grok-4.5",
+        "openrouter:x-ai/grok-4.3",
+        "openrouter:x-ai/grok-build-0.1",
+        "openrouter:x-ai/grok-4.20"
+      ]
+    },
+    "hard": {
+      "general": [
+        "openrouter:openai/gpt-6.1-sol",
+        "openrouter:openai/gpt-6.1-sol-pro",
+        "openrouter:anthropic/claude-sonnet-5.5",
+        "openrouter:fireworks/ember-1",
+        "openrouter:aion-labs/aion-3.5",
+        "openrouter:z-ai/glm-5.3-prime"
+      ],
+      "coding": [
+        "openrouter:openai/gpt-5.3-codex",
+        "openrouter:openai/gpt-5.2-codex",
+        "openrouter:openai/gpt-6.1-sol",
+        "openrouter:openai/gpt-6.1-sol-pro",
+        "openrouter:anthropic/claude-sonnet-5.5",
+        "openrouter:fireworks/ember-1"
+      ]
+    }
+  }
+}

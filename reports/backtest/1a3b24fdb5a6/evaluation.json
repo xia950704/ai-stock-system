@@ -1,0 +1,104 @@
+{
+  "run_dir": "reports/backtest/1a3b24fdb5a6",
+  "evaluated_at": "2026-10-20T18:57:21.685772",
+  "data_quality": {
+    "total_days": 30,
+    "anchor_availability": {
+      "count": 14,
+      "rate": 0.467
+    },
+    "ranking_availability": {
+      "count": 0,
+      "rate": 0.0
+    },
+    "realtime_availability": {
+      "count": 14,
+      "rate": 0.467
+    },
+    "freshness_distribution": {
+      "fresh": 0,
+      "stale": 0,
+      "date_unknown": 0,
+      "fresh_rate": 0.0
+    },
+    "lookahead_check": {
+      "clean_days": 30,
+      "total_violations": 0
+    },
+    "note": "ranking 仅 2026-10-20 有快照，其他日期不可用；anchor 仅 09-23 和 10-20 有快照"
+  },
+  "system_reliability": {
+    "total_days": 30,
+    "internal_errors": 0,
+    "jev_unavailable_days": 30,
+    "search_unavailable_days": 30,
+    "staleness_gate_blocks": 14,
+    "note": "历史回放中 JEV/Search 标记为不可用，不计为系统故障"
+  },
+  "traceability": {
+    "total_stock_analyses": 240,
+    "with_supporting_evidence": {
+      "count": 98,
+      "rate": 0.408
+    },
+    "with_counter_evidence": {
+      "count": 0,
+      "rate": 0.0
+    },
+    "with_invalidation_conditions": {
+      "count": 84,
+      "rate": 0.35
+    },
+    "action_distribution": {
+      "INSUFFICIENT_EVIDENCE": 142,
+      "WAIT": 28,
+      "HOLD": 56,
+      "OBSERVE": 14
+    },
+    "note": "历史模式下多数为 INSUFFICIENT_EVIDENCE/OBSERVE（缺锚价/排名快照），非引擎缺陷"
+  },
+  "repeatability": null,
+  "forward_returns": {
+    "by_action": {
+      "WAIT": {
+        "sample_count": 18,
+        "ret_5d": {
+          "mean": 1.62,
+          "median": 1.25,
+          "positive_rate": 0.556
+        },
+        "ret_10d": {
+          "mean": 3.46,
+          "median": 3.88,
+          "positive_rate": 1.0
+        },
+        "ret_20d": {
+          "mean": null,
+          "median": null,
+          "positive_rate": null
+        }
+      },
+      "HOLD": {
+        "sample_count": 36,
+        "ret_5d": {
+          "mean": -3.0,
+          "median": -2.39,
+          "positive_rate": 0.25
+        },
+        "ret_10d": {
+          "mean": -6.57,
+          "median": -4.82,
+          "positive_rate": 0.188
+        },
+        "ret_20d": {
+          "mean": null,
+          "median": null,
+          "positive_rate": null
+        }
+      }
+    },
+    "total_samples": 54,
+    "computable": true,
+    "note": "样本量 54 足够，可计算统计量"
+  }
+}

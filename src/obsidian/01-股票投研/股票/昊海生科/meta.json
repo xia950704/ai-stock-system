@@ -1,0 +1,33 @@
+{
+  "name": "昊海生科",
+  "code": "688366",
+  "source_dir": "昊海生科_688366_SS",
+  "data_source": "stock_analysis",
+  "data_date": "2026-05-26",
+  "price_range": {
+    "start_date": "2019-10-30",
+    "end_date": "2026-05-26",
+    "start_price": 130.7,
+    "current_price": 34.15,
+    "high": 282.0,
+    "low": 33.76,
+    "trading_days": 1592
+  },
+  "files": {
+    "investment_note": "投资笔记.md",
+    "tech_analysis": "技术分析.md",
+    "events": "事件时间线.md",
+    "pipeline": "业务管线.md",
+    "valuation": "估值追踪.md",
+    "rd_pipeline": "研发管线.md",
+    "charts": [
+      "图表/full_history_kline.png",
+      "图表/recent5y_candle.png"
+    ],
+    "csv_data": [
+      "full_history_daily.csv",
+      "events.csv"
+    ]
+  },
+  "status": "integrated"
+}

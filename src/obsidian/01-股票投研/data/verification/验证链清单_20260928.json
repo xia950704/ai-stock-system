@@ -1,0 +1,247 @@
+{
+  "600276": {
+    "name": "恒瑞医药",
+    "verdict": "观望",
+    "buy_score": 0,
+    "price": 44.57,
+    "change_pct": -0.65
+  },
+  "000963": {
+    "name": "华东医药",
+    "verdict": "买入关注",
+    "buy_score": 45,
+    "price": 26.99,
+    "change_pct": 3.57
+  },
+  "600079": {
+    "name": "人福医药",
+    "verdict": "观望",
+    "buy_score": 0,
+    "price": 18.8,
+    "change_pct": -0.11
+  },
+  "002422": {
+    "name": "科伦药业",
+    "verdict": "观望",
+    "buy_score": 0,
+    "price": 38.85,
+    "change_pct": -0.03
+  },
+  "603259": {
+    "name": "药明康德",
+    "verdict": "观望",
+    "buy_score": 0,
+    "price": 161.5,
+    "change_pct": -0.55
+  },
+  "688506": {
+    "name": "百利天恒",
+    "verdict": "观望",
+    "buy_score": 5,
+    "price": 240.0,
+    "change_pct": 0.29
+  },
+  "002262": {
+    "name": "恩华药业",
+    "verdict": "买入关注",
+    "buy_score": 30,
+    "price": 21.65,
+    "change_pct": 2.32
+  },
+  "300122": {
+    "name": "智飞生物",
+    "verdict": "观望",
+    "buy_score": 5,
+    "price": 13.02,
+    "change_pct": 0.08
+  },
+  "300142": {
+    "name": "沃森生物",
+    "verdict": "观望",
+    "buy_score": 5,
+    "price": 13.69,
+    "change_pct": 0.81
+  },
+  "688366": {
+    "name": "昊海生科",
+    "verdict": "观望",
+    "buy_score": 0,
+    "price": 29.89,
+    "change_pct": -0.07
+  },
+  "600976": {
+    "name": "健民集团",
+    "verdict": "观望",
+    "buy_score": 5,
+    "price": 26.89,
+    "change_pct": 0.34
+  },
+  "603392": {
+    "name": "万泰生物",
+    "verdict": "观望",
+    "buy_score": 5,
+    "price": 26.67,
+    "change_pct": 1.1
+  },
+  "300347": {
+    "name": "泰格医药",
+    "verdict": "观望",
+    "buy_score": 5,
+    "price": 57.21,
+    "change_pct": 0.7
+  },
+  "688180": {
+    "name": "君实生物",
+    "verdict": "观望",
+    "buy_score": 5,
+    "price": 35.15,
+    "change_pct": 0.77
+  },
+  "300759": {
+    "name": "康龙化成",
+    "verdict": "观望",
+    "buy_score": 0,
+    "price": 43.39,
+    "change_pct": -0.25
+  },
+  "300558": {
+    "name": "贝达药业",
+    "verdict": "观望",
+    "buy_score": 0,
+    "price": 47.96,
+    "change_pct": -0.56
+  },
+  "600196": {
+    "name": "复星医药",
+    "verdict": "观望",
+    "buy_score": 5,
+    "price": 23.29,
+    "change_pct": 1.97
+  },
+  "002821": {
+    "name": "凯莱英",
+    "verdict": "观望",
+    "buy_score": 5,
+    "price": 179.03,
+    "change_pct": 0.41
+  },
+  "688235": {
+    "name": "百济神州",
+    "verdict": "观望",
+    "buy_score": 0,
+    "price": 257.68,
+    "change_pct": -0.12
+  },
+  "300896": {
+    "name": "爱美客",
+    "verdict": "观望",
+    "buy_score": 0,
+    "price": 92.17,
+    "change_pct": -0.1
+  },
+  "600436": {
+    "name": "片仔癀",
+    "verdict": "观望",
+    "buy_score": 0,
+    "price": 116.92,
+    "change_pct": -0.41
+  },
+  "600332": {
+    "name": "白云山",
+    "verdict": "观望",
+    "buy_score": 5,
+    "price": 19.43,
+    "change_pct": 0.21
+  },
+  "000538": {
+    "name": "云南白药",
+    "verdict": "观望",
+    "buy_score": 5,
+    "price": 50.33,
+    "change_pct": 0.92
+  },
+  "002223": {
+    "name": "鱼跃医疗",
+    "verdict": "观望",
+    "buy_score": 0,
+    "price": 26.37,
+    "change_pct": -0.04
+  },
+  "002603": {
+    "name": "以岭药业",
+    "verdict": "观望",
+    "buy_score": 5,
+    "price": 15.19,
+    "change_pct": 0.33
+  },
+  "600267": {
+    "name": "海正药业",
+    "verdict": "观望",
+    "buy_score": 5,
+    "price": 11.56,
+    "change_pct": 1.14
+  },
+  "300003": {
+    "name": "乐普医疗",
+    "verdict": "观望",
+    "buy_score": 5,
+    "price": 11.43,
+    "change_pct": 0.18
+  },
+  "603456": {
+    "name": "九洲药业",
+    "verdict": "观望",
+    "buy_score": 5,
+    "price": 16.48,
+    "change_pct": 1.48
+  },
+  "002007": {
+    "name": "华兰生物",
+    "verdict": "观望",
+    "buy_score": 5,
+    "price": 13.18,
+    "change_pct": 0.53
+  },
+  "300363": {
+    "name": "博腾股份",
+    "verdict": "观望",
+    "buy_score": 5,
+    "price": 24.08,
+    "change_pct": 1.05
+  },
+  "600085": {
+    "name": "同仁堂",
+    "verdict": "观望",
+    "buy_score": 0,
+    "price": 23.33,
+    "change_pct": -0.04
+  },
+  "601607": {
+    "name": "上海医药",
+    "verdict": "观望",
+    "buy_score": 0,
+    "price": 15.89,
+    "change_pct": -0.81
+  },
+  "000513": {
+    "name": "丽珠集团",
+    "verdict": "买入关注",
+    "buy_score": 30,
+    "price": 30.34,
+    "change_pct": 10.01
+  },
+  "603229": {
+    "name": "奥翔药业",
+    "verdict": "观望",
+    "buy_score": 5,
+    "price": 8.16,
+    "change_pct": 0.12
+  },
+  "600216": {
+    "name": "普洛药业",
+    "verdict": "观望",
+    "buy_score": 5,
+    "price": 12.34,
+    "change_pct": 0.08
+  }
+}

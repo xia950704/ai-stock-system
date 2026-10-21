@@ -1,0 +1,20 @@
+{
+  "total": 1175,
+  "migrated": 1170,
+  "skipped": 4,
+  "pending": 0,
+  "modules": {
+    "obsidian-mirror": 1012,
+    "trading": 96,
+    "legacy-scripts": 31,
+    "jev": 10,
+    "skill": 5,
+    "github-workflow": 3,
+    "core-scripts": 2,
+    "fetch-scripts": 4,
+    "rules": 2,
+    "market-data": 5,
+    "jev-config": 3,
+    "config": 2
+  }
+}

@@ -1,0 +1,58 @@
+source_path,target_path,file_type,purpose,module,status,hash_sha256,verification
+/Users/xiashuang/obsidian/all about xia/01-股票投研/04-医药股票跟踪池.md,,md,跟踪池权威索引,stock-tracking,discovered,469cfc4e1ab7f3eec6b673dd02c37614d3845dad4da5a84779be0c143e28a7c2,unverified
+/Users/xiashuang/obsidian/all about xia/01-股票投研/01-股票分析框架.md,,md,分析方法,stock-analysis,discovered,33aa22680fc88aa44a16ace68dea0b3d14140aba08fb447386589527a9860a8b,unverified
+/Users/xiashuang/obsidian/all about xia/01-股票投研/05-股票更新清单.md,,md,更新清单,stock-tracking,discovered,158953d1f8bdc63dfc87aebe62c591231812dbb8179dd3294f2f32496a81ea5c,unverified
+/Users/xiashuang/obsidian/all about xia/01-股票投研/06-Agent命令清单-股票数据更新.md,,md,命令清单,stock-commands,discovered,9be6dfd1193bc90a79f490277b6c68364793643ba661084cffba6cd01706229f,unverified
+/Users/xiashuang/obsidian/all about xia/01-股票投研/AGENTS.md,,md,子目录规则,stock-rules,discovered,171ac9de4081318e9dfece30489b9c6d96280087bd0e8f72b827b710490be580,unverified
+/Users/xiashuang/obsidian/all about xia/01-股票投研/02-工具与方法,,dir,工具方法,stock-tools,discovered,ERROR,unverified
+/Users/xiashuang/obsidian/all about xia/01-股票投研/分析报告,,dir,历史报告,stock-reports,discovered,ERROR,unverified
+/Users/xiashuang/obsidian/all about xia/01-股票投研/图表,,dir,K线图表,stock-charts,discovered,ERROR,unverified
+/Users/xiashuang/obsidian/all about xia/01-股票投研/日更,,dir,每日报告,stock-daily-reports,discovered,ERROR,unverified
+/Users/xiashuang/obsidian/all about xia/01-股票投研/模板,,dir,报告模板,stock-templates,discovered,ERROR,unverified
+/Users/xiashuang/obsidian/all about xia/01-股票投研/横向对比,,dir,横向报告,stock-comparison,discovered,ERROR,unverified
+/Users/xiashuang/obsidian/all about xia/01-股票投研/股票,,dir,个股笔记根,stock-notes,discovered,ERROR,unverified
+/Users/xiashuang/obsidian/all about xia/01-股票投研/ETF,,dir,ETF 跟踪,stock-etf,discovered,ERROR,unverified
+/Users/xiashuang/obsidian/all about xia/01-股票投研/data,,dir,机器数据根,stock-data,discovered,ERROR,unverified
+/Users/xiashuang/obsidian/all about xia/01-股票投研/data/daily_check,,dir,每日检查,stock-data-check,discovered,ERROR,unverified
+/Users/xiashuang/obsidian/all about xia/01-股票投研/data/gfdma,,dir,GF-DMA 评分,stock-gfdma,discovered,ERROR,unverified
+/Users/xiashuang/obsidian/all about xia/01-股票投研/data/bayesian,,dir,贝叶斯更新,stock-bayesian,discovered,ERROR,unverified
+/Users/xiashuang/obsidian/all about xia/01-股票投研/data/verification,,dir,数据验证,stock-data-verify,discovered,ERROR,unverified
+/Users/xiashuang/obsidian/all about xia/01-股票投研/data/standardized,,dir,标准化清单,stock-standardized,discovered,ERROR,unverified
+/Users/xiashuang/harness/anchor_status.json,,json,锚价权威源,market-data,discovered,abc3c00ef7d2b2b1f7352d6e3e51d3e88098b1c051dfb7ac1c2853a412e26ddb,unverified
+/Users/xiashuang/harness/stock_daily/realtime_prices_20260923.json,,json,实时价快照,market-data,discovered,9da5a8fccee5748b72918a98875c3dbe66cba3f93e643dc5626216694a4002ae,unverified
+/Users/xiashuang/harness/stock_daily/anchor_status_2026-09-23.json,,json,锚价日期快照,market-data,discovered,15259cbf1d6da0ccd28a3bd2982322a83bf6f9d8776697854199c97dc5c49c6a,unverified
+/Users/xiashuang/harness/stock_daily/stock_portfolio_enriched.json,,json,合并投资组合,portfolio,discovered,85af788f4db9d07234c0b173be6396498edeb81762190b28210ddcbf1a7f56ff,unverified
+/Users/xiashuang/harness/stock_daily/stock_ranking.json,,json,综合排名,ranking,discovered,86dfd26f2ded7e92659424deb6495d0b237e840894ba3d82d1c75d399a93eda0,unverified
+/Users/xiashuang/harness/stock_daily/stock_ranking.html,,html,排名看板,ranking,discovered,de7bccc5339a86fd1bc00062e0406e9d46b19b19b2ded17a8bb80406074b8e3f,unverified
+/Users/xiashuang/harness/stock_daily/fetch_realtime.py,,py,实时价抓取,market-data,discovered,3af0bc682e73a3be27b8f80ed3f0e0e792dbbaeae64405e39bf3099b4c82f06d,unverified
+/Users/xiashuang/harness/stock_daily/fetch_kline_tencent.py,,py,腾讯 K线,market-data,discovered,0c377074d64dbc6ec82d8bb01a772ef8bc9d2acb9080dae52af4780c732e6e53,unverified
+/Users/xiashuang/harness/stock_daily/fetch_kline_tencent_incremental.py,,py,增量 K线,market-data,discovered,15acbc1f483ebac56f7e6296ad66d286d99b9d3e9122bea28bc856901bcc486b,unverified
+/Users/xiashuang/harness/stock_daily/update_anchor.py,,py,锚价更新,market-data,discovered,979883471289cf9eb3011376c8747afad422d74e0e16c47e62183d8cad153f08,unverified
+/Users/xiashuang/.codex/skills/stock-research/SKILL.md,,md,投研 Skill,skill,discovered,73b92b6316d1d318f3b2e72d867679676895c2bf3c2ce1d3f29c26bdbed19f40,unverified
+/Users/xiashuang/.codex/skills/stock-research/dsh-stock-data-reader.py,,py,投研数据读取,skill,discovered,b9d8ddedc41fba517df98c03f40aa3720bbe56f5309c7e018c028a5523c6b6d5,unverified
+/Users/xiashuang/.codex/skills/jev-systemone/SKILL.md,,md,JEV Skill,skill,discovered,98c2d726ede205e5e5b65ec14e9db111728d4e8c958b86491d56c419f69be9a5,unverified
+/Users/xiashuang/.codex/skills/system-warmup-stock/SKILL.md,,md,系统预热投研,skill,discovered,0050a65a0a8168863d5484c9c03f79251f75be37688b35c9d795b405ab589076,unverified
+/Users/xiashuang/.codex/skills/system-warmup-trading/SKILL.md,,md,系统预热交易,skill,discovered,c1294aa3a7a1b8024b1940248f071b6ef7294862383b7731fd246088a44f2f7b,unverified
+/Users/xiashuang/.hermes/mcp-servers/jev-systemone/server.py,,py,JEV MCP server,jev,discovered,8cb7bc2ea1ea52b213fdee1615e8dc96cbef5e9606230f57f2dd8de8a3b3dc9e,unverified
+/Users/xiashuang/.hermes/jev/routing.json,,json,Hermes JEV 路由,jev,discovered,d35dcbe37b33fe8e765cb0e110112d87b5c4aad6c5f5894d5e96561707b801ed,unverified
+/Users/xiashuang/.codex/jev-routing.json,,json,Codex JEV 路由,jev,discovered,3cdd43f88b62e827de4868be9fcdea1b707c17bb214c4d6527ea30ff218754d4,unverified
+/Users/xiashuang/.hermes/scripts/wrappers/github_stock_heartbeat.sh,,sh,GitHub 行情 heartbeat,github-workflow,discovered,ab9270bceb7cb2eaa1ebadaff437496fe0cc97513d43fdc6906ce73cad6654cf,unverified
+/Users/xiashuang/.hermes/scripts/wrappers/stock_daily_fetch.sh,,sh,每日数据抓取 wrapper,market-data,discovered,c2903c0ebaeaef2830136c5ece7977ee796a1196c7a1249d47ca572815d2465f,unverified
+/Users/xiashuang/.hermes/scripts/wrappers/investment_pipeline.sh,,sh,投资流水线 wrapper,market-data,discovered,599365ff90f5b34274c2465aa14b38a77ede1ff1eca66af68c1c0c150aee12f9,unverified
+/Users/xiashuang/.hermes/scripts/investment_pipeline.py,,py,投资流水线脚本,market-data,discovered,6d9db3d53b0501bbbfb8d6f7e30a591ad3d4ba0a96b1cb6d57cc8a54efc008a2,unverified
+/Users/xiashuang/.hermes/scripts/stock_ranking.py,,py,综合排名脚本,ranking,discovered,5a68179025dbe7f01cd6707b233a40d5a897abf7d4be9c2a56687fd8f867d563,unverified
+/Volumes/夏爽/migration-20260922/hermes-scripts/stock_price_alert.py,,py,价格告警,market-data,discovered,d0839bc1a8dbe0161e99088bdac766c78a19ba435a07db0e991c3efedbfd025f,unverified
+/Volumes/夏爽/migration-20260922/hermes-scripts/anchor_valuation.py,,py,锚价估值,valuation,discovered,b086af4e8541cfc347edb08a2e7efd6f2df322f4f8b6b57a9556817f82552753,unverified
+/Volumes/夏爽/migration-20260922/hermes-scripts/stock_ranking.py,,py,综合排名(移硬盘版),ranking,discovered,79f6dceef80cafc7b8091c0d24e15e79ca787160da128282caf478525400424d,unverified
+/Volumes/夏爽/migration-20260922/hermes-scripts/gfdma_scorer.py,,py,GF-DMA 评分,ranking,discovered,67bb6f8404b1dfa0c0cddad05ba59df8104cdd95704ef7bd62af7280e0b87806,unverified
+/Volumes/夏爽/migration-20260922/hermes-scripts/fetch_finance_and_pe.py,,py,财务+PE 抓取,market-data,discovered,ddddcf50249b5d5ae1f9726e1919a93f9413e9c5ccc68a0b9506697789231880,unverified
+/Users/xiashuang/stock_ml_trading/run.py,,py,配对交易入口,trading,discovered,06497fbd4ba54b2361f9f890e44821efb99595d2a663834823828eb9b0f799aa,unverified
+/Users/xiashuang/stock_ml_trading/auto_trade_state.json,,json,配对交易状态,trading,discovered,acfd0f410c340dd8e4b055495011d03886b68bbf9fe960a3b2f589c240f9c545,unverified
+/Users/xiashuang/stock_ml_trading/logs/auto_trade_log.csv,,csv,配对交易日志,trading,discovered,c5ed2ff01d57cfa5a5d018d5db2be236ad2be021b8a684bb6d783a9c048a5b1e,unverified
+/Users/xiashuang/stock_ml_trading/reports/daily/2026-09-24.md,,md,配对日报,trading,discovered,4a91570f1c0dd25c3f61013499551f1b516fbaf3fbf50e8f1ffce21f3aaef501,unverified
+/Users/xiashuang/agent-workspace/AGENTS.md,,md,工作区规则,rules,discovered,77cafe764cb1895460b97cc4d37fcfca11b91b5dd6f5705b09fe984ac3f4ce90,unverified
+/Users/xiashuang/obsidian/all about xia/AGENTS.md,,md,Vault 规则,rules,discovered,d85c5e429b5c65f42624e49aff8a6f29e28e3fec15d0e05a4c240e27b8277d1b,unverified
+/Users/xiashuang/.codex/config.toml,,toml,Codex MCP 配置,config,discovered,d0a2d0a7b272074ddee8fb033a1f0faab045bf25c8f0c2985c5fa7970b438e14,unverified
+/Users/xiashuang/.hermes/config.yaml,,yaml,Hermes 配置,config,discovered,e1f488a6351d77f5105d68b9fab8d845d6ba5f964f6d048669c6939e20448f6c,unverified
+/Users/xiashuang/.hermes/jev/.env,,env,JEV 环境,jev-config,discovered,MISSING,unverified
+/Volumes/夏爽/docs/audit/17-final-audit-report.md,,md,审计报告,audit,discovered,45ccef7a32bd94997fa2a0f11c5204b52c5e1aaa6c7fd46cd15925f0fdd0c0b9,unverified

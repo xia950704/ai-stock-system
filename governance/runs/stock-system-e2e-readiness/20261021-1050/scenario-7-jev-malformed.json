@@ -1,0 +1,16 @@
+{
+  "jev_available": false,
+  "jev_status": "parse_error",
+  "relation": "证据不足",
+  "gaps": [
+    "JEV 调用失败（parse_error），不参与证据综合",
+    "订单面数据缺失",
+    "研究笔记最后更新：2026-08-21"
+  ],
+  "action": {
+    "action": "INSUFFICIENT_EVIDENCE",
+    "reason": "无可用价格或评分数据",
+    "conditions": [],
+    "invalidation": []
+  }
+}

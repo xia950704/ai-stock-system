@@ -1,0 +1,10 @@
+{
+  "task_id": "1a3b24fdb5a6",
+  "start": "2026-09-01",
+  "end": "2026-10-20",
+  "total_days": 30,
+  "success_days": 30,
+  "failed_days": 0,
+  "errors": [],
+  "output_dir": "reports/backtest/1a3b24fdb5a6"
+}

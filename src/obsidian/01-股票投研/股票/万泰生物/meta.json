@@ -1,0 +1,33 @@
+{
+  "name": "万泰生物",
+  "code": "603392",
+  "source_dir": "万泰生物_603392_SS",
+  "data_source": "stock_analysis",
+  "data_date": "2026-05-26",
+  "price_range": {
+    "start_date": "2020-04-29",
+    "end_date": "2026-05-26",
+    "start_price": 12.6,
+    "current_price": 34.42,
+    "high": 344.7,
+    "low": 12.6,
+    "trading_days": 1470
+  },
+  "files": {
+    "investment_note": "投资笔记.md",
+    "tech_analysis": "技术分析.md",
+    "events": "事件时间线.md",
+    "pipeline": "业务管线.md",
+    "valuation": "估值追踪.md",
+    "rd_pipeline": "研发管线.md",
+    "charts": [
+      "图表/full_history_kline.png",
+      "图表/recent5y_candle.png"
+    ],
+    "csv_data": [
+      "full_history_daily.csv",
+      "events.csv"
+    ]
+  },
+  "status": "integrated"
+}

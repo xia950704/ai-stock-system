@@ -1,0 +1,23 @@
+# Hermes 配置模板（占位符版 — 不含真实密钥）
+# 源文件：~/.hermes/config.yaml (P1 未复制原件，因其包含明文 api_key)
+# 使用时：将 <PLACEHOLDER_*> 替换为真实值，或改用环境变量注入。
+
+# 注意：真实 Hermes 配置包含多个第三方 API 密钥（SenseNova、Gemini、OpenRouter 等）。
+# 这些密钥必须存放在本机配置文件或 Secrets Manager 中，禁止提交到 Git。
+
+secrets:
+  # SenseNova (示例)
+  sensenova:
+    api_key: "<PLACEHOLDER_SENSE_NOVA_API_KEY>"
+  # Gemini
+  gemini:
+    api_key: "<PLACEHOLDER_GEMINI_API_KEY>"
+  # OpenRouter
+  openrouter:
+    api_key: "<PLACEHOLDER_OPENROUTER_API_KEY>"
+  # JEV / bynara
+  jev:
+    api_key: "<PLACEHOLDER_JEV_API_KEY>"
+
+# 其他配置项（不含敏感值）保留结构参考
+# 完整配置请查阅 ~/.hermes/config.yaml（本机只读参考）

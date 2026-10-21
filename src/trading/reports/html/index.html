@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>配对交易策略仪表盘 - 2026-09-24</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+         background: #0f172a; color: #e2e8f0; padding: 24px; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  h1 { font-size: 1.8em; margin-bottom: 8px; color: #f1f5f9; }
+  .subtitle { color: #94a3b8; margin-bottom: 24px; }
+  .stats-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+               gap: 16px; margin-bottom: 24px; }
+  .stat-card { background: #1e293b; border-radius: 12px; padding: 16px; text-align: center; }
+  .stat-card .value { font-size: 1.6em; font-weight: 700; }
+  .stat-card .label { font-size: 0.8em; color: #94a3b8; margin-top: 4px; }
+  .positive { color: #22c55e; }
+  .negative { color: #ef4444; }
+  .table-wrap { overflow-x: auto; background: #1e293b; border-radius: 12px; padding: 16px; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.9em; }
+  th { text-align: left; padding: 10px 8px; border-bottom: 2px solid #334155;
+        color: #94a3b8; font-weight: 600; white-space: nowrap; }
+  td { padding: 10px 8px; border-bottom: 1px solid #1e293b; }
+  tr:hover td { background: #334155; }
+  .signal-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                  gap: 16px; margin: 24px 0; }
+  .signal-card { background: #1e293b; border-radius: 12px; padding: 16px;
+                  border-left: 4px solid #64748b; }
+  .signal-card.buy { border-left-color: #22c55e; }
+  .signal-card.over { border-left-color: #ef4444; }
+  .signal-card h3 { font-size: 1em; margin-bottom: 8px; }
+  .signal-card .meta { font-size: 0.85em; color: #94a3b8; }
+  .z-score { font-size: 1.8em; font-weight: 700; }
+  footer { text-align: center; color: #64748b; font-size: 0.8em; margin-top: 32px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>📊 配对交易策略仪表盘</h1>
+  <p class="subtitle">更新于 2026-09-24 | 统计套利均值回归策略 | 开仓|z|>2.0</p>
+
+  <div class="stats-row">
+    <div class="stat-card">
+      <div class="value positive">+0.33%</div>
+      <div class="label">平均收益</div>
+    </div>
+    <div class="stat-card">
+      <div class="value">60,196</div>
+      <div class="label">总资产(3份)</div>
+    </div>
+    <div class="stat-card">
+      <div class="value">5</div>
+      <div class="label">总交易</div>
+    </div>
+    <div class="stat-card">
+      <div class="value positive">33%</div>
+      <div class="label">平均胜率(1盈/2亏)</div>
+    </div>
+    <div class="stat-card">
+      <div class="value">3</div>
+      <div class="label">活跃配对</div>
+    </div>
+  </div>
+
+  <h2>📋 全配对排名</h2>
+  <div class="table-wrap">
+  <table>
+    <thead>
+      <tr><th>配对</th><th>行业</th><th>收益</th><th>交易</th><th>胜率</th><th>夏普</th><th>回撤</th><th>相关性</th></tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+            <td>🟢 光大嘉宝↔北京人力</td>
+            <td>银行</td>
+            <td class="positive">+9.31%</td>
+            <td>1</td>
+            <td>100%</td>
+            <td>0.8</td>
+            <td class="positive">-0.12%</td>
+            <td>0.813</td>
+        </tr>
+        <tr>
+            <td>🔴 阳光乳业↔隆基机械</td>
+            <td>新能源</td>
+            <td class="negative">-2.87%</td>
+            <td>1</td>
+            <td>0%</td>
+            <td>-0.9</td>
+            <td class="negative">-2.87%</td>
+            <td>0.811</td>
+        </tr>
+        <tr>
+            <td>🔴 老白干酒↔水井坊</td>
+            <td>白酒</td>
+            <td class="negative">-5.46%</td>
+            <td>3</td>
+            <td>0%</td>
+            <td>-1.1</td>
+            <td class="negative">-5.46%</td>
+            <td>0.983</td>
+        </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <footer>生成于 2026-09-24 09:57 | 不构成投资建议</footer>
+</div>
+</body>
+</html>

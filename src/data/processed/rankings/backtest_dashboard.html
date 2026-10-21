@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📊 信号回测报告 - 2026-09-24</title>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:#0f1117; color:#e0e0e0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; padding:20px; }
+h1 { font-size:24px; margin-bottom:8px; color:#fff; }
+.subtitle { color:#888; font-size:14px; margin-bottom:24px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px; margin-bottom:24px; }
+.card { background:#1a1d27; border-radius:12px; padding:20px; border:1px solid #2a2d37; }
+.card h3 { font-size:14px; color:#888; margin-bottom:8px; }
+.card .value { font-size:28px; font-weight:700; color:#fff; }
+.card .sub { font-size:12px; color:#666; margin-top:4px; }
+.chart-card { background:#1a1d27; border-radius:12px; padding:16px; border:1px solid #2a2d37; margin-bottom:16px; }
+.chart-card h3 { font-size:14px; color:#888; margin-bottom:12px; }
+.chart { width:100%; height:400px; }
+table { width:100%; border-collapse:collapse; font-size:13px; }
+th { text-align:left; padding:8px 10px; color:#888; font-weight:500; border-bottom:1px solid #2a2d37; }
+td { padding:8px 10px; border-bottom:1px solid #22252f; }
+tr:hover td { background:rgba(255,255,255,0.03); }
+.badge-win { display:inline-block; padding:2px 8px; border-radius:4px; font-size:11px; font-weight:600; background:#00a854; color:#fff; }
+.badge-lose { display:inline-block; padding:2px 8px; border-radius:4px; font-size:11px; font-weight:600; background:#d4380d; color:#fff; }
+.badge-neutral { display:inline-block; padding:2px 8px; border-radius:4px; font-size:11px; font-weight:600; background:#fa8c16; color:#fff; }
+</style>
+</head>
+<body>
+<h1>📊 信号历史回测报告</h1>
+<p class="subtitle">2026-09-24 | 测试 0 只股票 | 共 0 个信号</p>
+
+<div class="grid">
+  <div class="card">
+    <h3>测试股票</h3>
+    <div class="value">0</div>
+    <div class="sub">失败 35 只</div>
+  </div>
+  <div class="card">
+    <h3>总信号数</h3>
+    <div class="value">0</div>
+    <div class="sub">0 种信号类型</div>
+  </div>
+  <div class="card">
+    <h3>最佳信号 (5日胜率)</h3>
+    <div class="value" style="color:#d4380d">N/A</div>
+    <div class="sub"> | 胜率 0.0%</div>
+  </div>
+  <div class="card">
+    <h3>信号种类</h3>
+    <div class="value">0</div>
+    <div class="sub">MA / RSI / MACD / 布林带 / ATR</div>
+  </div>
+</div>
+
+<div class="chart-card">
+  <h3>📈 各信号5日胜率对比</h3>
+  <div id="winRateChart" class="chart"></div>
+</div>
+<script>
+const winRateChart = echarts.init(document.getElementById('winRateChart'));
+winRateChart.setOption({
+  tooltip: { trigger: 'axis' },
+  grid: { left: '12%', right: '8%', bottom: '15%' },
+  xAxis: { type: 'category', data: [],
+    axisLabel: { color: '#888', rotate: 30 } },
+  yAxis: { type: 'value', name: '胜率 (%)', axisLabel: { color: '#888' },
+    splitLine: { lineStyle: { color: '#2a2d37' } } },
+  series: [{
+    type: 'bar',
+    data: [],
+    itemStyle: { color: new echarts.graphic.LinearGradient(0, 0, 0, 1,
+      [{ offset: 0, color: '#00a854' }, { offset: 1, color: '#004d2b' }]),
+      borderRadius: [4, 4, 0, 0] },
+    label: { show: true, position: 'top', formatter: '{c}%', color: '#888', fontSize: 11 }
+  }]
+});
+</script>
+
+<div class="chart-card">
+  <h3>📋 信号回测详细数据</h3>
+  <table>
+  <thead><tr>
+    <th>信号类型</th><th>方向</th><th>样本数</th>
+    <th>1日胜率</th><th>3日胜率</th><th>5日胜率</th><th>10日胜率</th>
+    <th>3日收益</th><th>夏普</th><th>最大回撤</th>
+  </tr></thead><tbody>
+
+  </tbody></table>
+</div>
+
+<div class="chart-card">
+  <h3>📊 信号分布</h3>
+  <div id="distChart" class="chart" style="height:300px"></div>
+</div>
+<script>
+const distChart = echarts.init(document.getElementById('distChart'));
+distChart.setOption({
+  tooltip: { trigger: 'item', formatter: '{b}: {c} ({d}%)' },
+  series: [{
+    type: 'pie',
+    radius: ['40%', '70%'],
+    data: [],
+    label: { color: '#888', fontSize: 11 },
+    itemStyle: {
+      borderRadius: 4,
+      color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+        { offset: 0, color: '#5470c6' }, { offset: 1, color: '#2a3d6b' }
+      ])
+    }
+  }]
+});
+</script>
+
+</body>
+</html>

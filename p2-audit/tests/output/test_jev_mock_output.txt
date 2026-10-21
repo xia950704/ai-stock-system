@@ -1,0 +1,7 @@
+[PASS] T-J01 server.py _call 处理 httpx.TimeoutException
+[PASS] T-J02 server.py _call 返回 ok=False 格式的错误结果
+[PASS] T-J03 server.py jev_front_door 使用 --timeout 60 调用 CLI
+[PASS] T-J04 server.py 无裸 except:
+[PASS] T-J05 server.py 设置 TIMEOUT_S 并使用于 httpx.Client
+
+=== test_jev_mock: 5 passed, 0 failed ===

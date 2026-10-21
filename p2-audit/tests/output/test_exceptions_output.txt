@@ -1,0 +1,5 @@
+[PASS] T-E01 alerts.py 使用 except Exception as e 而非裸 except
+[PASS] T-E02 optimizer.py 使用 except Exception as e 而非裸 except
+[PASS] T-E03 daily_update.py 涨跌幅解析使用 except Exception as e
+
+=== test_exceptions: 3 passed, 0 failed ===

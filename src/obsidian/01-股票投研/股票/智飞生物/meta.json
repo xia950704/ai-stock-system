@@ -1,0 +1,33 @@
+{
+  "name": "智飞生物",
+  "code": "300122",
+  "source_dir": "智飞生物_300122_SZ",
+  "data_source": "stock_analysis",
+  "data_date": "2026-05-26",
+  "price_range": {
+    "start_date": "2010-09-28",
+    "end_date": "2026-05-26",
+    "start_price": 38.55,
+    "current_price": 13.38,
+    "high": 231.19,
+    "low": 11.9,
+    "trading_days": 3724
+  },
+  "files": {
+    "investment_note": "投资笔记.md",
+    "tech_analysis": "技术分析.md",
+    "events": "事件时间线.md",
+    "pipeline": "业务管线.md",
+    "valuation": "估值追踪.md",
+    "rd_pipeline": "研发管线.md",
+    "charts": [
+      "图表/full_history_kline.png",
+      "图表/recent5y_candle.png"
+    ],
+    "csv_data": [
+      "full_history_daily.csv",
+      "events.csv"
+    ]
+  },
+  "status": "integrated"
+}

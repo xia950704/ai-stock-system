@@ -1,0 +1,6 @@
+[PASS] T-D01 正常 JSON 读取成功
+[PASS] T-D02 空文件抛出 JSONDecodeError（清晰报错）
+[PASS] T-D03 字段缺失时使用默认值
+[PASS] T-D04 类型错误抛出 ValueError（可捕获）
+
+=== test_data_integrity: 4 passed, 0 failed ===

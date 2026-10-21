@@ -1,0 +1,13 @@
+{
+  "stock_name": "恩华药业",
+  "stock_code": "sz002262",
+  "exchange": "SZ",
+  "sector": "中枢神经用药/麻醉精神用药",
+  "p0_status": "active",
+  "anchor_price": 21,
+  "current_price": 22.37,
+  "data_source": "kline_baostock/002262_恩华药业_kline.csv",
+  "created": "2026-09-24",
+  "updated": "2026-09-24",
+  "notes": "kline_raw.csv 从 harness/kline_baostock/002262_恩华药业_kline.csv 补入（阶段 2 P1）；meta.json 为新建占位文件，财务数据待补充"
+}

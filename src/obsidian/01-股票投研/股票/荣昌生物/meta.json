@@ -1,0 +1,33 @@
+{
+  "name": "荣昌生物",
+  "code": "688331",
+  "source_dir": "荣昌生物_688331_SS",
+  "data_source": "stock_analysis",
+  "data_date": "2026-05-26",
+  "price_range": {
+    "start_date": "2022-03-31",
+    "end_date": "2026-05-26",
+    "start_price": 40.84,
+    "current_price": 114.0,
+    "high": 156.79,
+    "low": 22.37,
+    "trading_days": 1004
+  },
+  "files": {
+    "investment_note": "投资笔记.md",
+    "tech_analysis": "技术分析.md",
+    "events": "事件时间线.md",
+    "pipeline": "业务管线.md",
+    "valuation": "估值追踪.md",
+    "rd_pipeline": "研发管线.md",
+    "charts": [
+      "图表/full_history_kline.png",
+      "图表/recent5y_candle.png"
+    ],
+    "csv_data": [
+      "full_history_daily.csv",
+      "events.csv"
+    ]
+  },
+  "status": "integrated"
+}
