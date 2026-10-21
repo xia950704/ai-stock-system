@@ -33,6 +33,9 @@ SOURCE_TIER_RULES = [
     (re.compile(r"(zhihu|weibo|tieba|guba|baidu\.com)", re.I), 5),
 ]
 
+# Relay LLM 池作为第二路独立验证通道（tier=2，高于一般财经媒体）
+RELAY_VERIFIED_TIER = 2
+
 def source_tier(url: Optional[str]) -> int:
     """根据 URL 域名估计来源优先级（1-5）。"""
     if not url:
@@ -103,12 +106,19 @@ def add_source(claim: Dict[str, Any], result: Dict[str, Any],
     title = result.get("title") or ""
     # Live relay results use `content`; legacy/mock fixtures use `snippet`.
     snippet = result.get("snippet") or result.get("content") or ""
-    domain = _domain(url)
-    tier = source_tier(url)
+    # Relay verified sources use explicit tier and synthetic domain
+    if result.get("type") == "relay_verified":
+        domain = "relay"
+        tier = result.get("tier", RELAY_VERIFIED_TIER)
+        url_key = f"relay:{result.get('model', 'unknown')}:{result.get('timestamp', '')}"
+    else:
+        domain = _domain(url)
+        tier = source_tier(url)
+        url_key = _url_key(url)
     published = result.get("published_at") or result.get("date") or None
 
     for s in claim["sources"]:
-        if s["url_key"] == _url_key(url) and s["url_key"]:
+        if s.get("url_key") == url_key and url_key:
             s["duplicate_count"] = s.get("duplicate_count", 1) + 1
             return
         # 同域名同标题：视为转载
@@ -119,22 +129,26 @@ def add_source(claim: Dict[str, Any], result: Dict[str, Any],
     claim["sources"].append({
         "title": title,
         "url": url,
-        "url_key": _url_key(url),
+        "url_key": url_key,
         "domain": domain,
         "tier": tier,
         "published_at": published,
         "snippet": snippet[:300],
         "accessed_at": accessed_at or datetime.now(TZ).isoformat(),
         "duplicate_count": 1,
+        "type": result.get("type", "web"),
     })
 
 def independent_sources(claim: Dict[str, Any]) -> int:
-    """独立来源数：不同域名且 tier<=3 的来源。"""
+    """独立来源数：不同域名且 tier<=3 的来源 + relay_verified 来源。"""
     domains = set()
+    relay_count = 0
     for s in claim["sources"]:
+        if s.get("type") == "relay_verified":
+            relay_count += 1
         if s.get("domain") and s["tier"] <= 3:
             domains.add(s["domain"])
-    return len(domains)
+    return len(domains) + relay_count
 
 def best_source_tier(claim: Dict[str, Any]) -> Optional[int]:
     """最优来源优先级（最小 tier）。"""

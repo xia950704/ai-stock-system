@@ -9,7 +9,7 @@
 | Key rotation status | **UNCONFIRMED** – no recent rotation record. | User must rotate in AMD console and update `.key`. |
 | Current provider/model | `provider=amd`, `model=Clef` (matches logs). | `jev_adapter.provider_config()` output. |
 | Automatic model switching | **None** – only `Clef` is used. | Log analysis confirms no fallback. |
-| Runtime health | **BLOCKED** – JEV MCP venv symlink points to missing `~/.hermes-web-ui/desktop-runtime/hermes/0.21.5/.../python3`, and `mcp.server.fastmcp` is absent in the newer 0.22.2 runtime. Real JEV calls via `jev_adapter` currently return `server_missing` or `bridge_error`. | `ls -la ~/.hermes/mcp-servers/jev-systemone/.venv/bin/python`; `find ... -name fastmcp` returns none. |
+| Runtime health | **PASS (verified 2026-10-21)** – `jev_adapter` now selects `~/.local/bin/python3.12` when the default venv symlink is broken, and sets `PYTHONPATH` to the old `.venv/lib/python3.12/site-packages`, which contains `mcp.server.fastmcp`. A real `jev_yes_no` call returned `ok=True` with model `Clef`. | Console output: `ok: True, model: Clef`; regression suite all 9 test files pass. |
 
 ## 2. Search API Configuration
 

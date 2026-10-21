@@ -66,6 +66,13 @@ def _parse_tool_content(result: Any) -> Dict[str, Any]:
 
 
 async def _run(request: Dict[str, Any], timeout_s: float) -> Dict[str, Any]:
+    pythonpath = request.get("pythonpath")
+    if pythonpath:
+        sys.path.insert(0, pythonpath)
+        existing = os.environ.get("PYTHONPATH")
+        os.environ["PYTHONPATH"] = (
+            pythonpath + os.pathsep + existing if existing else pythonpath
+        )
     try:
         from mcp import ClientSession, StdioServerParameters
         from mcp.client.stdio import stdio_client
@@ -95,10 +102,6 @@ async def _run(request: Dict[str, Any], timeout_s: float) -> Dict[str, Any]:
         }
 
     env = dict(os.environ)
-    pythonpath = request.get("pythonpath")
-    if pythonpath:
-        existing = env.get("PYTHONPATH")
-        env["PYTHONPATH"] = pythonpath + os.pathsep + existing if existing else pythonpath
     # Tests can safely force a fake credential without touching the real file.
     if request.get("fake_key"):
         env["JEV_API_KEY"] = str(request["fake_key"])

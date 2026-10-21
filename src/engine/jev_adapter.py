@@ -60,6 +60,9 @@ def _mcp_python() -> str:
     """
     if os.path.isfile(_DEFAULT_MCP_PYTHON):
         return _DEFAULT_MCP_PYTHON
+    local_312 = os.path.expanduser("~/.local/bin/python3.12")
+    if os.path.isfile(local_312):
+        return local_312
     candidates = sorted(
         Path.home().joinpath(
             ".hermes-web-ui", "desktop-runtime", "hermes"
@@ -250,7 +253,7 @@ def _call(payload: Dict[str, Any], use_mock: bool = False,
             "python": MCP_PYTHON,
             "server_dir": MCP_SERVER_DIR,
             "pythonpath": str(
-                Path(MCP_PYTHON).parent.parent.parent / "optional-skills" / "mcp"
+                Path(MCP_SERVER_DIR) / ".venv" / "lib" / "python3.12" / "site-packages"
             ),
         }
         try:

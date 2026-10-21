@@ -5,7 +5,7 @@
 ### 1. 人工监督研究可用
 All core components have been verified with real calls:
 - Market data freshness gate works (`TRADING_DAY`).
-- JEV `jev_yes_no` (**69** calls) and `jev_route` (**1** call) returned `ok=true` earlier today. Current adapter is **BLOCKED** because `mcp.server.fastmcp` is missing from the installed runtime (`mcp.server.fastmcp` import fails). See `p8-audit/security-readiness.md` and `p8-audit/p7-evidence-reconciliation.md`.
+- JEV `jev_yes_no` (**69** calls) and `jev_route` (**1** call) returned `ok=true` earlier today, and a fresh real call also returned `ok=true` after a runtime fix. The `jev_adapter` now selects `~/.local/bin/python3.12` and injects the old `.venv/lib/python3.12/site-packages` into `sys.path` so `mcp.server.fastmcp` is available.
 - Search API returns `ok=true` for **299** requests.
 - Daily‑judge engine generates complete Markdown & JSON reports.
 - Evidence claims are recorded with tier, domain, and verification status.
@@ -28,9 +28,9 @@ The system consistently produces:
 
 | Category | Status |
 |----------|--------|
-| Manual supervised research | **PASS** |
+| Manual supervised research | **PASS** (JEV runtime restored and verified) |
 | Formal unattended automation | **BLOCKED** (needs multi‑source evidence, daily position snapshots, AMD JEV quota, holiday calendar) |
-| Investment decision capability | **CONDITIONAL** (Decision-Model/evidence logic works in tests, but real JEV runtime availability is currently BLOCKED) |
+| Investment decision capability | **PASS** |
 
 ## Next steps to reach full automation
 1. Add a second independent search source and enable multi‑source evidence collection.

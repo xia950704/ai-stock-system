@@ -2,7 +2,8 @@
 """Daily commit bot for ai-stock-system.
 
 Keeps the repository alive by:
-1. Running the daily_judge engine in mock mode (cheap, deterministic)
+1. Running the daily_judge engine in real mode (real JEV + real Search API)
+2. Running the daily positions snapshot script
 2. Committing any new report as a daily shadow run
 3. Committing a fix-style message if the engine fails
 
@@ -28,6 +29,7 @@ from datetime import datetime, timezone, timedelta
 TZ = timezone(timedelta(hours=8))
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ENGINE = os.path.join(ROOT, "src", "engine", "daily_judge.py")
+SNAPSHOT = os.path.join(ROOT, "scripts", "daily_positions_snapshot.py")
 REPORTS_DIR = os.path.join(ROOT, "reports", "shadow")
 
 
@@ -51,19 +53,31 @@ def has_git_repo() -> bool:
 
 
 def run_engine(today: str, dry_run: bool) -> tuple[bool, str]:
-    """Run the engine in mock mode; returns (success, log)."""
+    """Run the engine in real mode; returns (success, log)."""
     cmd = [
         sys.executable,
         ENGINE,
         "--date", today,
-        "--mock-jev",
-        "--mock-search",
         "--json",
     ]
     proc = run(cmd, check=False)
     log = proc.stdout + proc.stderr
     success = proc.returncode == 0
     return success, log
+
+
+def run_positions_snapshot(dry_run: bool) -> str:
+    """Run the daily positions snapshot script."""
+    if dry_run:
+        return "[dry-run] would run positions snapshot"
+    proc = subprocess.run(
+        [sys.executable, SNAPSHOT],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    return (proc.stdout + proc.stderr).strip()
 
 
 def has_report_changes() -> bool:
@@ -128,6 +142,9 @@ def main() -> int:
 
     print(f"=== daily_commit_bot {today} ===")
     success, log = run_engine(today, args.dry_run)
+
+    snap_result = run_positions_snapshot(args.dry_run)
+    print(f"  持仓快照: {snap_result}")
 
     if success:
         print("Engine OK")

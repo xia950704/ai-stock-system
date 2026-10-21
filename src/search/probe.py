@@ -23,6 +23,79 @@ from evidence import make_claim, add_source, verify_claim, sanitize_for_report, 
 
 TZ = timezone(timedelta(hours=8))
 
+# Relay LLM 池地址（与 src/engine/jev_adapter.py 同源）
+RELAY_URL = os.environ.get("RELAY_URL", "http://127.0.0.1:57321/v1")
+
+
+def relay_verify_claim(claim: Dict[str, Any],
+                       relay_url: str = RELAY_URL,
+                       model: str = "auto",
+                       timeout_s: float = 30.0) -> Dict[str, Any]:
+    """通过 Relay LLM 池对 claim 进行独立二次验证。
+
+    发送结构化 yes/no 问题，返回来源字典。
+    失败时返回 answer="error"，不抛异常。
+    """
+    try:
+        import httpx
+    except ImportError:
+        return {
+            "type": "relay_verified", "tier": 2, "model": model,
+            "answer": "error", "reasoning": "httpx not installed",
+            "timestamp": datetime.now(TZ).isoformat(),
+        }
+
+    # 构建证据摘要
+    evidence_parts = []
+    for s in claim.get("sources", []):
+        evidence_parts.append(f"- {s.get('title', '')}: {s.get('snippet', '')[:200]}")
+    evidence_text = "\n".join(evidence_parts) if evidence_parts else "（无可用来源摘要）"
+
+    question = (
+        f"Given the following evidence, does this claim hold true? "
+        f"Claim: {claim.get('claim', '')}. "
+        f"Evidence: {evidence_text}. "
+        f"Answer yes or no with reasoning."
+    )
+
+    payload = {
+        "model": model,
+        "messages": [
+            {"role": "system", "content": "You are a factual verifier. Answer yes or no based only on the provided evidence."},
+            {"role": "user", "content": question},
+        ],
+        "max_tokens": 200,
+        "temperature": 0,
+    }
+
+    headers = {"Content-Type": "application/json"}
+
+    try:
+        with httpx.Client(timeout=timeout_s) as client:
+            r = client.post(f"{relay_url}/chat/completions", headers=headers, json=payload)
+        if r.status_code != 200:
+            return {
+                "type": "relay_verified", "tier": 2, "model": model,
+                "answer": "error",
+                "reasoning": f"HTTP {r.status_code}",
+                "timestamp": datetime.now(TZ).isoformat(),
+            }
+        data = r.json()
+        content = data.get("choices", [{}])[0].get("message", {}).get("content", "")
+        answer = "yes" if content.lower().strip().startswith("yes") else "no"
+        return {
+            "type": "relay_verified", "tier": 2, "model": model,
+            "answer": answer, "reasoning": content.strip(),
+            "timestamp": datetime.now(TZ).isoformat(),
+        }
+    except Exception as e:
+        return {
+            "type": "relay_verified", "tier": 2, "model": model,
+            "answer": "error", "reasoning": str(e),
+            "timestamp": datetime.now(TZ).isoformat(),
+        }
+
+
 # 每只股票每个 facet 一个查询（只含代码与名称，不含持仓/成本）
 def build_queries(stock: Dict[str, str]) -> List[Dict[str, str]]:
     name, code = stock["name"], stock["code"]
@@ -79,6 +152,12 @@ def probe_stock(stock: Dict[str, str], use_mock: bool = False,
             add_source(c, res)
             verify_claim(c)
             claims.append(c)
+
+    # Relay LLM 池二次验证（每条 claim 独立验证）
+    for c in claims:
+        rv = relay_verify_claim(c)
+        add_source(c, rv)
+        verify_claim(c)
 
     if status != "ok":
         notes.insert(0, f"Search API 状态: {status}（结果仅为部分/待验证数据，不构成已核实事实）")

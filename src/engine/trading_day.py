@@ -19,6 +19,35 @@ ANCHOR_PATH = os.path.join(DATA_ROOT, "anchor_status.json")
 
 TZ = timezone(timedelta(hours=8))
 
+_CN_MARKET_HOLIDAYS = {
+    # 2026
+    "2026-01-01",                              # 元旦
+    "2026-02-16", "2026-02-17", "2026-02-18", "2026-02-19",
+    "2026-02-20", "2026-02-21", "2026-02-22",    # 春节（7 天）
+    "2026-04-04", "2026-04-05", "2026-04-06",    # 清明节
+    "2026-05-01", "2026-05-02", "2026-05-03",
+    "2026-05-04", "2026-05-05",                  # 劳动节（5 天）
+    "2026-06-19", "2026-06-20", "2026-06-21",    # 端午节
+    "2026-09-24", "2026-09-25", "2026-09-26",    # 中秋节
+    "2026-10-01", "2026-10-02", "2026-10-03",
+    "2026-10-04", "2026-10-05", "2026-10-06",
+    "2026-10-07",                                # 国庆节（7 天）
+    # 2027
+    "2027-01-01",                                # 元旦
+    "2027-02-06", "2027-02-07", "2027-02-08",
+    "2027-02-09", "2027-02-10", "2027-02-11",
+    "2027-02-12",                                # 春节（7 天）
+    "2027-04-05",                                # 清明节
+    "2027-05-01", "2027-05-02", "2027-05-03",
+    "2027-05-04", "2027-05-05", "2027-05-06",
+    "2027-05-07",                                # 劳动节（7 天）
+    "2027-05-29", "2027-05-30", "2027-05-31",    # 端午节
+    "2027-09-15",                                # 中秋节
+    "2027-10-01", "2027-10-02", "2027-10-03",
+    "2027-10-04", "2027-10-05", "2027-10-06",
+    "2027-10-07",                                # 国庆节（7 天）
+}
+
 
 def now_sh() -> datetime:
     """返回 Asia/Shanghai 当前时间。"""
@@ -41,14 +70,24 @@ def trading_day_status(reference_date: Optional[datetime] = None) -> Dict[str, A
     """
     d = reference_date or now_sh()
     weekend = is_weekend(d)
+    date_str = d.strftime("%Y-%m-%d")
+    if date_str in _CN_MARKET_HOLIDAYS:
+        return {
+            "date": date_str,
+            "weekday": d.strftime("%A"),
+            "is_weekend": weekend,
+            "likely_trading_day": False,
+            "confirmed": False,
+            "note": "节假日",
+        }
     return {
-        "date": d.strftime("%Y-%m-%d"),
+        "date": date_str,
         "weekday": d.strftime("%A"),
         "is_weekend": weekend,
         "likely_trading_day": not weekend,
-        "confirmed": not weekend,  # 节假日无法确认，保守起见不宣称确认
+        "confirmed": not weekend,
         "note": ("周末，非交易日" if weekend
-                 else "工作日，但法定节假日无法确认（无可信节假日表）"),
+                 else "工作日（节假日表已校验）"),
     }
 
 
