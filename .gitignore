@@ -28,6 +28,7 @@
 
 # 临时目录
 **/tmp/
+scratch/
 **/scratch/
 
 # 虚拟环境
