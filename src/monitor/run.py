@@ -127,6 +127,8 @@ def main() -> int:
                         help="交易时段内也强制运行（默认跳过）")
     parser.add_argument("--install-cron", action="store_true",
                         help="安装每日收盘后 crontab 条目")
+    parser.add_argument("--yes", action="store_true",
+                        help="配合 --install-cron 真正写入 crontab（默认仅预览）")
     args = parser.parse_args()
 
     print("=" * 60)
@@ -134,7 +136,7 @@ def main() -> int:
     print("=" * 60)
 
     if args.install_cron:
-        return install_cron()
+        return install_cron(confirm=args.yes)
 
     status = session_guard.session_status()
     print("时段：%s（%s）" % (status["phase"], status["note"]))
@@ -166,12 +168,12 @@ CRON_LINE = ("30 15 * * 1-5 cd /Users/xiashuang/AI-股票系统 && "
              ">> /Users/xiashuang/AI-股票系统/scratch/daily_monitor.log 2>&1")
 
 
-def install_cron() -> int:
+def install_cron(confirm: bool = False) -> int:
     """安装每日 15:30（交易日）收盘后 crontab 条目，幂等。
 
     注意：Codex heartbeat 自动化（automation a）已在收盘后执行同一流程。
     两者并跑会重复消耗 AMD JEV 额度并覆盖同一份报告，
-    因此本函数默认不启用；确需系统级兜底时再手工执行。
+    因此需要显式加 --yes 才真正写入 crontab。
     """
     import subprocess
 
@@ -179,6 +181,12 @@ def install_cron() -> int:
     current = proc.stdout if proc.returncode == 0 else ""
     if CRON_MARKER in current and CRON_LINE in current:
         print("Crontab 条目已存在。")
+        return 0
+    if not confirm:
+        print("将安装 crontab（每交易日 15:30）：")
+        print("  " + CRON_LINE)
+        print("注意：Codex heartbeat 自动化已在收盘后执行同一流程，并跑会重复消耗 "
+              "AMD JEV 额度。确认需要系统级兜底时再加 --yes。")
         return 0
 
     lines = current.rstrip("\n").splitlines()
