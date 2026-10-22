@@ -1,0 +1,438 @@
+{
+  "baseline_type": "evidence",
+  "baseline_date": "2026-10-21",
+  "created_at": "2026-10-21T14:34:40.507999+08:00",
+  "source_report": "reports/shadow/verify-2026-10-21.json",
+  "summary": {
+    "total_claims": 48,
+    "multi_source_confirmed": 48,
+    "single_source": 0,
+    "unverified": 0
+  },
+  "stocks": {
+    "sh600276": {
+      "name": "恒瑞医药",
+      "claims": [
+        {
+          "claim_id": "clm-25c59ba6fa94",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "江苏恒瑞医药股份有限公司关于获得药物临床试验批准通知 ..."
+        },
+        {
+          "claim_id": "clm-1ba7191ce62f",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "恒瑞医药(600276)_公司公告_恒瑞医药：关于获得药物临床试验批准通知书的公告新浪财经_新浪网"
+        },
+        {
+          "claim_id": "clm-b917dfead704",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "恒瑞医药 (600276) 最新公告和新闻稿 - 富途牛牛"
+        },
+        {
+          "claim_id": "clm-63adb7c456c6",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "恒瑞医药(600276.SH)：获得药物临床试验批准通知书 — Noticias de TradingView"
+        },
+        {
+          "claim_id": "clm-b83abe5e22d3",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "江苏恒瑞医药股份有限公司关于药品上市许可申请获受理的 ..."
+        },
+        {
+          "claim_id": "clm-678db74dee0e",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "恒瑞医药(600276.SH)"
+        }
+      ]
+    },
+    "sz000963": {
+      "name": "华东医药",
+      "claims": [
+        {
+          "claim_id": "clm-c047f4ef4e99",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "华东医药(000963)_公司公告_华东医药：关于控股子公司获得药物临床试验批准通知书的公告新浪财经_新浪网"
+        },
+        {
+          "claim_id": "clm-1389520fcab7",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "华东医药（000963）披露控股子公司获得药物临床试验批准通知书，10月19日股价上涨0.91%_公告_治疗_注射用"
+        },
+        {
+          "claim_id": "clm-d1844e796dd0",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "华东医药：子公司注射用DR30206临床试验获批，用于治疗Ⅲ期非小细胞肺癌 - 财中社"
+        },
+        {
+          "claim_id": "clm-b7d13deb7201",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "华东医药(000963.SZ)：注射用DR30206获得药物临床试验批准通知书 — Noticias de TradingView"
+        },
+        {
+          "claim_id": "clm-5e9160d2ef55",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "ҽҩ(000963)˾_˲ƾ_"
+        },
+        {
+          "claim_id": "clm-03f4a8747eb3",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "华东医药(000963)业绩预告_新浪财经_新浪网"
+        }
+      ]
+    },
+    "sz002262": {
+      "name": "恩华药业",
+      "claims": [
+        {
+          "claim_id": "clm-7a10581299a1",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "恩华药业1类创新药NH302注射液获临床试验批准通知书 | 新药网"
+        },
+        {
+          "claim_id": "clm-c9b0ecf50cf7",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "恩华药业(002262)公司公告_新浪财经_新浪网"
+        },
+        {
+          "claim_id": "clm-0e8048bc9f98",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 3,
+          "best_tier": 2,
+          "description": "恩华药业（002262）公告列表 _ 数据中心 _ 东方财富网"
+        },
+        {
+          "claim_id": "clm-a68cca428a67",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "公司新闻_江苏恩华药业股份有限公司"
+        },
+        {
+          "claim_id": "clm-8098d0bdedfa",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "江苏恩华药业股份有限公司"
+        },
+        {
+          "claim_id": "clm-c9b0ecf50cf7",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "恩华药业(002262)公司公告_新浪财经_新浪网"
+        }
+      ]
+    },
+    "sz002422": {
+      "name": "科伦药业",
+      "claims": [
+        {
+          "claim_id": "clm-64ade5ab13a6",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "科伦药业(002422)公司公告_新浪财经_新浪网"
+        },
+        {
+          "claim_id": "clm-06306ce3bb2f",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "关于我们 - 四川科伦博泰生物医药股份有限公司"
+        },
+        {
+          "claim_id": "clm-462103c910bd",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "ҩҵ(002422) - ˾ - Ʊ - Ѻ֤ȯ"
+        },
+        {
+          "claim_id": "clm-0d5294f69b65",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "科伦简介-四川科伦药业股份有限公司官网"
+        },
+        {
+          "claim_id": "clm-7d5067942626",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "科伦药业(SZ002422)股票股价_股价行情_财报_数据报告 - 雪球"
+        },
+        {
+          "claim_id": "clm-923e7d2affbf",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "科伦药业(002422)业绩预告_新浪财经_新浪网"
+        }
+      ]
+    },
+    "sh603259": {
+      "name": "药明康德",
+      "claims": [
+        {
+          "claim_id": "clm-42d3ad90b561",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "药明康德(603259)_公司公告_药明康德：2026年半年度报告新浪财经_新浪网"
+        },
+        {
+          "claim_id": "clm-023701bd8013",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "无锡药明康德新药开发股份有限公司"
+        },
+        {
+          "claim_id": "clm-1f0632930cb2",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "新闻 | 药明康德"
+        },
+        {
+          "claim_id": "clm-f0b75daf5902",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 3,
+          "best_tier": 2,
+          "description": "ҩ(603259) ¶̬_F10_ͬ˳ڷ"
+        },
+        {
+          "claim_id": "clm-68512517d820",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "首頁 | 藥明康德"
+        },
+        {
+          "claim_id": "clm-2ebd35cca3c8",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "药明康德（2359.HK/603259.CH）：1Q25 业绩显著好于预期， ..."
+        }
+      ]
+    },
+    "sh688506": {
+      "name": "百利天恒",
+      "claims": [
+        {
+          "claim_id": "clm-09888ca2525a",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "百利天恒(688506)_公司公告_百利天恒：自愿披露关于BL-ARC001用于在晚期实体瘤治疗获得临床试验批准通知书的公告新浪财经_新浪网"
+        },
+        {
+          "claim_id": "clm-d592c8a7212b",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "四川百利天恒药业股份有限公司"
+        },
+        {
+          "claim_id": "clm-d592c8a7212b",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 3,
+          "best_tier": 1,
+          "description": "四川百利天恒药业股份有限公司"
+        },
+        {
+          "claim_id": "clm-2689270a0d3a",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "百利天恒(SH688506)股票股价_股价行情_财报_数据报告 - 雪球"
+        },
+        {
+          "claim_id": "clm-3a227497cc90",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "百利天恒“厚积薄发”：从仿制到创制，在做擅长的事中赢得主动权"
+        },
+        {
+          "claim_id": "clm-6f6684de7be9",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "(688506) - Ʊ - Ѻ֤ȯ"
+        }
+      ]
+    },
+    "sh512400": {
+      "name": "512400有色金属ETF",
+      "claims": [
+        {
+          "claim_id": "clm-75e6eefa4716",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 3,
+          "best_tier": 2,
+          "description": "有色金属ETF南方(512400)基金公告 _ 基金档案 _ 天天基金网"
+        },
+        {
+          "claim_id": "clm-83df7dcbe4ab",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "财中ETF风向标｜有色金属ETF南方(512400)连续5日净赎回，近5日累计净赎回2.56亿份 - 财中社"
+        },
+        {
+          "claim_id": "clm-44669d9d7c86",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "ɫETF(512400) - Ʊ - Ѻ֤ȯ"
+        },
+        {
+          "claim_id": "clm-9a44c884e773",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "【ETF动向】10月9日有色金属ETF南方基金涨2.31%，份额增加1.36亿份_凤凰网"
+        },
+        {
+          "claim_id": "clm-5b88eac824a8",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "512400 ETF价格和图表 — SSE:512400 — TradingView"
+        },
+        {
+          "claim_id": "clm-820879c83b2a",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "10月16日有色金属ETF南方（512400）份额减少7600.00万份，最新份额139.11亿份，最新规模212.36亿元_龚涛_基金_崔蕾"
+        }
+      ]
+    },
+    "sh688331": {
+      "name": "荣昌生物",
+      "claims": [
+        {
+          "claim_id": "clm-2073389966f0",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "荣昌生物制药（烟台）股份有限公司_荣昌生物"
+        },
+        {
+          "claim_id": "clm-5987418ec2d5",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "荣昌生物(688331)_公司公告_荣昌生物：关于公司2026年度“提质增效重回报”行动方案的半年度评估报告新浪财经_新浪网"
+        },
+        {
+          "claim_id": "clm-2073389966f0",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "荣昌生物制药（烟台）股份有限公司_荣昌生物"
+        },
+        {
+          "claim_id": "clm-b1e5e5824e87",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "荣昌生物制药（烟台）股份有限公司投资者关系活动记录表"
+        },
+        {
+          "claim_id": "clm-14daa272b714",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "ٲ(688331) - ش - Ʊ - Ѻ֤ȯ"
+        },
+        {
+          "claim_id": "clm-2073389966f0",
+          "facet": "general",
+          "status": "multi_source_confirmed",
+          "independent_sources": 2,
+          "best_tier": 2,
+          "description": "荣昌生物制药（烟台）股份有限公司_荣昌生物"
+        }
+      ]
+    }
+  }
+}

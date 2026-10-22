@@ -1,0 +1,191 @@
+{
+  "baseline_type": "data",
+  "baseline_date": "2026-10-21",
+  "created_at": "2026-10-21T14:34:40.507999+08:00",
+  "file_count": 26,
+  "total_size_bytes": 491227,
+  "files": [
+    {
+      "path": "src/data/raw/README.md",
+      "size_bytes": 835,
+      "sha256": "8c61536153da756e9a37f2f6012c2cdae160f2ac247fe46e68d70b7837f16b4b",
+      "mtime": "2026-09-23T20:55:30.018502+08:00",
+      "source": "data"
+    },
+    {
+      "path": "src/data/raw/fundamentals/anchor_status.json",
+      "size_bytes": 12470,
+      "sha256": "abc3c00ef7d2b2b1f7352d6e3e51d3e88098b1c051dfb7ac1c2853a412e26ddb",
+      "mtime": "2026-10-20T11:55:18.520202+08:00",
+      "source": "data"
+    },
+    {
+      "path": "src/data/raw/prices/realtime_prices_20260923.json",
+      "size_bytes": 11173,
+      "sha256": "9da5a8fccee5748b72918a98875c3dbe66cba3f93e643dc5626216694a4002ae",
+      "mtime": "2026-10-20T11:54:22.268421+08:00",
+      "source": "data"
+    },
+    {
+      "path": "src/data/raw/anchor/anchor_status_2026-09-23.json",
+      "size_bytes": 12271,
+      "sha256": "15259cbf1d6da0ccd28a3bd2982322a83bf6f9d8776697854199c97dc5c49c6a",
+      "mtime": "2026-10-20T11:54:34.293034+08:00",
+      "source": "data"
+    },
+    {
+      "path": "src/data/processed/rankings/backtest_dashboard.html",
+      "size_bytes": 4450,
+      "sha256": "c2e56a431e131df314339e95d60ce96a658d631cfd7ca0de2e24c8531a80c805",
+      "mtime": "2026-09-24T09:56:34.542476+08:00",
+      "source": "data"
+    },
+    {
+      "path": "src/data/processed/rankings/backtest_signals.json",
+      "size_bytes": 146,
+      "sha256": "bf398148914f4e493e09d1243d7d030bc7e895237515f5a6305cf0d39e7f9d8c",
+      "mtime": "2026-09-24T09:56:34.542397+08:00",
+      "source": "data"
+    },
+    {
+      "path": "src/data/processed/rankings/risk_anomalies.html",
+      "size_bytes": 2774,
+      "sha256": "2f85ca5cfe2d2b0208d4d104330691425414ebaec82e420f074a40db515d7e6c",
+      "mtime": "2026-09-24T12:36:38.399982+08:00",
+      "source": "data"
+    },
+    {
+      "path": "src/data/processed/rankings/risk_anomalies.json",
+      "size_bytes": 173,
+      "sha256": "3e715a92e30ef975b688b8c9bc1967bfb0a7f99bb91d7bb7f78158488a797dcb",
+      "mtime": "2026-09-24T12:36:38.399884+08:00",
+      "source": "data"
+    },
+    {
+      "path": "src/data/processed/rankings/stock_ranking.html",
+      "size_bytes": 10602,
+      "sha256": "de7bccc5339a86fd1bc00062e0406e9d46b19b19b2ded17a8bb80406074b8e3f",
+      "mtime": "2026-10-20T11:54:58.410814+08:00",
+      "source": "data"
+    },
+    {
+      "path": "src/data/processed/rankings/stock_ranking.json",
+      "size_bytes": 16952,
+      "sha256": "86dfd26f2ded7e92659424deb6495d0b237e840894ba3d82d1c75d399a93eda0",
+      "mtime": "2026-10-20T11:54:52.781172+08:00",
+      "source": "data"
+    },
+    {
+      "path": "src/data/processed/portfolio/stock_portfolio_enriched.json",
+      "size_bytes": 29918,
+      "sha256": "85af788f4db9d07234c0b173be6396498edeb81762190b28210ddcbf1a7f56ff",
+      "mtime": "2026-10-20T11:54:44.121972+08:00",
+      "source": "data"
+    },
+    {
+      "path": "reports/shadow/2026-10-21-2.json",
+      "size_bytes": 46311,
+      "sha256": "5f06f7a18ecb03dc903546d331a1f1adec6787eef35bd8b564620fe99de485d1",
+      "mtime": "2026-10-21T13:39:42.737422+08:00",
+      "source": "report"
+    },
+    {
+      "path": "reports/shadow/2026-10-21-2.md",
+      "size_bytes": 15067,
+      "sha256": "61d167de8faee4068e13da856bc5d0ff6f771862d38ae3c144015ccf120da3aa",
+      "mtime": "2026-10-21T13:39:42.736458+08:00",
+      "source": "report"
+    },
+    {
+      "path": "reports/shadow/2026-10-21-3.md",
+      "size_bytes": 15067,
+      "sha256": "ea181fcb4df3e11a40f92a4d79ba07b8718b11288304374ad6dc467b0693a1bc",
+      "mtime": "2026-10-21T13:40:04.674262+08:00",
+      "source": "report"
+    },
+    {
+      "path": "reports/shadow/2026-10-21-4.json",
+      "size_bytes": 46311,
+      "sha256": "00d5e221f823310f22e98d30bd9fc1f0112a91c1f7d9cb404a8f738cdbd4d24b",
+      "mtime": "2026-10-21T13:59:26.839288+08:00",
+      "source": "report"
+    },
+    {
+      "path": "reports/shadow/2026-10-21-4.md",
+      "size_bytes": 15067,
+      "sha256": "4c963ca89fdf0bc27f7199e95d08ef50eef02234fee71fe293fb3975281ff8e1",
+      "mtime": "2026-10-21T13:59:26.838234+08:00",
+      "source": "report"
+    },
+    {
+      "path": "reports/shadow/2026-10-21-5.md",
+      "size_bytes": 13423,
+      "sha256": "032d46aa071584d099bb72c3ec26fe414c97a415f9a0f77817d390b0a4135edf",
+      "mtime": "2026-10-21T14:00:26.453748+08:00",
+      "source": "report"
+    },
+    {
+      "path": "reports/shadow/2026-10-21-6.json",
+      "size_bytes": 37190,
+      "sha256": "7a53f7780b5d17659777048ac95754981bbc6560ac4bc33f5b0ee5bc5a6f59f7",
+      "mtime": "2026-10-21T14:18:42.404246+08:00",
+      "source": "report"
+    },
+    {
+      "path": "reports/shadow/2026-10-21-6.md",
+      "size_bytes": 13423,
+      "sha256": "d3c06ea9fa51adce98f68244a5d187dae6c4c1394f3f8e01af6e587b7ded7699",
+      "mtime": "2026-10-21T14:18:42.403023+08:00",
+      "source": "report"
+    },
+    {
+      "path": "reports/shadow/2026-10-21.json",
+      "size_bytes": 46311,
+      "sha256": "7dfe9546dbf5115bad56f3b6ecc9ef21827c79456583e07ea2c524c246219c2e",
+      "mtime": "2026-10-21T13:39:35.798572+08:00",
+      "source": "report"
+    },
+    {
+      "path": "reports/shadow/2026-10-21.md",
+      "size_bytes": 15067,
+      "sha256": "fd122c2954b79d8b4fac1c672d0487ac230e592b4b04ae10fc4a6c1a65086ac6",
+      "mtime": "2026-10-21T13:39:35.797523+08:00",
+      "source": "report"
+    },
+    {
+      "path": "reports/shadow/verify-2026-10-21.json",
+      "size_bytes": 79764,
+      "sha256": "660072f770255df308a62406e2e0a190fac986676d4b2dd8d27aa49f1a9c081d",
+      "mtime": "2026-10-21T14:25:38.888509+08:00",
+      "source": "report"
+    },
+    {
+      "path": "reports/shadow/verify-2026-10-21.md",
+      "size_bytes": 16548,
+      "sha256": "e2a87e11194cec75a3c8d656a7dfa3a2997c48b447847483e3339aed6e14cddc",
+      "mtime": "2026-10-21T14:25:38.884781+08:00",
+      "source": "report"
+    },
+    {
+      "path": "/Users/xiashuang/harness/anchor_status.json",
+      "size_bytes": 12465,
+      "sha256": "5ca888e4076282398639186e82683e2353baea04d42d852dbc8fb1cf15a94d2b",
+      "mtime": "2026-10-21T12:22:46.322799+08:00",
+      "source": "harness"
+    },
+    {
+      "path": "/Users/xiashuang/harness/stock_daily/stock_ranking.json",
+      "size_bytes": 16936,
+      "sha256": "bd96a68c14d569e3edab9fe7956ca01af84243ac44a3f8310035f2fe4b4a33ef",
+      "mtime": "2026-10-20T16:30:15.671425+08:00",
+      "source": "harness"
+    },
+    {
+      "path": "/Users/xiashuang/harness/portfolio/positions.json",
+      "size_bytes": 513,
+      "sha256": "a50baa58544a1d1bdbd690a71da5a4802285d1d9c12fd39de3b2d22c3146f5d3",
+      "mtime": "2026-10-21T12:55:29.464759+08:00",
+      "source": "harness"
+    }
+  ]
+}
