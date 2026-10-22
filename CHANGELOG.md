@@ -6,15 +6,24 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
-- 新增 src/stock_codes.py：集中式股票代码注册表（P0=7, P2=1, HK=3, ETF=32, LEGACY=36），所有模块统一引用
-- 新增 src/decision/adapter.py：AMD Decision Model 适配层（Clef / d3 / d3-flash，endpoint=/v1/systemone）
-- 新增 src/decision/registry.json：注册 3 个 AMD 决策模型（Clef primary, d3, d3-flash fallback）
-- 改进 src/engine/daily_judge.py：新增 --decision-model CLI 开关，第 5.25 步调用 AMD Decision Model
-- 改进 src/engine/report.py：新增 C2 节展示 AMD Decision Model 个股判断
-- 改进 src/engine/daily_judge.py：股票池引用从 data_loader 迁移到 stock_codes（唯一真源）
-- 改进 src/decision/adapter.py：429 速率限制指数退避（4s/8s/12s/16s/20s），最多 5 次重试
-- 改进 .env：新增 AMD_API_KEY / AMD_API_BASE / AMD_DECISION_MODEL 配置
-- 安装 @tencent-qqmail/agently-cli：Agent Mail CLI 已授权（xiahshuang@agent.qq.com）
+- [新功能] src/stock_codes.py：集中式股票代码注册表（P0=7, P2=1, HK=3, ETF=32, LEGACY=36），所有模块统一引用
+- [新功能] src/decision/adapter.py：AMD Decision Model 适配层（Clef / d3 / d3-flash，endpoint=/v1/systemone）
+- [新功能] src/decision/registry.json：注册 3 个 AMD 决策模型（Clef primary, d3, d3-flash fallback）
+- [新功能] src/monitor/：每日 A 股持仓池 + ETF 监测模块（行情/锚价偏离 → Search API 新闻 → JEV 三问 → 动作映射 → Markdown 报告）
+- [新功能] src/monitor/run.py：监测 CLI，支持 --date/--dry-run/--mock-jev/--no-search/--json/--force
+- [新功能] src/monitor/session_guard.py：交易时段守卫，仅收盘后运行（09:30-11:30 / 13:00-15:00 连续竞价内跳过）
+- [新功能] src/monitor/market.py：真实大盘指数行情（四大指数）+ 本地池聚合，事实层与推断层分离
+- [新功能] src/monitor/tests/test_monitor.py：17 项离线单测（JEV 重试、error_code 归一化、动作映射、时段守卫）
+- [新功能] reports/monitor/YYYY-MM-DD.md：每日监测报告，CONSIDER_ENTRY/REDUCE/EXIT 加粗标注
+- [改进] src/engine/daily_judge.py：新增 --decision-model CLI 开关，第 5.25 步调用 AMD Decision Model
+- [改进] src/engine/report.py：新增 C2 节展示 AMD Decision Model 个股判断
+- [改进] src/engine/daily_judge.py：股票池引用从 data_loader 迁移到 stock_codes（唯一真源）
+- [改进] src/decision/adapter.py：429 速率限制指数退避（4s/8s/12s/16s/20s），最多 5 次重试
+- [改进] src/monitor/jev_questions.py：JEV 调用重试/退避（429/transport/bridge_error 按 4s/8s/12s/16s/20s 重试）+ 调用间隔限速
+- [改进] src/monitor/jev_questions.py：http_status 429 归一化为 error_code=rate_limit（此前误判为 unknown）
+- [改进] src/scripts/fetch/fetch_realtime.py、update_anchor.py：股票代码改引 src/stock_codes.py，补入缺失的荣昌生物 sh688331
+- [改进] .env：新增 AMD_API_KEY / AMD_API_BASE / AMD_DECISION_MODEL 配置
+- [chore] 安装 @tencent-qqmail/agently-cli：Agent Mail CLI 已授权（xiahshuang@agent.qq.com）
 
 ## [2026-10-21] — data_provider 基础设施
 

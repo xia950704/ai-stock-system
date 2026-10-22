@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """
 最小抓取入口（阶段 1 · 方案 C 骨架）
-抓 P0 6 只 + ETF 512400 实时价（腾讯 API qt.gtimg.cn）。
+抓关注池实时价（腾讯 API qt.gtimg.cn）。
 输出：现价 / 前收 / 涨跌幅 / 时间戳 / 锚价偏离 / 状态。
 只读抓取，不写任何文件；写盘由调用方决定。
+
+股票池来源：src/stock_codes.py（唯一真源），不再本地硬编码。
 """
 import json
 import os
@@ -11,16 +13,14 @@ import sys
 import urllib.request
 from datetime import datetime
 
-# P0 6 只 + ETF 512400（口径来源：00-系统/个人上下文卡.md 场景 1）
-SYMBOLS = {
-    "sh600276": "恒瑞医药",
-    "sz000963": "华东医药",
-    "sz002262": "恩华药业",
-    "sz002422": "科伦药业",
-    "sh603259": "药明康德",
-    "sh688506": "百利天恒",
-    "sh512400": "512400ETF",
-}
+_SRC = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+if _SRC not in sys.path:
+    sys.path.insert(0, _SRC)
+
+from stock_codes import ALL_POOL, P0_POOL, P2_POOL
+
+# 关注池（P0 + P2），名称以注册表为准
+SYMBOLS = {s.code: s.name for s in ALL_POOL}
 
 # 锚价权威源：默认 ~/harness/anchor_status.json，可用 DATA_ROOT 覆盖
 DATA_ROOT = os.path.expanduser(os.environ.get("DATA_ROOT", "~/harness"))
@@ -72,7 +72,8 @@ def deviation_status(deviation):
 def load_anchors():
     with open(ANCHOR_PATH) as f:
         data = json.load(f)
-    return {d["code"]: d for d in data}
+    from stock_codes import normalize_code
+    return {normalize_code(d["code"]): d for d in data}
 
 
 def main():

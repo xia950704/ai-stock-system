@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
-"""更新 anchor_status.json 到最新收盘（P0 6 只 + 512400，腾讯 API）。
+"""更新 anchor_status.json 到最新收盘（关注池，腾讯 API）。
 只更新 current/prev_close/change_pct/pe；anchor 锚价不动（动态值，由用户维护）。
 用法: python3 update_anchor.py [--dry-run]
+
+股票池来源：src/stock_codes.py（唯一真源），不再本地硬编码。
 """
 import json
 import os
@@ -9,21 +11,19 @@ import shutil
 import sys
 import urllib.request
 
+_SRC = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+if _SRC not in sys.path:
+    sys.path.insert(0, _SRC)
+
+from stock_codes import ALL_POOL
+
 # 数据根目录：默认 ~/harness（本机布局），可用 DATA_ROOT 覆盖（如 P3 容器化部署）
 DATA_ROOT = os.path.expanduser(os.environ.get("DATA_ROOT", "~/harness"))
 ANCHOR_PATH = os.path.join(DATA_ROOT, "anchor_status.json")
 BACKUP_PATH = os.path.join(DATA_ROOT, "backup_phase1", "anchor_status.pre_update.json")
 
-# key=腾讯API代码, value=显示名
-P0 = {
-    "sh600276": "恒瑞医药",
-    "sz000963": "华东医药",
-    "sz002262": "恩华药业",
-    "sz002422": "科伦药业",
-    "sh603259": "药明康德",
-    "sh688506": "百利天恒",
-    "sh512400": "有色金属ETF南方",
-}
+# key=腾讯API代码, value=显示名（来自 stock_codes 注册表）
+P0 = {s.code: s.name for s in ALL_POOL}
 
 
 def norm(code):

@@ -46,6 +46,14 @@ def _norm_code(code: str) -> str:
         if c.startswith(("0","3","2")): return "sz" + c
     return c
 
+def normalize_code(code: str) -> str:
+    """公开的代码归一化入口（供跨模块对齐同一标的）。
+
+    ~/harness/anchor_status.json 中 ETF 512400 以裸码存放，
+    而关注池用 sh512400；归一化后两者才对得上。
+    """
+    return _norm_code(code)
+
 def all_judge_codes() -> List[str]: return [s.code for s in ALL_POOL]
 def all_codes() -> List[str]: return [s.code for s in ALL_STOCKS]
 P0_POOL_CODES = [s.code for s in P0_POOL]

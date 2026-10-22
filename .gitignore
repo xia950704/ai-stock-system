@@ -18,6 +18,9 @@
 **/*holding*
 **/*cost*
 **/*account*
+# 字面量 ~ 目录（路径未展开导致的误建目录），内含 positions.json 等敏感数据
+~/
+**/positions.json
 
 # 日志与缓存
 **/logs/
