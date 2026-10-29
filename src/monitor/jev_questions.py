@@ -31,6 +31,40 @@ JEV_INTER_CALL_DELAY_S = float(os.environ.get("JEV_INTER_CALL_DELAY_S", "3.0"))
 _JEV_RETRYABLE_ERROR_CODES = {"timeout", "transport", "bridge_error",
                               "rate_limit", "server_error"}
 
+_JEV_BUCKET_CAPACITY = int(os.environ.get("JEV_BUCKET_CAPACITY", "3"))
+_JEV_BUCKET_RATE = float(os.environ.get("JEV_BUCKET_RATE", 1.0 / 3.0))
+_JEV_BUCKET_LOCK = __import__("threading").Lock()
+_JEV_BUCKET_NEXT_ALLOWED = 0.0
+
+
+def _jev_acquire_token(timeout_s: float = 30.0) -> bool:
+    """线程安全 token bucket 限速（stdlib threading + time.monotonic）。
+
+    依据：AMD global_concurrency_rate_limit 与现有 JEV_INTER_CALL_DELAY_S=3.0
+    （≈ 1/3 req/s）。默认容量 3、速率 1/3 req/s。
+
+    与现有 time.sleep(JEV_INTER_CALL_DELAY_S) 的关系：
+    - 原实现：每次真实调用后无条件 sleep 3s，多线程下会互相阻塞且不感知 429；
+    - 新实现：acquire() 在桶空时阻塞等待 refill，桶满时立即放行；
+      多线程并发下仍保持速率上限。
+    - 保留 JEV_INTER_CALL_DELAY_S 作为 acquire 的最小间隔下限，
+      两者叠加使用：acquire() 保证全局速率，sleep 保证单次调用间隔。
+    """
+    global _JEV_BUCKET_NEXT_ALLOWED
+    deadline = time.monotonic() + timeout_s
+    while True:
+        with _JEV_BUCKET_LOCK:
+            now = time.monotonic()
+            if now >= _JEV_BUCKET_NEXT_ALLOWED:
+                # 桶内有 token：放行，并预留下一个 token 的可用时刻
+                interval = max(1.0 / max(_JEV_BUCKET_RATE, 1e-6), JEV_INTER_CALL_DELAY_S)
+                _JEV_BUCKET_NEXT_ALLOWED = now + interval
+                return True
+            wait = _JEV_BUCKET_NEXT_ALLOWED - now
+        if time.monotonic() >= deadline:
+            return False
+        time.sleep(min(wait, 0.5))
+
 
 def _classify_result_error(result: Dict[str, Any]) -> str:
     """把 jev_adapter 原始返回归一化为 error_code。
@@ -217,8 +251,13 @@ def run_jev(state: Dict[str, Any], kind: str, quote: Dict[str, Any],
             continue
         break
 
+    # 限速：真实调用前 acquire token bucket（阻塞等待 refill，而非无条件 sleep）。
+    # mock 模式不消耗真实配额，因此跳过。
     if not use_mock:
-        time.sleep(JEV_INTER_CALL_DELAY_S)
+        acquired = _jev_acquire_token(timeout_s=max(60.0, JEV_BACKOFF_BASE_S * JEV_MAX_RETRIES))
+        if not acquired:
+            print("  JEV token bucket acquire timed out for %s [%s]" % (
+                quote.get("code"), kind))
 
     parsed = _parse_choice(last_result)
     parsed["question"] = q

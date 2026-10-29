@@ -28,6 +28,7 @@
 """
 import json
 import importlib.util
+import logging
 import os
 import subprocess
 import time
@@ -79,6 +80,7 @@ MCP_BRIDGE = os.path.join(
     os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
     "jev", "mcp_bridge.py",
 )
+# 支持环境变量 JEV_KEY_FILE 覆盖 key 文件路径
 KEY_FILE = os.path.expanduser(
     os.environ.get("JEV_KEY_FILE", "~/.hermes/mcp-servers/jev-systemone/.key")
 )
@@ -99,7 +101,8 @@ def _read_local_env() -> Dict[str, str]:
                 key = key.strip()
                 if key.startswith("JEV_"):
                     values[key] = value.strip()
-    except OSError:
+    except (OSError, ValueError):
+        logging.exception("Failed to read local env %s", MCP_ENV_FILE)
         return {}
     return values
 
@@ -116,7 +119,7 @@ PROVIDER = os.environ.get(
 )
 DEFAULT_MODEL = os.environ.get(
     "JEV_MODEL",
-    _LOCAL_ENV.get("JEV_MODEL", "jev"),
+    _LOCAL_ENV.get("JEV_MODEL", "Clef"),
 )
 TIMEOUT_S = float(
     os.environ.get("JEV_TIMEOUT", _LOCAL_ENV.get("JEV_TIMEOUT", "60"))

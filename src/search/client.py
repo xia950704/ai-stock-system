@@ -69,7 +69,10 @@ BASE_URL = os.environ.get("SEARCH_API_BASE_URL", "http://127.0.0.1:31415/v1/sear
 API_KEY = os.environ.get("SEARCH_API_KEY", "")
 TIMEOUT_S = float(os.environ.get("SEARCH_API_TIMEOUT", "30"))
 MAX_RETRIES = int(os.environ.get("SEARCH_API_MAX_RETRIES", "2"))
-LOG_DIR = os.path.expanduser(os.environ.get("SEARCH_LOG_DIR", "~/harness/logs/search"))
+BACKOFF_BASE_S = float(os.environ.get("SEARCH_API_BACKOFF_BASE_S", "4.0"))
+# 连接超时独立于读写超时，避免 TIMEOUT_S < 10 时连接超时被反直觉地放大
+CONNECT_TIMEOUT_S = float(os.environ.get("SEARCH_API_CONNECT_TIMEOUT", "10"))
+LOG_DIR = os.expanduser(os.environ.get("SEARCH_LOG_DIR", "~/harness/logs/search"))
 
 # ---- 错误分类 ----
 def _classify_error(http_status: Optional[int], detail: str) -> str:
@@ -159,7 +162,14 @@ def search(query: str, limit: int = 5, provider: Optional[str] = None,
     for attempt in range(MAX_RETRIES + 1):
         start = time.time()
         try:
-            with httpx.Client(timeout=TIMEOUT_S) as client:
+            # httpx.Timeout 的四个参数依次为 connect/read/write/pool；
+            # 原写法 httpx.Timeout(TIMEOUT_S, connect=10.0) 只显式传了 connect，
+            # 其余三项被首参 TIMEOUT_S 填充，造成 read/write/pool 与 connect 不一致。
+            # 显式补齐四项，并把 connect 限制在 min(10.0, TIMEOUT_S)，
+            # 避免 TIMEOUT_S < 10 时连接超时反直觉地大于总超时。
+            with httpx.Client(timeout=httpx.Timeout(
+                min(TIMEOUT_S, CONNECT_TIMEOUT_S), CONNECT_TIMEOUT_S, TIMEOUT_S, TIMEOUT_S,
+            )) as client:
                 r = client.post(url, headers=headers, json=payload)
         except httpx.TimeoutException:
             last_error = {"error_code": "timeout", "error_message": f"Timeout after {TIMEOUT_S}s"}
@@ -176,7 +186,8 @@ def search(query: str, limit: int = 5, provider: Optional[str] = None,
             code = _classify_error(r.status_code, detail)
             last_error = {"error_code": code, "http_status": r.status_code, "error_message": detail}
             if code in ("rate_limited", "server_error") and attempt < MAX_RETRIES:
-                time.sleep(1.0 * (attempt + 1))  # 指数退避
+                wait = BACKOFF_BASE_S * (attempt + 1)
+                time.sleep(wait)  # 指数退避
                 continue
             break
         

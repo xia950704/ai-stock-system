@@ -43,29 +43,29 @@ TZ = timezone(timedelta(hours=8))
 
 
 def run_config_check() -> str:
-    """运行配置验证，返回状态字符串。"""
+    """运行配置验证，返回状态字符串。
+
+    通过 subprocess 调用 scripts/validate_stock_config.py，隔离执行环境：
+    - capture_output=True：不污染主进程 stdout
+    - shell=False：命令以列表形式传入，避免 shell 注入
+    - timeout=30：防止验证脚本死循环
+    - 显式 returncode 判断：0=PASS，1=FAIL，其余=ERROR
+    """
     vsc_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
                             "scripts", "validate_stock_config.py")
     if not os.path.exists(vsc_path):
         return "配置验证脚本不存在"
     try:
-        import importlib.util
-        import io
-        spec = importlib.util.spec_from_file_location("vsc", vsc_path)
-        mod = importlib.util.module_from_spec(spec)
-        spec.loader.exec_module(mod)
-        old_stdout = sys.stdout
-        sys.stdout = io.StringIO()
-        try:
-            mod.main()
+        proc = subprocess.run(
+            [sys.executable, vsc_path],
+            capture_output=True, text=True,
+            timeout=30,
+        )
+        if proc.returncode == 0:
             return "PASS"
-        except SystemExit as e:
-            # validate_stock_config.py: exit 0 = PASS, exit 1 = FAIL
-            return "PASS" if e.code == 0 else f"FAIL (exit={e.code})"
-        finally:
-            sys.stdout = old_stdout
-        # 注意：validate_stock_config.py 成功时 exit=0，失败时 exit=1
-        # SystemExit(0) 视为 PASS，SystemExit(1) 视为 FAIL
+        return "FAIL (exit=%d): %s" % (proc.returncode, (proc.stderr or proc.stdout)[-300:])
+    except subprocess.TimeoutExpired:
+        return "ERROR: 配置验证超时（30s）"
     except Exception as e:
         return f"ERROR: {e}"
 
@@ -234,6 +234,7 @@ def main():
 
     # [5.25/8] AMD Decision Model 探查（可选）
     decision_status = "skipped"
+    search_status = "skipped"
     decision_results = {}
     if args.decision_model:
         print("[5.25/8] AMD Decision Model...")

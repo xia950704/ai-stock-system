@@ -27,10 +27,22 @@ import sys
 from datetime import datetime, timezone, timedelta
 
 TZ = timezone(timedelta(hours=8))
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT = os.environ.get("AI_STOCK_SYSTEM_ROOT") or os.path.dirname(
+    os.path.dirname(os.path.abspath(__file__))
+)
 ENGINE = os.path.join(ROOT, "src", "engine", "daily_judge.py")
 SNAPSHOT = os.path.join(ROOT, "scripts", "daily_positions_snapshot.py")
 REPORTS_DIR = os.path.join(ROOT, "reports", "shadow")
+
+CRONTAB_MARKER = "# ── AI股票系统 daily commit bot ──"
+
+def _build_cron_line(root: str) -> str:
+    """构建 crontab 条目，路径使用指定 root（支持 AI_STOCK_SYSTEM_ROOT）。"""
+    return (
+        "0 13 * * * cd {root} && "
+        "/usr/bin/python3 {root}/scripts/daily_commit_bot.py "
+        ">> {root}/scratch/daily_commit_bot.log 2>&1"
+    ).format(root=root)
 
 
 def run(cmd: list[str], cwd: str = ROOT, check: bool = True) -> subprocess.CompletedProcess:
@@ -98,22 +110,17 @@ def stage_and_commit(message: str, dry_run: bool) -> None:
 
 def install_cron() -> int:
     """Add a daily crontab entry for this bot, idempotently."""
-    cron_line = (
-        "0 13 * * * cd /Users/xiashuang/AI-股票系统 && "
-        "/usr/bin/python3 /Users/xiashuang/AI-股票系统/scripts/daily_commit_bot.py "
-        ">> /Users/xiashuang/AI-股票系统/scratch/daily_commit_bot.log 2>&1"
-    )
-    marker = "# ── AI股票系统 daily commit bot ──"
+    cron_line = _build_cron_line(ROOT)
     proc = run(["crontab", "-l"], check=False)
     current = proc.stdout if proc.returncode == 0 else ""
 
-    if marker in current and cron_line in current:
+    if CRONTAB_MARKER in current and cron_line in current:
         print("Crontab entry already exists.")
         return 0
 
     lines = current.rstrip("\n").splitlines()
-    if marker not in current:
-        lines.append(marker)
+    if CRONTAB_MARKER not in current:
+        lines.append(CRONTAB_MARKER)
     lines.append(cron_line)
     new_cron = "\n".join(lines) + "\n"
     proc = subprocess.run(["crontab"], input=new_cron, text=True, capture_output=True)

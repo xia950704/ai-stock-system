@@ -34,12 +34,36 @@ from decision.contract import (
 TZ = timezone(timedelta(hours=8))
 
 # ---- Config (env overrides; .env values are defaults) ----
-AMD_BASE_URL = os.environ.get("AMD_API_BASE", "https://developer.amd.com.cn/radeon/api/v1")
-AMD_API_KEY = os.environ.get("AMD_API_KEY", "rc-c8cd1139b79ebb6578de5dfe25771aad4d7c58201c776ba7")
+AMD_BASE_URL = os.environ.get(
+    "AMD_API_BASE",
+    "https://developer.amd.com.cn/radeon/api/v1",
+)
+# 密钥只走环境变量，不写默认值（原默认值为明文泄漏，已移除）。
+# 缺失时 is_available() / decide() 会显式返回不可用，而不是静默使用泄漏凭据。
+AMD_API_KEY = os.environ.get("AMD_API_KEY", "")
 AMD_MODEL = os.environ.get("AMD_DECISION_MODEL", "Clef")
 REQUEST_TIMEOUT_S = float(os.environ.get("AMD_TIMEOUT_S", "60"))
 MAX_RETRIES = int(os.environ.get("AMD_MAX_RETRIES", "5"))
 BACKOFF_BASE_S = float(os.environ.get("AMD_BACKOFF_BASE_S", "4.0"))
+# 优先读新名 AMD_API_BASE_FALLBACKS，兜底读旧名 AMD_FALLBACK_URLS
+_fallback_env = os.environ.get("AMD_API_BASE_FALLBACKS") or os.environ.get("AMD_FALLBACK_URLS", "")
+AMD_FALLBACK_URLS = [
+    url.strip()
+    for url in _fallback_env.split(",")
+    if url.strip()
+]
+
+
+def _endpoints() -> List[str]:
+    """返回有序 endpoint 列表（primary 在前，fallback 在后，自动去重）。"""
+    urls = [AMD_BASE_URL] + AMD_FALLBACK_URLS
+    seen: set = set()
+    result: List[str] = []
+    for u in urls:
+        if u not in seen:
+            seen.add(u)
+            result.append(u)
+    return result
 
 
 def _now_iso() -> str:
@@ -219,25 +243,32 @@ def call_amd_api(
     system_prompt: str,
     user_prompt: str,
     model: str = AMD_MODEL,
-    base_url: str = AMD_BASE_URL,
     api_key: str = AMD_API_KEY,
     timeout_s: float = REQUEST_TIMEOUT_S,
 ) -> Tuple[bool, Dict[str, Any], str]:
-    """Call AMD API with exponential backoff on 429/transport errors."""
+    """Call AMD API with exponential backoff on 429/transport errors.
+
+    支持 endpoint fallback：主 endpoint 连续失败后自动切换到备用 endpoint。
+    """
+    if not api_key:
+        return False, {}, "missing AMD_API_KEY"
     last_err = ""
-    for attempt in range(MAX_RETRIES):
-        ok, parsed, err = _call_amd_api_once(
-            system_prompt, user_prompt, model, base_url, api_key, timeout_s
-        )
-        if ok:
-            return True, parsed, ""
-        if "429" in err or "transport" in err.lower():
-            wait = BACKOFF_BASE_S * (attempt + 1)
-            print("  AMD API retry %d/%d in %.0fs: %s" % (attempt + 1, MAX_RETRIES, wait, err[:100]))
-            time.sleep(wait)
-            last_err = err
-            continue
-        return False, parsed, err
+    for endpoint in _endpoints():
+        for attempt in range(MAX_RETRIES):
+            ok, parsed, err = _call_amd_api_once(
+                system_prompt, user_prompt, model, endpoint, api_key, timeout_s
+            )
+            if ok:
+                return True, parsed, ""
+            if "429" in err or "transport" in err.lower():
+                wait = BACKOFF_BASE_S * (attempt + 1)
+                print("  AMD API retry %d/%d in %.0fs: %s" % (
+                    attempt + 1, MAX_RETRIES, wait, err[:100]))
+                time.sleep(wait)
+                last_err = err
+                continue
+            # 非重试错误（auth / bad_request / not_found 等）不换 endpoint
+            return False, parsed, err
     return False, {}, last_err or "max retries exceeded"
 
 
@@ -246,7 +277,6 @@ def call_amd_api(
 def decide(
     input_obj: DecisionInput,
     model: str = AMD_MODEL,
-    base_url: str = AMD_BASE_URL,
     api_key: str = AMD_API_KEY,
     timeout_s: float = REQUEST_TIMEOUT_S,
     validate: bool = True,
@@ -257,7 +287,7 @@ def decide(
     user_prompt = build_user_prompt(input_obj)
 
     ok, parsed, err = call_amd_api(
-        system_prompt, user_prompt, model, base_url, api_key, timeout_s
+        system_prompt, user_prompt, model, api_key, timeout_s
     )
 
     if not ok:
@@ -271,7 +301,7 @@ def decide(
             market_reasoning="API 调用失败: " + err,
             stocks=[],
             overall_notes=["Decision Model 不可用: " + err],
-            trace={"error": err, "model": model, "base_url": base_url},
+            trace={"error": err, "model": model},
         )
 
     if validate:
@@ -344,6 +374,8 @@ def decide(
 
 def is_available() -> Tuple[bool, str]:
     """Quick check whether the AMD API endpoint is reachable."""
+    if not AMD_API_KEY:
+        return False, "missing AMD_API_KEY"
     try:
         import httpx
     except ImportError:
